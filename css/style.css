@@ -1063,10 +1063,9 @@ body.page-leaving .page-body {
     color: #ffffff;
 }
 
-/* المحتوى الداخلي للدرس */
+/* ================= التخطيط الصحيح لمحتوى الدرس (فتح/غلق ثابت ومتناسق) ================= */
 .lesson-accordion-content {
     display: none;
-    background: #ffffff;
 }
 
 .lesson-accordion-item.open .lesson-accordion-content {
@@ -1074,10 +1073,11 @@ body.page-leaving .page-body {
 }
 
 .lesson-content-split {
-    padding: 24px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 24px;
+    padding: 24px;
 }
 
 .lesson-text-side {
@@ -1159,19 +1159,154 @@ body.page-leaving .page-body {
     border: 0;
 }
 
+/* ==========================================================================
+   المظهر الموحد لتذييل الموقع - الفوتر الداكن الفخم (Executive Dark Navy)
+   ========================================================================== */
+.site-footer {
+    margin-top: 50px;
+    background: linear-gradient(145deg, #0b1f3a 0%, #061224 100%);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(11, 31, 58, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    color: #e2e8f0;
+}
 
+.footer-top-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 36px;
+    padding: 40px 36px;
+}
 
+.footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
+.footer-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
+.footer-logo-img {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), 0 0 12px rgba(56, 189, 248, 0.25);
+    object-fit: contain;
+}
 
+.footer-brand-title {
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
 
+.footer-brand-title span {
+    color: #38bdf8;
+}
 
+.footer-bio-ar {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin: 0;
+}
 
-/* ======================MOBILE DESIGN ==================*/
+.footer-links-col,
+.footer-social-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-col-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+    border-left: 3px solid #0078d4;
+    padding-left: 8px;
+}
+
+.footer-quick-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-quick-nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer-quick-nav a:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+}
+
+.footer-social-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    background: rgba(255, 255, 255, 0.06);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.social-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.social-pill.yt:hover { background: #dc2626; color: #ffffff; border-color: #dc2626; }
+.social-pill.li:hover { background: #0284c7; color: #ffffff; border-color: #0284c7; }
+.social-pill.gh:hover { background: #1e293b; color: #ffffff; border-color: #475569; }
+.social-pill.wa:hover { background: #16a34a; color: #ffffff; border-color: #16a34a; }
+.social-pill.fb:hover { background: #2563eb; color: #ffffff; border-color: #2563eb; }
+
+.footer-bottom-bar {
+    padding: 16px 36px;
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.footer-bottom-bar p {
+    margin: 0;
+}
 
 /* ==========================================================================
    قسم التجاوب الشامل لكافة الشاشات (Responsive Media Queries)
-   معالجة البانر المدمج وإلغاء مططة الكروت لجميع الصفحات
    ========================================================================== */
 
 /* 1. الشاشات المتوسطة والأجهزة اللوحية (Tablets & Small Laptops: <= 992px) */
@@ -1180,7 +1315,6 @@ body.page-leaving .page-body {
         padding: 24px 16px;
     }
 
-    /* شبكة الكروت في صفحة الكورسات وصفحة التراك */
     .group-courses-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 16px !important;
@@ -1207,7 +1341,6 @@ body.page-leaving .page-body {
         justify-content: center !important;
     }
 
-    /* تقسيم الشطرين لدروس الكورس */
     .lesson-content-split {
         flex-direction: column-reverse !important;
         gap: 20px !important;
@@ -1227,7 +1360,7 @@ body.page-leaving .page-body {
         padding: 12px 10px;
     }
 
-    /* --- أ. البانر العلوي المدمج والنحيف --- */
+    /* البانر العلوي المدمج */
     .vibrant-banner {
         flex-direction: row !important;
         align-items: center !important;
@@ -1275,29 +1408,32 @@ body.page-leaving .page-body {
         font-size: 17px !important;
     }
 
-    /* --- ب. شريط التنقل (شبكة متناسقة بصفين) --- */
+    /* شريط التنقل (4 أزرار في كل صف) */
     .main-navbar {
         margin-top: 12px !important;
-        padding: 8px 10px !important;
+        padding: 8px 8px !important;
         border-radius: 16px !important;
     }
 
     .nav-links {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 6px !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 5px !important;
         width: 100% !important;
     }
 
     .nav-item {
-        font-size: 12px !important;
-        padding: 8px 4px !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+        padding: 8px 2px !important;
         text-align: center !important;
         justify-content: center !important;
         width: 100% !important;
+        white-space: nowrap !important;
+        border-radius: 12px !important;
     }
 
-    /* --- ج. شريط المسار والرجوع --- */
+    /* شريط المسار والرجوع */
     .sub-nav-bar {
         flex-direction: column !important;
         align-items: stretch !important;
@@ -1318,7 +1454,7 @@ body.page-leaving .page-body {
         font-size: 12px !important;
     }
 
-    /* --- د. علاج مططة الكروت في كافة الصفحات (Height Reset) --- */
+    /* علاج مط الكروت */
     .accordion-track-card,
     .course-mini-card,
     .lesson-accordion-item,
@@ -1328,7 +1464,7 @@ body.page-leaving .page-body {
         max-height: unset !important;
     }
 
-    /* صفحة الكورسات الأساسية (courses.html) */
+    /* صفحة الكورسات الأساسية */
     .page-title-box {
         margin-top: 20px !important;
         padding: 0 4px !important;
@@ -1374,7 +1510,7 @@ body.page-leaving .page-body {
         margin-bottom: 14px !important;
     }
 
-    /* صفحة تراك الباور بي آي (power-bi/index.html) */
+    /* صفحة تراك الباور بي آي */
     .track-hero-banner {
         padding: 18px 16px !important;
         border-radius: 18px !important;
@@ -1421,7 +1557,7 @@ body.page-leaving .page-body {
         font-size: 16px !important;
     }
 
-    /* صفحة الكورس والدروس (pl300-part1.html) */
+    /* صفحة الكورس والدروس */
     .course-master-hero {
         padding: 20px 16px !important;
         border-radius: 18px !important;
@@ -1464,7 +1600,6 @@ body.page-leaving .page-body {
         font-size: 12px !important;
     }
 
-    /* شريط عنوان الدرس */
     .lesson-bar-header {
         padding: 12px 14px !important;
     }
@@ -1484,7 +1619,7 @@ body.page-leaving .page-body {
     }
 
     .lesson-play-hint {
-        display: none !important; /* إخفاء النص لتوفير المساحة */
+        display: none !important;
     }
 
     .lesson-arrow-circle {
@@ -1509,4 +1644,731 @@ body.page-leaving .page-body {
     .lesson-takeaways-card ul li {
         font-size: 12px !important;
     }
+
+    /* فوتر الموبايل الموحد */
+    .site-footer {
+        margin-top: 36px;
+        border-radius: 20px;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        padding: 26px 18px !important;
+        text-align: center;
+    }
+
+    .footer-col-title {
+        border-left: none;
+        padding-left: 0;
+        display: inline-block;
+    }
+
+    .footer-logo-title {
+        justify-content: center;
+    }
+
+    .footer-links-col,
+    .footer-social-col {
+        align-items: center;
+    }
+
+    .footer-quick-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .footer-social-badges {
+        justify-content: center;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 14px 16px;
+    }
+}
+
+/* ==========================================================================
+   Community Page - Bilingual Soft UI Layout
+   ========================================================================== */
+.community-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.community-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(160, 175, 195, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(140, 160, 185, 0.26);
+}
+
+.comm-card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.comm-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.comm-icon-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.comm-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.comm-tag {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    display: inline-block;
+    width: fit-content;
+}
+
+.comm-meta h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.3px;
+}
+
+.comm-bilingual-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comm-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.comm-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border-right: 3px solid #cbd5e1;
+}
+
+.comm-action-row {
+    margin-top: 22px;
+}
+
+.btn-comm-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.btn-comm-action:hover {
+    transform: translateY(-2px);
+}
+
+/* Individual Card Themes */
+.candy-border { border-top: 5px solid #0760ac; }
+.candy-bg { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); }
+.candy-tag { background: #e0f2fe; color: #0369a1; }
+.candy-desc-ar { border-right-color: #0760ac; }
+.candy-btn { background: linear-gradient(135deg, #0760ac 0%, #034079 100%); box-shadow: 0 6px 18px rgba(7, 96, 172, 0.28); }
+
+.bi-border { border-top: 5px solid #0078d4; }
+.bi-bg { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+.bi-tag { background: #dbeafe; color: #1e40af; }
+.bi-btn { background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%); box-shadow: 0 6px 18px rgba(0, 120, 212, 0.28); }
+
+.yt-border { border-top: 5px solid #dc2626; }
+.yt-bg { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); }
+.yt-tag { background: #fee2e2; color: #991b1b; }
+.yt-btn { background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); box-shadow: 0 6px 18px rgba(220, 38, 38, 0.28); }
+
+.wa-border { border-top: 5px solid #16a34a; }
+.wa-bg { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+.wa-tag { background: #dcfce7; color: #166534; }
+.wa-btn { background: linear-gradient(135deg, #22c55e 0%, #15803d 100%); box-shadow: 0 6px 18px rgba(22, 163, 74, 0.28); }
+
+/* Responsive Grid for Mobile */
+@media (max-width: 768px) {
+    .community-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .community-card {
+        padding: 20px 18px !important;
+    }
+
+    .comm-meta h3 {
+        font-size: 17px !important;
+    }
+}
+
+/* ==========================================================================
+   Resources Page Layout
+   ========================================================================== */
+.resources-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.resource-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(160, 175, 195, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(140, 160, 185, 0.26);
+}
+
+.res-card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.res-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.res-icon-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.res-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.res-tag {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    display: inline-block;
+    width: fit-content;
+}
+
+.res-meta h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.3px;
+}
+
+.res-bilingual-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.res-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.res-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border-right: 3px solid #cbd5e1;
+}
+
+.res-meta-specs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.res-meta-specs strong {
+    color: var(--primary-navy);
+}
+
+.res-action-row {
+    margin-top: 22px;
+}
+
+.btn-res-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.btn-res-download:hover {
+    transform: translateY(-2px);
+}
+
+/* Individual Card Resource Themes */
+.pbi-border { border-top: 5px solid #f59e0b; }
+.pbi-res-bg { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); }
+.pbi-tag { background: #fef3c7; color: #b45309; }
+.pbi-btn { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); box-shadow: 0 6px 18px rgba(245, 158, 11, 0.28); }
+
+.dax-border { border-top: 5px solid #7c3aed; }
+.dax-res-bg { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); }
+.dax-tag { background: #ede9fe; color: #6d28d9; }
+.dax-btn { background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); box-shadow: 0 6px 18px rgba(109, 40, 217, 0.28); }
+
+.candy-border { border-top: 5px solid #0760ac; }
+.candy-res-bg { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); }
+.candy-tag { background: #e0f2fe; color: #0369a1; }
+.candy-btn { background: linear-gradient(135deg, #0760ac 0%, #034079 100%); box-shadow: 0 6px 18px rgba(7, 96, 172, 0.28); }
+
+.excel-border { border-top: 5px solid #059669; }
+.excel-res-bg { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+.excel-tag { background: #dcfce7; color: #047857; }
+.excel-btn { background: linear-gradient(135deg, #059669 0%, #047857 100%); box-shadow: 0 6px 18px rgba(5, 150, 105, 0.28); }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .resource-card {
+        padding: 20px 18px !important;
+    }
+}
+
+
+/* ==========================================================================
+   Books Page & 3D Angled Covers (Soft UI Shelf)
+   ========================================================================== */
+.books-categories-stack {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.book-category-card {
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 8px 24px rgba(160, 175, 195, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.book-cat-header {
+    padding: 18px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    background: #ffffff;
+    transition: background 0.2s ease;
+}
+
+.book-cat-header:hover { background: #fafcff; }
+
+.book-category-card.open .book-cat-header {
+    background: #f0f7ff;
+    border-bottom: 1px solid #e2effe;
+}
+
+.cat-header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cat-chip {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.5px;
+}
+
+.pbi-chip { background: #fef3c7; color: #b45309; }
+.candy-chip { background: #e0f2fe; color: #0369a1; }
+.excel-chip { background: #dcfce7; color: #047857; }
+
+.cat-header-left h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-navy);
+}
+
+.cat-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cat-count-badge {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+}
+
+.cat-arrow-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--brand-blue);
+    transition: transform 0.35s ease;
+}
+
+.book-category-card.open .cat-arrow-circle {
+    transform: rotate(180deg);
+    background: var(--brand-blue);
+    color: #ffffff;
+}
+
+/* جسم الأكورديون للكتب */
+.book-cat-body {
+    display: none;
+    padding: 26px;
+    background: #f8fafc;
+}
+
+.book-category-card.open .book-cat-body {
+    display: block;
+}
+
+.books-shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* بطاقة الكتاب المفرد */
+.single-book-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(160, 175, 195, 0.14), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    perspective: 1000px; /* يعطي العمق ثلاثي الأبعاد */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(140, 160, 185, 0.24);
+}
+
+/* الغلاف المعووج الـ 3D العبقري */
+.book-3d-wrapper {
+    flex-shrink: 0;
+}
+
+.book-3d-cover {
+    position: relative;
+    width: 100px;
+    height: 140px;
+    background: linear-gradient(135deg, #0284c7 0%, #034079 100%);
+    border-radius: 4px 10px 10px 4px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* زاوية الميلان ثلاثية الأبعاد المطلوبة */
+    transform: rotateY(-18deg) rotateX(6deg);
+    box-shadow: 
+        -5px 6px 12px rgba(11, 31, 58, 0.28),
+        inset 4px 0 6px rgba(0, 0, 0, 0.2); /* كعب الكتاب */
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.candy-3d { background: linear-gradient(135deg, #0760ac 0%, #082f49 100%); }
+.excel-3d { background: linear-gradient(135deg, #059669 0%, #064e3b 100%); }
+
+.single-book-card:hover .book-3d-cover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.04);
+    box-shadow: 0 10px 20px rgba(11, 31, 58, 0.2);
+}
+
+.book-3d-cover img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-ribbon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 9px;
+    font-weight: 800;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* تفاصيل الكتاب */
+.book-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.book-info-col h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    line-height: 1.3;
+}
+
+.book-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 12.5px;
+    color: #64748b;
+    line-height: 1.45;
+}
+
+.book-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 12px;
+    color: #475569;
+    line-height: 1.5;
+    background: #f8fafc;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border-right: 3px solid #cbd5e1;
+}
+
+.book-footer-action {
+    margin-top: 4px;
+}
+
+.btn-download-book {
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all 0.25s ease;
+}
+
+.btn-download-book:hover { transform: translateY(-2px); }
+
+.pbi-book-btn { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); box-shadow: 0 4px 12px rgba(245, 158, 11, 0.28); }
+.candy-book-btn { background: linear-gradient(135deg, #0760ac 0%, #034079 100%); box-shadow: 0 4px 12px rgba(7, 96, 172, 0.28); }
+.excel-book-btn { background: linear-gradient(135deg, #059669 0%, #047857 100%); box-shadow: 0 4px 12px rgba(5, 150, 105, 0.28); }
+
+/* توافق الكتب مع الموبايل */
+@media (max-width: 992px) {
+    .books-shelf-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 768px) {
+    .book-cat-header { padding: 14px 16px !important; }
+    .book-cat-header h3 { font-size: 15px !important; }
+    .book-cat-body { padding: 14px !important; }
+    .single-book-card {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 16px !important;
+        gap: 14px !important;
+    }
+    .book-3d-cover {
+        width: 85px !important;
+        height: 120px !important;
+    }
+    .btn-download-book { width: 100% !important; }
+}
+
+/* لوجو التراك في رأس فئة الكتب */
+.cat-track-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    flex-shrink: 0;
+}
+
+.cat-track-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cat-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* شارات تفاصيل الكتاب */
+.book-badges-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+.book-level-tag {
+    font-size: 11px;
+    font-weight: 800;
+    color: #b45309;
+    background: #fef3c7;
+    padding: 2px 10px;
+    border-radius: var(--radius-pill);
+}
+
+.book-pages-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0369a1;
+    background: #e0f2fe;
+    padding: 2px 10px;
+    border-radius: var(--radius-pill);
+}
+
+/* ضبط صورة الغلاف الحقيقية داخل المجسم ثلاثي الأبعاد */
+.book-cover-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 2px 8px 8px 2px !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.pbi-cover-theme {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+
+/* أيقونة لوجو رأس صفحة المكتبة */
+.library-chip {
+    padding: 6px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%) !important;
+}
+
+.library-header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(7, 96, 172, 0.2));
 }

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Said Fawzy Learning | Curated Book Library</title>
+    
+    <!-- Favicon & App Icon -->
+    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
+    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Said Fawzy Learning | Digital Library">
+    <meta property="og:description" content="Download practical references and eBooks on Power BI, DAX, Modern Excel, and Construction Cost Estimation.">
+    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
+    <meta property="og:url" content="https://saidfawzy.github.io/books.html">
+
+    <!-- Fonts & Main Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ================= Vibrant Banner ================= -->
+        <header class="vibrant-banner">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ================= Main Navigation (المعتمدة والنهائية) ================= -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="courses.html" class="nav-item">Courses</a>
+                <a href="books.html" class="nav-item active">Books</a>
+                <a href="resources.html" class="nav-item">Resources</a>
+                <a href="community.html" class="nav-item">Community</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ================= Sub Navigation / Breadcrumb ================= -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current-crumb">Books Library</span>
+            </div>
+            <a href="index.html" class="btn-back-pill">
+                <span>←</span> Back to Home
+            </a>
+        </div>
+
+        <!-- ================= Main Page Content ================= -->
+        <main class="page-body">
+            
+            <!-- Hero Title Box With Custom Library Logo -->
+            <div class="page-title-box">
+                <span class="page-badge">Open Digital Shelf</span>
+                <div class="title-heading-row">
+                    <div class="title-icon-chip library-chip">
+                        <img src="images/logo/library-icon.png" alt="Library Logo" class="library-header-logo">
+                    </div>
+                    <h2>Said Fawzy's Curated Library</h2>
+                </div>
+            </div>
+
+            <!-- Categories Accordion Stack -->
+            <div class="books-categories-stack">
+
+                <!-- ================= 1. فئة كتب Microsoft Power BI ================= -->
+                <div class="book-category-card open" id="cat-pbi">
+                    <div class="book-cat-header" onclick="toggleBookCategory('cat-pbi')">
+                        <div class="cat-header-left">
+                            <div class="cat-track-logo">
+                                <img src="images/logo/powerbi-logo.png" alt="Microsoft Power BI">
+                            </div>
+                            <div class="cat-title-text">
+                                <span class="cat-chip pbi-chip">Official Track Series</span>
+                                <h3>Microsoft Power BI Books</h3>
+                            </div>
+                        </div>
+                        <div class="cat-header-right">
+                            <span class="cat-count-badge">2 Books Available</span>
+                            <div class="cat-arrow-circle">▼</div>
+                        </div>
+                    </div>
+
+                    <div class="book-cat-body">
+                        <div class="books-shelf-grid">
+
+                            <!-- كتاب 01: Extracting and Transforming Data in Power BI -->
+                            <div class="single-book-card">
+                                <div class="book-3d-wrapper">
+                                    <div class="book-3d-cover pbi-cover-theme">
+                                        <img src="images/book-covers/pbi-book-1.png" alt="Extracting and Transforming Data in Power BI Cover" class="book-cover-img">
+                                        <span class="book-ribbon">PDF • 111 P</span>
+                                    </div>
+                                </div>
+
+                                <div class="book-info-col">
+                                    <div class="book-badges-row">
+                                        <span class="book-level-tag">Hands-on Guide</span>
+                                        <span class="book-pages-tag">18 Exercises • Final Project</span>
+                                    </div>
+
+                                    <h4>Extracting and Transforming Data in Power BI</h4>
+
+                                    <div class="book-bilingual-content">
+                                        <p class="book-desc-en">
+                                            A comprehensive hands-on guide covering the entire ETL lifecycle in Power Query. Master data connection, row/column transformations, text extraction, conditional logic, joining & appending datasets, data profiling, and end-to-end practical project implementation.
+                                        </p>
+                                        <p class="book-desc-ar">
+                                            دليل تطبيقي شامل يغطي دورة معالجة البيانات (ETL) بالكامل عبر محرك Power Query؛ يشمل الربط بمصادر البيانات، وتنظيف وتحويل الأعمدة، والدمج المتقدم (Merge & Append)، وفحص جودة البيانات (Data Profiling)، مع 18 تدريباً عملياً ومشروع تخرج واقعي متكامل.
+                                        </p>
+                                    </div>
+
+                                    <div class="book-footer-action">
+                                        <a href="https://raw.githubusercontent.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI/main/Book/Preparing%20Data%20For%20Analysis%20in%20Power%20BI%20Ver%201%20-%20Said%20Fawzy.pdf" 
+                                           download="Extracting_and_Transforming_Data_in_Power_BI_Said_Fawzy.pdf" 
+                                           target="_blank"
+                                           class="btn-download-book pbi-book-btn">
+                                            <span>Direct Download (PDF)</span> 
+                                            <span class="btn-dl-icon">📥</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- كتاب 02: Data Modelling in Power BI -->
+                            <div class="single-book-card">
+                                <div class="book-3d-wrapper">
+                                    <div class="book-3d-cover pbi-cover-theme">
+                                        <img src="images/book-covers/pbi-book-2.png" alt="Data Modelling in Power BI Cover" class="book-cover-img">
+                                        <span class="book-ribbon">PDF • 150 P</span>
+                                    </div>
+                                </div>
+
+                                <div class="book-info-col">
+                                    <div class="book-badges-row">
+                                        <span class="book-level-tag">Data Modeling & DAX</span>
+                                        <span class="book-pages-tag">16+ Exercises • Schemas</span>
+                                    </div>
+
+                                    <h4>Data Modelling in Power BI</h4>
+
+                                    <div class="book-bilingual-content">
+                                        <p class="book-desc-en">
+                                            Master enterprise data modeling architectures and DAX calculations. Covers Fact vs. Dimension tables, Star & Snowflake schemas, relationship cardinality, cross-filter directions, Row/Filter evaluation contexts, calculated tables/columns, and foundational DAX measures using CALCULATE and variables.
+                                        </p>
+                                        <p class="book-desc-ar">
+                                            المرجع الشامل في نمذجة وهندسة البيانات؛ يغطي جداول الحقائق والأبعاد (Fact & Dimension)، ومخططات النجمة ورقاقة الثلج (Star & Snowflake)، وإدارة سياق التصفية (Evaluation Contexts)، وبناء الجداول المحسوبة والمقاييس المتقدمة عبر دالة CALCULATE والمتغيرات في DAX.
+                                        </p>
+                                    </div>
+
+                                    <div class="book-footer-action">
+                                        <a href="https://raw.githubusercontent.com/saidfawzy/Data-Modelling-in-Power-BI-/main/Book/Data%20Modeling%20in%20Power%20BI_Said%20Fawzy_Ver%201.pdf" 
+                                        download="Data_Modeling_in_Power_BI_Said_Fawzy.pdf" 
+                                        target="_blank" 
+                                        class="btn-download-book pbi-book-btn">
+                                            <span>Direct Download (PDF)</span> 
+                                            <span class="btn-dl-icon">📥</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- نهاية books-shelf-grid -->
+                    </div> <!-- نهاية book-cat-body -->
+                </div> <!-- نهاية book-category-card pbi -->
+
+            </div> <!-- نهاية books-categories-stack -->
+
+        </main> <!-- نهاية main.page-body -->
+
+        <!-- ================= Dark Executive Footer ================= -->
+        <footer class="site-footer">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-title">
+                        <img src="images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
+                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    </div>
+                    <p class="footer-bio-ar">
+                        A specialized educational hub providing practical pathways in Data Analytics, Business Intelligence, and Engineering Cost Control.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h5 class="footer-col-title">Quick Links</h5>
+                    <div class="footer-quick-nav">
+                        <a href="courses.html">Courses</a>
+                        <a href="books.html">Books</a>
+                        <a href="resources.html">Resources</a>
+                        <a href="community.html">Community</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect & Learn</h5>
+                    <div class="footer-social-badges">
+                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
+                            <span>🎬</span> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
+                            <span>🐙</span> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
+                            <span>💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+                <p>Designed for data enthusiasts & professionals</p>
+            </div>
+        </footer>
+
+    </div> <!-- نهاية site-wrapper -->
+
+    <!-- Main Interaction Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
