@@ -1,0 +1,1512 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-navy: #0b1f3a;
+    --brand-blue: #0760ac;
+    --ms-blue: #0078d4;
+    --cyan-accent: #00b4d8;
+    --bg-page: #f1f5f9;
+    --nav-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --radius-round: 20px;
+    --radius-pill: 50px;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', sans-serif;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px 40px;
+}
+
+.site-wrapper {
+    width: 100%;
+    max-width: 1240px;
+}
+
+/* ================= البانر العلوي الثابت للموقع ================= */
+.vibrant-banner {
+    position: relative;
+    border-radius: var(--radius-round);
+    padding: 0 40px 0 20px;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(115deg, #fed7aa 0%, #a5f3fc 38%, #0284c7 72%, #0760ac 100%);
+    box-shadow: 0 10px 24px rgba(7, 96, 172, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    overflow: visible;
+}
+
+.logo-link {
+    display: block;
+    flex-shrink: 0;
+}
+
+.free-logo {
+    width: 310px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: -45px;
+    filter: drop-shadow(0 12px 20px rgba(11, 31, 58, 0.28));
+    transition: transform 0.3s ease;
+}
+
+.free-logo:hover {
+    transform: scale(1.02);
+}
+
+.brand-title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.text-dark {
+    color: var(--primary-navy);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.text-light {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(7, 30, 60, 0.35);
+}
+
+/* ================= شريط التنقل (Navigation) ================= */
+.main-navbar {
+    margin-top: 24px;
+    background: var(--nav-bg);
+    border-radius: 22px;
+    padding: 12px 20px;
+    box-shadow: 
+        0 14px 30px rgba(160, 175, 195, 0.28),
+        0 2px 6px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e3a5f;
+    padding: 10px 24px;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(180deg, #f0f7ff 0%, #e2effd 100%);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        0 4px 10px rgba(11, 31, 58, 0.06),
+        inset 0 2px 2px rgba(255, 255, 255, 0.9);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nav-item:hover:not(.active) {
+    background: linear-gradient(135deg, #ffe8d6 0%, #ffd1a4 100%);
+    color: #b45309;
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 18px rgba(251, 146, 60, 0.28),
+        inset 0 2px 3px rgba(255, 255, 255, 0.95);
+}
+
+.nav-item:active {
+    transform: translateY(1px) scale(0.97);
+    box-shadow: 
+        0 2px 5px rgba(11, 31, 58, 0.12),
+        inset 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg, var(--brand-blue) 0%, #0098f7 100%);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 
+        0 8px 20px rgba(7, 96, 172, 0.38),
+        inset 0 2px 3px rgba(255, 255, 255, 0.5);
+    transform: none;
+}
+
+/* ================= Breadcrumbs & Back Navigation ================= */
+.sub-nav-bar {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.breadcrumb-trail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.breadcrumb-trail a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-trail a:hover {
+    color: var(--brand-blue);
+}
+
+.breadcrumb-trail .separator {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.breadcrumb-trail .current-crumb {
+    color: var(--primary-navy);
+}
+
+.btn-back-pill {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0b1f3a;
+    background: #ffffff;
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    box-shadow: 
+        0 4px 12px rgba(160, 175, 195, 0.25),
+        inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+}
+
+.btn-back-pill:hover {
+    background: linear-gradient(135deg, #ffe8d6 0%, #ffd1a4 100%);
+    color: #b45309;
+    transform: translateX(-3px);
+}
+
+/* ================= حركة الانتقال العامة للصفحات ================= */
+.page-body {
+    margin-top: 25px;
+    animation: smoothPageEnter 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes smoothPageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.page-leaving .page-body {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.22s ease;
+}
+
+/* ================= 1. تنسيقات صفحة الكورسات الأساسية (courses.html) ================= */
+.page-title-box {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.page-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--brand-blue);
+    background: #e0f2fe;
+    padding: 4px 14px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 8px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.title-heading-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.title-icon-chip {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    box-shadow: 0 6px 14px rgba(2, 132, 199, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.title-heading-row h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.8px;
+    line-height: 1;
+}
+
+.accordion-tracks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.accordion-track-card {
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 8px 24px rgba(160, 175, 195, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.3s ease;
+}
+
+.accordion-track-card:hover {
+    box-shadow: 0 12px 30px rgba(140, 160, 185, 0.28);
+}
+
+.accordion-track-card.open {
+    border-color: rgba(2, 132, 199, 0.3);
+    box-shadow: 0 16px 36px rgba(140, 160, 185, 0.32);
+}
+
+.accordion-header {
+    padding: 18px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    background: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+    background-color: #fafcff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.track-mini-logo {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    flex-shrink: 0;
+}
+
+.track-mini-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.track-title-info h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.4px;
+    margin-bottom: 4px;
+}
+
+.track-brief-pill {
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    display: inline-block;
+}
+
+.toggle-indicator {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.indicator-icon {
+    font-size: 11px;
+    color: #64748b;
+    transition: transform 0.3s ease;
+}
+
+.accordion-track-card.open .toggle-indicator {
+    background: #e2e8f0;
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #ffffff;
+    border-top: 1px solid transparent;
+}
+
+.accordion-track-card.open .accordion-body {
+    border-top-color: #f1f5f9;
+}
+
+.track-accordion-inner {
+    padding: 24px;
+}
+
+.bilingual-panels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.bilingual-panels-grid, 
+.unified-track-footer {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion-track-card.open .bilingual-panels-grid {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.accordion-track-card.open .unified-track-footer {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.18s;
+}
+
+.lang-panel {
+    border-radius: 18px;
+    padding: 22px 20px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel-badge-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.panel-lang-tag {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.panel-badge-title h4 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.curriculum-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.group-label {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+}
+
+.curriculum-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.curriculum-list li {
+    font-size: 13px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.en-panel {
+    direction: ltr;
+    text-align: left;
+    background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid #bae6fd;
+}
+
+.en-tag { background: #0284c7; color: #ffffff; }
+.en-panel .panel-badge-title h4 { color: #075985; }
+.en-panel .group-label { color: #0369a1; }
+.en-panel .curriculum-list li { color: #0c4a6e; padding-left: 14px; }
+.en-panel .curriculum-list li::before { content: "•"; position: absolute; left: 0; color: #0284c7; font-weight: 800; }
+
+.ar-panel {
+    direction: rtl;
+    text-align: right;
+    background: linear-gradient(145deg, #fff7ed 0%, #ffedd5 100%);
+    border: 1px solid #fed7aa;
+}
+
+.ar-tag { background: #ea580c; color: #ffffff; }
+.ar-panel .panel-badge-title h4 { color: #9a3412; }
+.ar-panel .group-label { color: #c2410c; }
+.ar-panel .curriculum-list li { color: #431407; padding-right: 14px; }
+.ar-panel .curriculum-list li::before { content: "•"; position: absolute; right: 0; color: #ea580c; font-weight: 800; }
+
+.unified-track-footer {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-explore-track {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 34px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.25s ease;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35);
+}
+
+.btn-arrow-icon {
+    font-size: 18px;
+    transition: transform 0.25s ease;
+}
+
+.btn-explore-track:hover { transform: translateY(-2px); }
+.btn-explore-track:hover .btn-arrow-icon { transform: translateX(4px); }
+
+/* ألوان أزرار الكورسات الرئيسية */
+.btn-pbi-theme { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); box-shadow: 0 8px 22px rgba(245, 158, 11, 0.35); }
+.btn-excel-bi-theme { background: linear-gradient(135deg, #059669 0%, #064e3b 100%); box-shadow: 0 8px 22px rgba(5, 150, 105, 0.35); }
+.btn-excel-core-theme { background: linear-gradient(135deg, #10b981 0%, #047857 100%); box-shadow: 0 8px 22px rgba(16, 185, 129, 0.35); }
+.btn-candy-theme { background: linear-gradient(135deg, #0760ac 0%, #034079 100%); box-shadow: 0 8px 22px rgba(7, 96, 172, 0.35); }
+.btn-access-theme { background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%); box-shadow: 0 8px 22px rgba(185, 28, 28, 0.35); }
+
+/* ================= 2. صفحة تراك الباور بي آي (power-bi/index.html) ================= */
+.track-hero-banner {
+    margin-top: 15px;
+    border-radius: 24px;
+    padding: 28px 32px;
+    box-shadow: 0 12px 30px rgba(160, 175, 195, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pbi-hero {
+    background: linear-gradient(125deg, #fffbeb 0%, #fef3c7 45%, #fde68a 100%);
+    border-left: 6px solid #f59e0b;
+}
+
+.hero-content-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.hero-logo-box {
+    width: 76px;
+    height: 76px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(217, 119, 6, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.hero-pbi-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-text-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hero-badges-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hero-pill-brand {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: #ffffff;
+    color: #b45309;
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.hero-pill-cert {
+    font-size: 11px;
+    font-weight: 800;
+    background: #d97706;
+    color: #ffffff;
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+}
+
+.hero-text-details h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #78350f;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+    margin-top: 2px;
+}
+
+/* مجموعات التراك وألوان مايكروسوفت */
+.track-group-accordion {
+    margin-top: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 28px rgba(160, 175, 195, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.group-accordion-header {
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.25s ease;
+}
+
+.group-toggle-indicator {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease;
+}
+
+.track-group-accordion.open .group-toggle-indicator {
+    transform: rotate(180deg);
+}
+
+.group-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0.2, 1, 0.3, 1);
+    background: #f8fafc;
+}
+
+.track-group-accordion.open .group-accordion-body {
+    max-height: 1400px;
+}
+
+.group-body-inner {
+    padding: 26px;
+}
+
+.group-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-two-columns {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.course-mini-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 22px;
+    box-shadow: 0 8px 22px rgba(160, 175, 195, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.course-mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(140, 160, 185, 0.26);
+}
+
+.course-card-top h4 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+    margin-top: 6px;
+}
+
+.card-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
+.card-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 12.5px;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.course-card-footer {
+    margin-top: auto;
+}
+
+.btn-goto-course {
+    width: 100%;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+    color: #ffffff;
+}
+
+.btn-goto-course .btn-arrow {
+    font-size: 16px;
+    transition: transform 0.25s ease;
+}
+
+.btn-goto-course:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* 1. المجموعة الزرقاء PL-300 */
+.group-ms-blue { background: #ffffff; border-top: 5px solid #0078d4; }
+.group-ms-blue .group-accordion-header { background: linear-gradient(135deg, #f0f7ff 0%, #e0effe 100%); border-bottom: 1px solid #bae6fd; }
+.badge-blue { width: 62px; height: 62px; border-radius: 18px; background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%); color: #ffffff; box-shadow: 0 6px 16px rgba(0, 120, 212, 0.3); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+.pill-blue { font-size: 11px; font-weight: 800; text-transform: uppercase; background: #ffffff; color: #0078d4; padding: 3px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 6px; }
+.group-ms-blue h3 { color: #0c4a6e; font-size: 24px; font-weight: 800; }
+.badge-blue-tag { font-size: 11px; font-weight: 800; color: #0078d4; background: #e0f2fe; padding: 3px 10px; border-radius: var(--radius-pill); display: inline-block; }
+.btn-blue-theme { background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%); box-shadow: 0 6px 18px rgba(0, 120, 212, 0.3); }
+
+/* 2. المجموعة الكهرمانية Quick Start */
+.group-ms-amber { background: #ffffff; border-top: 5px solid #f59e0b; }
+.group-ms-amber .group-accordion-header { background: linear-gradient(135deg, #fffdf5 0%, #fef3c7 100%); border-bottom: 1px solid #fde68a; }
+.badge-amber { width: 62px; height: 62px; border-radius: 18px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; box-shadow: 0 6px 16px rgba(217, 119, 6, 0.32); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+.pill-amber { font-size: 11px; font-weight: 800; text-transform: uppercase; background: #ffffff; color: #b45309; padding: 3px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 6px; }
+.group-ms-amber h3 { color: #78350f; font-size: 24px; font-weight: 800; }
+.badge-amber-tag { font-size: 11px; font-weight: 800; color: #b45309; background: #fef3c7; padding: 3px 10px; border-radius: var(--radius-pill); display: inline-block; }
+.btn-amber-theme { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35); }
+
+/* 3. المجموعة البنفسجية Advanced DAX */
+.group-ms-purple { background: #ffffff; border-top: 5px solid #7c3aed; }
+.group-ms-purple .group-accordion-header { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-bottom: 1px solid #e9d5ff; }
+.badge-purple { width: 62px; height: 62px; border-radius: 18px; background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); color: #ffffff; box-shadow: 0 6px 16px rgba(109, 40, 217, 0.3); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+.pill-purple { font-size: 11px; font-weight: 800; text-transform: uppercase; background: #ffffff; color: #6d28d9; padding: 3px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 6px; }
+.group-ms-purple h3 { color: #4c1d95; font-size: 24px; font-weight: 800; }
+.badge-purple-tag { font-size: 11px; font-weight: 800; color: #6d28d9; background: #ede9fe; padding: 3px 10px; border-radius: var(--radius-pill); display: inline-block; }
+.btn-purple-theme { background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); box-shadow: 0 6px 18px rgba(109, 40, 217, 0.35); }
+
+/* 4. المجموعة الخضراء الإدارية Manager Guide */
+.group-ms-emerald { background: #ffffff; border-top: 5px solid #059669; }
+.group-ms-emerald .group-accordion-header { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-bottom: 1px solid #bbf7d0; }
+.badge-emerald { width: 62px; height: 62px; border-radius: 18px; background: linear-gradient(135deg, #059669 0%, #047857 100%); color: #ffffff; box-shadow: 0 6px 16px rgba(5, 150, 105, 0.32); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+.pill-emerald { font-size: 11px; font-weight: 800; text-transform: uppercase; background: #ffffff; color: #047857; padding: 3px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 6px; }
+.group-ms-emerald h3 { color: #064e3b; font-size: 24px; font-weight: 800; }
+.badge-emerald-tag { font-size: 11px; font-weight: 800; color: #047857; background: #dcfce7; padding: 3px 10px; border-radius: var(--radius-pill); display: inline-block; }
+.btn-emerald-theme { background: linear-gradient(135deg, #059669 0%, #047857 100%); box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35); }
+
+/* ================= 3. صفحة الدرس المستقلة (pl300-part1.html) ================= */
+.course-master-hero {
+    border-radius: 24px;
+    padding: 32px 36px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    box-shadow: 0 12px 30px rgba(160, 175, 195, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-top: 5px solid var(--ms-blue);
+}
+
+.hero-top-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.cert-pill { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; background: var(--ms-blue); color: #ffffff; padding: 4px 14px; border-radius: var(--radius-pill); box-shadow: 0 2px 8px rgba(0, 120, 212, 0.28); }
+.part-pill { font-size: 11px; font-weight: 800; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: var(--radius-pill); }
+.lang-pill { font-size: 11px; font-weight: 700; background: #f1f5f9; color: #475569; padding: 4px 12px; border-radius: var(--radius-pill); }
+
+.course-master-hero h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.hero-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0369a1;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.hero-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #075985;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+
+.course-quick-specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spec-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+}
+
+.spec-item strong {
+    font-size: 13.5px;
+    color: var(--primary-navy);
+}
+
+/* صندوق تحميل المواد (Hands-on Callout) */
+.hands-on-callout-card {
+    margin-top: 24px;
+    border-radius: 22px;
+    padding: 24px 28px;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 1px solid #fde68a;
+    box-shadow: 0 8px 24px rgba(217, 119, 6, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.callout-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.callout-text-content {
+    flex-grow: 1;
+}
+
+.callout-title-row h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #78350f;
+    margin-bottom: 4px;
+}
+
+.callout-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #92400e;
+    line-height: 1.45;
+}
+
+.callout-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    color: #b45309;
+    margin-top: 3px;
+    line-height: 1.45;
+}
+
+.callout-action-col {
+    flex-shrink: 0;
+}
+
+.btn-github-download {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.28);
+    transition: all 0.25s ease;
+}
+
+.btn-github-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.4);
+    background: #0f172a;
+}
+
+.gh-icon { font-size: 22px; }
+.btn-labels { display: flex; flex-direction: column; text-align: left; }
+.main-label { font-size: 13.5px; font-weight: 800; line-height: 1.2; }
+.sub-label { font-size: 11px; opacity: 0.75; }
+.btn-github-download .arrow { font-size: 16px; font-weight: 800; }
+
+/* كروت الدروس بنظام الأكورديون الذكي */
+.course-lessons-accordion-stack {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.lesson-accordion-item {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(160, 175, 195, 0.16), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.25s ease;
+}
+
+.lesson-accordion-item:hover {
+    box-shadow: 0 10px 24px rgba(140, 160, 185, 0.24);
+}
+
+.lesson-accordion-item.open {
+    border-color: rgba(0, 120, 212, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 120, 212, 0.14);
+}
+
+.lesson-bar-header {
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    background: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.lesson-bar-header:hover { background-color: #fafcff; }
+
+.lesson-accordion-item.open .lesson-bar-header {
+    background-color: #f0f7ff;
+    border-bottom: 1px solid #e0effe;
+}
+
+.lesson-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.lesson-chip {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ms-blue);
+    background: #e0f2fe;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.5px;
+}
+
+.lesson-bar-left h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.2px;
+}
+
+.lesson-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lesson-play-hint {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.lesson-arrow-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--ms-blue);
+    transition: transform 0.35s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.lesson-accordion-item.open .lesson-arrow-circle {
+    transform: rotate(180deg);
+    background: var(--ms-blue);
+    color: #ffffff;
+}
+
+/* المحتوى الداخلي للدرس */
+.lesson-accordion-content {
+    display: none;
+    background: #ffffff;
+}
+
+.lesson-accordion-item.open .lesson-accordion-content {
+    display: block;
+}
+
+.lesson-content-split {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.lesson-text-side {
+    flex: 0 0 54%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lesson-lead-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.55;
+}
+
+.lesson-takeaways-card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 14px 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.takeaways-title {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.lesson-takeaways-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lesson-takeaways-card ul li {
+    font-size: 12.5px;
+    color: #475569;
+    position: relative;
+    padding-left: 14px;
+    line-height: 1.45;
+}
+
+.lesson-takeaways-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: 800;
+}
+
+.lesson-media-side {
+    flex: 0 0 calc(46% - 24px);
+}
+
+.video-container-16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0f172a;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.video-container-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ======================MOBILE DESIGN ==================*/
+
+/* ==========================================================================
+   قسم التجاوب الشامل لكافة الشاشات (Responsive Media Queries)
+   معالجة البانر المدمج وإلغاء مططة الكروت لجميع الصفحات
+   ========================================================================== */
+
+/* 1. الشاشات المتوسطة والأجهزة اللوحية (Tablets & Small Laptops: <= 992px) */
+@media (max-width: 992px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    /* شبكة الكروت في صفحة الكورسات وصفحة التراك */
+    .group-courses-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    .bilingual-panels-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .course-quick-specs {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+    }
+
+    .hands-on-callout-card {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px !important;
+    }
+
+    .btn-github-download {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* تقسيم الشطرين لدروس الكورس */
+    .lesson-content-split {
+        flex-direction: column-reverse !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+
+    .lesson-text-side,
+    .lesson-media-side {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* 2. الهواتف الذكية والموبايل (Smartphones: <= 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 12px 10px;
+    }
+
+    /* --- أ. البانر العلوي المدمج والنحيف --- */
+    .vibrant-banner {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 10px 16px !important;
+        min-height: auto !important;
+        height: auto !important;
+        gap: 14px !important;
+        border-radius: 18px !important;
+    }
+
+    .logo-link {
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .free-logo {
+        width: 65px !important;
+        height: auto !important;
+        margin: 0 !important;
+        filter: drop-shadow(0 4px 8px rgba(11, 31, 58, 0.2)) !important;
+    }
+
+    .brand-title {
+        text-align: left !important;
+    }
+
+    .brand-title h1 {
+        font-size: 20px !important;
+        letter-spacing: -0.3px !important;
+        line-height: 1.2 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1px !important;
+    }
+
+    .text-dark {
+        font-size: 19px !important;
+    }
+
+    .text-light {
+        font-size: 17px !important;
+    }
+
+    /* --- ب. شريط التنقل (شبكة متناسقة بصفين) --- */
+    .main-navbar {
+        margin-top: 12px !important;
+        padding: 8px 10px !important;
+        border-radius: 16px !important;
+    }
+
+    .nav-links {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 6px !important;
+        width: 100% !important;
+    }
+
+    .nav-item {
+        font-size: 12px !important;
+        padding: 8px 4px !important;
+        text-align: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    /* --- ج. شريط المسار والرجوع --- */
+    .sub-nav-bar {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        padding: 4px 2px !important;
+    }
+
+    .breadcrumb-trail {
+        font-size: 12px !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+
+    .btn-back-pill {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
+
+    /* --- د. علاج مططة الكروت في كافة الصفحات (Height Reset) --- */
+    .accordion-track-card,
+    .course-mini-card,
+    .lesson-accordion-item,
+    .lang-panel {
+        height: auto !important;
+        min-height: unset !important;
+        max-height: unset !important;
+    }
+
+    /* صفحة الكورسات الأساسية (courses.html) */
+    .page-title-box {
+        margin-top: 20px !important;
+        padding: 0 4px !important;
+    }
+
+    .title-heading-row h2 {
+        font-size: 26px !important;
+    }
+
+    .title-icon-chip {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 22px !important;
+    }
+
+    .accordion-header {
+        padding: 14px 16px !important;
+    }
+
+    .track-mini-logo {
+        width: 46px !important;
+        height: 46px !important;
+        border-radius: 12px !important;
+        padding: 4px !important;
+    }
+
+    .track-title-info h3 {
+        font-size: 17px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .track-accordion-inner {
+        padding: 16px !important;
+    }
+
+    .lang-panel {
+        padding: 16px 14px !important;
+        gap: 12px !important;
+    }
+
+    .card-desc-ar, 
+    .card-desc-en {
+        margin-bottom: 14px !important;
+    }
+
+    /* صفحة تراك الباور بي آي (power-bi/index.html) */
+    .track-hero-banner {
+        padding: 18px 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .hero-content-left {
+        gap: 14px !important;
+    }
+
+    .hero-logo-box {
+        width: 58px !important;
+        height: 58px !important;
+        padding: 6px !important;
+        border-radius: 14px !important;
+    }
+
+    .hero-text-details h2 {
+        font-size: 22px !important;
+    }
+
+    .group-accordion-header {
+        padding: 16px 18px !important;
+    }
+
+    .group-accordion-header h3 {
+        font-size: 18px !important;
+    }
+
+    .group-body-inner {
+        padding: 16px !important;
+    }
+
+    .group-courses-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    .course-mini-card {
+        padding: 18px 16px !important;
+        border-radius: 16px !important;
+    }
+
+    .course-card-top h4 {
+        font-size: 16px !important;
+    }
+
+    /* صفحة الكورس والدروس (pl300-part1.html) */
+    .course-master-hero {
+        padding: 20px 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .course-master-hero h2 {
+        font-size: 22px !important;
+        line-height: 1.25 !important;
+    }
+
+    .hero-desc-en,
+    .hero-desc-ar {
+        font-size: 12.5px !important;
+    }
+
+    .course-quick-specs {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+        margin-top: 18px !important;
+        padding-top: 16px !important;
+    }
+
+    .hands-on-callout-card {
+        padding: 18px 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .callout-icon-box {
+        width: 46px !important;
+        height: 46px !important;
+        font-size: 22px !important;
+    }
+
+    .callout-title-row h3 {
+        font-size: 16.5px !important;
+    }
+
+    .callout-desc-en,
+    .callout-desc-ar {
+        font-size: 12px !important;
+    }
+
+    /* شريط عنوان الدرس */
+    .lesson-bar-header {
+        padding: 12px 14px !important;
+    }
+
+    .lesson-bar-left {
+        gap: 8px !important;
+    }
+
+    .lesson-chip {
+        font-size: 10px !important;
+        padding: 2px 8px !important;
+    }
+
+    .lesson-bar-left h4 {
+        font-size: 14px !important;
+        line-height: 1.35 !important;
+    }
+
+    .lesson-play-hint {
+        display: none !important; /* إخفاء النص لتوفير المساحة */
+    }
+
+    .lesson-arrow-circle {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 9px !important;
+    }
+
+    .lesson-content-split {
+        padding: 14px !important;
+        gap: 14px !important;
+    }
+
+    .lesson-lead-ar {
+        font-size: 12.5px !important;
+    }
+
+    .lesson-takeaways-card {
+        padding: 12px 14px !important;
+    }
+
+    .lesson-takeaways-card ul li {
+        font-size: 12px !important;
+    }
+}

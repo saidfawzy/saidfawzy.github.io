@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Said Fawzy Learning | Courses</title>
+    
+    <!-- مسار الـ CSS داخل مجلد css/ -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ================= البانر العلوي الثابت ================= -->
+        <header class="vibrant-banner">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ================= شريط التنقل (Courses هو النشط) ================= -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="courses.html" class="nav-item active">Courses</a>
+                <a href="books.html" class="nav-item">Books</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ================= مساحة محتوى الكورسات ================= -->
+        <main class="page-body">
+            
+            <div class="page-title-box">
+                <span class="page-badge">Learning Tracks</span>
+                <div class="title-heading-row">
+                    <div class="title-icon-chip">🎓</div>
+                    <h2>Courses & Tracks</h2>
+                </div>
+            </div>
+
+            <!-- قائمة التراكات الخمسة القابلة للفتح والطي -->
+            <div class="accordion-tracks-container">
+
+                <!-- ================= 1. تراك Power BI ================= -->
+                <div class="accordion-track-card theme-pbi" id="track-pbi">
+                    <div class="accordion-header" onclick="toggleTrack('track-pbi')">
+                        <div class="header-left">
+                            <div class="track-mini-logo">
+                                <img src="images/logo/powerbi-logo.png" alt="Power BI">
+                            </div>
+                            <div class="track-title-info">
+                                <h3>Power BI Data Analysis</h3>
+                                <span class="track-brief-pill pill-pbi">Business Intelligence & PL-300</span>
+                            </div>
+                        </div>
+                        <div class="toggle-indicator">
+                            <span class="indicator-icon">▼</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="track-accordion-inner">
+                            <div class="bilingual-panels-grid">
+                                
+                                <div class="lang-panel en-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag en-tag">EN</span>
+                                        <h4>Track Curriculum & Modules</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Microsoft Certified: Power BI Data Analyst (PL-300):</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Part 1:</strong> Data ETL & Preparation with Power Query</li>
+                                            <li><strong>Part 2:</strong> Data Modeling & Advanced DAX Calculations</li>
+                                            <li><strong>Part 3:</strong> Visualizations & Executive Dashboard Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Specialized & Fast-Track Series:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Power BI Crash Course:</strong> Accelerated learning for quick onboarding</li>
+                                            <li><strong>Power BI for Executives:</strong> High-level business metrics & KPIs</li>
+                                            <li><strong>Introductory Presentation:</strong> Simplified BI capabilities walkthrough</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="lang-panel ar-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag ar-tag">AR</span>
+                                        <h4>محتويات ومسارات التراك</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">المسار الاحترافي لشهادة مايكروسوفت (PL-300):</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>الجزء الأول:</strong> تجهيز وتنظيف وسحب البيانات باستخدام Power Query</li>
+                                            <li><strong>الجزء الثاني:</strong> نمذجة البيانات، بناء العلاقات، ومعادلات DAX</li>
+                                            <li><strong>الجزء الثالث:</strong> تصميم التقارير ولوحات التحكم التفاعلية (Dashboards)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">المسارات السريعة والمتخصصة:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>كورس سريع (Crash Course):</strong> تطبيق عملي مركز في وقت قياسي</li>
+                                            <li><strong>Power BI للمديرين:</strong> استيعاب المؤشرات واتخاذ القرارات الذكية</li>
+                                            <li><strong>جلسة تعريفية شاملة:</strong> شرح ميسر لماهية وإمكانيات ذكاء الأعمال</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="unified-track-footer">
+                                <a href="power-bi/index.html" class="btn-explore-track btn-pbi-theme">
+                                    <span>Explore Power BI Courses & Playlists</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= 2. تراك Mastering Data Analysis With Excel ================= -->
+                <div class="accordion-track-card theme-excel-bi" id="track-excel-bi">
+                    <div class="accordion-header" onclick="toggleTrack('track-excel-bi')">
+                        <div class="header-left">
+                            <div class="track-mini-logo">
+                                <img src="images/logo/Excel-Data-Analysis-logo.png" alt="Excel Data Analysis">
+                            </div>
+                            <div class="track-title-info">
+                                <h3>Mastering Data Analysis with Excel</h3>
+                                <span class="track-brief-pill pill-excel-bi">Interactive Dashboards & DAX</span>
+                            </div>
+                        </div>
+                        <div class="toggle-indicator">
+                            <span class="indicator-icon">▼</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="track-accordion-inner">
+                            <div class="bilingual-panels-grid">
+
+                                <div class="lang-panel en-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag en-tag">EN</span>
+                                        <h4>Business Intelligence in Excel</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Core Masterclass: Data Analysis & Dashboards:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Pivot Tables & Pivot Charts:</strong> Dynamic data summarization</li>
+                                            <li><strong>Interactive Business Dashboards:</strong> Slicers, timelines, and layout</li>
+                                            <li><strong>Data Model & Power Pivot:</strong> Working with relational data in Excel</li>
+                                            <li><strong>DAX Language in Excel:</strong> Writing measures on real business cases</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Recommended Prerequisites (If needed):</span>
+                                        <ul class="curriculum-list">
+                                            <li>Excel for Beginners & Intermediate series to solidify foundation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="lang-panel ar-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag ar-tag">AR</span>
+                                        <h4>تحليل البيانات ولوحات القيادة بالإكسيل</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">الكورس الأساسي: تحليل البيانات وبناء الـ Dashboards:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Pivot Tables & Charts:</strong> تلخيص وتصنيف البيانات بدقة</li>
+                                            <li><strong>تصميم لوحات تفاعلية:</strong> ربط التقارير بمجزءات البيانات (Slicers)</li>
+                                            <li><strong>نموذج البيانات (Data Model):</strong> ربط عدة جداول داخل الإكسيل</li>
+                                            <li><strong>لغة DAX:</strong> كتابة المقاييس المتقدمة مع تمارين ومشاريع عملية</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">المتطلبات السابقة المقترحة:</span>
+                                        <ul class="curriculum-list">
+                                            <li>دورة المبتدئين والمتوسطين لمن يريد تثبيت أساسيات الإكسيل أولاً</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="unified-track-footer">
+                                <a href="excel-bi/index.html" class="btn-explore-track btn-excel-bi-theme">
+                                    <span>Explore Excel Data Analysis Courses</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= 3. تراك Excel: From Scratch to Advanced ================= -->
+                <div class="accordion-track-card theme-excel-core" id="track-excel-core">
+                    <div class="accordion-header" onclick="toggleTrack('track-excel-core')">
+                        <div class="header-left">
+                            <div class="track-mini-logo">
+                                <img src="images/logo/Excel-logo.png" alt="Excel Foundation">
+                            </div>
+                            <div class="track-title-info">
+                                <h3>Excel: From Scratch to Advanced</h3>
+                                <span class="track-brief-pill pill-excel-core">Foundations, Formulas & Skills</span>
+                            </div>
+                        </div>
+                        <div class="toggle-indicator">
+                            <span class="indicator-icon">▼</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="track-accordion-inner">
+                            <div class="bilingual-panels-grid">
+
+                                <div class="lang-panel en-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag en-tag">EN</span>
+                                        <h4>Comprehensive Excel Roadmap</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">The Ideal Starting Point:</span>
+                                        <p class="track-inline-desc">Perfect launchpad for accounting, engineering, analysis, or workplace productivity.</p>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Excel for Absolute Beginners:</strong> Grid navigation, cells, formatting & core logic</li>
+                                            <li><strong>Excel Intermediate Training:</strong> Logical functions, lookups (VLOOKUP, XLOOKUP), and data validation</li>
+                                            <li><strong>Advanced Topics & Automation:</strong> Complex formulas, nested logic, and workplace techniques</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="lang-panel ar-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag ar-tag">AR</span>
+                                        <h4>المسار المتكامل للإكسيل من الصفر حتى الاحتراف</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">البوابة المثالية لجميع المجالات:</span>
+                                        <p class="track-inline-desc">أنسب انطلاقة للمحاسبين، المهندسين، ومحللي البيانات، وأي شخص يستخدم الإكسيل في بيئة العمل.</p>
+                                        <ul class="curriculum-list">
+                                            <li><strong>كورس المبتدئين (من الصفر):</strong> واجهة البرنامج، المعادلات البسيطة، وتنسيق الجداول</li>
+                                            <li><strong>المستوى المتوسط:</strong> دوال البحث والربط (XLOOKUP / VLOOKUP) والدوال الشرطية</li>
+                                            <li><strong>المستوى المتقدم:</strong> تركيب الدوال المعقدة، أدوات التحقق وحل مشكلات العمل اليومية</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="unified-track-footer">
+                                <a href="excel/index.html" class="btn-explore-track btn-excel-core-theme">
+                                    <span>Explore Core Excel Courses</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= 4. تراك Thinking in CANDY ================= -->
+                <div class="accordion-track-card theme-candy" id="track-candy">
+                    <div class="accordion-header" onclick="toggleTrack('track-candy')">
+                        <div class="header-left">
+                            <div class="track-mini-logo">
+                                <img src="images/logo/thinking-in-candy.png" alt="Thinking in Candy">
+                            </div>
+                            <div class="track-title-info">
+                                <h3>Thinking in CANDY</h3>
+                                <span class="track-brief-pill pill-candy">Project Estimation & Cost Control</span>
+                            </div>
+                        </div>
+                        <div class="toggle-indicator">
+                            <span class="indicator-icon">▼</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="track-accordion-inner">
+                            <div class="bilingual-panels-grid">
+
+                                <div class="lang-panel en-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag en-tag">EN</span>
+                                        <h4>Construction Engineering Suite</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Complete Project Management Tracks:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Construction Estimating Basics:</strong> Setting up pricing masterfiles & bills</li>
+                                            <li><strong>Advanced Estimating Topics:</strong> Complex resource allocation & indirect costs</li>
+                                            <li><strong>Valuation & Cost Control:</strong> Progress billing, subcontracts & variance tracking</li>
+                                            <li><strong>Planning & QTO:</strong> Quantity takeoff integration & scheduling links</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Micro-Learning & Skills:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Building Skills Series:</strong> Focused bite-sized videos mastering specific tools</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="lang-panel ar-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag ar-tag">AR</span>
+                                        <h4>إدارة المشروعات والتسعير الهندسي ببرنامج كاندي</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">المسارات المتكاملة لإدارة المشاريع الإنشائية:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Construction Estimating Basics:</strong> أساسيات تسعير مقايسات المشاريع</li>
+                                            <li><strong>Advanced Estimating:</strong> الموضوعات المتقدمة في تحليل التكاليف والموارد</li>
+                                            <li><strong>Valuation & Cost Control:</strong> المستخلصات الشهرية ومراقبة تكاليف المشروعات</li>
+                                            <li><strong>Planning & QTO:</strong> حصر الكميات وربطه بالبرامج الزمنية</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">المقاطع المهارية المركزة:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>سلسلة مهارات سريعة (Building Skills):</strong> مقاطع محددة تضيف لك مهارات مباشرة</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="unified-track-footer">
+                                <a href="candy/index.html" class="btn-explore-track btn-candy-theme">
+                                    <span>Explore CANDY Engineering Courses</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= 5. تراك Microsoft Access Database ================= -->
+                <div class="accordion-track-card theme-access" id="track-access">
+                    <div class="accordion-header" onclick="toggleTrack('track-access')">
+                        <div class="header-left">
+                            <div class="track-mini-logo">
+                                <img src="images/logo/Access-logo.png" alt="Microsoft Access">
+                            </div>
+                            <div class="track-title-info">
+                                <h3>Microsoft Access Database Systems</h3>
+                                <span class="track-brief-pill pill-access">Relational Design & Work Applications</span>
+                            </div>
+                        </div>
+                        <div class="toggle-indicator">
+                            <span class="indicator-icon">▼</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="track-accordion-inner">
+                            <div class="bilingual-panels-grid">
+
+                                <div class="lang-panel en-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag en-tag">EN</span>
+                                        <h4>Database Architecture & Engineering</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Database Fundamentals & Modeling:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Relational Design Concepts:</strong> ERD diagrams & schema planning on paper</li>
+                                            <li><strong>Access Core Objects:</strong> Structuring tables, relationships & constraints</li>
+                                            <li><strong>Interactive Queries & Forms:</strong> Criteria, joins & user-friendly interfaces</li>
+                                            <li><strong>Executive Reports:</strong> Grouping, summarizing & printable documentation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">Automation & Logic:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>Macros & Introductory Code:</strong> Automating workflow actions & buttons</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="lang-panel ar-panel">
+                                    <div class="panel-badge-title">
+                                        <span class="panel-lang-tag ar-tag">AR</span>
+                                        <h4>تصميم وتطوير قواعد البيانات الاحترافية بـ Access</h4>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">تأسيس قواعد البيانات والتطبيق العملي:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>تأسيس وتخطيط:</strong> مبادئ قواعد البيانات وتصميم المخطط (ERD) على الورق</li>
+                                            <li><strong>عناصر الأكسيس الأساسية:</strong> بناء الجداول، المفاتيح، والعلاقات السليمة</li>
+                                            <li><strong>الاستعلامات والنماذج (Forms & Queries):</strong> إدخال وتصفية البيانات باحتراف</li>
+                                            <li><strong>التقارير (Reports):</strong> إعداد وطباعة مخرجات وبيانات النظام</li>
+                                        </ul>
+                                    </div>
+                                    <div class="curriculum-group">
+                                        <span class="group-label">الأتمتة والبرمجة:</span>
+                                        <ul class="curriculum-list">
+                                            <li><strong>الماكرو وبدايات كتابة الكود:</strong> ربط الأزرار وجعل النظام تفاعلياً ومترابطاً</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="unified-track-footer">
+                                <a href="access/index.html" class="btn-explore-track btn-access-theme">
+                                    <span>Explore Access Database Courses</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ================= 6. تراك Six Sigma & Quality ================= -->
+<div class="accordion-track-card theme-sixsigma" id="track-sixsigma">
+    <div class="accordion-header" onclick="toggleTrack('track-sixsigma')">
+        <div class="header-left">
+            <div class="track-mini-logo">
+                <img src="images/logo/Six-sigma-logo.png" alt="Six Sigma">
+            </div>
+            <div class="track-title-info">
+                <h3>Lean Six Sigma & Quality Excellence</h3>
+                <span class="track-brief-pill" style="background: #eef2ff; color: #4338ca;">Process Improvement & RCA</span>
+            </div>
+        </div>
+        <div class="toggle-indicator">
+            <span class="indicator-icon">▼</span>
+        </div>
+    </div>
+
+    <div class="accordion-body">
+        <div class="track-accordion-inner">
+            <div class="bilingual-panels-grid">
+
+                <div class="lang-panel en-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag en-tag">EN</span>
+                        <h4>Quality & Process Improvement</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">Foundations & DMAIC Principles:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>Introduction to Six Sigma:</strong> Core concepts, DMAIC phases & defect prevention</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">Root Cause Analysis Tools:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>Fishbone (Ishikawa) Diagram:</strong> Structured troubleshooting of process bottlenecks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lang-panel ar-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag ar-tag">AR</span>
+                        <h4>إدارة الجودة والتحسين المستمر</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">مفاهيم ومنهجيات الجودة:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>مقدمة في الستة سيجما:</strong> فهم منهجية DMAIC لتقليل العيوب وتطوير العمليات</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">أدوات تحليل الأسباب الجذرية:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>مخطط هيكل السمكة (Fishbone):</strong> التحليل الدقيق لجذور المشكلات وحلها عملياً</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="unified-track-footer">
+                <a href="six-sigma/index.html" class="btn-explore-track" style="background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%); box-shadow: 0 8px 22px rgba(79, 70, 229, 0.35);">
+                    <span>Explore Six Sigma & Quality Modules</span>
+                    <span class="btn-arrow-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= 7. تراك Professional Emailing ================= -->
+<div class="accordion-track-card theme-email" id="track-email">
+    <div class="accordion-header" onclick="toggleTrack('track-email')">
+        <div class="header-left">
+            <div class="track-mini-logo">
+                <img src="images/logo/Outlook-logo.png" alt="Outlook-logo">
+            </div>
+            <div class="track-title-info">
+                <h3>Executive Business Communication</h3>
+                <span class="track-brief-pill" style="background: #fdf4ff; color: #86198f;">The Art of Professional Emailing</span>
+            </div>
+        </div>
+        <div class="toggle-indicator">
+            <span class="indicator-icon">▼</span>
+        </div>
+    </div>
+
+    <div class="accordion-body">
+        <div class="track-accordion-inner">
+            <div class="bilingual-panels-grid">
+
+                <div class="lang-panel en-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag en-tag">EN</span>
+                        <h4>High-Impact Correspondence</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">The Art of Writing Professional Emails:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>Business Email Etiquette:</strong> Clarity, structure, and professional tone</li>
+                            <li><strong>Executive Framing:</strong> Addressing leadership, managers, and clients</li>
+                            <li><strong>Handling Delicate Scenarios:</strong> Polite escalations, follow-ups & crisp CTAs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lang-panel ar-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag ar-tag">AR</span>
+                        <h4>التواصل والمراسلات التنفيذية</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">فن كتابة الإيميلات الاحترافية:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>إتيكيت الإيميل المهني:</strong> صياغة رسائل موجزة وواضحة تضمن الاستجابة السريعة</li>
+                            <li><strong>مخاطبة الإدارة والعملاء:</strong> الأسلوب الاحترافي في عرض التقارير والملاحظات</li>
+                            <li><strong>إدارة المواقف الصعبة:</strong> المتابعة الدبلوماسية وصياغة طلبات الإجراءات بذكاء</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="unified-track-footer">
+                <a href="email-writing/index.html" class="btn-explore-track" style="background: linear-gradient(135deg, #a21caf 0%, #701a75 100%); box-shadow: 0 8px 22px rgba(162, 28, 175, 0.35);">
+                    <span>Explore Business Communication Course</span>
+                    <span class="btn-arrow-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= 8. تراك Power Automate ================= -->
+<div class="accordion-track-card theme-automate" id="track-automate">
+    <div class="accordion-header" onclick="toggleTrack('track-automate')">
+        <div class="header-left">
+            <div class="track-mini-logo">
+                <img src="images/logo/PowerAutomate-logo.png" alt="Powerautomate-logo">
+            </div>
+            <div class="track-title-info">
+                <h3>Workflow Automation with Power Automate</h3>
+                <span class="track-brief-pill" style="background: #eff6ff; color: #1d4ed8;">Complex Flow Architectures</span>
+            </div>
+        </div>
+        <div class="toggle-indicator">
+            <span class="indicator-icon">▼</span>
+        </div>
+    </div>
+
+    <div class="accordion-body">
+        <div class="track-accordion-inner">
+            <div class="bilingual-panels-grid">
+
+                <div class="lang-panel en-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag en-tag">EN</span>
+                        <h4>Workflow Engineering & Integration</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">Advanced Multi-Step Architectures:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>Complex Project Automation:</strong> Designing multi-condition approval flows</li>
+                            <li><strong>Ecosystem Integration:</strong> Connecting Forms, Emails, Excel & SharePoint</li>
+                            <li><strong>Error Handling & Resilience:</strong> Stable execution for critical operations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lang-panel ar-panel">
+                    <div class="panel-badge-title">
+                        <span class="panel-lang-tag ar-tag">AR</span>
+                        <h4>أتمتة وهندسة مسارات العمل</h4>
+                    </div>
+                    <div class="curriculum-group">
+                        <span class="group-label">تطبيق متكامل لمشاريع معقدة:</span>
+                        <ul class="curriculum-list">
+                            <li><strong>بناء مشروع عملي مركب:</strong> دورات موافقة وتدفق للبيانات متعددة الشروط والمهام</li>
+                            <li><strong>تكامل المنظومة:</strong> ربط تلقائي بين الإكسيل، الإيميلات، والنماذج السحابية</li>
+                            <li><strong>استقرار النظام:</strong> معالجة الأخطاء وضمان سير التدفق دون توقف</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="unified-track-footer">
+                <a href="power-automate/index.html" class="btn-explore-track" style="background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);">
+                    <span>Explore Power Automate Projects</span>
+                    <span class="btn-arrow-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- ملف الجافا سكريبت للتفاعل -->
+    <script src="js/main.js"></script>
+</body>
+</html>

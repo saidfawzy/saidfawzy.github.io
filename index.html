@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Fawzy</title>
+    <title>Said Fawzy Learning | Home</title>
+    
+    <!-- مسار الـ CSS داخل فولدر css/ -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Welcome to Said Fawzy</h1>
-    <p>Free Training Courses and Learning Resources</p>
+    <div class="site-wrapper">
 
+        <!-- ================= البانر العلوي الثابت ================= -->
+        <header class="vibrant-banner">
+            <a href="index.html" class="logo-link">
+                <!-- مسار اللوجو داخل images/logo/ -->
+                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ================= شريط التنقل (Home هو النشط) ================= -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="courses.html" class="nav-item">Courses</a>
+                <a href="books.html" class="nav-item">Books</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ================= مساحة محتوى الصفحة الرئيسية ================= -->
+        <main class="page-body">
+            <div class="page-title-box">
+                <h2>Welcome</h2>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- مسار الجافا سكريبت داخل فولدر js/ -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing and Transforming Data in Power BI | Said Fawzy Learning</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ================= البانر العلوي الثابت للموقع ================= -->
+        <header class="vibrant-banner">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ================= شريط التنقل الرئيسي ================= -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../courses.html" class="nav-item active">Courses</a>
+                <a href="../books.html" class="nav-item">Books</a>
+                <a href="../gallery.html" class="nav-item">Gallery</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <a href="../contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ================= شريط المسار وزر الرجوع ================= -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../courses.html">Courses</a>
+                <span class="separator">›</span>
+                <a href="index.html">Power BI</a>
+                <span class="separator">›</span>
+                <span class="current-crumb">Preparing and Transforming Data</span>
+            </div>
+
+            <a href="index.html" class="btn-back-pill">
+                ← Back to Power BI Track
+            </a>
+        </div>
+
+        <!-- ================= مساحة محتوى الكورس ================= -->
+        <main class="page-body">
+
+            <!-- ================= بانر رأس الكورس ================= -->
+            <section class="course-master-hero">
+                <div class="hero-top-meta">
+                    <span class="cert-pill">Microsoft Certified: PL-300</span>
+                    <span class="part-pill">Part 01 of 03</span>
+                    <span class="lang-pill">Arabic Audio / English Terms</span>
+                </div>
+
+                <h2>Preparing and Transforming Data in Power BI</h2>
+
+                <p class="hero-desc-en">
+                    Master end-to-end data preparation, ETL architecture, Power Query transformations, and data profiling required for enterprise-grade analytics.
+                </p>
+                <p class="hero-desc-ar">
+                    المسار العملي المتكامل لاحتراف سحب وتجهيز وتنظيف البيانات، وهندسة عمليات الـ ETL باستخدام محرك Power Query لتأهيلك لاختبار مايكروسوفت الدولي المعتمد.
+                </p>
+
+                <div class="course-quick-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">Focus Area</span>
+                        <strong>ETL & Data Shaping</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Lessons</span>
+                        <strong>28 Hands-On Modules</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Format</span>
+                        <strong>Step-by-Step Practical Labs</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Language</span>
+                        <strong>العربية (مصطلحات إنجليزية تقنية)</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= صندوق ملفات العمل والتطبيق ================= -->
+            <section class="hands-on-callout-card">
+                <div class="callout-icon-box">
+                    <span>🛠️</span>
+                </div>
+                <div class="callout-text-content">
+                    <div class="callout-title-row">
+                        <h3>Get Your Hands Dirty! (التطبيق العملي خطوة بخطوة)</h3>
+                    </div>
+                    <p class="callout-desc-en">
+                        Real learning happens when you practice with your own hands. Download the project files, pause the video at each exercise, apply the transformations yourself, and compare your output.
+                    </p>
+                    <p class="callout-desc-ar">
+                        التعلم الحقيقي للبيانات يتطلب الممارسة بيدك. حمّل ملفات التمارين من مستودع GitHub، أوقف الفيديو عند كل تمرين، نفّذ الخطوات بنفسك داخل Power BI، ثم واصل الشرح خطوة بخطوة.
+                    </p>
+                </div>
+                <div class="callout-action-col">
+                    <a href="https://github.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI" target="_blank" class="btn-github-download">
+                        <span class="gh-icon">📁</span>
+                        <div class="btn-labels">
+                            <span class="main-label">Download Course Material</span>
+                            <span class="sub-label">GitHub Repository & Datasets</span>
+                        </div>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ================= قائمة الدروس الـ 28 بنظام الأكورديون الذكي ================= -->
+            <div class="course-lessons-accordion-stack">
+
+                <!-- الدرس 01 -->
+                <article class="lesson-accordion-item open" id="lesson-01">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 01</span>
+                            <h4>00 Course Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة المسار التدريبي الشامل لاختبار PL-300، واستعراض فلسفة إعداد وتحويل البيانات كأهم مرحلة في مسار ذكاء الأعمال.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Course roadmap and core objectives for PL-300 certification.</li>
+                                        <li>Importance of robust ETL in business intelligence projects.</li>
+                                        <li>How to get the most out of practice datasets and course material.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/d6I0-_aPRVg" title="00 Course Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 02 -->
+                <article class="lesson-accordion-item" id="lesson-02">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 02</span>
+                            <h4>01 Introduction to Power BI Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    التعريف بمنظومة Power BI، والفارق الجوهري بين إكسيل وباور بي آي في معالجة وتحليل مجموعات البيانات الكبيرة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>What is Power BI and why is it essential for modern analytics?</li>
+                                        <li>Excel vs Power BI: Capabilities, scalability, and performance.</li>
+                                        <li>Understanding the Business Intelligence workflow.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/mYTgQHuBq4s" title="01 Introduction to Power BI Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 03 -->
+                <article class="lesson-accordion-item" id="lesson-03">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 03</span>
+                            <h4>01 Introduction to Power BI Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    شرح دورة حياة البيانات (Data Life Cycle)، وبيئة عمل البرنامج، وخيارات التراخيص (Free, Pro, Premium)، وتنزيل Power BI Desktop.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Data Life Cycle stages from extraction to consumption.</li>
+                                        <li>Power BI Desktop, Service, and Mobile environment mapping.</li>
+                                        <li>Licensing tiers and downloading the free desktop application.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/7VDCxE-mJ4k" title="01 Introduction to Power BI Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 04 -->
+                <article class="lesson-accordion-item" id="lesson-04">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 04</span>
+                            <h4>02 Your First Project in Power BI Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    بدء المشروع العملي الأول؛ التعرف على مكونات واجهة المستخدم (Report, Table, Model Views) ودورة سير العمل (Workflow).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Core interface components and navigation panels.</li>
+                                        <li>Standard project workflow from import to visualization.</li>
+                                        <li>Setting up workspace preferences for optimal development.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/-qLTtOG_hiM" title="02 Your First Project in Power BI Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 05 -->
+                <article class="lesson-accordion-item" id="lesson-05">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 05</span>
+                            <h4>02 Your First Project in Power BI Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 1A & 1B): جلب البيانات (Getting Data) وضبط إعدادات التفاعل المباشر مع العناصر (On-Object Interaction).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 1A: Connecting to sample project data sources.</li>
+                                        <li>Exercise 1B: Enabling and configuring On-Object Interaction.</li>
+                                        <li>Handling modern interface adjustments for visual building.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/KH5YwBNbOs4" title="02 Your First Project in Power BI Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 06 -->
+                <article class="lesson-accordion-item" id="lesson-06">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-06')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 06</span>
+                            <h4>02 Your First Project in Power BI Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 1C & 1D): إنشاء المخططات الشريطية (Bar Charts) والمخططات الدائرية (Pie Charts) وتنسيقها.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 1C: Creating and formatting dynamic Bar Charts.</li>
+                                        <li>Exercise 1D: Designing Pie Charts with proper aggregation.</li>
+                                        <li>Adjusting visual headers, legends, and data labels cleanly.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/6-_1mpARZHc" title="02 Your First Project in Power BI Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 07 -->
+                <article class="lesson-accordion-item" id="lesson-07">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-07')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 07</span>
+                            <h4>02 Your First Project in Power BI Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 1E, 1F, 1G): التفاعل بين الرسوم (Cross-filtering)، بناء وتنسيق الجداول، ونشر ومشاركة التقرير.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 1E: Visual interactivity and cross-highlighting.</li>
+                                        <li>Exercise 1F: Creating tabular visuals and formatting results.</li>
+                                        <li>Exercise 1G: Publishing to Power BI Service and sharing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/j0gKJ0sS880" title="02 Your First Project in Power BI Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 08 -->
+                <article class="lesson-accordion-item" id="lesson-08">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-08')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 08</span>
+                            <h4>03 Connecting to Data Sources Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مفهوم عمليات الـ ETL (Extract, Transform, Load)، ومكوناتها الرئيسية، والفوائد المؤسسية لمعالجة البيانات قبل النمذجة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Detailed breakdown of the ETL process in business intelligence.</li>
+                                        <li>ETL components and workflow stages.</li>
+                                        <li>Benefits of centralized ETL for data accuracy and reporting speed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/lcu4ui4ZRcw" title="03 Connecting to Data Sources Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 09 -->
+                <article class="lesson-accordion-item" id="lesson-09">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-09')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 09</span>
+                            <h4>03 Connecting to Data Sources Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    استعراض كافة أنواع مصادر البيانات المدعومة في Power BI، ومبادئ دمج المصادر المتعددة في نموذج عمل موحد.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Overview of available connectors (Files, Databases, Cloud).</li>
+                                        <li>Combining disparate data sources into a cohesive pipeline.</li>
+                                        <li>Authentication methods and data privacy levels in Power BI.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/hEp7Y7u_Ff0" title="03 Connecting to Data Sources Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 10 -->
+                <article class="lesson-accordion-item" id="lesson-10">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-10')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 10</span>
+                            <h4>03 Connecting to Data Sources Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الاتصال بالملفات المسطحة (Connecting to Flat Data Sources) وضبط إعدادات مسار الملفات لتفادي انقطاع البيانات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Importing Text/CSV and Excel flat files.</li>
+                                        <li>Best practices for relative file paths and parameterization.</li>
+                                        <li>Inspecting initial data structure and schema headers.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/VSxl__5y-Rc" title="03 Connecting to Data Sources Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 11 -->
+                <article class="lesson-accordion-item" id="lesson-11">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-11')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 11</span>
+                            <h4>03 Connecting to Data Sources Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 2 & 3): تهيئة إعدادات ملف المشروع، وإجراء الاتصال المباشر بمصادر البيانات وتقييم الفهم (Knowledge Check).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 2: Preparing project file configuration settings.</li>
+                                        <li>Exercise 3: Hands-on connection to multi-source project datasets.</li>
+                                        <li>Knowledge Check review of ETL foundations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/O8b8CG0wsIs" title="03 Connecting to Data Sources Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 12 -->
+                <article class="lesson-accordion-item" id="lesson-12">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-12')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 12</span>
+                            <h4>04 Transforming Data in Power BI Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    لماذا نحتاج لتحويل البيانات؟ ومقدمة إلى واجهة محرر Power Query (محرر الاستعلامات) ومكوناته الأساسية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why raw data is rarely ready for direct modeling.</li>
+                                        <li>Comprehensive tour of Power Query Editor ribbon and panels.</li>
+                                        <li>Formulas, query steps, and the underlying M code concept.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/lVpyimm1Cbo" title="04 Transforming Data in Power BI Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 13 -->
+                <article class="lesson-accordion-item" id="lesson-13">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-13')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 13</span>
+                            <h4>04 Transforming Data in Power BI Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 4 & 5): استكشاف بيئة Power Query، وفهم قائمة الخطوات المطبقة (Applied Steps)، وتحرير الصفوف (Editing Rows).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 4: Exploring Power Query operations and step recording.</li>
+                                        <li>How the Applied Steps list functions and how to edit previous steps.</li>
+                                        <li>Exercise 5: Filtering, removing top/bottom rows, and deduplication.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/8xCthR7B-Lc" title="04 Transforming Data in Power BI Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 14 -->
+                <article class="lesson-accordion-item" id="lesson-14">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-14')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 14</span>
+                            <h4>04 Transforming Data in Power BI Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أنواع البيانات في Power BI (Data Types)، وتصنيفاتها، وتمرين عملي (Exercise 6) لتغيير وتحويل أنواع البيانات وتفادي أخطاء التحويل.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Data type categories: Numeric, Text, Date/Time, and Boolean.</li>
+                                        <li>Exercise 6: Changing and enforcing explicit data types.</li>
+                                        <li>Handling localization, currency, and locale-specific format errors.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/p0wDE6P8EPQ" title="04 Transforming Data in Power BI Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 15 -->
+                <article class="lesson-accordion-item" id="lesson-15">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-15')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 15</span>
+                            <h4>05 Working with Columns Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أهمية هندسة الأعمدة، وتمرين عملي (Exercise 7 & 8) للاتصال بملف CSV والاتصال بصفحة ويب لسحب الجداول الحية ومعالجة أخطاء البيانات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Benefits of shaping columns early in the query stage.</li>
+                                        <li>Exercise 7: Ingesting and transforming CSV data streams.</li>
+                                        <li>Exercise 8: Scraping structured HTML tables from Web URLs.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/cR2G349bWTA" title="05 Working with Columns Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 16 -->
+                <article class="lesson-accordion-item" id="lesson-16">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-16')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 16</span>
+                            <h4>05 Working with Columns Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمارين استخراج وتقسيم النصوص (Exercise 9 & 10)، وإنشاء الأعمدة الشرطية (Conditional Columns)، والأعمدة بالأمثلة (Column from Examples).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 9 & 10: Extracting text delimiters and column splitting.</li>
+                                        <li>Exercise 11: Crafting multi-condition logic via Conditional Columns.</li>
+                                        <li>Exercise 12: Generating complex columns using AI pattern examples.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/BH9mcLy2a-Y" title="05 Working with Columns Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 17 -->
+                <article class="lesson-accordion-item" id="lesson-17">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-17')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 17</span>
+                            <h4>06 Advanced Data Transformation Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أهمية دمج البيانات (Data Combination)، والفرق بين طرق الدمج، ومفهوم العلاقات والربط (What is a Join?)، ومفاتيح الربط الأساسية (Join Keys).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why combining datasets is central to enterprise relational design.</li>
+                                        <li>Understanding Joins vs Appends conceptually.</li>
+                                        <li>Identifying primary and foreign keys for merge accuracy.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/XT2_EuSw0uc" title="06 Advanced Data Transformation Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 18 -->
+                <article class="lesson-accordion-item" id="lesson-18">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-18')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 18</span>
+                            <h4>06 Advanced Data Transformation Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 13): دمج الاستعلامات (Merging Queries)، واختيار نوع الربط (Left Outer, Inner, Full) واستخراج الأعمدة المطلوبة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 13: Hands-on query merging with sample transactions.</li>
+                                        <li>Join types breakdown (Inner, Left Outer, Anti-joins).</li>
+                                        <li>Expanding nested record tables without duplicate row inflation.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/86TLwk4oFJg" title="06 Advanced Data Transformation Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 19 -->
+                <article class="lesson-accordion-item" id="lesson-19">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-19')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 19</span>
+                            <h4>06 Advanced Data Transformation Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    شرح تحويل الجداول العريضة إلى جداول طولية (Unpivot Columns) وأهميتها الحاسمة في إعداد الجداول لتصلح لمعادلات DAX.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why matrix/wide tables fail in data modeling.</li>
+                                        <li>Unpivot Other Columns vs Unpivot Selected Columns.</li>
+                                        <li>Normalizing financial and quarterly reports into tabular rows.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/SX7wWL6VvCc" title="06 Advanced Data Transformation Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 20 -->
+                <article class="lesson-accordion-item" id="lesson-20">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-20')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 20</span>
+                            <h4>06 Advanced Data Transformation Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 14): التطبيق المباشر على عمليات Pivoting و Unpivoting على ملفات محاسبية وفواتير فعلية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 14: Step-by-step pivoting and unpivoting practice.</li>
+                                        <li>Resolving aggregation conflicts when re-pivoting columns.</li>
+                                        <li>Cleaning header labels and verifying final record counts.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/QUfMdMSjPeE" title="06 Advanced Data Transformation Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 21 -->
+                <article class="lesson-accordion-item" id="lesson-21">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-21')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 21</span>
+                            <h4>06 Advanced Data Transformation Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    إلحاق الجداول (Append Tables)؛ توحيد ملفات متعددة بنفس الهيكل التراكمي (مثل مبيعات شهور مختلفة) في جدول سنوي واحد.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Append queries architecture for stacking historical records.</li>
+                                        <li>Ensuring column name identity and casing for clean stacks.</li>
+                                        <li>Appending 2 tables vs 3 or more tables simultaneously.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/SNuWOj8h5eI" title="06 Advanced Data Transformation Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 22 -->
+                <article class="lesson-accordion-item" id="lesson-22">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-22')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 22</span>
+                            <h4>06 Advanced Data Transformation Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 15): إلحاق الاستعلامات عملياً (Appending Queries) وضمان مطابقة الأنواع وأسماء الأعمدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 15: Hands-on query appending across monthly datasets.</li>
+                                        <li>Validating null columns caused by mismatching schema headers.</li>
+                                        <li>Optimizing queries by disabling load for intermediate stages.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/FdjOfwJ1Jwo" title="06 Advanced Data Transformation Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 23 -->
+                <article class="lesson-accordion-item" id="lesson-23">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-23')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 23</span>
+                            <h4>06 Advanced Data Transformation Part 7 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 16 & 17): تنظيم الاستعلامات في مجموعات ومجلدات (Query Groups)، وإدخال البيانات اليدوية (Enter Data).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Exercise 16: Structuring enterprise queries into clean folders.</li>
+                                        <li>Exercise 17: Entering small static lookup tables manually.</li>
+                                        <li>Best practices for query governance and team handovers.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/XxPx0t67nkw" title="06 Advanced Data Transformation Part 7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 24 -->
+                <article class="lesson-accordion-item" id="lesson-24">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-24')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 24</span>
+                            <h4>07 Data Profiling Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة إلى فحص جودة البيانات (Data Profiling) والتحليل الإحصائي الأولي لاكتشاف القيم المفقودة والشاذة قبل التحميل.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>What is Data Profiling and why does it protect report validity?</li>
+                                        <li>Activating data quality tools in the Power Query View ribbon.</li>
+                                        <li>Profiling based on top 1000 rows vs entire dataset.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/_NNWWMHC7Jw" title="07 Data Profiling Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 25 -->
+                <article class="lesson-accordion-item" id="lesson-25">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-25')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 25</span>
+                            <h4>07 Data Profiling Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تمرين عملي (Exercise 18): تطبيق أدوات فحص البيانات (Column Quality, Value Distribution, Column Profile) واكتشاف الأخطاء.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Reading Column Quality: Valid %, Error %, and Empty %.</li>
+                                        <li>Analyzing Value Distribution (Distinct and Unique counts).</li>
+                                        <li>Exercise 18: Troubleshooting corrupted datasets with visual profiling.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/2Ku1sVPnGRQ" title="07 Data Profiling Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 26 -->
+                <article class="lesson-accordion-item" id="lesson-26">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-26')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 26</span>
+                            <h4>08 Practice and Final Project Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (Part 1): تمرين تطبيقي لدمج جدول الناتج المحلي الإجمالي (GDP) مع بيانات السكان (Population Data) وبناء جدول الأبعاد.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Practice 1: Merging global economic GDP tables with population data.</li>
+                                        <li>Practice 2: Adding and creating custom dimension tables from scratch.</li>
+                                        <li>Standardizing country codes and handling missing regional records.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/JBz-iVBraY8" title="08 Practice and Final Project Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 27 -->
+                <article class="lesson-accordion-item" id="lesson-27">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-27')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 27</span>
+                            <h4>08 Practice and Final Project Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (Part 2): حل التحدي المتكامل، ومراجعة الخطوات والمخرجات، وتجهيز النموذج النهائي لمرحلة نمذجة البيانات القادمة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Step-by-step walkthrough of the comprehensive Final Project solution.</li>
+                                        <li>Validating data pipeline efficiency and query refresh speed.</li>
+                                        <li>Transitioning cleanly from Data Preparation to Part 2: Data Modeling.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/kWHBj1SM-OQ" title="08 Practice and Final Project Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 28 -->
+                <article class="lesson-accordion-item" id="lesson-28">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-28')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 28</span>
+                            <h4>09 How to Join Microsoft Developer Program (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch & Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دليل الانضمام لبرنامج مطوري مايكروسوفت (Microsoft 365 Developer Program) للحصول على حساب سحابي مجاني وممارسة مزايا Power BI Pro و Service.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Step-by-step registration in the Microsoft Developer Program.</li>
+                                        <li>Setting up a free sandbox tenant with enterprise licensing.</li>
+                                        <li>Activating your personal Power BI Pro environment for sharing reports.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/eKlyMuZ5OcE" title="09 How to Join Microsoft Developer Program" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
