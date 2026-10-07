@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "م. أحمد الشربيني",
+    "track": "CCS Candy",
+    "date": "2026-10-06",
+    "topic": "تسعير بنود الخرسانات والهالك ونسب الموقع",
+    "suggestion": "السلام عليكم يا باشمهندس سعيد، هل سيتم تناول إعداد ورقة تسعير متكاملة (Worksheet) لبند الخرسانة المسلحة وتوزيع نسب الهالك ومصنعيات الصب المباشر والمضخة داخل كاندي؟",
+    "adminResponse": "وعليكم السلام يا باشمهندس أحمد. نعم بالتأكيد، ورش عمل كاندي القادمة تركز تحديداً على ربط الـ Resource List بالإنتاجيات الواقعية ومعدلات الهالك طبقاً للمواصفات، وسيتم إرفاق ملف نموذج عملي لتحميله وتطبيقه.",
+    "approved": true
+  },
+  {
+    "id": 2,
+    "name": "Eng. Mahmoud Mostafa",
+    "track": "Power BI",
+    "date": "2026-10-05",
+    "topic": "Cash Flow vs Progress Curves Integration",
+    "suggestion": "Would appreciate a hands-on case study in Power BI covering S-Curve comparison (Planned vs. Actual) linked directly to progress data rather than just static tables.",
+    "adminResponse": "Welcome Eng. Mahmoud. Excellent point! Our dedicated dashboard workflow demonstrates how to model project progress curves and cash flow comparisons using robust DAX measures, supported by structured mock datasets.",
+    "approved": true
+  },
+  {
+    "id": 3,
+    "name": "م. طارق عبد الرحمن",
+    "track": "Excel Intermediate Training",
+    "date": "2026-10-03",
+    "topic": "تطبيقات دوال البحث المتقدمة VLOOKUP و XLOOKUP",
+    "suggestion": "يا ريت توضيح حالات عملية لمعالجة الأخطاء الشائعة في دوال البحث مثل VLOOKUP عند تكرار القيم أو اختلاف ترتيب الأعمدة، والفرق الجوهري بينها وبين XLOOKUP و INDEX & MATCH في شيتات المشاريع.",
+    "adminResponse": "أهلاً م. طارق. هذا المحور من الركائز الأساسية في دورة Excel Intermediate Training؛ حيث نطبق عملياً على معالجة أخطاء دوال البحث، وفهم متى نعتمد على التقريب أو المطابقة التامة، وتوظيف دوال البحث الحديثة بكفاءة ومرونة تامة.",
+    "approved": true
+  }
+]

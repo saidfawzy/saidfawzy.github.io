@@ -20,7 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/books.css">
 </head>
 <body>
 
@@ -39,7 +42,7 @@
             </div>
         </header>
 
-        <!-- ================= Main Navigation (المعتمدة والنهائية) ================= -->
+        <!-- ================= Main Navigation ================= -->
         <nav class="main-navbar">
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -68,7 +71,7 @@
         <!-- ================= Main Page Content ================= -->
         <main class="page-body">
             
-            <!-- Hero Title Box With Custom Library Logo -->
+            <!-- Hero Title Box With Controlled Library Logo -->
             <div class="page-title-box">
                 <span class="page-badge">Open Digital Shelf</span>
                 <div class="title-heading-row">
@@ -104,76 +107,78 @@
                         <div class="books-shelf-grid">
 
                             <!-- كتاب 01: Extracting and Transforming Data in Power BI -->
-                            <div class="single-book-card">
-                                <div class="book-3d-wrapper">
-                                    <div class="book-3d-cover pbi-cover-theme">
-                                        <img src="images/book-covers/pbi-book-1.png" alt="Extracting and Transforming Data in Power BI Cover" class="book-cover-img">
-                                        <span class="book-ribbon">PDF • 111 P</span>
+                            <div class="single-book-card amazon-style">
+                                <div class="book-media-side">
+                                    <div class="book-real-cover">
+                                        <img src="images/book-covers/pbi-book-1.png" alt="Extracting and Transforming Data in Power BI Cover">
                                     </div>
                                 </div>
 
-                                <div class="book-info-col">
-                                    <div class="book-badges-row">
-                                        <span class="book-level-tag">Hands-on Guide</span>
-                                        <span class="book-pages-tag">18 Exercises • Final Project</span>
+                                <div class="book-details-side">
+                                    <div class="book-meta-top">
+                                        <span class="spec-pill pages">📄 111 Pages</span>
+                                        <span class="spec-pill level">🎯 Hands-on Guide</span>
+                                        <span class="spec-pill format">💾 Free PDF</span>
                                     </div>
 
-                                    <h4>Extracting and Transforming Data in Power BI</h4>
+                                    <h3 class="book-title">Extracting and Transforming Data in Power BI</h3>
+                                    <p class="book-author">By <span>Said Fawzy</span></p>
 
-                                    <div class="book-bilingual-content">
-                                        <p class="book-desc-en">
-                                            A comprehensive hands-on guide covering the entire ETL lifecycle in Power Query. Master data connection, row/column transformations, text extraction, conditional logic, joining & appending datasets, data profiling, and end-to-end practical project implementation.
+                                    <div class="book-synopsis">
+                                        <p class="synopsis-en">
+                                            A comprehensive hands-on guide covering the ETL lifecycle in Power Query. Master data connection, column transformations, joins, and end-to-end data preparation.
                                         </p>
-                                        <p class="book-desc-ar">
-                                            دليل تطبيقي شامل يغطي دورة معالجة البيانات (ETL) بالكامل عبر محرك Power Query؛ يشمل الربط بمصادر البيانات، وتنظيف وتحويل الأعمدة، والدمج المتقدم (Merge & Append)، وفحص جودة البيانات (Data Profiling)، مع 18 تدريباً عملياً ومشروع تخرج واقعي متكامل.
+                                        <p class="synopsis-ar">
+                                            دليل تطبيقي شامل يغطي دورة معالجة البيانات (ETL) بالكامل عبر محرك Power Query؛ يشمل تنظيف ودمج البيانات وفحص جودتها مع 18 تدريباً عملياً ومشروع تخرج واقعي.
                                         </p>
                                     </div>
 
-                                    <div class="book-footer-action">
+                                    <div class="book-action-box">
                                         <a href="https://raw.githubusercontent.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI/main/Book/Preparing%20Data%20For%20Analysis%20in%20Power%20BI%20Ver%201%20-%20Said%20Fawzy.pdf" 
                                            download="Extracting_and_Transforming_Data_in_Power_BI_Said_Fawzy.pdf" 
-                                           target="_blank"
-                                           class="btn-download-book pbi-book-btn">
-                                            <span>Direct Download (PDF)</span> 
-                                            <span class="btn-dl-icon">📥</span>
+                                           target="_blank" 
+                                           class="btn-amazon-download">
+                                            <span>Direct Download (PDF)</span>
+                                            <span class="dl-icon">📥</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- كتاب 02: Data Modelling in Power BI -->
-                            <div class="single-book-card">
-                                <div class="book-3d-wrapper">
-                                    <div class="book-3d-cover pbi-cover-theme">
-                                        <img src="images/book-covers/pbi-book-2.png" alt="Data Modelling in Power BI Cover" class="book-cover-img">
-                                        <span class="book-ribbon">PDF • 150 P</span>
+                            <div class="single-book-card amazon-style">
+                                <div class="book-media-side">
+                                    <div class="book-real-cover">
+                                        <img src="images/book-covers/pbi-book-2.png" alt="Data Modelling in Power BI Cover">
                                     </div>
                                 </div>
 
-                                <div class="book-info-col">
-                                    <div class="book-badges-row">
-                                        <span class="book-level-tag">Data Modeling & DAX</span>
-                                        <span class="book-pages-tag">16+ Exercises • Schemas</span>
+                                <div class="book-details-side">
+                                    <div class="book-meta-top">
+                                        <span class="spec-pill pages">📄 150 Pages</span>
+                                        <span class="spec-pill level">🎯 Data Modeling & DAX</span>
+                                        <span class="spec-pill format">💾 Free PDF</span>
                                     </div>
 
-                                    <h4>Data Modelling in Power BI</h4>
+                                    <h3 class="book-title">Data Modelling in Power BI</h3>
+                                    <p class="book-author">By <span>Said Fawzy</span></p>
 
-                                    <div class="book-bilingual-content">
-                                        <p class="book-desc-en">
-                                            Master enterprise data modeling architectures and DAX calculations. Covers Fact vs. Dimension tables, Star & Snowflake schemas, relationship cardinality, cross-filter directions, Row/Filter evaluation contexts, calculated tables/columns, and foundational DAX measures using CALCULATE and variables.
+                                    <div class="book-synopsis">
+                                        <p class="synopsis-en">
+                                            Master enterprise data modeling architectures and DAX calculations. Covers Fact vs. Dimension tables, Star & Snowflake schemas, relationship cardinality, and DAX measures.
                                         </p>
-                                        <p class="book-desc-ar">
-                                            المرجع الشامل في نمذجة وهندسة البيانات؛ يغطي جداول الحقائق والأبعاد (Fact & Dimension)، ومخططات النجمة ورقاقة الثلج (Star & Snowflake)، وإدارة سياق التصفية (Evaluation Contexts)، وبناء الجداول المحسوبة والمقاييس المتقدمة عبر دالة CALCULATE والمتغيرات في DAX.
+                                        <p class="synopsis-ar">
+                                            المرجع الشامل في نمذجة وهندسة البيانات؛ يغطي جداول الحقائق والأبعاد (Fact & Dimension)، ومخططات النجمة ورقاقة الثلج، وإدارة سياق التصفية والمقاييس المحسوبة.
                                         </p>
                                     </div>
 
-                                    <div class="book-footer-action">
+                                    <div class="book-action-box">
                                         <a href="https://raw.githubusercontent.com/saidfawzy/Data-Modelling-in-Power-BI-/main/Book/Data%20Modeling%20in%20Power%20BI_Said%20Fawzy_Ver%201.pdf" 
-                                        download="Data_Modeling_in_Power_BI_Said_Fawzy.pdf" 
-                                        target="_blank" 
-                                        class="btn-download-book pbi-book-btn">
-                                            <span>Direct Download (PDF)</span> 
-                                            <span class="btn-dl-icon">📥</span>
+                                           download="Data_Modeling_in_Power_BI_Said_Fawzy.pdf" 
+                                           target="_blank" 
+                                           class="btn-amazon-download">
+                                            <span>Direct Download (PDF)</span>
+                                            <span class="dl-icon">📥</span>
                                         </a>
                                     </div>
                                 </div>

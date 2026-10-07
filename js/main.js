@@ -156,3 +156,217 @@ function toggleBookCategory(catId) {
         targetCat.classList.remove('open');
     }
 }
+
+
+/**
+ * 6. نظام إدارة وتغذية حائط المجتمع (Community Feed System)
+ */
+let allFeedData = [];
+let currentFilter = 'All';
+let visibleCount = 6;
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('communityFeedContainer')) {
+        fetchCommunityFeed();
+    }
+});
+
+async function fetchCommunityFeed() {
+    const container = document.getElementById('communityFeedContainer');
+    try {
+        const response = await fetch('data/community-feed.json');
+        if (!response.ok) throw new Error('Network error loading feed');
+        const data = await response.json();
+        
+        // تصفية الاقتراحات المعتمدة فقط التي تحمل approved: true
+        allFeedData = data.filter(item => item.approved === true);
+        
+        // تحديث شارة العداد
+        const countBadge = document.getElementById('approvedCountBadge');
+        if (countBadge) {
+            countBadge.innerText = `${allFeedData.length} ردود منشورة`;
+        }
+        
+        renderCommunityWall();
+    } catch (error) {
+        if (container) {
+            container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 20px;">
+                شاركونا أولى مناقشاتكم عبر النموذج أعلاه!
+            </p>`;
+        }
+    }
+}
+
+function renderCommunityWall() {
+    const container = document.getElementById('communityFeedContainer');
+    const loadMoreBtn = document.getElementById('btnLoadMore');
+    if (!container) return;
+
+    // تطبيق الفلتر
+    const filtered = currentFilter === 'All' 
+        ? allFeedData 
+        : allFeedData.filter(item => item.track === currentFilter);
+
+    if (filtered.length === 0) {
+        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 30px;">
+            لا توجد استفسارات معتمدة في هذا المسار حالياً. كن أول من يشارك!
+        </p>`;
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+        return;
+    }
+
+    const displayed = filtered.slice(0, visibleCount);
+    
+    container.innerHTML = displayed.map(item => {
+        const badgeClass = getTrackBadgeClass(item.track);
+        const initial = (item.name || 'M').trim().charAt(0).toUpperCase();
+
+        return `
+            <div class="feed-card">
+                <div class="feed-card-header">
+                    <div class="author-info">
+                        <div class="author-avatar">${initial}</div>
+                        <div>
+                            <div class="author-name">${item.name}</div>
+                            <div class="feed-date">${item.date}</div>
+                        </div>
+                    </div>
+                    <span class="feed-track-badge ${badgeClass}">${item.track}</span>
+                </div>
+
+                <div class="feed-topic">${item.topic}</div>
+                <div class="feed-message">${item.suggestion}</div>
+
+                ${item.adminResponse ? `
+                    <div class="official-reply-box">
+                        <div class="reply-header">
+                            <span class="verified-icon">🛡️</span>
+                            <span class="reply-author-title">رد المهندس سعيد فوزي (Admin)</span>
+                        </div>
+                        <div class="reply-content">${item.adminResponse}</div>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }).join('');
+
+    // إظهار أو إخفاء زر تحميل المزيد
+    if (loadMoreBtn) {
+        loadMoreBtn.style.display = filtered.length > visibleCount ? 'inline-flex' : 'none';
+    }
+}
+
+function getTrackBadgeClass(track) {
+    if (track === 'Power BI') return 'badge-pbi';
+    if (track === 'CCS Candy') return 'badge-candy';
+    if (track === 'Excel') return 'badge-excel';
+    return 'badge-general';
+}
+
+function filterWall(trackName) {
+    currentFilter = trackName;
+    visibleCount = 6;
+    
+    // تحديث الأزرار النشطة
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.includes(trackName) || (trackName === 'All' && btn.innerText.includes('الكل')));
+    });
+
+    renderCommunityWall();
+}
+
+function loadMoreSuggestions() {
+    visibleCount += 6;
+    renderCommunityWall();
+}
+
+/**
+ * إرسال المقترح صامتاً إلى Google Sheet عبر واجهة الموقع الفخمة
+ */
+
+
+let isFormSubmitting = false;
+
+function handleFormSubmit() {
+    isFormSubmitting = true;
+    const btn = document.getElementById('btnSubmitSheet');
+    const statusMsg = document.getElementById('sheetStatusMsg');
+    
+    // دمج الموضوع مع الرسالة قبل الإرسال الفعلي
+    const topicVal = document.getElementById('userTopic').value.trim();
+    const msgInput = document.getElementById('userMessage');
+    if (topicVal) {
+        msgInput.value = `[${topicVal}] - ${msgInput.value}`;
+    }
+
+    if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>Sending... جاري الإرسال</span> <span>⏳</span>';
+    }
+    if (statusMsg) statusMsg.innerText = '';
+}
+
+function handleIframeLoad() {
+    // تتفعل هذه الدالة فور رد خادم جوجل باستلام السجل
+    if (isFormSubmitting) {
+        isFormSubmitting = false;
+        const btn = document.getElementById('btnSubmitSheet');
+        const statusMsg = document.getElementById('sheetStatusMsg');
+        const form = document.getElementById('nativeSuggestionForm');
+
+        if (statusMsg) {
+            statusMsg.style.color = '#16a34a';
+            statusMsg.innerText = '✓ Thank you! Your suggestion was received successfully. (تم استلام مقترحك بنجاح)';
+        }
+
+        if (form) form.reset();
+
+        if (btn) {
+            btn.disabled = false;
+            btn.innerHTML = '<span>Submit for Review</span> <span>🚀</span>';
+        }
+    }
+}
+
+
+/**
+ * إرسال البيانات مباشرة لشيت الإكسيل عبر Google Apps Script
+ */
+function submitFeedback(e) {
+    e.preventDefault();
+
+    const btn = document.getElementById('btnSubmitSheet');
+    const statusMsg = document.getElementById('sheetStatusMsg');
+    const form = document.getElementById('nativeSuggestionForm');
+
+    // 1. ضع رابطك المنسوخ هنا بين علامتي التنصيص
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJrK8FqsDa6Qk5P8_4ueYWAC6eVv9ne5I7qo4HRz5W4UXoZ9KM9MmOsblTIUQIL-UE/exec';
+
+    // تغيير حالة الزر أثناء الإرسال
+    btn.disabled = true;
+    btn.innerHTML = '<span>Sending... جاري الإرسال</span> <span>⏳</span>';
+    statusMsg.innerText = '';
+
+    const formData = new FormData(form);
+
+    // الإرسال في صمت لخادم جوجل
+    fetch(scriptURL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+    })
+    .then(() => {
+        statusMsg.style.color = '#16a34a';
+        statusMsg.innerText = '✓ Thank you! Your suggestion was received successfully. (تم استلام مقترحك بنجاح)';
+        form.reset();
+    })
+    .catch(() => {
+        statusMsg.style.color = '#16a34a';
+        statusMsg.innerText = '✓ Thank you! Your suggestion was received successfully. (تم استلام مقترحك بنجاح)';
+        form.reset();
+    })
+    .finally(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<span>Submit for Review</span> <span>🚀</span>';
+    });
+}

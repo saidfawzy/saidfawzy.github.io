@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Fawzy Learning | Community Hub</title>
+    <title>Community & Feedback Hub | Said Fawzy Learning</title>
     
     <!-- Favicon & App Icon -->
     <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
     <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
 
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Said Fawzy Learning | Professional Communities">
-    <meta property="og:description" content="Connect with specialized communities in Power BI, Business Intelligence, Cost Control, and CCS Candy.">
-    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
-    <meta property="og:url" content="https://saidfawzy.github.io/community.html">
-
-    <!-- Fonts & Main Style -->
+    <!-- Fonts & Modular Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/community.css">
 </head>
 <body>
 
@@ -40,7 +34,6 @@
         </header>
 
         <!-- ================= Main Navigation ================= -->
-        <!-- ================= Main Navigation ================= -->
         <nav class="main-navbar">
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -59,7 +52,7 @@
             <div class="breadcrumb-trail">
                 <a href="index.html">Home</a>
                 <span class="separator">/</span>
-                <span class="current-crumb">Community</span>
+                <span class="current-crumb">Community & Discussions</span>
             </div>
             <a href="index.html" class="btn-back-pill">
                 <span>←</span> Back to Home
@@ -69,122 +62,191 @@
         <!-- ================= Main Page Content ================= -->
         <main class="page-body">
             
+            <!-- Hero Title Box With Community Logo -->
             <div class="page-title-box">
-                <span class="page-badge">Interactive Hub</span>
+                <span class="page-badge">Collaborative Network</span>
                 <div class="title-heading-row">
-                    <div class="title-icon-chip">🤝</div>
-                    <h2>Learning & Professional Communities</h2>
+                    <div class="title-icon-chip community-chip">
+                        <img src="images/logo/community-log.png" alt="Community Logo" class="community-header-logo">
+                    </div>
+                    <h2>Said Fawzy Community Hub</h2>
                 </div>
             </div>
 
-            <!-- Community Hub Cards Grid -->
-            <div class="community-grid">
+            <!-- 1. شريط منصات التواصل والمجتمعات -->
+            <section class="channels-section">
+                
+                <h4 class="channels-group-title">Direct Connect & Social</h4>
+                <div class="connect-channels-strip">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="channel-pill li-strip">
+                        <span class="channel-icon-circle">
+                            <img src="images/logo/linkedin-log.png" alt="LinkedIn" class="social-btn-icon">
+                        </span>
+                        <div class="pill-texts">
+                            <strong>Connect on LinkedIn</strong>
+                            <small>Eng. Said Fawzy Profile</small>
+                        </div>
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/201227449987" target="_blank" class="channel-pill wa-strip">
+                        <span class="channel-icon-circle">
+                            <img src="images/logo/whatsapp-logo.png" alt="WhatsApp" class="social-btn-icon">
+                        </span>
+                        <div class="pill-texts">
+                            <strong>Chat on WhatsApp</strong>
+                            <small>Direct Instant Messaging</small>
+                        </div>
+                    </a>
 
-                <!-- 1. Thinking in Candy Card -->
-                <div class="community-card candy-border">
-                    <div class="comm-card-top">
-                        <div class="comm-card-header">
-                            <div class="comm-icon-box candy-bg">🏗️</div>
-                            <div class="comm-meta">
-                                <span class="comm-tag candy-tag">Construction & Cost Control</span>
-                                <h3>Thinking in Candy</h3>
-                            </div>
+                    <!-- Telegram -->
+                    <a href="https://t.me/+201227449987" target="_blank" class="channel-pill tg-strip">
+                        <span class="channel-icon-circle">
+                            <img src="images/logo/Telegram-logo.png" alt="Telegram" class="social-btn-icon">
+                        </span>
+                        <div class="pill-texts">
+                            <strong>Message on Telegram</strong>
+                            <small>@saidfawzy Direct</small>
                         </div>
-                        <div class="comm-bilingual-body">
-                            <p class="comm-desc-en">
-                                A specialized professional community for estimation engineers, quantity surveyors, and project cost controllers leveraging CCS CANDY for reliable takeoff, cost breakdown, and project forecasting.
-                            </p>
-                            <p class="comm-desc-ar">
-                                مجتمع مهني متخصص يجمع مهندسي المكتب الفني والتسعير وإدارة تكاليف المشروعات لمناقشة تقنيات وتطبيقات برنامج CCS CANDY في حساب الكميات ومراقبة التكاليف والتدفقات النقدية.
-                            </p>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="channel-pill yt-strip">
+                        <span class="channel-icon-circle">
+                            <img src="images/logo/youtube-logo.png" alt="YouTube" class="social-btn-icon">
+                        </span>
+                        <div class="pill-texts">
+                            <strong>Subscribe on YouTube</strong>
+                            <small>Video Tutorials & Guides</small>
                         </div>
+                    </a>
+                </div>
+
+                <h4 class="channels-group-title" style="margin-top: 24px;">Specialized Discussion Groups</h4>
+                <div class="connect-channels-strip group-communities-strip">
+                    <!-- Thinking in Candy -->
+                    <a href="https://www.facebook.com/ThinkingInCandy/" target="_blank" class="channel-pill community-brand-pill candy-brand">
+                        <div class="brand-logo-frame">
+                            <img src="images/logo/thinking-in-candy.png" alt="Thinking in Candy">
+                        </div>
+                        <div class="pill-texts">
+                            <strong>Thinking in Candy</strong>
+                            <small>Cost Estimation & Valuation Page</small>
+                        </div>
+                    </a>
+
+                    <!-- Data Analyst Journey -->
+                    <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="channel-pill community-brand-pill daj-brand">
+                        <div class="brand-logo-frame">
+                            <img src="images/logo/DAJ.png" alt="Data Analyst Journey">
+                        </div>
+                        <div class="pill-texts">
+                            <strong>Data Analyst Journey</strong>
+                            <small>Power BI & Analytics Community</small>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            
+                <!-- 2. صندوق إرسال المقترح (تصميم أنيق مع إرسال مباشر ومضمون إلى شيت جوجل) -->
+            <section class="submit-suggestion-card">
+                <div class="suggestion-header">
+                    <div class="sugg-badge">Your Voice Matters • رأيك يهمنا</div>
+                    <h3>Submit a Suggestion or Question</h3>
+                    <p class="sugg-subtitle">
+                        Feel free to write in <strong>English</strong> or <strong>Arabic</strong>. All contributions are reviewed by Eng. Said Fawzy before publishing on the community wall.
+                        <br>
+                        <span class="ar-hint">اقتراحاتكم تصنع محتوى المسارات القادمة! يتم فحص كافة المشاركات والرد عليها هندسياً قبل النشر.</span>
+                    </p>
+                </div>
+
+                <!-- 2. صندوق إرسال المقترح (التصميم الأصلي مع ربط مباشر وآمن بشيت جوجل) -->
+<section class="submit-suggestion-card">
+    <div class="suggestion-header">
+        <div class="sugg-badge">Your Voice Matters • رأيك يهمنا</div>
+        <h3>Submit a Suggestion or Question</h3>
+        <p class="sugg-subtitle">
+            Feel free to write in <strong>English</strong> or <strong>Arabic</strong>. All contributions are reviewed by Eng. Said Fawzy before publishing on the community wall.
+            <br>
+            <span class="ar-hint">اقتراحاتكم تصنع محتوى المسارات القادمة! يتم فحص كافة المشاركات والرد عليها هندسياً قبل النشر.</span>
+        </p>
+    </div>
+
+    <form id="nativeSuggestionForm" class="suggestion-form-grid" onsubmit="submitFeedback(event)">
+        <!-- 1. الاسم -->
+        <div class="form-group">
+            <label for="userName">Full Name / الاسم</label>
+            <input type="text" id="userName" name="name" required placeholder="e.g. Eng. Tamer Salem" dir="auto">
+        </div>
+
+        <!-- 2. المسار -->
+        <div class="form-group">
+            <label for="userTrack">Topic Domain / المسار</label>
+            <select id="userTrack" name="track" required>
+                <option value="Power BI Data Analysis">Power BI Data Analysis</option>
+                <option value="CCS Candy Cost Estimation">CCS Candy Cost Estimation</option>
+                <option value="Modern Excel">Modern Excel</option>
+                <option value="General Suggestion">General Suggestion / عام</option>
+            </select>
+        </div>
+
+        <!-- 3. عنوان الموضوع -->
+        <div class="form-group full-width">
+            <label for="userTopic">Topic Title / عنوان الموضوع</label>
+            <input type="text" id="userTopic" name="topic" placeholder="Brief summary of your topic or query" dir="auto">
+        </div>
+
+        <!-- 4. الرسالة -->
+        <div class="form-group full-width">
+            <label for="userMessage">Your Message / تفاصيل الاقتراح أو السؤال</label>
+            <textarea id="userMessage" name="message" rows="4" required placeholder="Write your ideas, practical question, or course request here..." dir="auto"></textarea>
+        </div>
+
+        <!-- أزرار الإرسال والرسائل -->
+        <div class="form-actions full-width">
+            <button type="submit" id="btnSubmitSheet" class="btn-submit-sugg">
+                <span>Submit for Review</span>
+                <span>🚀</span>
+            </button>
+            <span id="sheetStatusMsg" class="form-status-msg"></span>
+        </div>
+    </form>
+</section>
+
+
+
+            <!-- 3. حائط المجتمع وإجابات المهندس -->
+            <section class="community-wall-section">
+                
+                <div class="wall-header-bar">
+                    <div class="wall-title-box">
+                        <h3>Community Wall & Official Q&A</h3>
+                        <span id="approvedCountBadge" class="wall-count-pill">0 Published</span>
                     </div>
-                    <div class="comm-action-row">
-                        <a href="https://www.facebook.com/ThinkingInCandy/" target="_blank" class="btn-comm-action candy-btn">
-                            Join Facebook Page <span>↗</span>
-                        </a>
+
+                    <div class="filter-pills-row">
+                        <button class="filter-pill active" onclick="filterWall('All')">All Topics</button>
+                        <button class="filter-pill" onclick="filterWall('Power BI')">Power BI</button>
+                        <button class="filter-pill" onclick="filterWall('CCS Candy')">CCS Candy</button>
+                        <button class="filter-pill" onclick="filterWall('Excel')">Excel</button>
+                        <button class="filter-pill" onclick="filterWall('General')">General</button>
                     </div>
                 </div>
 
-                <!-- 2. Data Analyst Journey Card -->
-                <div class="community-card bi-border">
-                    <div class="comm-card-top">
-                        <div class="comm-card-header">
-                            <div class="comm-icon-box bi-bg">📊</div>
-                            <div class="comm-meta">
-                                <span class="comm-tag bi-tag">Business Intelligence</span>
-                                <h3>Data Analyst Journey</h3>
-                            </div>
-                        </div>
-                        <div class="comm-bilingual-body">
-                            <p class="comm-desc-en">
-                                Dedicated community for aspiring and senior data analysts. Master Power BI, advanced DAX formulations, and data modeling while sharing enterprise dashboards and preparation workflows.
-                            </p>
-                            <p class="comm-desc-ar">
-                                المجتمع الرئيسي لمحللي البيانات والمهتمين بتطوير مهارات Power BI و DAX و Power Query، ومشاركة حلول عملية لتجهيز ونمذجة البيانات وتأهيل الكوادر لاختبارات الاعتماد.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comm-action-row">
-                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="btn-comm-action bi-btn">
-                            Join Facebook Page <span>↗</span>
-                        </a>
-                    </div>
+                <div id="communityFeedContainer" class="community-feed-grid">
+                    <div class="feed-loading-spinner">Loading approved community discussions...</div>
                 </div>
 
-                <!-- 3. YouTube Learning Channel Card -->
-                <div class="community-card yt-border">
-                    <div class="comm-card-top">
-                        <div class="comm-card-header">
-                            <div class="comm-icon-box yt-bg">🎬</div>
-                            <div class="comm-meta">
-                                <span class="comm-tag yt-tag">Video Lectures</span>
-                                <h3>Said Fawzy Video Channel</h3>
-                            </div>
-                        </div>
-                        <div class="comm-bilingual-body">
-                            <p class="comm-desc-en">
-                                Primary video library featuring deep-dive technical tutorials, hands-on dataset exercises, project management frameworks, and official Microsoft exam walkthroughs.
-                            </p>
-                            <p class="comm-desc-ar">
-                                مرجعك الأول للمحاضرات المسجلة وشروحات الفيديو العملية، وتطبيقات الخطوة بخطوة على مشاريع حقيقية ونماذج عملية لاجتياز اختبارات مايكروسوفت الدولية.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comm-action-row">
-                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="btn-comm-action yt-btn">
-                            Subscribe on YouTube <span>↗</span>
-                        </a>
-                    </div>
+                <div class="wall-load-more-row">
+                    <button id="btnLoadMore" class="btn-load-more" onclick="loadMoreSuggestions()" style="display: none;">
+                        <span>Load More Responses</span>
+                        <span>▼</span>
+                    </button>
                 </div>
 
-                <!-- 4. Direct WhatsApp Support Card -->
-                <div class="community-card wa-border">
-                    <div class="comm-card-top">
-                        <div class="comm-card-header">
-                            <div class="comm-icon-box wa-bg">💬</div>
-                            <div class="comm-meta">
-                                <span class="comm-tag wa-tag">Direct Support</span>
-                                <h3>Direct Inquiry Line</h3>
-                            </div>
-                        </div>
-                        <div class="comm-bilingual-body">
-                            <p class="comm-desc-en">
-                                Instant messaging contact for corporate training tracks, professional consultations, cohort schedules, and dataset access assistance.
-                            </p>
-                            <p class="comm-desc-ar">
-                                قناة تواصل فوري للاستفسار عن المسارات التدريبية المتقدمة، والاستشارات المهنية، وجداول المحاضرات، وملفات العمل الخاصة بالدورات.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comm-action-row">
-                        <a href="https://wa.me/201227449987" target="_blank" class="btn-comm-action wa-btn">
-                            Chat on WhatsApp <span>↗</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            </section>
 
         </main>
 
@@ -205,9 +267,9 @@
                     <h5 class="footer-col-title">Quick Links</h5>
                     <div class="footer-quick-nav">
                         <a href="courses.html">Courses</a>
+                        <a href="books.html">Books</a>
                         <a href="resources.html">Resources</a>
                         <a href="community.html">Community</a>
-                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
 
@@ -241,7 +303,7 @@
 
     </div>
 
-    <!-- Script -->
+    <!-- Main Interaction & Community Script -->
     <script src="js/main.js"></script>
 </body>
 </html>

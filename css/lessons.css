@@ -1,0 +1,387 @@
+/* ==========================================================================
+   Lesson Detail Page Styles (e.g. pl300-part1.html)
+   ========================================================================== */
+.course-master-hero {
+    border-radius: 24px;
+    padding: 32px 36px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    box-shadow: 0 12px 30px rgba(160, 175, 195, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-top: 5px solid var(--ms-blue);
+}
+
+.hero-top-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.cert-pill { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; background: var(--ms-blue); color: #ffffff; padding: 4px 14px; border-radius: var(--radius-pill); box-shadow: 0 2px 8px rgba(0, 120, 212, 0.28); }
+.part-pill { font-size: 11px; font-weight: 800; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: var(--radius-pill); }
+.lang-pill { font-size: 11px; font-weight: 700; background: #f1f5f9; color: #475569; padding: 4px 12px; border-radius: var(--radius-pill); }
+
+.course-master-hero h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.hero-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0369a1;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.hero-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #075985;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+
+.course-quick-specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spec-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+}
+
+.spec-item strong {
+    font-size: 13.5px;
+    color: var(--primary-navy);
+}
+
+.hands-on-callout-card {
+    margin-top: 24px;
+    border-radius: 22px;
+    padding: 24px 28px;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 1px solid #fde68a;
+    box-shadow: 0 8px 24px rgba(217, 119, 6, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.callout-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.callout-text-content {
+    flex-grow: 1;
+}
+
+.callout-title-row h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #78350f;
+    margin-bottom: 4px;
+}
+
+.callout-desc-en {
+    direction: ltr;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #92400e;
+    line-height: 1.45;
+}
+
+.callout-desc-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    color: #b45309;
+    margin-top: 3px;
+    line-height: 1.45;
+}
+
+.callout-action-col {
+    flex-shrink: 0;
+}
+
+.btn-github-download {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.28);
+    transition: all 0.25s ease;
+}
+
+.btn-github-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.4);
+    background: #0f172a;
+}
+
+.gh-icon { font-size: 22px; }
+.btn-labels { display: flex; flex-direction: column; text-align: left; }
+.main-label { font-size: 13.5px; font-weight: 800; line-height: 1.2; }
+.sub-label { font-size: 11px; opacity: 0.75; }
+.btn-github-download .arrow { font-size: 16px; font-weight: 800; }
+
+.course-lessons-accordion-stack {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.lesson-accordion-item {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(160, 175, 195, 0.16), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.25s ease;
+}
+
+.lesson-accordion-item:hover {
+    box-shadow: 0 10px 24px rgba(140, 160, 185, 0.24);
+}
+
+.lesson-accordion-item.open {
+    border-color: rgba(0, 120, 212, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 120, 212, 0.14);
+}
+
+.lesson-bar-header {
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    background: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.lesson-bar-header:hover { background-color: #fafcff; }
+
+.lesson-accordion-item.open .lesson-bar-header {
+    background-color: #f0f7ff;
+    border-bottom: 1px solid #e0effe;
+}
+
+.lesson-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.lesson-chip {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ms-blue);
+    background: #e0f2fe;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.5px;
+}
+
+.lesson-bar-left h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary-navy);
+    letter-spacing: -0.2px;
+}
+
+.lesson-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lesson-play-hint {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.lesson-arrow-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--ms-blue);
+    transition: transform 0.35s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.lesson-accordion-item.open .lesson-arrow-circle {
+    transform: rotate(180deg);
+    background: var(--ms-blue);
+    color: #ffffff;
+}
+
+.lesson-accordion-content {
+    display: none;
+}
+
+.lesson-accordion-item.open .lesson-accordion-content {
+    display: block;
+}
+
+.lesson-content-split {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px;
+}
+
+.lesson-text-side {
+    flex: 0 0 54%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lesson-lead-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.55;
+}
+
+.lesson-takeaways-card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 14px 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.takeaways-title {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.lesson-takeaways-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lesson-takeaways-card ul li {
+    font-size: 12.5px;
+    color: #475569;
+    position: relative;
+    padding-left: 14px;
+    line-height: 1.45;
+}
+
+.lesson-takeaways-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: 800;
+}
+
+.lesson-media-side {
+    flex: 0 0 calc(46% - 24px);
+}
+
+.video-container-16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0f172a;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.video-container-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 992px) {
+    .course-quick-specs { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
+    .hands-on-callout-card { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
+    .btn-github-download { width: 100% !important; justify-content: center !important; }
+    .lesson-content-split { flex-direction: column-reverse !important; gap: 20px !important; padding: 20px !important; }
+    .lesson-text-side, .lesson-media-side { flex: 1 1 100% !important; width: 100% !important; }
+}
+
+@media (max-width: 768px) {
+    .lesson-accordion-item { height: auto !important; min-height: unset !important; max-height: unset !important; }
+    .course-master-hero { padding: 20px 16px !important; border-radius: 18px !important; }
+    .course-master-hero h2 { font-size: 22px !important; line-height: 1.25 !important; }
+    .hero-desc-en, .hero-desc-ar { font-size: 12.5px !important; }
+    .course-quick-specs { grid-template-columns: 1fr 1fr !important; gap: 12px !important; margin-top: 18px !important; padding-top: 16px !important; }
+    .hands-on-callout-card { padding: 18px 16px !important; border-radius: 18px !important; }
+    .callout-icon-box { width: 46px !important; height: 46px !important; font-size: 22px !important; }
+    .callout-title-row h3 { font-size: 16.5px !important; }
+    .callout-desc-en, .callout-desc-ar { font-size: 12px !important; }
+    .lesson-bar-header { padding: 12px 14px !important; }
+    .lesson-bar-left { gap: 8px !important; }
+    .lesson-chip { font-size: 10px !important; padding: 2px 8px !important; }
+    .lesson-bar-left h4 { font-size: 14px !important; line-height: 1.35 !important; }
+    .lesson-play-hint { display: none !important; }
+    .lesson-arrow-circle { width: 28px !important; height: 28px !important; font-size: 9px !important; }
+    .lesson-content-split { padding: 14px !important; gap: 14px !important; }
+    .lesson-lead-ar { font-size: 12.5px !important; }
+    .lesson-takeaways-card { padding: 12px 14px !important; }
+    .lesson-takeaways-card ul li { font-size: 12px !important; }
+}

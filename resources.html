@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Fawzy Learning | Practical Resources & Datasets</title>
+    <title>Practical Resources & Datasets | Said Fawzy Learning</title>
     
     <!-- Favicon & App Icon -->
     <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
     <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
 
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Said Fawzy Learning | Resources & Datasets">
-    <meta property="og:description" content="Download hands-on practice datasets, Power BI templates (.pbix), DAX cheat sheets, and Candy cost control references.">
-    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
-    <meta property="og:url" content="https://saidfawzy.github.io/resources.html">
-
-    <!-- Fonts & Main Style -->
+    <!-- Fonts & Modular Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/resources.css">
 </head>
 <body>
 
@@ -40,14 +34,13 @@
         </header>
 
         <!-- ================= Main Navigation ================= -->
-        <!-- ================= Main Navigation ================= -->
         <nav class="main-navbar">
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
                 <a href="courses.html" class="nav-item">Courses</a>
                 <a href="books.html" class="nav-item">Books</a>
                 <a href="resources.html" class="nav-item active">Resources</a>
-                <a href="community.html" class="nav-item ">Community</a>
+                <a href="community.html" class="nav-item">Community</a>
                 <a href="gallery.html" class="nav-item">Gallery</a>
                 <a href="about.html" class="nav-item">About</a>
                 <a href="contact.html" class="nav-item">Contact</a>
@@ -59,7 +52,7 @@
             <div class="breadcrumb-trail">
                 <a href="index.html">Home</a>
                 <span class="separator">/</span>
-                <span class="current-crumb">Resources</span>
+                <span class="current-crumb">Resources & Datasets</span>
             </div>
             <a href="index.html" class="btn-back-pill">
                 <span>←</span> Back to Home
@@ -69,6 +62,7 @@
         <!-- ================= Main Page Content ================= -->
         <main class="page-body">
             
+            <!-- Hero Title Box -->
             <div class="page-title-box">
                 <span class="page-badge">Learning Assets</span>
                 <div class="title-heading-row">
@@ -80,22 +74,22 @@
             <!-- Resources Cards Grid -->
             <div class="resources-grid">
 
-                <!-- 1. PL-300 Training Dataset & Templates -->
+                <!-- 1. Power BI Practice Datasets -->
                 <div class="resource-card pbi-border">
                     <div class="res-card-top">
                         <div class="res-header">
                             <div class="res-icon-box pbi-res-bg">📊</div>
                             <div class="res-meta">
                                 <span class="res-tag pbi-tag">Power BI & DAX</span>
-                                <h3>PL-300 Course Material & Datasets</h3>
+                                <h3>Course Datasets & Star Schema Models</h3>
                             </div>
                         </div>
                         <div class="res-bilingual-body">
                             <p class="res-desc-en">
-                                Complete starter kits containing messy source tables, clean star-schema dimensional models, and finished `.pbix` report files for each video module.
+                                Complete hands-on training kit containing raw transactional tables, dimensional models, and finished `.pbix` report files for project dashboards.
                             </p>
                             <p class="res-desc-ar">
-                                حزمة العمل الكاملة للكورس: تتضمن جداول البيانات الخام، ونماذج مخطط النجمة (Star Schema)، وملفات باور بي آي المنتهية لكل تطبيق عملي.
+                                حزمة العمل الكاملة: تتضمن جداول البيانات الخام، ونماذج مخطط النجمة (Star Schema)، وملفات تقارير باور بي آي المكتملة للتطبيق العملي.
                             </p>
                         </div>
                         <div class="res-meta-specs">
@@ -110,7 +104,7 @@
                     </div>
                 </div>
 
-                <!-- 2. DAX Formula Quick Reference & Cheatsheet -->
+                <!-- 2. DAX Patterns & Cheatsheet -->
                 <div class="resource-card dax-border">
                     <div class="res-card-top">
                         <div class="res-header">
@@ -147,7 +141,7 @@
                             <div class="res-icon-box candy-res-bg">🏗️</div>
                             <div class="res-meta">
                                 <span class="res-tag candy-tag">Cost Engineering</span>
-                                <h3>CCS Candy Practical Workbook</h3>
+                                <h3>CCS Candy Resource & BOQ Workbooks</h3>
                             </div>
                         </div>
                         <div class="res-bilingual-body">
@@ -155,7 +149,7 @@
                                 Standard bill of quantities (BOQ) sample workbooks, resource pricing worksheets, and indirect cost templates structured for construction estimators.
                             </p>
                             <p class="res-desc-ar">
-                                نماذج دفاتر مقايسات كميات تجريبية، ومخططات تسعير العمالة والمعدات وتكاليف الموقع غير المباشرة المطبقة ببرنامج كاندي.
+                                نماذج مقايسات كميات تجريبية، ومخططات تسعير الموارد والعمالة وتكاليف الموقع غير المباشرة المطبقة ببرنامج كاندي.
                             </p>
                         </div>
                         <div class="res-meta-specs">
@@ -170,27 +164,27 @@
                     </div>
                 </div>
 
-                <!-- 4. Excel Modern Analytics & Power Query Kits -->
+                <!-- 4. Excel Intermediate Training Worksheets -->
                 <div class="resource-card excel-border">
                     <div class="res-card-top">
                         <div class="res-header">
                             <div class="res-icon-box excel-res-bg">📗</div>
                             <div class="res-meta">
-                                <span class="res-tag excel-tag">Excel & Automation</span>
-                                <h3>Modern Excel & ETL Datasets</h3>
+                                <span class="res-tag excel-tag">Excel Intermediate</span>
+                                <h3>Advanced Lookups & Data Models Practice</h3>
                             </div>
                         </div>
                         <div class="res-bilingual-body">
                             <p class="res-desc-en">
-                                Multi-sheet raw transactional records designed for Power Query transformation workflows, Pivot Table dashboarding, and M code transformations.
+                                Hands-on exercises covering VLOOKUP, XLOOKUP, INDEX & MATCH comparisons, handling approximate match logic, and error handling in engineering tables.
                             </p>
                             <p class="res-desc-ar">
-                                ملفات معاملات ضخمة ومتعددة الجداول للتدريب على عمليات التحويل والتنظيف باستخدام Power Query وبناء لوحات المتابعة التفاعلية.
+                                ملفات تدريبية وتطبيقات عملية على دوال البحث المتقدمة (VLOOKUP, XLOOKUP, INDEX & MATCH) ومعالجة أخطاء البيانات في جداول المشروعات.
                             </p>
                         </div>
                         <div class="res-meta-specs">
-                            <span>Format: <strong>.xlsx / .csv</strong></span>
-                            <span>Topic: <strong>ETL & Data Modeling</strong></span>
+                            <span>Format: <strong>.xlsx / Practice Files</strong></span>
+                            <span>Track: <strong>Excel Intermediate Training</strong></span>
                         </div>
                     </div>
                     <div class="res-action-row">
@@ -221,9 +215,9 @@
                     <h5 class="footer-col-title">Quick Links</h5>
                     <div class="footer-quick-nav">
                         <a href="courses.html">Courses</a>
+                        <a href="books.html">Books</a>
                         <a href="resources.html">Resources</a>
                         <a href="community.html">Community</a>
-                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
 
