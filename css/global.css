@@ -388,10 +388,19 @@ body.page-leaving .page-body {
     transform: translateX(4px);
 }
 
-.footer-social-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* ضبط أزرار السوشيال في الفوتر مع اللوجوهات الحقيقية */
+.footer-social-badges .social-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social-pill {

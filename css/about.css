@@ -2,27 +2,27 @@
    Said Fawzy Learning - About Page Styles (css/about.css)
    ========================================================================== */
 
-/* كارت التعريف بالمهندس والصورة البورتريه */
+/* كارت التعريف بالمهندس والصورة */
 .about-profile-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 16px;
-    padding: 32px;
+    padding: 28px 32px;
     display: flex;
-    gap: 32px;
+    gap: 30px;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
 }
 
-/* إطار مستطيل بنسبة أبعاد صورتك الأصلية */
+/* إطار الصورة متناسق وثابت */
 .profile-img-frame {
-    width: 170px;
-    height: 250px;
-    border-radius: 14px;
+    width: 140px;
+    height: 198px;
+    border-radius: 12px;
     overflow: hidden;
-    border: 3px solid #f1f5f9;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 2px solid #f1f5f9;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     flex-shrink: 0;
     background: #e2e8f0;
 }
@@ -34,31 +34,92 @@
     display: block;
 }
 
-.profile-text-side h3 {
-    font-size: 1.6rem;
-    color: #0f172a;
-    margin: 0 0 8px;
+.profile-text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
+/* تكبير اسم المهندس */
+.profile-text-side h3 {
+    font-size: 1.75rem;
+    color: #0f172a;
+    margin: 0 0 16px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+/* قائمة الأدوار الوظيفية */
 .profile-roles-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
 }
 
-.profile-roles-list li {
-    color: #475569;
-    font-size: 0.95rem;
+.role-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 14px;
 }
 
-.profile-roles-list li strong {
-    color: #1e293b;
+/* تكبير وتنسيق بوكس اللوجوهات (المقاولون العرب + Instructor) */
+.role-logo-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.role-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* تكبير النصوص لملء الطول المقابل للصورة */
+.role-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.role-text-wrap strong {
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.role-text-wrap span {
+    color: #64748b;
+    font-size: 0.92rem;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .about-profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .role-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* أقسام المحتوى والكروت */
@@ -84,7 +145,7 @@
 
 .items-list-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 16px;
 }
 
@@ -96,31 +157,43 @@
     background: #f8fafc;
     border-radius: 10px;
     border: 1px solid #edf2f7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.item-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+}
+
+/* صندوق الأيقونة/اللوجو - أبعاد ثابتة واستيعاب لأي لوجو بدقة */
 .tile-icon {
-    width: 44px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #e2e8f0;
     flex-shrink: 0;
-    font-size: 1.4rem;
+    padding: 6px;
+    box-sizing: border-box;
 }
 
 .tile-icon img {
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     object-fit: contain;
+    display: block;
 }
 
 .tile-content h5 {
     margin: 0 0 4px;
     font-size: 0.95rem;
     color: #0f172a;
+    font-weight: 700;
 }
 
 .tile-content p {
