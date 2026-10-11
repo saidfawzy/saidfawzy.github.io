@@ -1,16 +1,25 @@
 /* ==========================================================================
    Books Page Styles (books.html)
    ========================================================================== */
+
+/* تكبير إطار ولوجو الهيدر العلوي */
 .library-chip {
-    padding: 8px !important;
+    width: 58px !important;
+    min-width: 58px !important;
+    height: 58px !important;
+    padding: 6px !important;
     background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 14px !important;
 }
 
 .library-header-logo {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 36px !important;
-    max-height: 36px !important;
+    width: 46px !important;
+    height: 46px !important;
+    max-width: 46px !important;
+    max-height: 46px !important;
     object-fit: contain !important;
     display: block !important;
     filter: drop-shadow(0 2px 4px rgba(7, 96, 172, 0.2)) !important;
@@ -217,6 +226,13 @@
     border-radius: var(--radius-pill);
 }
 
+/* بادج لغة الكتاب */
+.spec-pill.lang {
+    background: #eef2ff;
+    color: #4338ca;
+    border: 1px solid #c7d2fe;
+}
+
 .spec-pill.pages { background: #f1f5f9; color: #475569; }
 .spec-pill.level { background: #e0f2fe; color: #0284c7; }
 .spec-pill.format { background: #dcfce7; color: #166534; }
@@ -267,13 +283,16 @@
 
 .book-action-box {
     margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .btn-amazon-download {
     text-decoration: none;
     font-size: 13.5px;
     font-weight: 700;
-    padding: 10px 22px;
+    padding: 10px 20px;
     border-radius: var(--radius-pill);
     color: #ffffff;
     background: linear-gradient(135deg, var(--brand-blue) 0%, #0078d4 100%);
@@ -289,8 +308,39 @@
     box-shadow: 0 8px 20px rgba(7, 96, 172, 0.38);
 }
 
+/* زر مستودع GitHub بلوجو GitHub الرسمي */
+.btn-amazon-repo {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.22s ease;
+}
+
+.btn-amazon-repo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.35);
+    background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+}
+
+.btn-github-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
-    .library-header-logo { max-width: 28px !important; max-height: 28px !important; }
+    .library-chip { width: 48px !important; min-width: 48px !important; height: 48px !important; }
+    .library-header-logo { max-width: 36px !important; max-height: 36px !important; }
     .book-cat-header { padding: 14px 16px !important; }
     .book-cat-header h3 { font-size: 15px !important; }
     .book-cat-body { padding: 14px !important; }
@@ -305,5 +355,6 @@
     .book-real-cover { width: 150px !important; height: 200px !important; }
     .book-meta-top { justify-content: center !important; }
     .book-title { font-size: 18px !important; }
-    .btn-amazon-download { width: 100% !important; justify-content: center !important; }
+    .book-action-box { justify-content: center; }
+    .btn-amazon-download, .btn-amazon-repo { width: 100% !important; justify-content: center !important; }
 }
