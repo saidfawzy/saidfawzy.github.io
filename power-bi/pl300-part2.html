@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         - ضبط الترميز، التجاوب مع الشاشات، وعنوان الصفحة الرسمي للكورس الثاني.
+         ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeling Data in Power BI | Said Fawzy Learning</title>
+    
+    <!-- استدعاء ملفات الستايل الموحدة (Global Framework + Lesson Details) -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    
+    <!-- خطوط الويب المعتمدة للمنصة (Plus Jakarta Sans & Noto Sans Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="../images/logo/saidfawzy-icon.png">
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png">
+
+    <!-- وسوم المشاركة عبر منصات التواصل (Open Graph Meta Tags) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Modeling Data in Power BI | Said Fawzy Learning">
+    <meta property="og:description" content="المسار المتقدم لاحتراف نمذجة البيانات وتصميم مخططات النجمة وحسابات DAX لاختبار PL-300 الدولي.">
+    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
+    <meta property="og:url" content="https://saidfawzy.github.io/power-bi/pl300-part2.html">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+        <header class="vibrant-banner">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../courses.html" class="nav-item active">Courses</a>
+                <a href="../books.html" class="nav-item">Books</a>
+                <a href="../resources.html" class="nav-item">Resources</a>
+                <a href="../community.html" class="nav-item">Community</a>
+                <a href="../gallery.html" class="nav-item">Gallery</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <a href="../contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             - يوضح موقع الصفحة داخل مسار Power BI ويوفر زراً للرجوع للفهرس الرئيسي للمسار.
+             ========================================================================== -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../courses.html">Courses</a>
+                <span class="separator">›</span>
+                <a href="index.html">Power BI</a>
+                <span class="separator">›</span>
+                <span class="current-crumb">Modeling Data</span>
+            </div>
+
+            <a href="index.html" class="btn-back-pill">
+                ← Back to Power BI Track
+            </a>
+        </div>
+
+        <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+        <main class="page-body">
+
+            <!-- ==========================================================================
+                 بانر رأس الكورس المطور (Course Master Hero with Book Visual Badge)
+                 - يشمل شارات الكورس (PL-300 / Part 02)، العناوين، الوصف، والمواصفات السريعة.
+                 - يعرض على الجانب غلاف الكتاب الرسمي (pbi-book-2.png) كـ Visual Companion.
+                 ========================================================================== -->
+            <section class="course-master-hero with-book-cover">
+                <div class="hero-layout-split">
+                    
+                    <!-- عمود تفاصيل ومواصفات الكورس (يسار / يمين في الشاشات العريضة) -->
+                    <div class="hero-details-col">
+                        <div class="hero-top-meta">
+                            <span class="cert-pill">Microsoft Certified: PL-300</span>
+                            <span class="part-pill">Part 02 of 03</span>
+                            <span class="lang-pill">Arabic Audio / English Terms</span>
+                        </div>
+
+                        <h2>Modeling Data in Power BI</h2>
+
+                        <p class="hero-desc-en">
+                            Design enterprise-grade dimensional data models, configure Star Schemas, establish robust relationships, and write foundational DAX calculations for advanced business analytics.
+                        </p>
+                        <p class="hero-desc-ar">
+                            المسار المتخصص لاحتراف نمذجة البيانات المؤسسية، وتصميم مخططات النجمة (Star Schema)، وضبط العلاقات الرياضية، وصياغة دوال الـ DAX التأسيسية لتحليل ذكاء الأعمال المتقدم.
+                        </p>
+
+                        <div class="course-quick-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Focus Area</span>
+                                <strong>Data Modeling &amp; DAX</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Course Level</span>
+                                <strong>Intermediate to Advanced</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Format</span>
+                                <strong>Hands-On Architectural Labs</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Course Textbook</span>
+                                <strong>Included in Material 📦</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- عمود العرض البصري لغلاف الكتاب المعتمد (Visual Preview Only) -->
+                    <div class="hero-book-preview-col">
+                        <div class="course-book-card-mini">
+                            <span class="book-companion-badge">Course Textbook</span>
+                            <div class="course-book-img-frame">
+                                <img src="../images/book-covers/pbi-book-2.png" alt="Modeling Data in Power BI Book Cover" onerror="this.src='../images/logo/saidfawzy-icon.png'">
+                            </div>
+                            <span class="book-included-hint">Included in GitHub Repo ↓</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 5. كارت التحفيز العملي ورابط مستودع GitHub (Hands-On Callout Card)
+                 - يوجه الطالب مباشرة لتحميل حزمة المشروع الشاملة (ملف الـ PBIX ومجموعات البيانات والكتاب).
+                 ========================================================================== -->
+            <section class="hands-on-callout-card">
+                <div class="callout-icon-box">
+                    <span>🛠️</span>
+                </div>
+                <div class="callout-text-content">
+                    <div class="callout-title-row">
+                        <h3>Get Your Hands Dirty! (التطبيق العملي خطوة بخطوة)</h3>
+                    </div>
+                    <p class="callout-desc-en">
+                        Data modeling is learned by doing. Download the starter PBIX models and raw schema datasets, follow the structural labs, build your relationships, and evaluate your DAX measures directly.
+                    </p>
+                    <p class="callout-desc-ar">
+                        نمذجة البيانات تُكتسب بالتطبيق الفعلي. حمّل نماذج العمل وملفات البيانات من مستودع GitHub، طبّق بناء جداول الحقائق والأبعاد والعلاقات بنفسك، واختبر دوال DAX خطوة بخطوة.
+                    </p>
+                </div>
+                <div class="callout-action-col">
+                    <!-- ضع رابط المستودع الخاص بالجزء الثاني هنا -->
+                    <a href="https://github.com/saidfawzy/Data-Modelling-in-Power-BI-" target="_blank" class="btn-github-download">
+                        <span class="gh-icon">📁</span>
+                        <div class="btn-labels">
+                            <span class="main-label">Download Course Material</span>
+                            <span class="sub-label">GitHub Repository &amp; Datasets</span>
+                        </div>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 6. حاوية أكورديون الدروس (Course Lessons Accordion Stack)
+                 - هنا سيتم وضع بطاقات الدروس والفيديوهات (Lesson Items) فور إرسال الجدول.
+                 ========================================================================== -->
+            <div class="course-lessons-accordion-stack">
+
+                <!-- ستبدأ الدروس من هنا فور استلام الجدول -->
+                <!-- ==========================================================================
+                 قائمة الدروس الـ 44 لمسار نمذجة البيانات (Modeling Data in Power BI)
+                 - الدرس الأول مفتوح افتراضياً (class="lesson-accordion-item open").
+                 - كل درس مقسم إلى: شرح عربي + قائمة مكتسبات تعليمية + مشغل فيديو 16:9.
+                 ========================================================================== -->
+            <div class="course-lessons-accordion-stack">
+
+                <!-- الدرس 01 -->
+                <article class="lesson-accordion-item open" id="lesson-01">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 01</span>
+                            <h4>00 Course Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة المسار التدريبي الثاني؛ استعراض محاور نمذجة البيانات، أهداف اختبار PL-300، وطريقة التطبيق العملي الفعّال.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Course roadmap and core objectives for the Data Modeling module.</li>
+                                        <li>Understanding the role of relational data models in BI performance.</li>
+                                        <li>How to utilize practice files and follow along with hands-on labs.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/lVvkeElvGsg" title="00 Course Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 02 -->
+                <article class="lesson-accordion-item" id="lesson-02">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 02</span>
+                            <h4>01 Introduction to Data Model Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المفهوم الأساسي لنمذجة البيانات؛ الفرق بين التعامل مع الجداول الفردية وبناء نموذج علائقي متكامل للتقارير.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>What is a Data Model and why is flat table design inefficient?</li>
+                                        <li>Benefits of dimensional modeling for analytics scalability.</li>
+                                        <li>Core elements: Tables, attributes, and analytical measures.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/ijS1g1IqCIY" title="01 Introduction to Data Model Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 03 -->
+                <article class="lesson-accordion-item" id="lesson-03">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 03</span>
+                            <h4>01 Introduction to Data Model Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    جداول الحقائق وجداول الأبعاد؛ التمييز الجوهري بين Fact Tables و Dimension Tables وموقع كل منهما في النموذج.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Identifying Fact Tables: Transactions, numerical values, and foreign keys.</li>
+                                        <li>Identifying Dimension Tables: Descriptive attributes and primary keys.</li>
+                                        <li>Best practices for structuring analytical dimensions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/SezitV8kGNk" title="01 Introduction to Data Model Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 04 -->
+                <article class="lesson-accordion-item" id="lesson-04">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 04</span>
+                            <h4>01 Introduction to Data Model Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    استكشاف بيئة Model View في Power BI؛ ترتيب الجداول وإدارتها وضبط خصائص الأعمدة والبيانات التعريفية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Navigating the Power BI Model View canvas.</li>
+                                        <li>Creating custom Model View layouts and organizational tabs.</li>
+                                        <li>Managing column properties, data formatting, and visibility.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/LOxGw26quvU" title="01 Introduction to Data Model Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 05 -->
+                <article class="lesson-accordion-item" id="lesson-05">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 05</span>
+                            <h4>01 Introduction to Data Model Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تطبيق عملي لتنظيم نموذج البيانات؛ إخفاء الحقول غير الضرورية وإنشاء المجلدات الوصفية (Display Folders).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Hiding foreign key columns to prevent erroneous reporting.</li>
+                                        <li>Organizing fields using Display Folders for clean end-user experience.</li>
+                                        <li>Setting primary keys and summarizing defaults.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/T1fFfTcFwjw" title="01 Introduction to Data Model Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 06 -->
+                <article class="lesson-accordion-item" id="lesson-06">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-06')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 06</span>
+                            <h4>02 Tables Relationships Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مفهوم العلاقات بين الجداول (Table Relationships)؛ درجات التعدد (Cardinality) من 1-to-Many و Many-to-1.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Primary Key and Foreign Key constraints.</li>
+                                        <li>Cardinality types: One-to-Many vs Many-to-One fundamentals.</li>
+                                        <li>How relationships drive dynamic report filtering.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/WlSzHnaqxT0" title="02 Tables Relationships Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 07 -->
+                <article class="lesson-accordion-item" id="lesson-07">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-07')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 07</span>
+                            <h4>02 Tables Relationships Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    اتجاه فلترة البيانات (Cross Filter Direction) والعلاقات النشطة وغير النشطة (Active vs Inactive Relationships).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Single vs Both cross-filter direction and performance pitfalls.</li>
+                                        <li>Handling multiple relationships with the USERELATIONSHIP DAX function.</li>
+                                        <li>Resolving ambiguity in complex enterprise data models.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/dZb5YSGuOno" title="02 Tables Relationships Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 08 -->
+                <article class="lesson-accordion-item" id="lesson-08">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-08')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 08</span>
+                            <h4>03 Star and Snowflake Schema Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مخطط النجمة (Star Schema) في بيئات ذكاء الأعمال؛ المعمارية القياسية المثالية لمحرك VertiPaq وسرعة الحسابات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Principles of Kimball Star Schema dimensional modeling.</li>
+                                        <li>Why Power BI is specifically architected for Star Schemas.</li>
+                                        <li>Evaluating query performance and model simplicity.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/0KaSU3i--Dc" title="03 Star and Snowflake Schema Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 09 -->
+                <article class="lesson-accordion-item" id="lesson-09">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-09')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 09</span>
+                            <h4>03 Star and Snowflake Schema Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مخطط ندفة الثلج (Snowflake Schema)؛ متى نلجأ إليه وكيف نقوم بتحويله وتفكيكه إلى Star Schema لتحسين الأداء.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding normalized dimensions in Snowflake Schemas.</li>
+                                        <li>Comparing Star vs Snowflake performance and maintenance.</li>
+                                        <li>Denormalizing sub-dimensions in Power Query for cleaner models.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/tsxMwW-34JA" title="03 Star and Snowflake Schema Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 10 -->
+                <article class="lesson-accordion-item" id="lesson-10">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-10')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 10</span>
+                            <h4>04 Introduction to DAX Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مدخل إلى لغة DAX (Data Analysis Expressions)؛ ما هي، كيف تعمل، والفرق بينها وبين معادلات Excel التقليدية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>What is DAX and why is it essential for custom calculations?</li>
+                                        <li>DAX vs Excel formulas: Syntax, scope, and execution models.</li>
+                                        <li>Understanding table-based and column-based references.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/tWfNKUD_R4Q" title="04 Introduction to DAX Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 11 -->
+                <article class="lesson-accordion-item" id="lesson-11">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-11')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 11</span>
+                            <h4>04 Introduction to DAX Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أنواع العمليات الحسابية في DAX؛ مقارنة شاملة بين الأعمدة المحسوبة (Calculated Columns) والمقاييس (Measures).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Calculated Columns: Row by row evaluation and memory footprint.</li>
+                                        <li>Measures: Dynamic aggregation at report run-time.</li>
+                                        <li>Decision framework: When to use a column vs when to write a measure.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/1Sr61l_Xb58" title="04 Introduction to DAX Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 12 -->
+                <article class="lesson-accordion-item" id="lesson-12">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-12')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 12</span>
+                            <h4>04 Introduction to DAX Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    سياق التقييم (Evaluation Context)؛ الركيزة الأهم في لغة DAX وفهم سياق الصف (Row Context) وسياق الفلتر (Filter Context).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Mastering Evaluation Context: The heartbeat of DAX.</li>
+                                        <li>How Row Context iterates over records in calculated columns.</li>
+                                        <li>How Filter Context dynamically slices values in visuals.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/mKp5a23puB0" title="04 Introduction to DAX Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 13 -->
+                <article class="lesson-accordion-item" id="lesson-13">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-13')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 13</span>
+                            <h4>04 Introduction to DAX Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال التجميع الأساسية في DAX (Aggregation Functions) مثل SUM و AVERAGE و MIN و MAX وطريقة كتابتها.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Standard scalar aggregations (SUM, AVERAGE, MIN, MAX).</li>
+                                        <li>Counting rows and unique entries: COUNT, COUNTA, DISTINCTCOUNT.</li>
+                                        <li>Writing clean, readable DAX expressions with best practices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/GWI-UVkvCIQ" title="04 Introduction to DAX Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 14 -->
+                <article class="lesson-accordion-item" id="lesson-14">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-14')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 14</span>
+                            <h4>04 Introduction to DAX Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال التكرار وسياق الصف (Iterator Functions)؛ استيعاب عائلة دوال X مثل SUMX و AVERAGEX وحساب العمليات على مستوى السطر.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why simple SUM fails on multi-column transactional calculations.</li>
+                                        <li>How Iterator X-functions create temporary row context.</li>
+                                        <li>Applying SUMX for dynamic revenue, cost, and profit computations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/cUmL-FGbTNA" title="04 Introduction to DAX Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 15 -->
+                <article class="lesson-accordion-item" id="lesson-15">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-15')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 15</span>
+                            <h4>04 Introduction to DAX Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الدوال الشرطية والمنطقية في DAX؛ توظيف IF و SWITCH و AND و OR لتصنيف وتخصيص البيانات المعقدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Logical conditioning using IF and nested expressions.</li>
+                                        <li>Writing clean multi-condition logic with the SWITCH TRUE pattern.</li>
+                                        <li>Handling edge cases and blank values with COALESCE.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/qDf-wUQfF9c" title="04 Introduction to DAX Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 16 -->
+                <article class="lesson-accordion-item" id="lesson-16">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-16')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 16</span>
+                            <h4>05 Measures Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المقاييس الصريحة مقابل الضمنية (Explicit vs Implicit Measures)؛ أفضل الممارسات لبناء جدول مخصص للمقاييس.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Implicit measures drawbacks and why explicit DAX is mandatory.</li>
+                                        <li>Creating a dedicated Measures Table to organize analytical KPIs.</li>
+                                        <li>Formatting measures (currency, decimals, percentages) properly.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/0AVLqDAvUkU" title="05 Measures Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 17 -->
+                <article class="lesson-accordion-item" id="lesson-17">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-17')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 17</span>
+                            <h4>05 Measures Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المقاييس السريعة (Quick Measures) ومقدمة لأقوى دالة في DAX؛ دالة CALCULATE وتعديل سياق الفلتر.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Leveraging Quick Measures as a productivity booster.</li>
+                                        <li>Introduction to the CALCULATE function and its execution order.</li>
+                                        <li>Overriding and modifying existing visual filter contexts.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/t07jX38SCWk" title="05 Measures Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 18 -->
+                <article class="lesson-accordion-item" id="lesson-18">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-18')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 18</span>
+                            <h4>05 Measures Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    التحكم في الفلترة؛ استخدام دالة ALL مع CALCULATE لحساب النسب المئوية الإجمالية وحصص السوق (Market Share).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Removing filter context using the ALL function.</li>
+                                        <li>Calculating Percentage of Total across categories and products.</li>
+                                        <li>Comparing ALL vs ALLEXCEPT and ALLSELECTED.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Ob8Ahg4QbJM" title="05 Measures Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 19 -->
+                <article class="lesson-accordion-item" id="lesson-19">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-19')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 19</span>
+                            <h4>05 Measures Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الفلترة المتقدمة بواسطة دالة FILTER؛ تطبيق شروط مركبة تتطلب فحص كل سطر ومقارنة مقاييس بأخرى.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Using the FILTER function as an argument inside CALCULATE.</li>
+                                        <li>Filtering tables based on measure thresholds.</li>
+                                        <li>Avoiding common performance bottlenecks with large tables.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/ct8yl0KR25E" title="05 Measures Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 20 -->
+                <article class="lesson-accordion-item" id="lesson-20">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-20')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 20</span>
+                            <h4>05 Measures Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    استخدام المتغيرات (Variables - VAR / RETURN) في كتابة مقاييس DAX المعقدة لتحسين القراءة وتسريع التنفيذ.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Syntax and architecture of VAR and RETURN in DAX.</li>
+                                        <li>Performance benefits of calculating expressions once into memory.</li>
+                                        <li>Simplifying debugging and breaking down complex formulas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/TD4rKNds0LE" title="05 Measures Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 21 -->
+                <article class="lesson-accordion-item" id="lesson-21">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-21')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 21</span>
+                            <h4>05 Measures Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال التعامل مع العلاقات عبر DAX؛ دالة RELATED و RELATEDTABLE لجلب القيم عبر جداول الأبعاد والحقائق.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Fetching values from the One-side using RELATED.</li>
+                                        <li>Aggregating the Many-side into the One-side via RELATEDTABLE.</li>
+                                        <li>Requirements for established relationships in the data model.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/OltzgJY1y4I" title="05 Measures Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 22 -->
+                <article class="lesson-accordion-item" id="lesson-22">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-22')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 22</span>
+                            <h4>05 Measures Part 7 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    انتقال السياق (Context Transition)؛ كيف تتحول الأعمدة المحسوبة إلى مقاييس عند استدعاء دالة CALCULATE داخلياً.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Context Transition mechanics step by step.</li>
+                                        <li>How CALCULATE converts Row Context into an equivalent Filter Context.</li>
+                                        <li>Common mistakes and unexpected results when invoking measures in columns.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/LjeZ5V6iOcI" title="05 Measures Part 7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 23 -->
+                <article class="lesson-accordion-item" id="lesson-23">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-23')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 23</span>
+                            <h4>05 Measures Part 8 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    معالجة القسمة الصفرية والقيم الخالية بواسطة DIVIDE وتطبيق سيناريوهات KPI الحقيقية داخل التقارير.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Safe mathematical operations using the DIVIDE function.</li>
+                                        <li>Handling divide-by-zero errors without throwing breaks.</li>
+                                        <li>Building reusable business margin and growth KPI measures.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/n1STNwWlzk4" title="05 Measures Part 8" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 24 -->
+                <article class="lesson-accordion-item" id="lesson-24">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-24')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 24</span>
+                            <h4>Mid-Course Exam (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الامتحان النصفي للمسار؛ اختبار عملي ونظري شامل لقياس مدى استيعاب مبادئ نمذجة البيانات ومفاهيم DAX الأساسية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Real exam-style simulation questions mirroring PL-300 testing.</li>
+                                        <li>Evaluating model troubleshooting and relationship fixes.</li>
+                                        <li>Testing formulation speed for core DAX aggregations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/d6_ImlN97C8" title="Mid-Course Exam" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 25 -->
+                <article class="lesson-accordion-item" id="lesson-25">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-25')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 25</span>
+                            <h4>Mid Term Review Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مراجعة الامتحان النصفي (الجزء 1)؛ تفنيد أسئلة نمذجة الجداول والتحقق من أفضل الممارسات في توزيع الأبعاد والحقائق.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Detailed breakdown and model answers for Exam Part 1.</li>
+                                        <li>Common mistakes in distinguishing Facts from Dimensions.</li>
+                                        <li>Refining schemas for maximum compression and query speed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/J1FibhXGnf4" title="Mid Term Review Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 26 -->
+                <article class="lesson-accordion-item" id="lesson-26">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-26')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 26</span>
+                            <h4>Mid Term Review Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مراجعة الامتحان النصفي (الجزء 2)؛ حل المسائل المتعلقة بدرجات العلاقات وتأثير اتجاه الفلترة على النتائج الإجمالية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Resolving exam scenarios involving inactive relationships.</li>
+                                        <li>Handling Many-to-Many cardinality exam challenges correctly.</li>
+                                        <li>Step-by-step walkthrough of model validation steps.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/VKsTCJrfATY" title="Mid Term Review Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 27 -->
+                <article class="lesson-accordion-item" id="lesson-27">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-27')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 27</span>
+                            <h4>Mid Term Review Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مراجعة الامتحان النصفي (الجزء 3)؛ تصحيح ومناقشة معادلات DAX ومقارنة حلول الأعمدة المحسوبة والمقاييس.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Deconstructing DAX syntax errors and performance traps.</li>
+                                        <li>Evaluating row-by-row computations with SUMX vs SUM.</li>
+                                        <li>Clear logical analysis of nested logical criteria.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/YJ2GSnx_yFM" title="Mid Term Review Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 28 -->
+                <article class="lesson-accordion-item" id="lesson-28">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-28')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 28</span>
+                            <h4>Mid Term Review Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مراجعة الامتحان النصفي (الجزء 4)؛ تحليل سياق الفلتر والتنفيذ لدالة CALCULATE وحساب النسب المئوية الكلية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Mastering CALCULATE + ALL review questions.</li>
+                                        <li>Tips and tricks for approaching tricky PL-300 question phrasing.</li>
+                                        <li>Preparing mindset and fundamentals for advanced DAX topics.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/jF0vvJXvcuU" title="Mid Term Review Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 29 -->
+                <article class="lesson-accordion-item" id="lesson-29">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-29')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 29</span>
+                            <h4>6 More About DAX Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    التعمق في دوال الجداول (Table Functions)؛ استكشاف VALUES و DISTINCT لإنشاء قوائم فريدة للاستخدام في الصيغ.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Table Functions vs Scalar Functions.</li>
+                                        <li>Differences between VALUES and DISTINCT with blank rows.</li>
+                                        <li>Using table functions dynamically inside filter arguments.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/lyDliirWecE" title="6 More About DAX Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 30 -->
+                <article class="lesson-accordion-item" id="lesson-30">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-30')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 30</span>
+                            <h4>6 More About DAX Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دالة ALLSELECTED والتعامل مع الفلاتر البصرية؛ الحفاظ على الفلاتر الخارجية مع إزالة الفلاتر الداخلية داخل الجداول.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Visual Total calculations using ALLSELECTED.</li>
+                                        <li>The subtle distinctions between ALL, ALLEXCEPT, and ALLSELECTED.</li>
+                                        <li>Building dynamic responsive visual matrices and charts.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/FVBW6EH5heI" title="6 More About DAX Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 31 -->
+                <article class="lesson-accordion-item" id="lesson-31">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-31')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 31</span>
+                            <h4>6 More About DAX Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تعديل العلاقات برمجياً في DAX عبر دالة USERELATIONSHIP و CROSSFILTER للتحكم الديناميكي أثناء تشغيل المقياس.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Activating secondary inactive relationships with USERELATIONSHIP.</li>
+                                        <li>Analyzing sales by Order Date vs Ship Date in the same report.</li>
+                                        <li>Dynamically toggling cross-filter directions via CROSSFILTER.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/H6gSwqL-t_E" title="6 More About DAX Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 32 -->
+                <article class="lesson-accordion-item" id="lesson-32">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-32')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 32</span>
+                            <h4>7 Time Intelligence Functions Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أساسيات ذكاء الوقت (Time Intelligence)؛ الشروط الإلزامية لبناء جدول التاريخ المخصص (Date / Calendar Table).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why Auto Date/Time should be turned off in production models.</li>
+                                        <li>Requirements of a dedicated Calendar Dimension (contiguous dates, marked as date table).</li>
+                                        <li>Generating date tables using CALENDAR and CALENDARAUTO.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Ez-Wok8nnaM" title="7 Time Intelligence Functions Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 33 -->
+                <article class="lesson-accordion-item" id="lesson-33">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-33')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 33</span>
+                            <h4>7 Time Intelligence Functions Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    حسابات التراكم السنوي والشهري (YTD, QTD, MTD)؛ استخدام TOTALYTD و DATESYTD لمتابعة الأداء المالي التراكمي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Calculating Year-to-Date (YTD) measures via TOTALYTD and DATESYTD.</li>
+                                        <li>Configuring Quarter-to-Date (QTD) and Month-to-Date (MTD) KPIs.</li>
+                                        <li>Setting custom fiscal year-end parameters inside date calculations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/nyfzgczDajQ" title="7 Time Intelligence Functions Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 34 -->
+                <article class="lesson-accordion-item" id="lesson-34">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-34')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 34</span>
+                            <h4>7 Time Intelligence Functions Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقارنة الفترات الزمنية السابقة؛ حساب نمو المبيعات السنوي بواسطة SAMEPERIODLASTYEAR و DATEADD.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Comparing performance across periods with SAMEPERIODLASTYEAR.</li>
+                                        <li>Flexible period shifts (days, months, quarters, years) using DATEADD.</li>
+                                        <li>Formulating Year-over-Year (YoY) Growth and Growth Percentage measures.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Qllcbigu3C0" title="7 Time Intelligence Functions Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 35 -->
+                <article class="lesson-accordion-item" id="lesson-35">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-35')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 35</span>
+                            <h4>7 Time Intelligence Functions Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المتوسطات المتحركة والفترات المتتابعة؛ حساب المتوسط المتحرك (Rolling Average) وفترات DATESINPERIOD.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Dynamic moving ranges using DATESINPERIOD and DATESBETWEEN.</li>
+                                        <li>Constructing 30-day and 3-month Rolling Average calculations.</li>
+                                        <li>Smoothing out seasonality fluctuations in business dashboards.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/HU-d1kRiA9E" title="7 Time Intelligence Functions Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 36 -->
+                <article class="lesson-accordion-item" id="lesson-36">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-36')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 36</span>
+                            <h4>8 Data Modelling Project Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 1)؛ دراسة متطلبات بيئة العمل، فحص مصادر البيانات، وتخطيط بنية النموذج.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Enterprise project scope and analytical problem statement.</li>
+                                        <li>Profiling project transaction datasets and external tables.</li>
+                                        <li>Designing the conceptual Star Schema architecture.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/X4zJ_SAJVRE" title="8 Data Modelling Project Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 37 -->
+                <article class="lesson-accordion-item" id="lesson-37">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-37')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 37</span>
+                            <h4>8 Data Modelling Project Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 2)؛ بناء جداول الأبعاد المشتركة، وإنشاء جدول التاريخ، وتعيين المفاتيح الفريدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Building robust Customer, Product, and Territory dimension tables.</li>
+                                        <li>Implementing custom Date Master tables with hierarchical fiscal columns.</li>
+                                        <li>Enforcing clean surrogate keys to prevent mapping duplicates.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/kYLLj0H0zWY" title="8 Data Modelling Project Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 38 -->
+                <article class="lesson-accordion-item" id="lesson-38">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-38')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 38</span>
+                            <h4>8 Data Modelling Project Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 3)؛ ربط العلاقات بين الجداول وضبط درجات التعدد وقواعد التكامل المرجعي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Connecting Fact tables with multiple Dimensions cleanly.</li>
+                                        <li>Verifying relationship cardinality and resolving warnings.</li>
+                                        <li>Structuring Model View layouts for easy stakeholder handover.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/6qmAOt4b5i4" title="8 Data Modelling Project Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 39 -->
+                <article class="lesson-accordion-item" id="lesson-39">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-39')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 39</span>
+                            <h4>8 Data Modelling Project Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 4)؛ صياغة مقاييس العمل الأساسية (المبيعات، التكاليف، الأرباح، وهوامش الربح).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Writing primary financial KPIs (Total Revenue, Total Cost, Gross Margin).</li>
+                                        <li>Formulating margin percentage and unit economics measures.</li>
+                                        <li>Testing measure outputs across multiple categorical cuts.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/dS7OOg2s-3s" title="8 Data Modelling Project Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 40 -->
+                <article class="lesson-accordion-item" id="lesson-40">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-40')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 40</span>
+                            <h4>8 Data Modelling Project Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 5)؛ تطبيق تحليلات ذكاء الوقت وحسابات النمو السنوي والمقارنات التراكمية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Integrating YTD and YoY performance measures into project reports.</li>
+                                        <li>Handling date filters with multiple transaction milestones.</li>
+                                        <li>Building dynamic trend indicators using DAX formatting strings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/0caFYsVnIAE" title="8 Data Modelling Project Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 41 -->
+                <article class="lesson-accordion-item" id="lesson-41">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-41')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 41</span>
+                            <h4>8 Data Modelling Project Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 6)؛ فحص أداء النموذج وتطبيق معايير التحسين وسرعة الاستعلام (Optimization).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Using the Power BI Performance Analyzer to diagnose slow visuals.</li>
+                                        <li>Optimizing DAX expressions to reduce memory and CPU overhead.</li>
+                                        <li>Eliminating redundant columns and reducing model cardinality.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Prmku4sk8m4" title="8 Data Modelling Project Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 42 -->
+                <article class="lesson-accordion-item" id="lesson-42">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-42')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 42</span>
+                            <h4>8 Data Modelling Project Part 7 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مشروع نمذجة البيانات الشامل (الجزء 7)؛ إتمام اللمسات النهائية، توثيق المقاييس، وتجهيز النموذج لمرحلة بناء التقارير.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Final project validation against business requirements.</li>
+                                        <li>Documenting model metadata, measure definitions, and relationships.</li>
+                                        <li>Seamless handover to the Visualization &amp; Reporting track (Part 3).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/STUrcullFMM" title="8 Data Modelling Project Part 7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 43 -->
+                <article class="lesson-accordion-item" id="lesson-43">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-43')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 43</span>
+                            <h4>9 Final Quick Review (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مراجعة سريعة ومكثفة لجميع المفاهيم الجوهرية التي تم تناولها عبر مسار نمذجة البيانات استعداداً للامتحان النهائي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Rapid summary of Star Schemas, Cardinality, and Cross-Filtering.</li>
+                                        <li>Key DAX patterns: CALCULATE, ALL, FILTER, and Iterators.</li>
+                                        <li>Essential Time Intelligence checklist for PL-300 exam prep.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/yetBF8ewYrA" title="9 Final Quick Review" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 44 -->
+                <article class="lesson-accordion-item" id="lesson-44">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-44')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 44</span>
+                            <h4>10 Course Final Exam (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الامتحان النهائي الشامل للمسار؛ أسئلة وتحديات عملية تحاكي اختبار مايكروسوفت الدولي PL-300 لتأكيد جاهزيتك التامة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Full-length PL-300 practice exam covering all Modeling domain skills.</li>
+                                        <li>Scenario-based troubleshooting and architecture decision challenges.</li>
+                                        <li>Final assessment of readiness for official Microsoft certification.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/saXbggH5Cx8" title="10 Course Final Exam" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div> <!-- نهاية course-lessons-accordion-stack -->
+            </div> <!-- نهاية course-lessons-accordion-stack -->
+
+        </main> <!-- نهاية page-body -->
+
+        <!-- ==========================================================================
+             7. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+        <footer class="site-footer">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-title">
+                        <img src="../images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
+                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    </div>
+                    <p class="footer-bio-ar">
+                        منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت الدولية وتكاليف المشروعات الهندسية.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h5 class="footer-col-title">Quick Links</h5>
+                    <div class="footer-quick-nav">
+                        <a href="../courses.html">Courses</a>
+                        <a href="../books.html">Books</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../community.html">Community</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect &amp; Learn</h5>
+                    <div class="footer-social-badges">
+                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
+                            <img src="../images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
+                            <img src="../images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
+                        </a>
+                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
+                            <img src="../images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
+                            <img src="../images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
+                        </a>
+                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
+                            <img src="../images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+                <p>Designed for data enthusiasts &amp; professionals</p>
+            </div>
+        </footer>
+
+    </div> <!-- نهاية site-wrapper -->
+
+    <!-- السكريبت التفاعلي لفتح وإغلاق الأكورديون (Toggle Lesson Logic) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

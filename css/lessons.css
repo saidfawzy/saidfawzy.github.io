@@ -1,6 +1,18 @@
 /* ==========================================================================
-   Lesson Detail Page Styles (e.g. pl300-part1.html)
+   ملف: lessons.css
+   المشروع: منصة Said Fawzy Learning
+   الوصف: تنسيقات صفحات تفاصيل الكورسات والدروس (مثل: pl300-part1.html)
+   يشمل: البانر العلوي للكورس، غلاف الكتاب البصري، كارت التطبيق العملي،
+         أكورديون الدروس، مشغلات الفيديو، والتجاوب مع جميع أحجام الشاشات.
    ========================================================================== */
+
+
+/* ==========================================================================
+   المجموعة 1: بانر رأس الكورس الرئيسي (Course Master Hero)
+   - يحتوي على خلفية متدرجة ناعمة مع إطار علوي بأزرق مايكروسوفت الرسمي.
+   - يعرض العناوين، الأوصاف (عربي/إنجليزي)، والمواصفات السريعة.
+   ========================================================================== */
+
 .course-master-hero {
     border-radius: 24px;
     padding: 32px 36px;
@@ -10,6 +22,7 @@
     border-top: 5px solid var(--ms-blue);
 }
 
+/* شريط الشارات والبادجات العلوية (الشهادة، الجزء، لغة الشرح) */
 .hero-top-meta {
     display: flex;
     align-items: center;
@@ -18,10 +31,40 @@
     margin-bottom: 12px;
 }
 
-.cert-pill { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; background: var(--ms-blue); color: #ffffff; padding: 4px 14px; border-radius: var(--radius-pill); box-shadow: 0 2px 8px rgba(0, 120, 212, 0.28); }
-.part-pill { font-size: 11px; font-weight: 800; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: var(--radius-pill); }
-.lang-pill { font-size: 11px; font-weight: 700; background: #f1f5f9; color: #475569; padding: 4px 12px; border-radius: var(--radius-pill); }
+/* بادج الشهادة الدولية (PL-300) */
+.cert-pill { 
+    font-size: 11px; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: 0.8px; 
+    background: var(--ms-blue); 
+    color: #ffffff; 
+    padding: 4px 14px; 
+    border-radius: var(--radius-pill); 
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.28); 
+}
 
+/* بادج رقم الجزء من السلسلة (Part 01 of 03) */
+.part-pill { 
+    font-size: 11px; 
+    font-weight: 800; 
+    background: #e0f2fe; 
+    color: #0369a1; 
+    padding: 4px 12px; 
+    border-radius: var(--radius-pill); 
+}
+
+/* بادج لغة الشرح والمصطلحات */
+.lang-pill { 
+    font-size: 11px; 
+    font-weight: 700; 
+    background: #f1f5f9; 
+    color: #475569; 
+    padding: 4px 12px; 
+    border-radius: var(--radius-pill); 
+}
+
+/* عنوان الكورس الرئيسي الكبير (H2) */
 .course-master-hero h2 {
     font-size: 32px;
     font-weight: 800;
@@ -31,6 +74,7 @@
     margin-bottom: 6px;
 }
 
+/* الوصف الإنجليزي للكورس (محاذاة لليسار LTR) */
 .hero-desc-en {
     direction: ltr;
     text-align: left;
@@ -41,6 +85,7 @@
     margin-top: 6px;
 }
 
+/* الوصف العربي للكورس (محاذاة لليمين RTL) */
 .hero-desc-ar {
     direction: rtl;
     text-align: right;
@@ -51,6 +96,7 @@
     margin-top: 3px;
 }
 
+/* شبكة المواصفات السريعة للكورس (4 أعمدة: المجال، الدروس، الأسلوب، الكتاب) */
 .course-quick-specs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -60,12 +106,14 @@
     border-top: 1px solid #e2e8f0;
 }
 
+/* عنصر المواصفة الفردي داخل الشبكة */
 .spec-item {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
+/* عنوان المواصفة الصغير بالرمادي */
 .spec-label {
     font-size: 11px;
     font-weight: 800;
@@ -74,10 +122,104 @@
     color: var(--text-muted);
 }
 
+/* القيمة البارزة للمواصفة باللون الكحلي */
 .spec-item strong {
     font-size: 13.5px;
     color: var(--primary-navy);
 }
+
+
+/* ==========================================================================
+   المجموعة 2: تقسيم الهيرو وغلاف الكتاب كمرجع بصري (Hero Split & Book Preview)
+   - يقسم الهيرو إلى عمود تفاصيل عريض (يمين/يسار) وعمود غلاف الكتاب.
+   - يعرض مجسم غلاف الكتاب المعتمد بنسبة (1:1.5) كإثبات بصري ودون تشتيت.
+   ========================================================================== */
+
+/* حاوية التوزيع الثنائي بين تفاصيل الكورس وغلاف الكتاب */
+.hero-layout-split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+/* عمود تفاصيل الكورس (يأخذ المساحة الأكبر 72%) */
+.hero-details-col {
+    flex: 1 1 72%;
+}
+
+/* عمود غلاف الكتاب (يأخذ 25% مع توسط المحاذاة) */
+.hero-book-preview-col {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* كارت غلاف الكتاب ثلاثي الأبعاد والخلفية البيضاء */
+.course-book-card-mini {
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 14px 14px 12px 14px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(0, 120, 212, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 190px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير الارتفاع الناعم عند تمرير الماوس فوق كارت الكتاب */
+.course-book-card-mini:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+}
+
+/* بادج رأس كارت الكتاب (Course Textbook) */
+.book-companion-badge {
+    font-size: 10.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--ms-blue);
+    background: #e0f2fe;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+}
+
+/* إطار صورة الغلاف (يحافظ على النسبة القياسية للكتب 1:1.5) */
+.course-book-img-frame {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0f172a;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.course-book-img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* تلميح أن الكتاب متوفر داخل باكدج الجيتهب بالأسفل */
+.book-included-hint {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   المجموعة 3: كارت التطبيق العملي وملفات التدريب (Hands-On Callout Card)
+   - كارت التحفيز الذهبي "Get Your Hands Dirty!" لتحميل البيانات والماتيريال من GitHub.
+   ========================================================================== */
 
 .hands-on-callout-card {
     margin-top: 24px;
@@ -91,6 +233,7 @@
     gap: 24px;
 }
 
+/* صندوق الأيقونة التعبيرية (🛠️) داخل الكارت */
 .callout-icon-box {
     width: 60px;
     height: 60px;
@@ -104,6 +247,7 @@
     flex-shrink: 0;
 }
 
+/* المساحة النصية داخل كارت التطبيق */
 .callout-text-content {
     flex-grow: 1;
 }
@@ -134,10 +278,12 @@
     line-height: 1.45;
 }
 
+/* عمود زر التنزيل لـ GitHub */
 .callout-action-col {
     flex-shrink: 0;
 }
 
+/* زر التحميل الفخم باللون الأسود المتدرج الخاص بـ GitHub */
 .btn-github-download {
     text-decoration: none;
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
@@ -163,6 +309,12 @@
 .sub-label { font-size: 11px; opacity: 0.75; }
 .btn-github-download .arrow { font-size: 16px; font-weight: 800; }
 
+
+/* ==========================================================================
+   المجموعة 4: أكورديون الدروس الذكي (Lessons Accordion Stack)
+   - يحوي قائمة الدروس (28 درساً) القابلة للفتح والغلق تفاعلياً.
+   ========================================================================== */
+
 .course-lessons-accordion-stack {
     margin-top: 30px;
     display: flex;
@@ -170,6 +322,7 @@
     gap: 14px;
 }
 
+/* بطاقة الدرس الفردية */
 .lesson-accordion-item {
     background: #ffffff;
     border-radius: 20px;
@@ -183,11 +336,13 @@
     box-shadow: 0 10px 24px rgba(140, 160, 185, 0.24);
 }
 
+/* شكل بطاقة الدرس عندما تكون مفتوحة (Active State) */
 .lesson-accordion-item.open {
     border-color: rgba(0, 120, 212, 0.35);
     box-shadow: 0 12px 30px rgba(0, 120, 212, 0.14);
 }
 
+/* الشريط العلوي القابل للنقر لفتح وإغلاق الدرس */
 .lesson-bar-header {
     padding: 16px 22px;
     display: flex;
@@ -206,6 +361,7 @@
     border-bottom: 1px solid #e0effe;
 }
 
+/* الجزء الأيسر من شريط الدرس (رقم الدرس والعنوان) */
 .lesson-bar-left {
     display: flex;
     align-items: center;
@@ -213,6 +369,7 @@
     flex-wrap: wrap;
 }
 
+/* شارة رقم الدرس (Lesson 01) */
 .lesson-chip {
     font-size: 11px;
     font-weight: 800;
@@ -223,6 +380,7 @@
     letter-spacing: 0.5px;
 }
 
+/* عنوان الدرس الرئيسي */
 .lesson-bar-left h4 {
     font-size: 16px;
     font-weight: 800;
@@ -230,6 +388,7 @@
     letter-spacing: -0.2px;
 }
 
+/* الجزء الأيمن من شريط الدرس (تلميح المشاهدة وسهم الفتح الدائري) */
 .lesson-bar-right {
     display: flex;
     align-items: center;
@@ -242,6 +401,7 @@
     color: #64748b;
 }
 
+/* دائرة السهم التفاعلية مع دوران 180 درجة عند الفتح */
 .lesson-arrow-circle {
     width: 32px;
     height: 32px;
@@ -261,6 +421,7 @@
     color: #ffffff;
 }
 
+/* محتوى الدرس الداخلي (مخفي افتراضياً ويظهر عند إضافة كلاس open) */
 .lesson-accordion-content {
     display: none;
 }
@@ -268,6 +429,12 @@
 .lesson-accordion-item.open .lesson-accordion-content {
     display: block;
 }
+
+
+/* ==========================================================================
+   المجموعة 5: محتوى الدرس وتضمين الفيديو (Lesson Content & Video Embed)
+   - يقسم المحتوى الداخلي إلى: شرح ومخرجات تعليمية (يسار) وفيديو يوتيوب (يمين).
+   ========================================================================== */
 
 .lesson-content-split {
     display: flex;
@@ -277,6 +444,7 @@
     padding: 24px;
 }
 
+/* الجانب النصي لشرح الدرس (54% من العرض) */
 .lesson-text-side {
     flex: 0 0 54%;
     display: flex;
@@ -284,6 +452,7 @@
     gap: 12px;
 }
 
+/* النص التمهيدي للدرس باللغة العربية */
 .lesson-lead-ar {
     direction: rtl;
     text-align: right;
@@ -292,6 +461,7 @@
     line-height: 1.55;
 }
 
+/* كارت النقاط المكتسبة والمخرجات التعليمية (What You'll Learn) */
 .lesson-takeaways-card {
     background: #f8fafc;
     border-radius: 14px;
@@ -316,6 +486,7 @@
     gap: 5px;
 }
 
+/* بنود النقاط المستفادة مع علامة الصح الخضراء (✓) */
 .lesson-takeaways-card ul li {
     font-size: 12.5px;
     color: #475569;
@@ -332,14 +503,16 @@
     font-weight: 800;
 }
 
+/* جانب مشغل الفيديو (حوالي 46% من العرض) */
 .lesson-media-side {
     flex: 0 0 calc(46% - 24px);
 }
 
+/* إطار تثبيت نسبة الأبعاد للفيديو (16:9 Responsive Ratio) */
 .video-container-16-9 {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* نسبة 16 إلى 9 القياسية */
     height: 0;
     border-radius: 14px;
     overflow: hidden;
@@ -356,32 +529,149 @@
     border: 0;
 }
 
+
+/* ==========================================================================
+   المجموعة 6: التجاوب مع الشاشات المتوسطة والأجهزة اللوحية (Max-Width: 992px)
+   ========================================================================== */
+
 @media (max-width: 992px) {
-    .course-quick-specs { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
-    .hands-on-callout-card { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
-    .btn-github-download { width: 100% !important; justify-content: center !important; }
-    .lesson-content-split { flex-direction: column-reverse !important; gap: 20px !important; padding: 20px !important; }
-    .lesson-text-side, .lesson-media-side { flex: 1 1 100% !important; width: 100% !important; }
+    /* تحويل شبكة المواصفات السريعة لعمودين بدلاً من 4 */
+    .course-quick-specs { 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 14px !important; 
+    }
+
+    /* تحويل الهيرو لترتيب عمودي مع جعل غلاف الكتاب شريطاً أفقياً */
+    .hero-layout-split {
+        flex-direction: column-reverse !important;
+        gap: 22px !important;
+        align-items: stretch !important;
+    }
+    .hero-book-preview-col {
+        justify-content: flex-start !important;
+    }
+    .course-book-card-mini {
+        flex-direction: row !important;
+        max-width: 100% !important;
+        padding: 12px 16px !important;
+        gap: 16px !important;
+    }
+    .course-book-img-frame {
+        width: 75px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* جعل كارت التطبيق العملي عمودياً مع تمدد زر الجيتهب بالعرض الكامل */
+    .hands-on-callout-card { 
+        flex-direction: column !important; 
+        align-items: flex-start !important; 
+        gap: 16px !important; 
+    }
+    .btn-github-download { 
+        width: 100% !important; 
+        justify-content: center !important; 
+    }
+
+    /* جعل الفيديو فوق النص في الشاشات المتوسطة لراحة المشاهدة */
+    .lesson-content-split { 
+        flex-direction: column-reverse !important; 
+        gap: 20px !important; 
+        padding: 20px !important; 
+    }
+    .lesson-text-side, 
+    .lesson-media-side { 
+        flex: 1 1 100% !important; 
+        width: 100% !important; 
+    }
 }
 
+
+/* ==========================================================================
+   المجموعة 7: التجاوب مع شاشات الهواتف الذكية الصغيرة (Max-Width: 768px)
+   ========================================================================== */
+
 @media (max-width: 768px) {
-    .lesson-accordion-item { height: auto !important; min-height: unset !important; max-height: unset !important; }
-    .course-master-hero { padding: 20px 16px !important; border-radius: 18px !important; }
-    .course-master-hero h2 { font-size: 22px !important; line-height: 1.25 !important; }
-    .hero-desc-en, .hero-desc-ar { font-size: 12.5px !important; }
-    .course-quick-specs { grid-template-columns: 1fr 1fr !important; gap: 12px !important; margin-top: 18px !important; padding-top: 16px !important; }
-    .hands-on-callout-card { padding: 18px 16px !important; border-radius: 18px !important; }
-    .callout-icon-box { width: 46px !important; height: 46px !important; font-size: 22px !important; }
-    .callout-title-row h3 { font-size: 16.5px !important; }
-    .callout-desc-en, .callout-desc-ar { font-size: 12px !important; }
-    .lesson-bar-header { padding: 12px 14px !important; }
-    .lesson-bar-left { gap: 8px !important; }
-    .lesson-chip { font-size: 10px !important; padding: 2px 8px !important; }
-    .lesson-bar-left h4 { font-size: 14px !important; line-height: 1.35 !important; }
-    .lesson-play-hint { display: none !important; }
-    .lesson-arrow-circle { width: 28px !important; height: 28px !important; font-size: 9px !important; }
-    .lesson-content-split { padding: 14px !important; gap: 14px !important; }
-    .lesson-lead-ar { font-size: 12.5px !important; }
-    .lesson-takeaways-card { padding: 12px 14px !important; }
-    .lesson-takeaways-card ul li { font-size: 12px !important; }
+    .lesson-accordion-item { 
+        height: auto !important; 
+        min-height: unset !important; 
+        max-height: unset !important; 
+    }
+    
+    /* تقليص حواف وحجم خطوط رأس الهيرو */
+    .course-master-hero { 
+        padding: 20px 16px !important; 
+        border-radius: 18px !important; 
+    }
+    .course-master-hero h2 { 
+        font-size: 22px !important; 
+        line-height: 1.25 !important; 
+    }
+    .hero-desc-en, 
+    .hero-desc-ar { 
+        font-size: 12.5px !important; 
+    }
+
+    .course-quick-specs { 
+        grid-template-columns: 1fr 1fr !important; 
+        gap: 12px !important; 
+        margin-top: 18px !important; 
+        padding-top: 16px !important; 
+    }
+
+    /* تقليص أبعاد كارت العملي ومقاسات الأيقونة */
+    .hands-on-callout-card { 
+        padding: 18px 16px !important; 
+        border-radius: 18px !important; 
+    }
+    .callout-icon-box { 
+        width: 46px !important; 
+        height: 46px !important; 
+        font-size: 22px !important; 
+    }
+    .callout-title-row h3 { 
+        font-size: 16.5px !important; 
+    }
+    .callout-desc-en, 
+    .callout-desc-ar { 
+        font-size: 12px !important; 
+    }
+
+    /* شريط عنوان الدرس على الموبايل */
+    .lesson-bar-header { 
+        padding: 12px 14px !important; 
+    }
+    .lesson-bar-left { 
+        gap: 8px !important; 
+    }
+    .lesson-chip { 
+        font-size: 10px !important; 
+        padding: 2px 8px !important; 
+    }
+    .lesson-bar-left h4 { 
+        font-size: 14px !important; 
+        line-height: 1.35 !important; 
+    }
+    .lesson-play-hint { 
+        display: none !important; /* إخفاء كلمة Watch & Learn لتوفير المساحة */
+    }
+    .lesson-arrow-circle { 
+        width: 28px !important; 
+        height: 28px !important; 
+        font-size: 9px !important; 
+    }
+
+    /* محتوى شرح الدرس والنقاط المستفادة على الموبايل */
+    .lesson-content-split { 
+        padding: 14px !important; 
+        gap: 14px !important; 
+    }
+    .lesson-lead-ar { 
+        font-size: 12.5px !important; 
+    }
+    .lesson-takeaways-card { 
+        padding: 12px 14px !important; 
+    }
+    .lesson-takeaways-card ul li { 
+        font-size: 12px !important; 
+    }
 }

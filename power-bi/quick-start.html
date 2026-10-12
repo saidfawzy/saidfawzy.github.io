@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Quick Start | Said Fawzy Learning</title>
+    
+    <!-- استدعاء ملفات الستايل الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="../images/logo/saidfawzy-icon.png">
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png">
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Power BI Quick Start | Said Fawzy Learning">
+    <meta property="og:description" content="المعسكر التدريبي المكثف لاحتراف Power BI من الصفر حتى بناء لوحات الأعمال والنشر السحابي في 4 أيام عملية.">
+    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
+    <meta property="og:url" content="https://saidfawzy.github.io/power-bi/quick-start.html">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+        <header class="vibrant-banner">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../courses.html" class="nav-item active">Courses</a>
+                <a href="../books.html" class="nav-item">Books</a>
+                <a href="../resources.html" class="nav-item">Resources</a>
+                <a href="../community.html" class="nav-item">Community</a>
+                <a href="../gallery.html" class="nav-item">Gallery</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <a href="../contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../courses.html">Courses</a>
+                <span class="separator">›</span>
+                <a href="index.html">Power BI</a>
+                <span class="separator">›</span>
+                <span class="current-crumb">Power BI Quick Start</span>
+            </div>
+
+            <a href="index.html" class="btn-back-pill">
+                ← Back to Power BI Track
+            </a>
+        </div>
+
+        <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+        <main class="page-body">
+
+            <!-- ==========================================================================
+                 بانر رأس الكورس المطور (Course Master Hero with Book Visual Badge)
+                 ========================================================================== -->
+            <section class="course-master-hero with-book-cover">
+                <div class="hero-layout-split">
+                    
+                    <!-- عمود تفاصيل ومواصفات الكورس -->
+                    <div class="hero-details-col">
+                        <div class="hero-top-meta">
+                            <span class="cert-pill" style="background: #059669;">Hands-On Bootcamp</span>
+                            <span class="part-pill">4-Day Intensive Track</span>
+                            <span class="lang-pill">Arabic Audio / English Terms</span>
+                        </div>
+
+                        <h2>Power BI Quick Start</h2>
+
+                        <p class="hero-desc-en">
+                            An intensive, practical zero-to-hero bootcamp covering end-to-end Power BI workflows: data extraction and ETL shaping, dimensional modeling, DAX foundations, executive dashboard UI, and cloud sharing.
+                        </p>
+                        <p class="hero-desc-ar">
+                            المعسكر التدريبي العملي المكثف لاحتراف دورة حياة Power BI كاملة في 4 أيام: سحب وتنظيف البيانات بـ Power Query، بناء نموذج البيانات، دوال DAX، تصميم اللوحات التفاعلية، والنشر السحابي ومشاريع التخرج.
+                        </p>
+
+                        <div class="course-quick-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Focus Area</span>
+                                <strong>End-to-End Business BI</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Lessons</span>
+                                <strong>50 Hands-On Modules</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Format</span>
+                                <strong>Intensive 4-Day Workshop</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Course Textbook</span>
+                                <strong>Included in Material 📦</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- عمود العرض البصري لغلاف الكتاب المعتمد -->
+                    <div class="hero-book-preview-col">
+                        <div class="course-book-card-mini">
+                            <span class="book-companion-badge">Course Textbook</span>
+                            <div class="course-book-img-frame">
+                                <img src="../images/book-covers/pbi-book-4.png" alt="Power BI Quick Start Book Cover" onerror="this.src='../images/logo/saidfawzy-icon.png'">
+                            </div>
+                            <span class="book-included-hint">Included in GitHub Repo ↓</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 5. كارت التحفيز العملي ورابط مستودع GitHub
+                 ========================================================================== -->
+            <section class="hands-on-callout-card">
+                <div class="callout-icon-box">
+                    <span>🛠️</span>
+                </div>
+                <div class="callout-text-content">
+                    <div class="callout-title-row">
+                        <h3>Get Your Hands Dirty! (التطبيق العملي خطوة بخطوة)</h3>
+                    </div>
+                    <p class="callout-desc-en">
+                        Accelerate your learning through immediate hands-on practice. Download starter datasets, follow along day-by-day labs, and build the 12-part comprehensive capstone business project.
+                    </p>
+                    <p class="callout-desc-ar">
+                        التطبيق العملي الفوري هو مفتاح الإتقان. حمّل مجموعات البيانات وملفات التمارين لمتابعة أيام الورشة الأربعة، وبناء مشروع التخرج الشامل خطوة بخطوة من مستودع GitHub المخصص للكورس.
+                    </p>
+                </div>
+                <div class="callout-action-col">
+                    <a href="https://github.com/saidfawzy/Power-BI-Quick-Start" target="_blank" class="btn-github-download">
+                        <span class="gh-icon">📁</span>
+                        <div class="btn-labels">
+                            <span class="main-label">Download Course Material</span>
+                            <span class="sub-label">GitHub Repository &amp; Datasets</span>
+                        </div>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 6. قائمة الدروس الـ 50 لمسار Power BI Quick Start
+                 ========================================================================== -->
+            <div class="course-lessons-accordion-stack">
+
+                <!-- الدرس 01 -->
+                <article class="lesson-accordion-item open" id="lesson-01">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 01</span>
+                            <h4>00 Course Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة المعسكر التدريبي السريع؛ نظرة عامة على محاور الأيام الأربعة، آلية التطبيق العملي، وأهمية اكتساب المهارة العملية المتكاملة لذكاء الأعمال.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Bootcamp structure and 4-day learning milestones.</li>
+                                        <li>How to set up the Power BI Desktop working environment.</li>
+                                        <li>Working with companion datasets and lab resources.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/_UkXepc3VJY" title="00 Course Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 02 -->
+                <article class="lesson-accordion-item" id="lesson-02">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 02</span>
+                            <h4>01 Introduction to Power BI Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    التعريف بمنظومة Power BI؛ فلسفة ذكاء الأعمال، المقارنة مع Excel، وتحديد متى يحتاج محلل البيانات للانتقال لبيئة Power BI.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Power BI ecosystem architecture and modern business value.</li>
+                                        <li>Excel vs Power BI: Data scale, relationships, and automation.</li>
+                                        <li>Understanding the end-to-end data processing lifecycle.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/_cTsAmqswTk" title="01 Introduction to Power BI Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 03 -->
+                <article class="lesson-accordion-item" id="lesson-03">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 03</span>
+                            <h4>01 Introduction to Power BI Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تثبيت البرنامج واستكشاف واجهة العمل؛ تنزيل وتثبيت Power BI Desktop، والتعرف على واجهات العرض الثلاثة (Report, Table, Model).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Installing and configuring Power BI Desktop preferences.</li>
+                                        <li>Navigating Report View, Table View, and Model View.</li>
+                                        <li>Understanding ribbons, visual panes, and data fields panels.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/cPq5W0-mzsM" title="01 Introduction to Power BI Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 04 -->
+                <article class="lesson-accordion-item" id="lesson-04">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 04</span>
+                            <h4>01 Introduction to Power BI Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    بناء أول تقرير عملي سريع؛ جلب أول جدول بيانات، رسم المخططات البسيطة، واستكشاف التفاعل التلقائي بين العناصر.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Loading your first sample data table into the canvas.</li>
+                                        <li>Creating basic bar and donut charts in minutes.</li>
+                                        <li>Testing interactive cross-filtering on sample sales records.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/HGCHNBwrfu0" title="01 Introduction to Power BI Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 05 -->
+                <article class="lesson-accordion-item" id="lesson-05">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 05</span>
+                            <h4>02 Extracting and Transforming Data Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة محرك Power Query؛ استكشاف شاشة تحرير الاستعلامات وقائمة الخطوات المطبقة (Applied Steps) ومنهجية الـ ETL.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Why ETL and data preparation make up the core of analytics.</li>
+                                        <li>Power Query Editor interface tour and formula bar basics.</li>
+                                        <li>How Applied Steps record and automate transformation rules.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/G_BXVZvj_nI" title="02 Extracting and Transforming Data Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 06 -->
+                <article class="lesson-accordion-item" id="lesson-06">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-06')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 06</span>
+                            <h4>02 Extracting and Transforming Data Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تنظيف الصفوف والأعمدة؛ إزالة الصفوف العليا والفارغة، ترويج الصف الأول كعناوين (Promote Headers)، وحذف التكرار.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Using Use First Row as Headers properly.</li>
+                                        <li>Filtering blanks, errors, and removing duplicate records.</li>
+                                        <li>Trimming unnecessary columns to minimize dataset size.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/BRZuIhf3R18" title="02 Extracting and Transforming Data Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 07 -->
+                <article class="lesson-accordion-item" id="lesson-07">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-07')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 07</span>
+                            <h4>02 Extracting and Transforming Data Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    ضبط وتصحيح أنواع البيانات (Data Types)؛ تحويل التواريخ والأرقام والنصوص، وتجنب أخطاء التحويل والتنسيق المحلي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Enforcing explicit data types on every column.</li>
+                                        <li>Handling date and decimal format mismatches across locales.</li>
+                                        <li>Troubleshooting and replacing data loading errors.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/XBbocCPi2dA" title="02 Extracting and Transforming Data Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 08 -->
+                <article class="lesson-accordion-item" id="lesson-08">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-08')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 08</span>
+                            <h4>02 Extracting and Transforming Data Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تقسيم واستخراج النصوص والأعمدة الشرطية (Conditional Columns) لإنشاء تصنيفات مخصصة ومجموعات أعمال جديدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Splitting columns by delimiters, character counts, and transitions.</li>
+                                        <li>Building business tiers with Conditional Columns logic.</li>
+                                        <li>Using Column from Examples for quick pattern extraction.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/dYoO2M1hE-s" title="02 Extracting and Transforming Data Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 09 -->
+                <article class="lesson-accordion-item" id="lesson-09">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-09')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 09</span>
+                            <h4>02 Extracting and Transforming Data Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دمج وإلحاق الاستعلامات (Merge &amp; Append Queries)؛ ربط الجداول بجداول فرعية وتكديس ملفات المبيعات الشهرية المتفرقة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Appending multiple periodic transactional datasets into one master table.</li>
+                                        <li>Merging queries using primary/foreign key joins (Left Outer).</li>
+                                        <li>Disabling Enable Load for intermediate staging queries.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Z1Pe7JOh0kc" title="02 Extracting and Transforming Data Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 10 -->
+                <article class="lesson-accordion-item" id="lesson-10">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-10')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 10</span>
+                            <h4>02 Extracting and Transforming Data Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    عمليات إلغاء محور الأعمدة (Unpivot Columns) وفحص جودة البيانات (Data Profiling) قبل تحميل النموذج.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Transforming wide matrix tables into normalized tabular rows (Unpivot).</li>
+                                        <li>Activating Column Quality and Value Distribution in View ribbon.</li>
+                                        <li>Applying Close &amp; Apply to load clean tables into the data model.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/5-ccLIZuxXg" title="02 Extracting and Transforming Data Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 11 -->
+                <article class="lesson-accordion-item" id="lesson-11">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-11')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 11</span>
+                            <h4>Course Day 2 Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة اليوم التدريبي الثاني؛ الانتقال من مرحلة تجهيز البيانات إلى قلب المحرك التحليلي: نمذجة البيانات (Data Modeling) وصياغة DAX.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Day 2 learning plan: Relational schemas and computational formulas.</li>
+                                        <li>Reviewing clean tables ready for star schema relationships.</li>
+                                        <li>Setting analytical goals for measures and business KPIs.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/_kKqBMU7H-s" title="Course Day 2 Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 12 -->
+                <article class="lesson-accordion-item" id="lesson-12">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-12')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 12</span>
+                            <h4>03 Data Modelling Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المفاهيم الجوهرية لنمذجة البيانات؛ جداول الحقائق (Fact Tables) وجداول الأبعاد (Dimension Tables) ومفهوم المفاتيح الفريدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Fact tables (numeric metrics) vs Dimensions (descriptive filters).</li>
+                                        <li>Primary key and Foreign key relationship mapping.</li>
+                                        <li>Why flat single-table models fail on scale and performance.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/IQZfgiig0Aw" title="03 Data Modelling Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 13 -->
+                <article class="lesson-accordion-item" id="lesson-13">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-13')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 13</span>
+                            <h4>03 Data Modelling Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    بناء مخطط النجمة (Star Schema)؛ معمارية التصميم القياسي في Power BI وتنظيم الجداول في واجهة Model View.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Star Schema layout: Surrounding fact tables with dimension satellites.</li>
+                                        <li>Arranging Model View diagrams cleanly for readability.</li>
+                                        <li>Hiding key columns from the end-user report canvas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/TPThB92Ww-w" title="03 Data Modelling Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 14 -->
+                <article class="lesson-accordion-item" id="lesson-14">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-14')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 14</span>
+                            <h4>03 Data Modelling Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    درجات العلاقات (Cardinality)؛ شرح العلاقات من نوع 1-to-Many وتفادي مخاطر علاقات Many-to-Many الشائعة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>One-to-Many vs Many-to-One cardinality configurations.</li>
+                                        <li>Why Many-to-Many relationships should be modeled with bridge tables.</li>
+                                        <li>Validating relationship integrity and referential warnings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/ReFsMqUKRYE" title="03 Data Modelling Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 15 -->
+                <article class="lesson-accordion-item" id="lesson-15">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-15')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 15</span>
+                            <h4>03 Data Modelling Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    اتجاه الفلترة المتبادلة (Cross Filter Direction) والعلاقات النشطة وغير النشطة بين التواريخ والمعاملات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Single vs Both cross-filtering directions and performance impacts.</li>
+                                        <li>Handling active and inactive relationships (e.g. Order vs Ship date).</li>
+                                        <li>Best practices for maintaining unambiguous filter flows.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/fRAvjFxgREc" title="03 Data Modelling Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 16 -->
+                <article class="lesson-accordion-item" id="lesson-16">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-16')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 16</span>
+                            <h4>03 Data Modelling Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    بناء جدول التاريخ المخصص (Date Master Table)؛ إنشاء التسلسل الزمني وتصنيفه كـ Date Table لتفعيل تحليلات الوقت.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Generating standard calendar tables via DAX (CALENDAR / CALENDARAUTO).</li>
+                                        <li>Using Mark as Date Table to ensure contiguous integrity.</li>
+                                        <li>Building hierarchical time dimensions (Year, Quarter, Month, Week).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Mekl7tKifiI" title="03 Data Modelling Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 17 -->
+                <article class="lesson-accordion-item" id="lesson-17">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-17')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 17</span>
+                            <h4>04 Introduction to DAX Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مدخل إلى لغة DAX؛ الفرق بين الأعمدة المحسوبة (Calculated Columns) والمقاييس الصريحة (Explicit Measures).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>DAX syntax and foundational concepts for beginners.</li>
+                                        <li>Calculated Columns (stored row values) vs Measures (on-the-fly math).</li>
+                                        <li>Creating a dedicated Measures Table to organize KPI formulas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/CFPCqmq8xTQ" title="04 Introduction to DAX Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 18 -->
+                <article class="lesson-accordion-item" id="lesson-18">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-18')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 18</span>
+                            <h4>04 Introduction to DAX Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال التجميع والعد الأساسية؛ كتابة مقاييس SUM و AVERAGE و COUNT و DISTINCTCOUNT للعمليات الحسابية القياسية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Basic scalar aggregations for financial metrics.</li>
+                                        <li>Counting rows vs unique entities (DISTINCTCOUNT for customers/invoices).</li>
+                                        <li>Formatting numeric outputs with currency symbols and decimal places.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/XYIAB-_SqnM" title="04 Introduction to DAX Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 19 -->
+                <article class="lesson-accordion-item" id="lesson-19">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-19')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 19</span>
+                            <h4>04 Introduction to DAX Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال التكرار (Iterators - X Functions)؛ حساب حاصل ضرب الكميات في الأسعار على مستوى السطر باستخدام SUMX.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Row Context iteration using SUMX and AVERAGEX.</li>
+                                        <li>Computing Total Revenue (Price * Units) dynamically without helper columns.</li>
+                                        <li>Performance advantages of iterator measures over physical table columns.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/3joCM0JxrxY" title="04 Introduction to DAX Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 20 -->
+                <article class="lesson-accordion-item" id="lesson-20">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-20')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 20</span>
+                            <h4>04 Introduction to DAX Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    سياق الفلترة وأقوى دوال DAX؛ دالة CALCULATE وتعديل سياق الحسابات الفورية ومسح الفلاتر بواسطة دالة ALL.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Understanding Filter Context dynamics in visual matrices.</li>
+                                        <li>Using CALCULATE to overwrite active visual filters.</li>
+                                        <li>Formulating Percentage of Total using CALCULATE + ALL.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/19r3d3Xguoc" title="04 Introduction to DAX Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 21 -->
+                <article class="lesson-accordion-item" id="lesson-21">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-21')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 21</span>
+                            <h4>04 Introduction to DAX Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    دوال ذكاء الوقت البسيطة (Time Intelligence) وحسابات التراكم السنوي (YTD) ودالة DIVIDE الآمنة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Implementing TOTALYTD for cumulative financial revenue tracking.</li>
+                                        <li>Preventing zero-division errors using the safe DIVIDE function.</li>
+                                        <li>Review of core DAX best practices before dashboard visual design.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/gL3q1dEj5yg" title="04 Introduction to DAX Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 22 -->
+                <article class="lesson-accordion-item" id="lesson-22">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-22')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 22</span>
+                            <h4>05 Course Day 3 Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة اليوم التدريبي الثالث؛ الانتقال للواجهات المرئية وتصميم التقارير التنفيذية التفاعلية ولوحات القيادة (Dashboards).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Day 3 roadmap: Layout design, visual variety, and interactive storytelling.</li>
+                                        <li>Understanding the user experience of corporate decision-makers.</li>
+                                        <li>Preparing visuals to render DAX measures clearly.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/CTC6zGZKLZo" title="05 Course Day 3 Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 23 -->
+                <article class="lesson-accordion-item" id="lesson-23">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-23')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 23</span>
+                            <h4>05 Report Design Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مبادئ التخطيط والألوان؛ تنسيق أبعاد الصفحة، اختيار لوحات الألوان المؤسسية المتناسقة، وتجنب فوضى التصميم.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Report grid alignment, margins, and whitespace essentials.</li>
+                                        <li>Applying custom report themes and corporate color standards.</li>
+                                        <li>Establishing visual hierarchy for immediate comprehension.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/OYdArvB0Bqw" title="05 Report Design Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 24 -->
+                <article class="lesson-accordion-item" id="lesson-24">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-24')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 24</span>
+                            <h4>05 Report Design Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تصميم بطاقات المؤشرات الرئيسية (KPI Cards)؛ استخدام البطاقات الحديثة لعرض أهم أرقام الإيرادات والأرباح بوضوح.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Styling single and multi-metric Cards with callouts.</li>
+                                        <li>Adding comparison reference labels and trend status icons.</li>
+                                        <li>Formatting numbers with dynamic abbreviations (K, M, B).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/pksKNdCBD4w" title="05 Report Design Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 25 -->
+                <article class="lesson-accordion-item" id="lesson-25">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-25')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 25</span>
+                            <h4>05 Report Design Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المخططات الشريطية والعمودية المقارنة؛ تصميم Clustered و Stacked Bar/Column Charts ومقارنة المبيعات عبر الفئات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Configuring Clustered Bar and Column comparisons.</li>
+                                        <li>Customizing X and Y axes, title labels, and data colors.</li>
+                                        <li>Applying conditional color formatting based on sales targets.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/jdiJLtpnVPY" title="05 Report Design Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 26 -->
+                <article class="lesson-accordion-item" id="lesson-26">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-26')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 26</span>
+                            <h4>05 Report Design Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المخططات الخطية والاتجاهات الزمنية (Line &amp; Area Charts)؛ تتبع نمو الأداء عبر الشهور وتفعيل خطوط التوقع (Forecast).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Plotting monthly and quarterly trends on continuous time axes.</li>
+                                        <li>Adding trend lines, min/max points, and markers.</li>
+                                        <li>Enabling date hierarchy Drill Down directly on visual headers.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/hcpUMBCJBIc" title="05 Report Design Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 27 -->
+                <article class="lesson-accordion-item" id="lesson-27">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-27')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 27</span>
+                            <h4>05 Report Design Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مخططات الدونات ونسب الحصص السوقية (Donut Charts &amp; Treemaps) وتوزيع حصص المبيعات بطريقة احترافية متوازنة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Designing balanced Donut charts with top product shares.</li>
+                                        <li>Utilizing Treemap rectangles for large categorical structures.</li>
+                                        <li>Formatting data labels to show percentage alongside values.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/cY08GpOxaTs" title="05 Report Design Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 28 -->
+                <article class="lesson-accordion-item" id="lesson-28">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-28')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 28</span>
+                            <h4>05 Report Design Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تصميم الجداول والمصفوفات التفاعلية (Matrix &amp; Table Visuals)؛ تفعيل التنسيق الشرطي وأشرطة البيانات الملونة (Data Bars).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Structuring multi-level matrix row hierarchies.</li>
+                                        <li>Applying conditional background gradients and KPI icons.</li>
+                                        <li>Formatting subtotals and Grand Totals cleanly.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/g-BI2Cf7f10" title="05 Report Design Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 29 -->
+                <article class="lesson-accordion-item" id="lesson-29">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-29')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 29</span>
+                            <h4>05 Report Design Part 7 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الرسوم الجغرافية والخرائط (Map Visuals)؛ ربط بيانات الدول والمدن وعرض أحجام المبيعات حسب الموقع الجغرافي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Configuring geographic data category tags in Data View.</li>
+                                        <li>Bubble sizing by sales volume across regional territories.</li>
+                                        <li>Troubleshooting geo-location mapping ambiguities.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Z-uU00BhKRg" title="05 Report Design Part 7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 30 -->
+                <article class="lesson-accordion-item" id="lesson-30">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-30')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 30</span>
+                            <h4>05 Report Design Part 8 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    شرائح التصفية التفاعلية (Slicers)؛ تصميم فلاتر التاريخ والسنوات والقوائم المنسدلة وأزرار التحديد الحديثة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Configuring Dropdown, Tile, and Between Date Slicers.</li>
+                                        <li>Modern button-style slicer visual configurations.</li>
+                                        <li>Restricting single vs multi-select user interaction modes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/GtkM8sNxuR0" title="05 Report Design Part 8" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 31 -->
+                <article class="lesson-accordion-item" id="lesson-31">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-31')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 31</span>
+                            <h4>05 Report Design Part 9 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    التحكم في التفاعل بين الرسوم (Edit Interactions) لمنع التشويه البصري وضبط تأثير الفلاتر على الرسوم المحددة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Activating Format &gt; Edit Interactions on the ribbon.</li>
+                                        <li>Toggling between Filter, Highlight, and None modes.</li>
+                                        <li>Preventing visual performance degradation with selective filtering.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/MxlhvsBklcA" title="05 Report Design Part 9" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 32 -->
+                <article class="lesson-accordion-item" id="lesson-32">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-32')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 32</span>
+                            <h4>05 Report Design Part 10 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الإشارات المرجعية (Bookmarks) وقائمة التحديد (Selection Pane)؛ بناء قوائم ونوافذ منبثقة تفاعلية للوحة القيادة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Capturing dashboard visual states with Bookmarks.</li>
+                                        <li>Controlling layer visibility and order in Selection Pane.</li>
+                                        <li>Building interactive slide-out slicer panels.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/TDBSYRw6_cg" title="05 Report Design Part 10" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 33 -->
+                <article class="lesson-accordion-item" id="lesson-33">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-33')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 33</span>
+                            <h4>05 Report Design Part 11 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    أزرار التنقل التفاعلية (Action Buttons &amp; Navigation)؛ ربط الأزرار بالإشارات المرجعية والتنقل التلقائي بين الصفحات.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Inserting and styling Action Buttons (Bookmark, Page navigation).</li>
+                                        <li>Managing button hover and active click states.</li>
+                                        <li>Setting up automated Page Navigator tab bars.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Vnx9jxobJho" title="05 Report Design Part 11" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 34 -->
+                <article class="lesson-accordion-item" id="lesson-34">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-34')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 34</span>
+                            <h4>05 Report Design Part 12 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    تلميحات الماوس المخصصة (Custom Tooltip Pages)؛ إنشاء صفحات مصغرة تظهر ديناميكياً لتقديم تفاصيل إضافية عند التمرير.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Configuring Tooltip page canvas type and hidden visibility.</li>
+                                        <li>Binding custom tooltip pages to main charts.</li>
+                                        <li>Enriching summary visuals with instant granular breakdowns.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/xxJbAQqGkPI" title="05 Report Design Part 12" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 35 -->
+                <article class="lesson-accordion-item" id="lesson-35">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-35')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 35</span>
+                            <h4>06 Publishing and Sharing Reports (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    نشر ومشاركة التقارير عبر السحابة (Power BI Service)؛ إنشاء مساحات العمل (Workspaces) وضبط خيارات النشر والمشاركة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Publishing Desktop pbix files to Power BI Service online.</li>
+                                        <li>Managing cloud workspaces and dataset permissions.</li>
+                                        <li>Sharing reports with business users via secure links.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/j8_PX-smr-c" title="06 Publishing and Sharing Reports" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 36 (مصحح ومحدث) -->
+                <article class="lesson-accordion-item" id="lesson-36">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-36')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 36</span>
+                            <h4>Course Day 4 Introduction (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    مقدمة اليوم التدريبي الرابع والأخير؛ استعراض خريطة مشاريع التخرج النهائية، مراجعة دورة العمل المتكاملة (ETL &amp; Data Cleaning، نمذجة البيانات، الـ DAX، والـ Visualization)، والتمهيد لبناء لوحات قيادة المبيعات ونشرها السحابي والامتحان العملي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Overview of Day 4 capstone projects and practical exam format.</li>
+                                        <li>Synthesizing Power Query data cleaning, data modeling, and basic DAX.</li>
+                                        <li>Roadmap for building, publishing, and creating final sales dashboards.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Sybr9D0La2E" title="Course Day 4 Introduction" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 37 -->
+                <article class="lesson-accordion-item" id="lesson-37">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-37')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 37</span>
+                            <h4>07 Course Final Projects Part 1 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 1)؛ فحص مصادر البيانات الخام للمشروع، وفهم سيناريو العمل وتحليل متطلبات لوحة الإدارة التنفيذية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Ingesting raw company transactions and master files.</li>
+                                        <li>Identifying reporting KPIs needed by executive leadership.</li>
+                                        <li>Setting up the new Power BI project workspace file.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/ZQ6nhBilqtM" title="07 Course Final Projects Part 1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 38 -->
+                <article class="lesson-accordion-item" id="lesson-38">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-38')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 38</span>
+                            <h4>07 Course Final Projects Part 2 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 2)؛ تطبيق تحويلات Power Query الشاملة لتنظيف الجداول وتجهيز جداول الحقائق والأبعاد للمشروع.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Cleaning transactional anomalies and missing values in Power Query.</li>
+                                        <li>Formatting text casing and stripping unnecessary whitespace.</li>
+                                        <li>Normalizing data structures for optimal dimensional integration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/MbghdviPrRE" title="07 Course Final Projects Part 2" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 39 -->
+                <article class="lesson-accordion-item" id="lesson-39">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-39')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 39</span>
+                            <h4>07 Course Final Projects Part 3 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 3)؛ دمج الجداول المتفرقة وبناء جدول التاريخ المخصص ومزامنة مفاتيح الربط الأولية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Generating dynamic master calendar tables for the project.</li>
+                                        <li>Creating clean surrogate keys across products and branches.</li>
+                                        <li>Finalizing staging loads into the analytical engine.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/ESBAxivj6bc" title="07 Course Final Projects Part 3" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 40 -->
+                <article class="lesson-accordion-item" id="lesson-40">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-40')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 40</span>
+                            <h4>07 Course Final Projects Part 4 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 4)؛ بناء مخطط النجمة (Star Schema) الكامل للمشروع وربط العلاقات 1-to-Many والتحقق من سلامتها.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Establishing one-to-many relationship connections cleanly.</li>
+                                        <li>Setting single cross-filter direction across dimensions.</li>
+                                        <li>Organizing fields into intuitive display folders.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/vkUWvuyTb0I" title="07 Course Final Projects Part 4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 41 -->
+                <article class="lesson-accordion-item" id="lesson-41">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-41')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 41</span>
+                            <h4>07 Course Final Projects Part 5 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 5)؛ صياغة مقاييس DAX التأسيسية: المبيعات الإجمالية، التكاليف، وهوامش الربح لكل وحدة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Writing primary revenue, cost, and profit DAX measures.</li>
+                                        <li>Calculating gross margin percentages using DIVIDE.</li>
+                                        <li>Creating dedicated KPI formatting strings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/Q73s71lpitA" title="07 Course Final Projects Part 5" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 42 -->
+                <article class="lesson-accordion-item" id="lesson-42">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-42')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 42</span>
+                            <h4>07 Course Final Projects Part 6 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 6)؛ صياغة مقاييس التراكم السنوي والشهري (YTD / MTD) وحصص المساهمة النسبية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Implementing TOTALYTD and comparative time measures.</li>
+                                        <li>Computing category contributions to total company sales.</li>
+                                        <li>Validating calculation results against test pivot tables.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/-OTp5lRamGo" title="07 Course Final Projects Part 6" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 43 -->
+                <article class="lesson-accordion-item" id="lesson-43">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-43')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 43</span>
+                            <h4>07 Course Final Projects Part 7 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 7)؛ تصميم هيكل لوحة القيادة التنفيذية، إدراج بطاقات الـ KPI العليا وبناء المظهر العام.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Designing executive header banners and summary cards.</li>
+                                        <li>Applying modern card visuals for top-line revenue metrics.</li>
+                                        <li>Setting canvas backgrounds and visual alignment guides.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/5MIXHTazVVk" title="07 Course Final Projects Part 7" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 44 -->
+                <article class="lesson-accordion-item" id="lesson-44">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-44')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 44</span>
+                            <h4>07 Course Final Projects Part 8 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 8)؛ بناء المخططات البيانية الرئيسية: مقارنات المبيعات بالفئات والاتجاهات الزمنية الشهرية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Building responsive Clustered Column and Line combo charts.</li>
+                                        <li>Adding dynamic data labels and customized marker points.</li>
+                                        <li>Integrating monthly target lines for visual variance tracking.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/jtaCcLGDj6g" title="07 Course Final Projects Part 8" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 45 -->
+                <article class="lesson-accordion-item" id="lesson-45">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-45')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 45</span>
+                            <h4>07 Course Final Projects Part 9 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 9)؛ بناء الخرائط الجغرافية ومصفوفات التحليل التفصيلي للمنتجات مع التنسيق الشرطي.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Adding regional territory maps with proportional bubble sizes.</li>
+                                        <li>Configuring dense product matrices with data bars.</li>
+                                        <li>Implementing row-by-row margin coloring rules.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/pZhG3orRk6g" title="07 Course Final Projects Part 9" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 46 -->
+                <article class="lesson-accordion-item" id="lesson-46">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-46')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 46</span>
+                            <h4>07 Course Final Projects Part 10 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 10)؛ تفعيل شرائح التصفية المتقدمة والإشارات المرجعية (Bookmarks) وأزرار التنقل الذكية.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Constructing modern popup filter panels with Bookmarks.</li>
+                                        <li>Binding reset and clear filter actions to interactive buttons.</li>
+                                        <li>Synchronizing slicers across all project report pages.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/t88mwEf8mvk" title="07 Course Final Projects Part 10" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 47 -->
+                <article class="lesson-accordion-item" id="lesson-47">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-47')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 47</span>
+                            <h4>07 Course Final Projects Part 11 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 11)؛ تصميم صفحات التفاصيل المتعمقة (Drill-through) والتلميحات المرئية المخصصة (Custom Tooltips).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Creating customer drill-through destination pages.</li>
+                                        <li>Attaching hover micro-chart tooltips to bar visuals.</li>
+                                        <li>Fine-tuning visual interactions to avoid misleading metrics.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/DprOQG96STI" title="07 Course Final Projects Part 11" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 48 -->
+                <article class="lesson-accordion-item" id="lesson-48">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-48')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 48</span>
+                            <h4>07 Course Final Projects Part 12 (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    المشروع النهائي (الجزء 12)؛ المراجعة الختامية للوحة المشروع، فحص سرعة الأداء ونشر العمل إلى السحابة للمشاركة.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Auditing project performance via Performance Analyzer.</li>
+                                        <li>Final visual design polish and responsive canvas verification.</li>
+                                        <li>Publishing complete capstone dashboard to Power BI Service.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/y_IiK5Utt7g" title="07 Course Final Projects Part 12" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 49 -->
+                <article class="lesson-accordion-item" id="lesson-49">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-49')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 49</span>
+                            <h4>08 Course Final Exam (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    الامتحان النهائي الشامل؛ أسئلة وتحديات عملية لاختبار استيعاب المتدرب لجميع أدوات Power Query والنمذجة وDAX والتصميم.
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Comprehensive testing of all bootcamp core competencies.</li>
+                                        <li>Troubleshooting realistic business reporting scenarios.</li>
+                                        <li>Evaluating problem-solving speed and model design choices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/YyeTxoLHQf8" title="08 Course Final Exam" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- الدرس 50 -->
+                <article class="lesson-accordion-item" id="lesson-50">
+                    <div class="lesson-bar-header" onclick="toggleLesson('lesson-50')">
+                        <div class="lesson-bar-left">
+                            <span class="lesson-chip">Lesson 50</span>
+                            <h4>08 Course Closing (Arabic)</h4>
+                        </div>
+                        <div class="lesson-bar-right">
+                            <span class="lesson-play-hint">Watch &amp; Learn</span>
+                            <div class="lesson-arrow-circle">▼</div>
+                        </div>
+                    </div>
+                    <div class="lesson-accordion-content">
+                        <div class="lesson-content-split">
+                            <div class="lesson-text-side">
+                                <p class="lesson-lead-ar">
+                                    ختام المعسكر التدريبي؛ نصائح عملية لتطوير المهارات ومواصلة رحلة تحليل البيانات وبناء المعرض الشخصي (Portfolio).
+                                </p>
+                                <div class="lesson-takeaways-card">
+                                    <span class="takeaways-title">What You'll Learn:</span>
+                                    <ul>
+                                        <li>Summary of the 4-day Power BI learning transformation.</li>
+                                        <li>Next steps for building a standout business analytics portfolio.</li>
+                                        <li>Resources and continuous learning pathways in the community.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lesson-media-side">
+                                <div class="video-container-16-9">
+                                    <iframe src="https://www.youtube.com/embed/vYLjbkZcRk4" title="08 Course Closing" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div> <!-- نهاية course-lessons-accordion-stack -->
+
+        </main> <!-- نهاية page-body -->
+
+        <!-- ==========================================================================
+             7. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+        <footer class="site-footer">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-title">
+                        <img src="../images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
+                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    </div>
+                    <p class="footer-bio-ar">
+                        منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت الدولية وتكاليف المشروعات الهندسية.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h5 class="footer-col-title">Quick Links</h5>
+                    <div class="footer-quick-nav">
+                        <a href="../courses.html">Courses</a>
+                        <a href="../books.html">Books</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../community.html">Community</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect &amp; Learn</h5>
+                    <div class="footer-social-badges">
+                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
+                            <img src="../images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
+                            <img src="../images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
+                        </a>
+                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
+                            <img src="../images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
+                            <img src="../images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
+                        </a>
+                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
+                            <img src="../images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+                <p>Designed for data enthusiasts &amp; professionals</p>
+            </div>
+        </footer>
+
+    </div> <!-- نهاية site-wrapper -->
+
+    <!-- استدعاء سكريبت تفاعل فتح وإغلاق الدروس -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
