@@ -1,1099 +1,1760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Said Fawzy Learning | Curated Book Library</title>
-    
+
     <!-- Favicon & App Icon -->
-    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
-    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
+    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png" />
+    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png" />
 
     <!-- Open Graph for Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Said Fawzy Learning | Digital Library">
-    <meta property="og:description" content="Download practical references and eBooks on Power BI, DAX, Modern Excel, and Construction Cost Estimation.">
-    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
-    <meta property="og:url" content="https://saidfawzy.github.io/books.html">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Said Fawzy Learning | Digital Library" />
+    <meta
+      property="og:description"
+      content="Download practical references and eBooks on Power BI, DAX, Modern Excel, and Construction Cost Estimation."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png"
+    />
+    <meta property="og:url" content="https://saidfawzy.github.io/books.html" />
 
     <!-- Fonts & Main Style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/books.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/books.css" />
+  </head>
+  <body>
     <div class="site-wrapper">
+      <!-- ================= Vibrant Banner ================= -->
+      <header class="vibrant-banner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
 
-        <!-- ================= Vibrant Banner ================= -->
-        <header class="vibrant-banner">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
-            </a>
-            <div class="brand-title">
-                <h1>
-                    <span class="text-dark">Said Fawzy</span>
-                    <span class="text-light">Learning</span>
-                </h1>
-            </div>
-        </header>
+      <!-- ================= Main Navigation ================= -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="courses.html" class="nav-item">Courses</a>
+          <a href="books.html" class="nav-item active">Books</a>
+          <a href="resources.html" class="nav-item">Resources</a>
+          <a href="community.html" class="nav-item">Community</a>
+          <a href="gallery.html" class="nav-item">Gallery</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
 
-        <!-- ================= Main Navigation ================= -->
-        <nav class="main-navbar">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="courses.html" class="nav-item">Courses</a>
-                <a href="books.html" class="nav-item active">Books</a>
-                <a href="resources.html" class="nav-item">Resources</a>
-                <a href="community.html" class="nav-item">Community</a>
-                <a href="gallery.html" class="nav-item">Gallery</a>
-                <a href="about.html" class="nav-item">About</a>
-                <a href="contact.html" class="nav-item">Contact</a>
-            </div>
-        </nav>
+      <!-- ================= Sub Navigation / Breadcrumb ================= -->
+      <div class="sub-nav-bar">
+        <div class="breadcrumb-trail">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current-crumb">Books Library</span>
+        </div>
+        <a href="index.html" class="btn-back-pill">
+          <span>←</span> Back to Home
+        </a>
+      </div>
 
-        <!-- ================= Sub Navigation / Breadcrumb ================= -->
-        <div class="sub-nav-bar">
-            <div class="breadcrumb-trail">
-                <a href="index.html">Home</a>
-                <span class="separator">/</span>
-                <span class="current-crumb">Books Library</span>
+      <!-- ================= Main Page Content ================= -->
+      <main class="page-body">
+        <!-- Hero Title Box With Controlled Library Logo -->
+        <div class="page-title-box">
+          <span class="page-badge">Open Digital Shelf</span>
+          <div class="title-heading-row">
+            <div class="title-icon-chip library-chip">
+              <img
+                src="images/logo/library-icon.png"
+                alt="Library Logo"
+                class="library-header-logo"
+              />
             </div>
-            <a href="index.html" class="btn-back-pill">
-                <span>←</span> Back to Home
-            </a>
+            <h2>Said Fawzy's Curated Library</h2>
+          </div>
         </div>
 
-        <!-- ================= Main Page Content ================= -->
-        <main class="page-body">
-            
-            <!-- Hero Title Box With Controlled Library Logo -->
-            <div class="page-title-box">
-                <span class="page-badge">Open Digital Shelf</span>
-                <div class="title-heading-row">
-                    <div class="title-icon-chip library-chip">
-                        <img src="images/logo/library-icon.png" alt="Library Logo" class="library-header-logo">
-                    </div>
-                    <h2>Said Fawzy's Curated Library</h2>
+        <!-- Categories Accordion Stack -->
+        <div class="books-categories-stack">
+          <!-- ================= 1. فئة كتب Microsoft Power BI ================= -->
+          <div class="book-category-card" id="cat-pbi">
+            <div
+              class="book-cat-header"
+              onclick="toggleBookCategory('cat-pbi')"
+            >
+              <div class="cat-header-left">
+                <div class="cat-track-logo">
+                  <img
+                    src="images/logo/powerbi-logo.png"
+                    alt="Microsoft Power BI"
+                  />
                 </div>
+                <div class="cat-title-text">
+                  <span class="cat-chip pbi-chip">Official Track Series</span>
+                  <h3>Microsoft Power BI Books</h3>
+                </div>
+              </div>
+              <div class="cat-header-right">
+                <span class="cat-count-badge">7 Books Available</span>
+                <div class="cat-arrow-circle">▼</div>
+              </div>
             </div>
 
-            <!-- Categories Accordion Stack -->
-            <div class="books-categories-stack">
+            <div class="book-cat-body">
+              <div class="books-shelf-grid">
+                <!-- كتاب 01: Extracting and Transforming Data in Power BI -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-1.png"
+                        alt="Extracting and Transforming Data in Power BI Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
 
-                <!-- ================= 1. فئة كتب Microsoft Power BI ================= -->
-                <div class="book-category-card " id="cat-pbi">
-                    <div class="book-cat-header" onclick="toggleBookCategory('cat-pbi')">
-                        <div class="cat-header-left">
-                            <div class="cat-track-logo">
-                                <img src="images/logo/powerbi-logo.png" alt="Microsoft Power BI">
-                            </div>
-                            <div class="cat-title-text">
-                                <span class="cat-chip pbi-chip">Official Track Series</span>
-                                <h3>Microsoft Power BI Books</h3>
-                            </div>
-                        </div>
-                        <div class="cat-header-right">
-                            <span class="cat-count-badge">7 Books Available</span>
-                            <div class="cat-arrow-circle">▼</div>
-                        </div>
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 111 Pages</span>
+                      <span class="spec-pill level">🎯 Hands-on Guide</span>
+                      <span class="spec-pill format">💾 Free PDF</span>
                     </div>
 
-                    <div class="book-cat-body">
-                        <div class="books-shelf-grid">
+                    <h3 class="book-title">
+                      Extracting and Transforming Data in Power BI
+                    </h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
 
-                            <!-- كتاب 01: Extracting and Transforming Data in Power BI -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-1.png" alt="Extracting and Transforming Data in Power BI Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 111 Pages</span>
-                                        <span class="spec-pill level">🎯 Hands-on Guide</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Extracting and Transforming Data in Power BI</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A comprehensive hands-on guide covering the ETL lifecycle in Power Query. Master data connection, column transformations, joins, and end-to-end data preparation.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل تطبيقي شامل يغطي دورة معالجة البيانات (ETL) بالكامل عبر محرك Power Query؛ يشمل تنظيف ودمج البيانات وفحص جودتها مع 18 تدريباً عملياً ومشروع تخرج واقعي.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI/main/Book/Preparing%20Data%20For%20Analysis%20in%20Power%20BI%20Ver%201%20-%20Said%20Fawzy.pdf" 
-                                           download="Extracting_and_Transforming_Data_in_Power_BI_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 02: Data Modelling in Power BI -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-2.png" alt="Data Modelling in Power BI Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 150 Pages</span>
-                                        <span class="spec-pill level">🎯 Data Modeling & DAX</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Data Modelling in Power BI</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            Master enterprise data modeling architectures and DAX calculations. Covers Fact vs. Dimension tables, Star & Snowflake schemas, relationship cardinality, and DAX measures.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            المرجع الشامل في نمذجة وهندسة البيانات؛ يغطي جداول الحقائق والأبعاد (Fact & Dimension)، ومخططات النجمة ورقاقة الثلج، وإدارة سياق التصفية والمقاييس المحسوبة.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Data-Modelling-in-Power-BI-/main/Book/Data%20Modeling%20in%20Power%20BI_Said%20Fawzy_Ver%201.pdf" 
-                                           download="Data_Modeling_in_Power_BI_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Data-Modelling-in-Power-BI-" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 03: Data Visualization in Power BI -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-3.png" alt="Data Visualization in Power BI Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 172 Pages</span>
-                                        <span class="spec-pill level">🎯 Visualization & Dashboards</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Data Visualization in Power BI</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            Master advanced Power BI visuals, interactive reports, bookmarks, drill-through, and Power BI Service publishing with 33+ practical exercises and a comprehensive final project.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            مرجع عملي شامل لبناء التقارير واللوحات التفاعلية (Dashboards)؛ يغطي الرسوم المتقدمة، الإشارات المرجعية (Bookmarks)، ونشر ومشاركة النماذج عبر Power BI Service مع مشروع تخرج متكامل.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Data-Visualisation-in-Power-BI-/main/Book/SF_Data%20Visulaization%20Ver1.pdf" 
-                                           download="Data_Visualization_in_Power_BI_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Data-Visualisation-in-Power-BI-" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 04: Power BI Quick Start -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-4.png" alt="Power BI Quick Start Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 165 Pages</span>
-                                        <span class="spec-pill level">⚡ Fast-Track Guide</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Power BI Quick Start</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A practical fast-track guide designed to get you analyzing data and building reports within hours. Covers the entire pipeline: Power Query ETL, Data Modeling, DAX fundamentals, report design, Power BI Service publishing, and concludes with 2 comprehensive capstone projects.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل الانطلاق السريع والمكثف لتعلم Power BI في ساعات معدودة؛ يغطي دورة العمل الكاملة بدءاً من معالجة البيانات، والنمذجة، ودوال DAX، وبناء التقارير ومشاركتها عبر Power BI Service، مع مشروعين عمليين متكاملين.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Quick-Start/main/Book/SF_Power%20BI%20Quick%20Start.pdf" 
-                                           download="Power_BI_Quick_Start_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Power-BI-Quick-Start" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 05: DAX Filtered Context in Power BI -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-5.png" alt="DAX Filtered Context in Power BI Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 Specialized Guide</span>
-                                        <span class="spec-pill level">🧠 Advanced DAX</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">DAX Filtered Context in Power BI</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A focused masterclass on the analytical core of Power BI: Filter Context and evaluation engines. Learn how to manage active/inactive relationships, master the CALCULATE function and filter modifiers, and understand the mechanics of Context Transition for accurate DAX calculations.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            كتيب تخصصي متقدم يركز على المحرك التحليلي للغة DAX؛ يشرح بعمق سياق التصفية (Filter Context)، العلاقات النشطة وغير النشطة، تسخير دالة CALCULATE وتمرير معدلات التصفية، بالإضافة إلى آلية انتقال السياق (Context Transition).
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Tips-and-Tricks-DAX-Filter-Context/main/PBI%20Filter%20in%20DAX.pdf" 
-                                           download="DAX_Filter_Context_Power_BI_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Power-BI-Tips-and-Tricks-DAX-Filter-Context" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 06: Power BI Mini Project -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-6.png" alt="Power BI Mini Project Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 Hands-on Lab</span>
-                                        <span class="spec-pill level">💼 Real HR Project</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Power BI Mini Project</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A practical, step-by-step walkthrough project based on an HR dataset. Covers loading and cleaning missing data in Power Query (M Language inspection), modern On-Object visual configuration, conditional formatting (Data Bars & Colors), visual interaction control, and final publishing to Power BI Service.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            مشروع تدريبي عملي خطوة بخطوة على بيانات موارد بشرية واقعية (HR)؛ يشمل جلب ومعالجة القيم المفقودة في Power Query، التعامل مع واجهة On-Object الحديثة، تطبيق التنسيق الشرطي وتعديل تفاعل الرسوم، وحتى نشر التقرير النهائي على مساحة عمل السحابة.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Mini-Project/main/Power%20BI%20Mini%20Project.pdf" 
-                                           download="Power_BI_Mini_Project_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Power-BI-Mini-Project" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Lab Files &amp; Dataset</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 07: Power BI Manager's Guide -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/pbi-book-7.png" alt="Power BI Manager's Guide Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 Executive Edition</span>
-                                        <span class="spec-pill level">👔 For Managers & PMs</span>
-                                        <span class="spec-pill format">💾 Free PDF + Activity Book</span>
-                                    </div>
-
-                                    <h3 class="book-title">Power BI Manager's Guide</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A strategic guide crafted for project managers and decision-makers to understand the analytics lifecycle, lead BI teams effectively, and leverage Power BI across construction, manufacturing, and business operations. Accompanied by a dedicated Activity Book for executive hands-on practice.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل إداري واستراتيجي موجه لمديري المشاريع والقيادات التنفيذية؛ يشرح دورة حياة تحليل البيانات وكيفية توظيف Power BI في قطاعات التشييد والصناعة والأعمال، ومتابعة فرق العمل لإنتاج تقارير دعم اتخاذ القرار، مع كتاب تمارين وأنشطة تكميلي.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Manager-Guide/main/PDF/Power%20BI%20Manager%20Guide.pdf" 
-                                           download="Power_BI_Manager_Guide_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Manager Guide (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Manager-Guide/main/PDF/Actitiy%20Book.pdf" 
-                                           download="Power_BI_Manager_Activity_Book.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download"
-                                           style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);">
-                                            <span>Activity Book (PDF)</span>
-                                            <span class="dl-icon">📝</span>
-                                        </a>
-
-                                        <a href="https://github.com/saidfawzy/Power-BI-Manager-Guide" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>GitHub Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- نهاية books-shelf-grid -->
-                    </div> <!-- نهاية book-cat-body -->
-                </div> <!-- نهاية book-category-card pbi -->
-
-            </div> <!-- نهاية books-categories-stack -->
-
-       <!-- ================= 2. فئة كتب Microsoft Excel ================= -->
-                <div class="book-category-card" id="cat-excel">
-                    <div class="book-cat-header" onclick="toggleBookCategory('cat-excel')">
-                        <div class="cat-header-left">
-                            <div class="cat-track-logo">
-                                <img src="images/logo/Excel-logo.png" alt="Microsoft Excel">
-                            </div>
-                            <div class="cat-title-text">
-                                <span class="cat-chip excel-chip">Official Track Series</span>
-                                <h3>Microsoft Excel Books</h3>
-                            </div>
-                        </div>
-                        <div class="cat-header-right">
-                            <span class="cat-count-badge">4 Books Available</span>
-                            <div class="cat-arrow-circle">▼</div>
-                        </div>
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        A comprehensive hands-on guide covering the ETL
+                        lifecycle in Power Query. Master data connection, column
+                        transformations, joins, and end-to-end data preparation.
+                      </p>
+                      <p class="synopsis-ar">
+                        دليل تطبيقي شامل يغطي دورة معالجة البيانات (ETL) بالكامل
+                        عبر محرك Power Query؛ يشمل تنظيف ودمج البيانات وفحص
+                        جودتها مع 18 تدريباً عملياً ومشروع تخرج واقعي.
+                      </p>
                     </div>
 
-                    <div class="book-cat-body">
-                        <div class="books-shelf-grid">
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI/main/Book/Preparing%20Data%20For%20Analysis%20in%20Power%20BI%20Ver%201%20-%20Said%20Fawzy.pdf"
+                        download="Extracting_and_Transforming_Data_in_Power_BI_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Preparing-Data-for-Analysis-in-Power-BI"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Exercise Files &amp; Repo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                            <!-- كتاب 01: ميكروسوفت إكسيل للمبتدئين (النسخة العربية) -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/excel-book-1.png" alt="Microsoft Excel for Beginners Arabic Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
+                <!-- كتاب 02: Data Modelling in Power BI -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-2.png"
+                        alt="Data Modelling in Power BI Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
 
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang" style="background: #ecfdf5; color: #047857; border-color: #a7f3d0;">🌐 العربية (Arabic)</span>
-                                        <span class="spec-pill pages">📄 296 Pages</span>
-                                        <span class="spec-pill level">🌱 Beginners Level</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">ميكروسوفت إكسيل للمبتدئين</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-ar">
-                                            دليل تدريبي تطبيقي شامل من 10 فصول يبدأ معك من الصفر لاحتراف واجهة إكسيل، إدارة المصنفات، الصيغ والدوال الأساسية، تنسيق البيانات، تخطيط الجداول، وحتى طباعة وحماية المصنفات مع اختبارات وتمارين عملية بعد كل فصل.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Excel-Training-for-Beginners/main/PDF/Excel%20Training%20for%20Beginers%20Arabic%201.pdf" 
-                                           download="Excel_Training_for_Beginners_Arabic_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>تحميل الكتاب (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Excel-Training-for-Beginners" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 02: Excel Training for Beginners (English Edition) -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/excel-book-2.png" alt="Excel Training for Beginners English Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 231 Pages</span>
-                                        <span class="spec-pill level">🌱 Beginners Level</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Excel Training for Beginners</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A hands-on foundation guide covering Excel interface navigation, workbook structure, essential formulas (SUM, AVERAGE, COUNT), data formatting, worksheet layout, object insertions, and safe workbook sharing across 10 structured chapters.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            النسخة الإنجليزية المعتمدة للتأسيس الاحترافي في إكسيل خطوة بخطوة عبر 10 فصول تطبيقية مدعومة بتمارين ذاتية واختبارات لتقييم المهارات.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Excel-Training-for-Beginners/main/PDF/Excel%20Training%20for%20Beginers%20English%201.pdf" 
-                                           download="Excel_Training_for_Beginners_English_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Excel-Training-for-Beginners" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 03: Excel Intermediate Training (Second Edition) -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/excel-book-3.png" alt="Excel Intermediate Training Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 108 Pages</span>
-                                        <span class="spec-pill level">📈 Intermediate Level</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Excel Intermediate Training (2nd Edition)</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            Take your spreadsheet skills further with Named Ranges, structured Lists &amp; Tables, lookup mastery (VLOOKUP, XLOOKUP, INDEX/MATCH), nested logical tests, 3D references, advanced chart customization, and conditional formatting rules.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            الطبعة الثانية المحدثة للمستوى المتوسط؛ تغطي النطاقات المسماة، الجداول، دوال البحث المتقدمة، الشروط المتداخلة، المراجع ثلاثية الأبعاد، وتصميم الرسوم البيانية وقواعد التنسيق الشرطي.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Excel_Intermediate_Training/main/PDF/Excel%20Intermediate%20Training.pdf" 
-                                           download="Excel_Intermediate_Training_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Excel_Intermediate_Training" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 04: Mastering Data Analysis with Excel -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/excel-book-4.png" alt="Mastering Data Analysis with Excel Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 170+ Pages</span>
-                                        <span class="spec-pill level">📊 Analytics &amp; Power Query</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Mastering Data Analysis with Excel</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            Bridging classic Excel and Modern Analytics: master Pivot Tables, Pivot Charts, Slicers, automated ETL with Power Query, building relational Data Models in Excel, and authoring analytical DAX measures with Time Intelligence.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل احتراف تحليل البيانات بالإكسيل الحديث؛ يجمع بين أدوات التحليل الكلاسيكية وجداول الـ Pivot، ومعالجة البيانات المتقدمة عبر Power Query، وبناء نماذج البيانات وصياغة دوال DAX ودوال الوقت الذكية.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Mastering-Data-Analysis-with-Excel/main/PDF/Mastering%20Data%20Analysis%20with%20Excel.pdf" 
-                                           download="Mastering_Data_Analysis_with_Excel_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Mastering-Data-Analysis-with-Excel" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Demos</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- نهاية books-shelf-grid -->
-                    </div> <!-- نهاية book-cat-body -->
-                </div> <!-- نهاية book-category-card excel -->
-
-                <!-- ================= 3. فئة كتب Mastering Database ================= -->
-                <div class="book-category-card" id="cat-db">
-                    <div class="book-cat-header" onclick="toggleBookCategory('cat-db')">
-                        <div class="cat-header-left">
-                            <div class="cat-track-logo">
-                                <img src="images/logo/mastering-database-logo.png" alt="Mastering Database">
-                            </div>
-                            <div class="cat-title-text">
-                                <span class="cat-chip db-chip" style="background: #fee2e2; color: #991b1b;">Official Track Series</span>
-                                <h3>Mastering Database Books</h3>
-                            </div>
-                        </div>
-                        <div class="cat-header-right">
-                            <span class="cat-count-badge">3 Books Available</span>
-                            <div class="cat-arrow-circle">▼</div>
-                        </div>
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 150 Pages</span>
+                      <span class="spec-pill level"
+                        >🎯 Data Modeling & DAX</span
+                      >
+                      <span class="spec-pill format">💾 Free PDF</span>
                     </div>
 
-                    <div class="book-cat-body">
-                        <div class="books-shelf-grid">
+                    <h3 class="book-title">Data Modelling in Power BI</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
 
-                            <!-- كتاب 01: Database Fundamentals -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/database-book-1.png" alt="Database Fundamentals Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 41+ Pages</span>
-                                        <span class="spec-pill level">🌱 Fundamentals &amp; ERD</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Database Fundamentals</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A foundational guide bridging relational database theory with practical design. Learn DBMS architectures (Three-Schema), conceptual design with Entity-Relationship Diagrams (ERD), mapping to logical tables, database integrity constraints, and essential Access objects with SQL DDL.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            المرجع التأسيسي في علوم ونظم إدارة قواعد البيانات العلائقية؛ يشرح معمارية النظم (Three-Schema)، وتصميم مخططات الكيانات والعلاقات (ERD)، والتحويل للنموذج المنطقي، مع مقدمة تطبيقية على Microsoft Access وأوامر لغة تعريف البيانات SQL DDL.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Access-and-Database-Fundamentals/main/PDF/Database%20Fundamentals%20V2.pdf" 
-                                           download="Database_Fundamentals_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Access-and-Database-Fundamentals" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 02: Microsoft Access Database Development -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/database-book-2.png" alt="Microsoft Access Database Development Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 50 Pages (Labs)</span>
-                                        <span class="spec-pill level">⚙️ Development &amp; Queries</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Microsoft Access Database Development</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            An intensive hands-on lab manual covering table structures, primary keys, referential integrity and cascade rules, multi-table joins, calculated fields via Expression Builder, automated Parameter Queries, Action Queries, and core SQL (DDL &amp; DML).
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل المختبرات والتطوير العملي في Microsoft Access؛ يركز على بناء وتصميم الجداول المتقدمة، وضبط العلاقات وفرض التكامل المرجعي، والاستعلامات المعقدة والروابط المتعددة (Joins)، والاستعلامات الإجرائية ومحددات المعاملات وأوامر SQL.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced/main/PDF/Access%20Database%20Development%20V2.pdf" 
-                                           download="Access_Database_Development_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 03: Microsoft Access Application Development -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/database-book-3.png" alt="Microsoft Access Application Development Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 Advanced Lab</span>
-                                        <span class="spec-pill level">💻 UI &amp; App Architecture</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Microsoft Access Application Development</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            Transform raw databases into fully functional desktop applications. Master custom Form design, property sheets, SubForms, Tabbed layouts, Split Forms, tab orders, button controls, and build intuitive user interfaces using Navigation Forms and Switchboards.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل تحويل قواعد البيانات إلى تطبيقات أعمال مكتبية متكاملة وسهلة الاستخدام؛ يغطي تصميم واجهات ونماذج المستخدم المتقدمة، والنماذج الفرعية (SubForms)، والتخطيطات المبوبة، ونماذج التنقل ولوحات التحكم الرئيسية (Switchboards).
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced/main/PDF/Access%20Application%20Development%20%20V2.pdf" 
-                                           download="Access_Application_Development_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Exercise Files &amp; Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- نهاية books-shelf-grid -->
-                    </div> <!-- نهاية book-cat-body -->
-                </div> <!-- نهاية book-category-card db -->
-
-                <!-- ================= 4. فئة كتب Business Excellence & Management ================= -->
-                <div class="book-category-card" id="cat-business">
-                    <div class="book-cat-header" onclick="toggleBookCategory('cat-business')">
-                        <div class="cat-header-left">
-                            <div class="cat-track-logo">
-                                <img src="images/logo/business-logo.png" alt="Business Excellence &amp; Management">
-                            </div>
-                            <div class="cat-title-text">
-                                <span class="cat-chip biz-chip" style="background: #fef3c7; color: #92400e;">Official Track Series</span>
-                                <h3>Business Excellence &amp; Management</h3>
-                            </div>
-                        </div>
-                        <div class="cat-header-right">
-                            <span class="cat-count-badge">4 Books Available</span>
-                            <div class="cat-arrow-circle">▼</div>
-                        </div>
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        Master enterprise data modeling architectures and DAX
+                        calculations. Covers Fact vs. Dimension tables, Star &
+                        Snowflake schemas, relationship cardinality, and DAX
+                        measures.
+                      </p>
+                      <p class="synopsis-ar">
+                        المرجع الشامل في نمذجة وهندسة البيانات؛ يغطي جداول
+                        الحقائق والأبعاد (Fact & Dimension)، ومخططات النجمة
+                        ورقاقة الثلج، وإدارة سياق التصفية والمقاييس المحسوبة.
+                      </p>
                     </div>
 
-                    <div class="book-cat-body">
-                        <div class="books-shelf-grid">
-
-                            <!-- كتاب 01: The Art of Writing Professional Emails -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/business-book-1.png" alt="The Art of Writing Professional Emails Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd;">🌐 Bilingual (AR / EN)</span>
-                                        <span class="spec-pill level">💼 Business Communication</span>
-                                        <span class="spec-pill format">💻 Interactive HTML Course</span>
-                                        <span class="spec-pill pages">📝 Activity Book (PDF)</span>
-                                    </div>
-
-                                    <h3 class="book-title">The Art of Writing Professional Emails</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A comprehensive interactive learning experience covering professional email structure, business etiquette rules, common writing pitfalls, and hands-on rewrite workshops. Includes a self-scoring interactive HTML training course and a dedicated student activity book.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            حقيبة تدريبية تفاعلية ثنائية اللغة تجمع بين هيكلة المراسلات الرسمية وقواعد الإتيكيت المهني وتفادي الأخطاء الشائعة، مصحوبة بكراس أنشطة تطبيقي وحزمة كورس HTML تفاعلي متكامل للتقييم الذاتي.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box" style="flex-wrap: wrap; gap: 8px;">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/The-Art-of-Writing-Professional-Emails/main/Student%20Activity%20Book.pdf" 
-                                           download="Student_Activity_Book_Professional_Emails_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Activity Book (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/The-Art-of-Writing-Professional-Emails/raw/main/Interactive%20Course.zip" 
-                                           target="_blank" 
-                                           class="btn-amazon-download" 
-                                           style="background: #0284c7; border-color: #0369a1; color: #ffffff;">
-                                            <span>Interactive Course (.ZIP)</span>
-                                            <span class="dl-icon">📦</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/The-Art-of-Writing-Professional-Emails" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 02: Power Automate - Manage Client Emails Workflow Project -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/business-book-2.png" alt="Power Automate Manage Client Emails Workflow Project Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 ~30 Pages</span>
-                                        <span class="spec-pill level">⚡ Process Automation</span>
-                                        <span class="spec-pill format">⚙️ Hands-On Project</span>
-                                    </div>
-
-                                    <h3 class="book-title">Power Automate - Manage Client Emails Workflow</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A practical enterprise automation project manual. Build an end-to-end client email workflow connecting Outlook triggers to SharePoint Lists, handling file attachments, sending team alerts, and scheduling automated 3-hour pending request escalation reminders.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            مشروع تطبيقي لبناء منظومة أتمتة مؤسسية لمراسلات العملاء؛ يوضح خطوة بخطوة ربط تدفقات Power Automate بقوائم SharePoint List، واستخراج المرفقات، وإرسال تنبيهات المتابعة والتذكير التلقائي كل 3 ساعات للمهام المعلقة.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Power-Automat-Mange-Client-Emails-Workflow-Project/main/SF_Power%20Automate%20Manage%20Email%20Workflow.pdf" 
-                                           download="Power_Automate_Manage_Client_Emails_Workflow_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Power-Automat-Mange-Client-Emails-Workflow-Project" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Project Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 03: Risk Management for Projects -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/business-book-3.png" alt="Risk Management for Projects Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill level">🛡️ Project Risk Strategy</span>
-                                        <span class="spec-pill format">📊 Monte Carlo Analysis</span>
-                                        <span class="spec-pill pages">📘 TextBook + Activity Book</span>
-                                    </div>
-
-                                    <h3 class="book-title">Risk Management for Projects</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A structured project management manual for identifying, categorizing, and assessing engineering and business risks. Features Monte Carlo simulation models, risk registers, response planning (treatment &amp; transfer), communication canvases, and a companion activity book.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            دليل منهجي متقدم لإدارة مخاطر المشروعات الهندسية والتنفيذية؛ يغطي دورة معالجة وتصنيف المخاطر، ونمذجة المحاكاة عبر Monte Carlo، وبناء سجلات المخاطر ومصفوفات الاستجابة والمتابعة المستمرة، مدعوماً بكراس أنشطة تطبيقي.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box" style="flex-wrap: wrap; gap: 8px;">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy/main/PDF/Said_Fawzy_Risk%20Project%20Management%20TextBook.pdf" 
-                                           download="Risk_Project_Management_TextBook_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Textbook (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy/main/PDF/Said_Fawzy_Risk%20Project%20Management%20Activity%20Book.pdf" 
-                                           download="Risk_Project_Management_Activity_Book_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download" 
-                                           style="background: #475569; border-color: #334155; color: #ffffff;">
-                                            <span>Activity Book (PDF)</span>
-                                            <span class="dl-icon">📝</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- كتاب 04: Introduction to Six Sigma -->
-                            <div class="single-book-card amazon-style">
-                                <div class="book-media-side">
-                                    <div class="book-real-cover">
-                                        <img src="images/book-covers/business-book-4.png" alt="Introduction to Six Sigma Cover" onerror="this.src='images/logo/saidfawzy-icon.png'">
-                                    </div>
-                                </div>
-
-                                <div class="book-details-side">
-                                    <div class="book-meta-top">
-                                        <span class="spec-pill lang">🌐 English</span>
-                                        <span class="spec-pill pages">📄 ~60 Pages</span>
-                                        <span class="spec-pill level">🎯 Quality &amp; Lean Six Sigma</span>
-                                        <span class="spec-pill format">💾 Free PDF</span>
-                                    </div>
-
-                                    <h3 class="book-title">Introduction to Six Sigma</h3>
-                                    <p class="book-author">By <span>Said Fawzy</span></p>
-
-                                    <div class="book-synopsis">
-                                        <p class="synopsis-en">
-                                            A solid operational excellence handbook covering Six Sigma fundamentals, defect level quantification, customer-driven quality definition, Kano Model theory, DMAIC process improvement methodology, and practical SIPOC diagrams for system mapping.
-                                        </p>
-                                        <p class="synopsis-ar">
-                                            مرجع تطبيقي في مبادئ الجودة وإدارة العمليات وفق منهجية سيكس سيجما؛ يشرح قياس مستويات العيوب، وتحديد متطلبات العملاء، ونظرية نموذج كانو (Kano Model)، ودورة التحسين المستمر DMAIC، ورسم مخططات SIPOC للعمليات.
-                                        </p>
-                                    </div>
-
-                                    <div class="book-action-box">
-                                        <a href="https://raw.githubusercontent.com/saidfawzy/Introduction-to-Six-Sigma-by-Said-Fawzy-2018/blob/main/SaidFawzy_Intro_Six_Sigma_02.pdf" 
-                                           download="Introduction_to_Six_Sigma_Said_Fawzy.pdf" 
-                                           target="_blank" 
-                                           class="btn-amazon-download">
-                                            <span>Direct Download (PDF)</span>
-                                            <span class="dl-icon">📥</span>
-                                        </a>
-                                        <a href="https://github.com/saidfawzy/Introduction-to-Six-Sigma-by-Said-Fawzy-2018" 
-                                           target="_blank" 
-                                           class="btn-amazon-repo">
-                                            <img src="images/logo/github-logo.png" alt="GitHub" class="btn-github-icon">
-                                            <span>Book Repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- نهاية books-shelf-grid -->
-                    </div> <!-- نهاية book-cat-body -->
-                </div> <!-- نهاية book-category-card business -->
-
-
-
-        </main> <!-- نهاية main.page-body -->
-
-        <!-- ================= Dark Executive Footer ================= -->
-        <footer class="site-footer">
-            <div class="footer-top-grid">
-                <div class="footer-brand-col">
-                    <div class="footer-logo-title">
-                        <img src="images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
-                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Data-Modelling-in-Power-BI-/main/Book/Data%20Modeling%20in%20Power%20BI_Said%20Fawzy_Ver%201.pdf"
+                        download="Data_Modeling_in_Power_BI_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Data-Modelling-in-Power-BI-"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Exercise Files &amp; Repo</span>
+                      </a>
                     </div>
-                    <p class="footer-bio-ar">
-                        A specialized educational hub providing practical pathways in Data Analytics, Business Intelligence, and Engineering Cost Control.
+                  </div>
+                </div>
+
+                <!-- كتاب 03: Data Visualization in Power BI -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-3.png"
+                        alt="Data Visualization in Power BI Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 172 Pages</span>
+                      <span class="spec-pill level"
+                        >🎯 Visualization & Dashboards</span
+                      >
+                      <span class="spec-pill format">💾 Free PDF</span>
+                    </div>
+
+                    <h3 class="book-title">Data Visualization in Power BI</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
+
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        Master advanced Power BI visuals, interactive reports,
+                        bookmarks, drill-through, and Power BI Service
+                        publishing with 33+ practical exercises and a
+                        comprehensive final project.
+                      </p>
+                      <p class="synopsis-ar">
+                        مرجع عملي شامل لبناء التقارير واللوحات التفاعلية
+                        (Dashboards)؛ يغطي الرسوم المتقدمة، الإشارات المرجعية
+                        (Bookmarks)، ونشر ومشاركة النماذج عبر Power BI Service
+                        مع مشروع تخرج متكامل.
+                      </p>
+                    </div>
+
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Data-Visualisation-in-Power-BI-/main/Book/SF_Data%20Visulaization%20Ver1.pdf"
+                        download="Data_Visualization_in_Power_BI_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Data-Visualisation-in-Power-BI-"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Exercise Files &amp; Repo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- كتاب 04: Power BI Quick Start -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-4.png"
+                        alt="Power BI Quick Start Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 165 Pages</span>
+                      <span class="spec-pill level">⚡ Fast-Track Guide</span>
+                      <span class="spec-pill format">💾 Free PDF</span>
+                    </div>
+
+                    <h3 class="book-title">Power BI Quick Start</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
+
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        A practical fast-track guide designed to get you
+                        analyzing data and building reports within hours. Covers
+                        the entire pipeline: Power Query ETL, Data Modeling, DAX
+                        fundamentals, report design, Power BI Service
+                        publishing, and concludes with 2 comprehensive capstone
+                        projects.
+                      </p>
+                      <p class="synopsis-ar">
+                        دليل الانطلاق السريع والمكثف لتعلم Power BI في ساعات
+                        معدودة؛ يغطي دورة العمل الكاملة بدءاً من معالجة
+                        البيانات، والنمذجة، ودوال DAX، وبناء التقارير ومشاركتها
+                        عبر Power BI Service، مع مشروعين عمليين متكاملين.
+                      </p>
+                    </div>
+
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Quick-Start/main/Book/SF_Power%20BI%20Quick%20Start.pdf"
+                        download="Power_BI_Quick_Start_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Power-BI-Quick-Start"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Exercise Files &amp; Repo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- كتاب 05: DAX Filtered Context in Power BI -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-5.png"
+                        alt="DAX Filtered Context in Power BI Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 Specialized Guide</span>
+                      <span class="spec-pill level">🧠 Advanced DAX</span>
+                      <span class="spec-pill format">💾 Free PDF</span>
+                    </div>
+
+                    <h3 class="book-title">DAX Filtered Context in Power BI</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
+
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        A focused masterclass on the analytical core of Power
+                        BI: Filter Context and evaluation engines. Learn how to
+                        manage active/inactive relationships, master the
+                        CALCULATE function and filter modifiers, and understand
+                        the mechanics of Context Transition for accurate DAX
+                        calculations.
+                      </p>
+                      <p class="synopsis-ar">
+                        كتيب تخصصي متقدم يركز على المحرك التحليلي للغة DAX؛ يشرح
+                        بعمق سياق التصفية (Filter Context)، العلاقات النشطة وغير
+                        النشطة، تسخير دالة CALCULATE وتمرير معدلات التصفية،
+                        بالإضافة إلى آلية انتقال السياق (Context Transition).
+                      </p>
+                    </div>
+
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Tips-and-Tricks-DAX-Filter-Context/main/PBI%20Filter%20in%20DAX.pdf"
+                        download="DAX_Filter_Context_Power_BI_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Power-BI-Tips-and-Tricks-DAX-Filter-Context"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Exercise Files &amp; Repo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- كتاب 06: Power BI Mini Project -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-6.png"
+                        alt="Power BI Mini Project Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 Hands-on Lab</span>
+                      <span class="spec-pill level">💼 Real HR Project</span>
+                      <span class="spec-pill format">💾 Free PDF</span>
+                    </div>
+
+                    <h3 class="book-title">Power BI Mini Project</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
+
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        A practical, step-by-step walkthrough project based on
+                        an HR dataset. Covers loading and cleaning missing data
+                        in Power Query (M Language inspection), modern On-Object
+                        visual configuration, conditional formatting (Data Bars
+                        & Colors), visual interaction control, and final
+                        publishing to Power BI Service.
+                      </p>
+                      <p class="synopsis-ar">
+                        مشروع تدريبي عملي خطوة بخطوة على بيانات موارد بشرية
+                        واقعية (HR)؛ يشمل جلب ومعالجة القيم المفقودة في Power
+                        Query، التعامل مع واجهة On-Object الحديثة، تطبيق التنسيق
+                        الشرطي وتعديل تفاعل الرسوم، وحتى نشر التقرير النهائي على
+                        مساحة عمل السحابة.
+                      </p>
+                    </div>
+
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Mini-Project/main/Power%20BI%20Mini%20Project.pdf"
+                        download="Power_BI_Mini_Project_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Direct Download (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+                      <a
+                        href="https://github.com/saidfawzy/Power-BI-Mini-Project"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>Lab Files &amp; Dataset</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- كتاب 07: Power BI Manager's Guide -->
+                <div class="single-book-card amazon-style">
+                  <div class="book-media-side">
+                    <div class="book-real-cover">
+                      <img
+                        src="images/book-covers/pbi-book-7.png"
+                        alt="Power BI Manager's Guide Cover"
+                        onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="book-details-side">
+                    <div class="book-meta-top">
+                      <span class="spec-pill lang">🌐 English</span>
+                      <span class="spec-pill pages">📄 Executive Edition</span>
+                      <span class="spec-pill level">👔 For Managers & PMs</span>
+                      <span class="spec-pill format"
+                        >💾 Free PDF + Activity Book</span
+                      >
+                    </div>
+
+                    <h3 class="book-title">Power BI Manager's Guide</h3>
+                    <p class="book-author">By <span>Said Fawzy</span></p>
+
+                    <div class="book-synopsis">
+                      <p class="synopsis-en">
+                        A strategic guide crafted for project managers and
+                        decision-makers to understand the analytics lifecycle,
+                        lead BI teams effectively, and leverage Power BI across
+                        construction, manufacturing, and business operations.
+                        Accompanied by a dedicated Activity Book for executive
+                        hands-on practice.
+                      </p>
+                      <p class="synopsis-ar">
+                        دليل إداري واستراتيجي موجه لمديري المشاريع والقيادات
+                        التنفيذية؛ يشرح دورة حياة تحليل البيانات وكيفية توظيف
+                        Power BI في قطاعات التشييد والصناعة والأعمال، ومتابعة
+                        فرق العمل لإنتاج تقارير دعم اتخاذ القرار، مع كتاب تمارين
+                        وأنشطة تكميلي.
+                      </p>
+                    </div>
+
+                    <div class="book-action-box">
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Manager-Guide/main/PDF/Power%20BI%20Manager%20Guide.pdf"
+                        download="Power_BI_Manager_Guide_Said_Fawzy.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                      >
+                        <span>Manager Guide (PDF)</span>
+                        <span class="dl-icon">📥</span>
+                      </a>
+
+                      <a
+                        href="https://raw.githubusercontent.com/saidfawzy/Power-BI-Manager-Guide/main/PDF/Actitiy%20Book.pdf"
+                        download="Power_BI_Manager_Activity_Book.pdf"
+                        target="_blank"
+                        class="btn-amazon-download"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #0284c7 0%,
+                            #0369a1 100%
+                          );
+                          box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+                        "
+                      >
+                        <span>Activity Book (PDF)</span>
+                        <span class="dl-icon">📝</span>
+                      </a>
+
+                      <a
+                        href="https://github.com/saidfawzy/Power-BI-Manager-Guide"
+                        target="_blank"
+                        class="btn-amazon-repo"
+                      >
+                        <img
+                          src="images/logo/github-logo.png"
+                          alt="GitHub"
+                          class="btn-github-icon"
+                        />
+                        <span>GitHub Repo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- نهاية books-shelf-grid -->
+            </div>
+            <!-- نهاية book-cat-body -->
+          </div>
+          <!-- نهاية book-category-card pbi -->
+        </div>
+        <!-- نهاية books-categories-stack -->
+
+        <!-- ================= 2. فئة كتب Microsoft Excel ================= -->
+        <div class="book-category-card" id="cat-excel">
+          <div
+            class="book-cat-header"
+            onclick="toggleBookCategory('cat-excel')"
+          >
+            <div class="cat-header-left">
+              <div class="cat-track-logo">
+                <img src="images/logo/Excel-logo.png" alt="Microsoft Excel" />
+              </div>
+              <div class="cat-title-text">
+                <span class="cat-chip excel-chip">Official Track Series</span>
+                <h3>Microsoft Excel Books</h3>
+              </div>
+            </div>
+            <div class="cat-header-right">
+              <span class="cat-count-badge">5 Books Available</span>
+              <div class="cat-arrow-circle">▼</div>
+            </div>
+          </div>
+
+          <div class="book-cat-body">
+            <div class="books-shelf-grid">
+              <!-- كتاب 01: ميكروسوفت إكسيل للمبتدئين (النسخة العربية) -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/excel-book-1.png"
+                      alt="Microsoft Excel for Beginners Arabic Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span
+                      class="spec-pill lang"
+                      style="
+                        background: #ecfdf5;
+                        color: #047857;
+                        border-color: #a7f3d0;
+                      "
+                      >🌐 العربية (Arabic)</span
+                    >
+                    <span class="spec-pill pages">📄 296 Pages</span>
+                    <span class="spec-pill level">🌱 Beginners Level</span>
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">ميكروسوفت إكسيل للمبتدئين</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-ar">
+                      دليل تدريبي تطبيقي شامل من 10 فصول يبدأ معك من الصفر
+                      لاحتراف واجهة إكسيل، إدارة المصنفات، الصيغ والدوال
+                      الأساسية، تنسيق البيانات، تخطيط الجداول، وحتى طباعة وحماية
+                      المصنفات مع اختبارات وتمارين عملية بعد كل فصل.
                     </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Excel-Training-for-Beginners/main/PDF/Excel%20Training%20for%20Beginers%20Arabic%201.pdf"
+                      download="Excel_Training_for_Beginners_Arabic_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>تحميل الكتاب (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Excel-Training-for-Beginners"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 02: Excel Training for Beginners (English Edition) -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/excel-book-2.png"
+                      alt="Excel Training for Beginners English Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
                 </div>
 
-                <div class="footer-links-col">
-                    <h5 class="footer-col-title">Quick Links</h5>
-                    <div class="footer-quick-nav">
-                        <a href="courses.html">Courses</a>
-                        <a href="books.html">Books</a>
-                        <a href="resources.html">Resources</a>
-                        <a href="community.html">Community</a>
-                    </div>
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 231 Pages</span>
+                    <span class="spec-pill level">🌱 Beginners Level</span>
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">Excel Training for Beginners</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A hands-on foundation guide covering Excel interface
+                      navigation, workbook structure, essential formulas (SUM,
+                      AVERAGE, COUNT), data formatting, worksheet layout, object
+                      insertions, and safe workbook sharing across 10 structured
+                      chapters.
+                    </p>
+                    <p class="synopsis-ar">
+                      النسخة الإنجليزية المعتمدة للتأسيس الاحترافي في إكسيل خطوة
+                      بخطوة عبر 10 فصول تطبيقية مدعومة بتمارين ذاتية واختبارات
+                      لتقييم المهارات.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Excel-Training-for-Beginners/main/PDF/Excel%20Training%20for%20Beginers%20English%201.pdf"
+                      download="Excel_Training_for_Beginners_English_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Excel-Training-for-Beginners"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 03: Excel Intermediate Training (Second Edition) -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/excel-book-3.png"
+                      alt="Excel Intermediate Training Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
                 </div>
 
-                <div class="footer-social-col">
-                    <h5 class="footer-col-title">Connect & Learn</h5>
-                    <div class="footer-social-badges">
-                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
-                            <img src="images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
-                        </a>
-                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
-                            <img src="images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
-                        </a>
-                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
-                            <img src="images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
-                        </a>
-                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
-                            <img src="images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
-                        </a>
-                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
-                            <img src="images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
-                        </a>
-                    </div>
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 108 Pages</span>
+                    <span class="spec-pill level">📈 Intermediate Level</span>
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Excel Intermediate Training (2nd Edition)
+                  </h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      Take your spreadsheet skills further with Named Ranges,
+                      structured Lists &amp; Tables, lookup mastery (VLOOKUP,
+                      XLOOKUP, INDEX/MATCH), nested logical tests, 3D
+                      references, advanced chart customization, and conditional
+                      formatting rules.
+                    </p>
+                    <p class="synopsis-ar">
+                      الطبعة الثانية المحدثة للمستوى المتوسط؛ تغطي النطاقات
+                      المسماة، الجداول، دوال البحث المتقدمة، الشروط المتداخلة،
+                      المراجع ثلاثية الأبعاد، وتصميم الرسوم البيانية وقواعد
+                      التنسيق الشرطي.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Excel_Intermediate_Training/main/PDF/Excel%20Intermediate%20Training.pdf"
+                      download="Excel_Intermediate_Training_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Excel_Intermediate_Training"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
+
+              <!-- كتاب 04: Mastering Data Analysis with Excel -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/excel-book-4.png"
+                      alt="Mastering Data Analysis with Excel Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 170+ Pages</span>
+                    <span class="spec-pill level"
+                      >📊 Analytics &amp; Power Query</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">Mastering Data Analysis with Excel</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      Bridging classic Excel and Modern Analytics: master Pivot
+                      Tables, Pivot Charts, Slicers, automated ETL with Power
+                      Query, building relational Data Models in Excel, and
+                      authoring analytical DAX measures with Time Intelligence.
+                    </p>
+                    <p class="synopsis-ar">
+                      دليل احتراف تحليل البيانات بالإكسيل الحديث؛ يجمع بين أدوات
+                      التحليل الكلاسيكية وجداول الـ Pivot، ومعالجة البيانات
+                      المتقدمة عبر Power Query، وبناء نماذج البيانات وصياغة دوال
+                      DAX ودوال الوقت الذكية.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Mastering-Data-Analysis-with-Excel/main/PDF/Mastering%20Data%20Analysis%20with%20Excel.pdf"
+                      download="Mastering_Data_Analysis_with_Excel_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Mastering-Data-Analysis-with-Excel"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Demos</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- كتاب 05: Preparing Data for Analysis in Excel -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/Excel-book-5.png"
+                      alt="Preparing Data for Analysis in Excel Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang"
+                      >🌐 English &amp; Arabic Intro</span
+                    >
+                    <span class="spec-pill pages">📄 Complete Foundation</span>
+                    <span class="spec-pill level"
+                      >🧹 Data Prep &amp; Cleaning</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Preparing Data for Analysis in Excel
+                  </h3>
+                  <p class="book-author">
+                    By <span>Eng. Said Fawzy Mohamed Hoda</span>
+                  </p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      The foundational handbook for aspiring data analysts:
+                      mastering data cleansing, formula refreshers, knowledge
+                      check assessments, and a 6-year business lab dataset
+                      designed to build solid intuition before advanced
+                      modeling.
+                    </p>
+                    <p class="synopsis-ar">
+                      الدليل التأسيسي الشامل في فلسفة إعداد وتحليل البيانات عبر
+                      Excel؛ يركز على مراجعة المفاهيم والدوال الأساسية قبل كل
+                      فصل، واختبارات الفهم، مع تدريب عملي تطبيقي على بيانات شركة
+                      مجمعة على مدار 6 سنوات لإدراك قيمة الأرقام وسرد القصص
+                      بالبيانات.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Preparing-Data-for-Analysis-in-Excel/main/PDF/Preparing%20Data%20for%20Analysis%20in%20Excel%20V2.pdf"
+                      download="Preparing_Data_for_Analysis_in_Excel_V2_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Preparing-Data-for-Analysis-in-Excel"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Datasets</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 06: Introduction to Data Analysis using Excel (Classic Edition) -->
+              <!-- كتاب: Introduction to Data Analysis using Excel (Classic Edition) -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/excel-book-7.png"
+                      alt="Introduction to Data Analysis using Excel Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang"
+                      >🌐 English &amp; Arabic Intro</span
+                    >
+                    <span class="spec-pill pages">📄 Classic Handbook V2</span>
+                    <span class="spec-pill level"
+                      >📊 Charts &amp; Pivot Dashboards</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Introduction to Data Analysis using Excel
+                  </h3>
+                  <p class="book-author">
+                    By <span>Eng. Said Fawzy Mohamed Hoda</span>
+                  </p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      The classic scenario-based foundation for Excel analytics:
+                      master reporting charts, structured Excel tables,
+                      fundamental PivotTables, and assembling interactive
+                      executive dashboards with hands-on multi-year company lab
+                      models.
+                    </p>
+                    <p class="synopsis-ar">
+                      الدليل التأسيسي الكلاسيكي لتحليل البيانات وإعداد التقارير
+                      في إكسيل: مهارات بناء الرسوم البيانية التوضيحية، الجداول
+                      الذكية، الجداول المحورية (Pivot Tables)، وتجميع لوحات
+                      القيادة التفاعلية مع تدريبات عملية وتطبيقات Labs خطوة
+                      بخطوة.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/SaidFawzy_Intro-to-DA-in-Excel-/main/PDF/Introduction%20to%20DataAnalysis%20Using%20Excel_V2.pdf"
+                      download="Introduction_to_DataAnalysis_Using_Excel_V2_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/SaidFawzy_Intro-to-DA-in-Excel-"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Labs</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- نهاية books-shelf-grid -->
+          </div>
+          <!-- نهاية book-cat-body -->
+        </div>
+        <!-- نهاية book-category-card excel -->
 
-            <div class="footer-bottom-bar">
-                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
-                <p>Designed for data enthusiasts & professionals</p>
+        <!-- ================= 3. فئة كتب Mastering Database ================= -->
+        <div class="book-category-card" id="cat-db">
+          <div class="book-cat-header" onclick="toggleBookCategory('cat-db')">
+            <div class="cat-header-left">
+              <div class="cat-track-logo">
+                <img
+                  src="images/logo/mastering-database-logo.png"
+                  alt="Mastering Database"
+                />
+              </div>
+              <div class="cat-title-text">
+                <span
+                  class="cat-chip db-chip"
+                  style="background: #fee2e2; color: #991b1b"
+                  >Official Track Series</span
+                >
+                <h3>Mastering Database Books</h3>
+              </div>
             </div>
-        </footer>
+            <div class="cat-header-right">
+              <span class="cat-count-badge">3 Books Available</span>
+              <div class="cat-arrow-circle">▼</div>
+            </div>
+          </div>
 
-    </div> <!-- نهاية site-wrapper -->
+          <div class="book-cat-body">
+            <div class="books-shelf-grid">
+              <!-- كتاب 01: Database Fundamentals -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/database-book-1.png"
+                      alt="Database Fundamentals Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 41+ Pages</span>
+                    <span class="spec-pill level"
+                      >🌱 Fundamentals &amp; ERD</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">Database Fundamentals</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A foundational guide bridging relational database theory
+                      with practical design. Learn DBMS architectures
+                      (Three-Schema), conceptual design with Entity-Relationship
+                      Diagrams (ERD), mapping to logical tables, database
+                      integrity constraints, and essential Access objects with
+                      SQL DDL.
+                    </p>
+                    <p class="synopsis-ar">
+                      المرجع التأسيسي في علوم ونظم إدارة قواعد البيانات
+                      العلائقية؛ يشرح معمارية النظم (Three-Schema)، وتصميم
+                      مخططات الكيانات والعلاقات (ERD)، والتحويل للنموذج المنطقي،
+                      مع مقدمة تطبيقية على Microsoft Access وأوامر لغة تعريف
+                      البيانات SQL DDL.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Access-and-Database-Fundamentals/main/PDF/Database%20Fundamentals%20V2.pdf"
+                      download="Database_Fundamentals_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Access-and-Database-Fundamentals"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 02: Microsoft Access Database Development -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/database-book-2.png"
+                      alt="Microsoft Access Database Development Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 50 Pages (Labs)</span>
+                    <span class="spec-pill level"
+                      >⚙️ Development &amp; Queries</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Microsoft Access Database Development
+                  </h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      An intensive hands-on lab manual covering table
+                      structures, primary keys, referential integrity and
+                      cascade rules, multi-table joins, calculated fields via
+                      Expression Builder, automated Parameter Queries, Action
+                      Queries, and core SQL (DDL &amp; DML).
+                    </p>
+                    <p class="synopsis-ar">
+                      دليل المختبرات والتطوير العملي في Microsoft Access؛ يركز
+                      على بناء وتصميم الجداول المتقدمة، وضبط العلاقات وفرض
+                      التكامل المرجعي، والاستعلامات المعقدة والروابط المتعددة
+                      (Joins)، والاستعلامات الإجرائية ومحددات المعاملات وأوامر
+                      SQL.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced/main/PDF/Access%20Database%20Development%20V2.pdf"
+                      download="Access_Database_Development_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 03: Microsoft Access Application Development -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/database-book-3.png"
+                      alt="Microsoft Access Application Development Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 Advanced Lab</span>
+                    <span class="spec-pill level"
+                      >💻 UI &amp; App Architecture</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Microsoft Access Application Development
+                  </h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      Transform raw databases into fully functional desktop
+                      applications. Master custom Form design, property sheets,
+                      SubForms, Tabbed layouts, Split Forms, tab orders, button
+                      controls, and build intuitive user interfaces using
+                      Navigation Forms and Switchboards.
+                    </p>
+                    <p class="synopsis-ar">
+                      دليل تحويل قواعد البيانات إلى تطبيقات أعمال مكتبية متكاملة
+                      وسهلة الاستخدام؛ يغطي تصميم واجهات ونماذج المستخدم
+                      المتقدمة، والنماذج الفرعية (SubForms)، والتخطيطات المبوبة،
+                      ونماذج التنقل ولوحات التحكم الرئيسية (Switchboards).
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced/main/PDF/Access%20Application%20Development%20%20V2.pdf"
+                      download="Access_Application_Development_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Exercise Files &amp; Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- نهاية books-shelf-grid -->
+          </div>
+          <!-- نهاية book-cat-body -->
+        </div>
+        <!-- نهاية book-category-card db -->
+
+        <!-- ================= 4. فئة كتب Business Excellence & Management ================= -->
+        <div class="book-category-card" id="cat-business">
+          <div
+            class="book-cat-header"
+            onclick="toggleBookCategory('cat-business')"
+          >
+            <div class="cat-header-left">
+              <div class="cat-track-logo">
+                <img
+                  src="images/logo/business-logo.png"
+                  alt="Business Excellence &amp; Management"
+                />
+              </div>
+              <div class="cat-title-text">
+                <span
+                  class="cat-chip biz-chip"
+                  style="background: #fef3c7; color: #92400e"
+                  >Official Track Series</span
+                >
+                <h3>Business Excellence &amp; Management</h3>
+              </div>
+            </div>
+            <div class="cat-header-right">
+              <span class="cat-count-badge">4 Books Available</span>
+              <div class="cat-arrow-circle">▼</div>
+            </div>
+          </div>
+
+          <div class="book-cat-body">
+            <div class="books-shelf-grid">
+              <!-- كتاب 01: The Art of Writing Professional Emails -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/business-book-1.png"
+                      alt="The Art of Writing Professional Emails Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span
+                      class="spec-pill lang"
+                      style="
+                        background: #e0f2fe;
+                        color: #0369a1;
+                        border-color: #bae6fd;
+                      "
+                      >🌐 Bilingual (AR / EN)</span
+                    >
+                    <span class="spec-pill level"
+                      >💼 Business Communication</span
+                    >
+                    <span class="spec-pill format"
+                      >💻 Interactive HTML Course</span
+                    >
+                    <span class="spec-pill pages">📝 Activity Book (PDF)</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    The Art of Writing Professional Emails
+                  </h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A comprehensive interactive learning experience covering
+                      professional email structure, business etiquette rules,
+                      common writing pitfalls, and hands-on rewrite workshops.
+                      Includes a self-scoring interactive HTML training course
+                      and a dedicated student activity book.
+                    </p>
+                    <p class="synopsis-ar">
+                      حقيبة تدريبية تفاعلية ثنائية اللغة تجمع بين هيكلة
+                      المراسلات الرسمية وقواعد الإتيكيت المهني وتفادي الأخطاء
+                      الشائعة، مصحوبة بكراس أنشطة تطبيقي وحزمة كورس HTML تفاعلي
+                      متكامل للتقييم الذاتي.
+                    </p>
+                  </div>
+
+                  <div
+                    class="book-action-box"
+                    style="flex-wrap: wrap; gap: 8px"
+                  >
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/The-Art-of-Writing-Professional-Emails/main/Student%20Activity%20Book.pdf"
+                      download="Student_Activity_Book_Professional_Emails_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Activity Book (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/The-Art-of-Writing-Professional-Emails/raw/main/Interactive%20Course.zip"
+                      target="_blank"
+                      class="btn-amazon-download"
+                      style="
+                        background: #0284c7;
+                        border-color: #0369a1;
+                        color: #ffffff;
+                      "
+                    >
+                      <span>Interactive Course (.ZIP)</span>
+                      <span class="dl-icon">📦</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/The-Art-of-Writing-Professional-Emails"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 02: Power Automate - Manage Client Emails Workflow Project -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/business-book-2.png"
+                      alt="Power Automate Manage Client Emails Workflow Project Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 ~30 Pages</span>
+                    <span class="spec-pill level">⚡ Process Automation</span>
+                    <span class="spec-pill format">⚙️ Hands-On Project</span>
+                  </div>
+
+                  <h3 class="book-title">
+                    Power Automate - Manage Client Emails Workflow
+                  </h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A practical enterprise automation project manual. Build an
+                      end-to-end client email workflow connecting Outlook
+                      triggers to SharePoint Lists, handling file attachments,
+                      sending team alerts, and scheduling automated 3-hour
+                      pending request escalation reminders.
+                    </p>
+                    <p class="synopsis-ar">
+                      مشروع تطبيقي لبناء منظومة أتمتة مؤسسية لمراسلات العملاء؛
+                      يوضح خطوة بخطوة ربط تدفقات Power Automate بقوائم
+                      SharePoint List، واستخراج المرفقات، وإرسال تنبيهات
+                      المتابعة والتذكير التلقائي كل 3 ساعات للمهام المعلقة.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Power-Automat-Mange-Client-Emails-Workflow-Project/main/SF_Power%20Automate%20Manage%20Email%20Workflow.pdf"
+                      download="Power_Automate_Manage_Client_Emails_Workflow_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Power-Automat-Mange-Client-Emails-Workflow-Project"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Project Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 03: Risk Management for Projects -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/business-book-3.png"
+                      alt="Risk Management for Projects Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill level"
+                      >🛡️ Project Risk Strategy</span
+                    >
+                    <span class="spec-pill format"
+                      >📊 Monte Carlo Analysis</span
+                    >
+                    <span class="spec-pill pages"
+                      >📘 TextBook + Activity Book</span
+                    >
+                  </div>
+
+                  <h3 class="book-title">Risk Management for Projects</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A structured project management manual for identifying,
+                      categorizing, and assessing engineering and business
+                      risks. Features Monte Carlo simulation models, risk
+                      registers, response planning (treatment &amp; transfer),
+                      communication canvases, and a companion activity book.
+                    </p>
+                    <p class="synopsis-ar">
+                      دليل منهجي متقدم لإدارة مخاطر المشروعات الهندسية
+                      والتنفيذية؛ يغطي دورة معالجة وتصنيف المخاطر، ونمذجة
+                      المحاكاة عبر Monte Carlo، وبناء سجلات المخاطر ومصفوفات
+                      الاستجابة والمتابعة المستمرة، مدعوماً بكراس أنشطة تطبيقي.
+                    </p>
+                  </div>
+
+                  <div
+                    class="book-action-box"
+                    style="flex-wrap: wrap; gap: 8px"
+                  >
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy/main/PDF/Said_Fawzy_Risk%20Project%20Management%20TextBook.pdf"
+                      download="Risk_Project_Management_TextBook_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Textbook (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy/main/PDF/Said_Fawzy_Risk%20Project%20Management%20Activity%20Book.pdf"
+                      download="Risk_Project_Management_Activity_Book_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                      style="
+                        background: #475569;
+                        border-color: #334155;
+                        color: #ffffff;
+                      "
+                    >
+                      <span>Activity Book (PDF)</span>
+                      <span class="dl-icon">📝</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Risk-Project-Management-Training-Said-Fawzy"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- كتاب 04: Introduction to Six Sigma -->
+              <div class="single-book-card amazon-style">
+                <div class="book-media-side">
+                  <div class="book-real-cover">
+                    <img
+                      src="images/book-covers/business-book-4.png"
+                      alt="Introduction to Six Sigma Cover"
+                      onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                    />
+                  </div>
+                </div>
+
+                <div class="book-details-side">
+                  <div class="book-meta-top">
+                    <span class="spec-pill lang">🌐 English</span>
+                    <span class="spec-pill pages">📄 ~60 Pages</span>
+                    <span class="spec-pill level"
+                      >🎯 Quality &amp; Lean Six Sigma</span
+                    >
+                    <span class="spec-pill format">💾 Free PDF</span>
+                  </div>
+
+                  <h3 class="book-title">Introduction to Six Sigma</h3>
+                  <p class="book-author">By <span>Said Fawzy</span></p>
+
+                  <div class="book-synopsis">
+                    <p class="synopsis-en">
+                      A solid operational excellence handbook covering Six Sigma
+                      fundamentals, defect level quantification, customer-driven
+                      quality definition, Kano Model theory, DMAIC process
+                      improvement methodology, and practical SIPOC diagrams for
+                      system mapping.
+                    </p>
+                    <p class="synopsis-ar">
+                      مرجع تطبيقي في مبادئ الجودة وإدارة العمليات وفق منهجية
+                      سيكس سيجما؛ يشرح قياس مستويات العيوب، وتحديد متطلبات
+                      العملاء، ونظرية نموذج كانو (Kano Model)، ودورة التحسين
+                      المستمر DMAIC، ورسم مخططات SIPOC للعمليات.
+                    </p>
+                  </div>
+
+                  <div class="book-action-box">
+                    <a
+                      href="https://raw.githubusercontent.com/saidfawzy/Introduction-to-Six-Sigma-by-Said-Fawzy-2018/blob/main/SaidFawzy_Intro_Six_Sigma_02.pdf"
+                      download="Introduction_to_Six_Sigma_Said_Fawzy.pdf"
+                      target="_blank"
+                      class="btn-amazon-download"
+                    >
+                      <span>Direct Download (PDF)</span>
+                      <span class="dl-icon">📥</span>
+                    </a>
+                    <a
+                      href="https://github.com/saidfawzy/Introduction-to-Six-Sigma-by-Said-Fawzy-2018"
+                      target="_blank"
+                      class="btn-amazon-repo"
+                    >
+                      <img
+                        src="images/logo/github-logo.png"
+                        alt="GitHub"
+                        class="btn-github-icon"
+                      />
+                      <span>Book Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- نهاية books-shelf-grid -->
+          </div>
+          <!-- نهاية book-cat-body -->
+        </div>
+        <!-- نهاية book-category-card business -->
+      </main>
+      <!-- نهاية main.page-body -->
+
+      <!-- ================= Dark Executive Footer ================= -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              A specialized educational hub providing practical pathways in Data
+              Analytics, Business Intelligence, and Engineering Cost Control.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="courses.html">Courses</a>
+              <a href="books.html">Books</a>
+              <a href="resources.html">Resources</a>
+              <a href="community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect & Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts & professionals</p>
+        </div>
+      </footer>
+    </div>
+    <!-- نهاية site-wrapper -->
 
     <!-- Main Interaction Script -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

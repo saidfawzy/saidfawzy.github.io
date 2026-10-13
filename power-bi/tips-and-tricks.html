@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Tips &amp; Tricks | Said Fawzy Learning</title>
+    
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="../images/logo/saidfawzy-icon.png">
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png">
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Power BI Tips &amp; Tricks | Said Fawzy Learning">
+    <meta property="og:description" content="سلسلة الحيل والخدع المتقدمة في Power BI لحل التحديات غير التقليدية في DAX والتصميم ونمذجة البيانات.">
+    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
+    <meta property="og:url" content="https://saidfawzy.github.io/power-bi/tips-and-tricks.html">
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+        <header class="vibrant-banner">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../courses.html" class="nav-item active">Courses</a>
+                <a href="../books.html" class="nav-item">Books</a>
+                <a href="../resources.html" class="nav-item">Resources</a>
+                <a href="../community.html" class="nav-item">Community</a>
+                <a href="../gallery.html" class="nav-item">Gallery</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <a href="../contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../courses.html">Courses</a>
+                <span class="separator">›</span>
+                <a href="index.html">Power BI</a>
+                <span class="separator">›</span>
+                <span class="current-crumb">Tips &amp; Tricks</span>
+            </div>
+
+            <a href="index.html" class="btn-back-pill">
+                ← Back to Power BI Track
+            </a>
+        </div>
+
+        <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+        <main class="page-body">
+
+            <!-- ==========================================================================
+                 بانر رأس الكورس المطور (Course Master Hero - In Production Badge)
+                 ========================================================================== -->
+            <section class="course-master-hero with-book-cover">
+                <div class="hero-layout-split">
+                    
+                    <!-- عمود تفاصيل ومواصفات الكورس -->
+                    <div class="hero-details-col">
+                        <div class="hero-top-meta">
+                            <span class="cert-pill" style="background: #2563eb;">Power BI Pro Edition</span>
+                            <span class="part-pill" style="background: #f59e0b; color: #78350f;">In Production 🚀</span>
+                            <span class="lang-pill">Arabic Audio / English Terms</span>
+                        </div>
+
+                        <h2>Power BI Tips &amp; Tricks</h2>
+
+                        <p class="hero-desc-en">
+                            A curated video series tackling real-world business challenges, smart calculation workarounds, advanced UI/UX hacks, and performance tuning inside Power BI.
+                        </p>
+                        <p class="hero-desc-ar">
+                            سلسلة فيديوهات عملية مكثفة مخصصة لأهم الحيل والخدع المتقدمة والحلول غير التقليدية في DAX، وتصميم الواجهات، وضبط أداء النماذج الكبيرة لتوفير ساعات من العمل والتجربة.
+                        </p>
+
+                        <div class="course-quick-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Track Level</span>
+                                <strong>Advanced Solutions</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Format</span>
+                                <strong>Bite-Sized Practical Tips</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Status</span>
+                                <strong>Recording &amp; Editing 🎬</strong>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Release Plan</span>
+                                <strong>Episodes Coming Soon</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- عمود العرض البصري لبطاقة السلسلة -->
+                    <div class="hero-book-preview-col">
+                        <div class="course-book-card-mini" style="text-align: center; padding: 24px 16px;">
+                            <span class="book-companion-badge" style="background: #0284c7;">Upcoming Series</span>
+                            <div style="width: 140px; height: 190px; margin: 12px auto; background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(0,0,0,0.18); border: 1px solid rgba(255,255,255,0.1);">
+                                <span style="font-size: 42px; margin-bottom: 8px;">💡</span>
+                                <strong style="font-size: 13px; color: #f8fafc; font-weight: 800; line-height: 1.3;">TIPS &amp; TRICKS</strong>
+                                <span style="font-size: 10.5px; color: #94a3b8; margin-top: 4px;">Power BI Vault</span>
+                            </div>
+                            <span class="book-included-hint" style="color: #64748b;">Stay Tuned!</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 5. كارت الإعلان عن الإطلاق ومتابعة اليوتيوب (Stay Tuned Card)
+                 ========================================================================== -->
+            <section class="hands-on-callout-card" style="border-left: 5px solid #2563eb;">
+                <div class="callout-icon-box" style="background: #eff6ff; color: #2563eb;">
+                    <span>🔔</span>
+                </div>
+                <div class="callout-text-content">
+                    <div class="callout-title-row">
+                        <h3>Series in Production (السلسلة قيد التسجيل والإعداد)</h3>
+                    </div>
+                    <p class="callout-desc-en">
+                        Each upcoming video will dissect a specific edge-case business scenario with downloadable code snippets and demo PBIX templates. Subscribe to the channel to get notified as new episodes drop!
+                    </p>
+                    <p class="callout-desc-ar">
+                        يتم تجهيز وتسجيل هذه السلسلة العملية حالياً لتقديم حلول سريعة ومباشرة للمشاكل المعقدة في بيئات العمل الحقيقية، مع توفير أكواد DAX الجاهزة وملفات PBIX للتطبيق الفوري. اشترك في القناة ليصلك إشعار فور رفع كل درس.
+                    </p>
+                </div>
+                <div class="callout-action-col">
+                    <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="btn-github-download" style="background: #ef4444;">
+                        <span class="gh-icon">▶</span>
+                        <div class="btn-labels">
+                            <span class="main-label">Subscribe on YouTube</span>
+                            <span class="sub-label">Get Episode Notifications</span>
+                        </div>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 6. خريطة الموضوعات والحيل القادمة (Upcoming Topics Roadmap Grid)
+                 ========================================================================== -->
+            <div style="margin-top: 36px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 28px 32px; box-shadow: 0 4px 18px rgba(0,0,0,0.03);">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f1f5f9; padding-bottom: 16px; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+                    <div>
+                        <h3 style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">
+                            Upcoming Master Tricks Roadmap (خريطة الدروس القادمة)
+                        </h3>
+                        <p style="font-size: 13.5px; color: #64748b; margin: 0;">
+                            نظرة عامة على أبرز الخدع والمحاور الجاري تسجيلها وإعداد ملفات العمل الخاصة بها:
+                        </p>
+                    </div>
+                    <span style="background: #f1f5f9; color: #475569; font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 999px;">
+                        Curated by Eng. Said Fawzy
+                    </span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+                    
+                    <!-- بطاقة موضوع 1 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 01</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Dynamic Formatting Strings with DAX</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            تنسيق المقاييس ديناميكياً (عرض نسب وأرقام بالعملة في نفس العمود) بالاعتماد على ميزة Dynamic Format Strings.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة موضوع 2 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 02</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Embedding SVG Mini-Charts in Tables</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            رسم مؤشرات وبارات بيانية ورموز شريطية خفيفة وسريعة التحميل داخل الجداول والمصفوفات باستخدام كود SVG DAX.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة موضوع 3 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 03</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Smart Search Slicers &amp; Multi-Attributes</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            بناء فلاتر ذكية تبحث عبر عدة أعمدة في آن واحد (كود الموظف، الاسم، الإدارة) بدون إثقال أداء شريحة التصفية.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة موضوع 4 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 04</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Optimizing Heavy DAX with Performance Analyzer</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            كيفية تفكيك واستكشاف المقاييس البطيئة وتسريع زمن استجابة التقرير من ثوانٍ معدودة إلى أجزاء من الثانية.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة موضوع 5 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 05</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Advanced Tab-Switching UI with Bookmarks</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            تصميم تابات تنقل احترافية تغير خلفيات الأزرار وتتحكم في طبقات الرسوم دون تكرار أو مسح اختيارات المستخدم.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة موضوع 6 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 11.5px; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 3px 10px; border-radius: 6px;">Tip 06</span>
+                            <span style="font-size: 11px; color: #94a3b8;">Planned</span>
+                        </div>
+                        <h4 style="font-size: 15px; font-weight: 700; color: #0f172a; margin: 4px 0 2px;">Dynamic Date Relative Periods (Rolling 30 Days)</h4>
+                        <p style="font-size: 12.5px; color: #64748b; line-height: 1.5; margin: 0;">
+                            حساب الفترات المتحركة السريعة ومقارنتها بنفس الفترة السابقة دون الحاجة لتعديل شريحة التاريخ يدوياً.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </main> <!-- نهاية page-body -->
+
+        <!-- ==========================================================================
+             7. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+        <footer class="site-footer">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-title">
+                        <img src="../images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
+                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    </div>
+                    <p class="footer-bio-ar">
+                        منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت الدولية وتكاليف المشروعات الهندسية.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h5 class="footer-col-title">Quick Links</h5>
+                    <div class="footer-quick-nav">
+                        <a href="../courses.html">Courses</a>
+                        <a href="../books.html">Books</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../community.html">Community</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect &amp; Learn</h5>
+                    <div class="footer-social-badges">
+                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
+                            <img src="../images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
+                            <img src="../images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
+                        </a>
+                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
+                            <img src="../images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
+                            <img src="../images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
+                        </a>
+                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
+                            <img src="../images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+                <p>Designed for data enthusiasts &amp; professionals</p>
+            </div>
+        </footer>
+
+    </div> <!-- نهاية site-wrapper -->
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

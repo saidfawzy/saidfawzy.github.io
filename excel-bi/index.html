@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Data Analysis with Excel | Said Fawzy Learning</title>
+    
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="../images/logo/saidfawzy-icon.png">
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png">
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mastering Data Analysis with Excel | Said Fawzy Learning">
+    <meta property="og:description" content="المسار الاحترافي المتخصص في تحليل البيانات وتجهيز الجداول وبناء لوحات القيادة التفاعلية في Microsoft Excel.">
+    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
+    <meta property="og:url" content="https://saidfawzy.github.io/excel-bi/index.html">
+
+    <style>
+        /* شبكة الكورسات */
+        .track-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .track-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+        }
+        .track-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+        }
+        .card-top-meta {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+        .badge-pill {
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-green { background: #dcfce7; color: #15803d; }
+        .badge-blue { background: #dbeafe; color: #1d4ed8; }
+        .badge-amber { background: #fef3c7; color: #b45309; }
+        .badge-purple { background: #f3e8ff; color: #6b21a8; }
+        .badge-gray { background: #f1f5f9; color: #475569; }
+
+        .card-title {
+            font-size: 19px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+            line-height: 1.35;
+        }
+        .card-desc-en {
+            font-size: 13.5px;
+            color: #475569;
+            line-height: 1.55;
+            margin-bottom: 6px;
+        }
+        .card-desc-ar {
+            font-size: 13.5px;
+            color: #64748b;
+            line-height: 1.65;
+            margin-bottom: 18px;
+            direction: rtl;
+            text-align: right;
+        }
+        .card-footer {
+            border-top: 1px solid #f1f5f9;
+            padding-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .btn-open-course {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #0f172a;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 9px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+            white-space: nowrap;
+        }
+        .btn-open-course:hover {
+            background: #1e293b;
+        }
+
+        /* حاوية قسم الأرشيف الكلاسيكي */
+        .archive-section {
+            margin-top: 48px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 32px 28px;
+        }
+        .archive-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .archive-title-group h3 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+        .archive-title-group p {
+            font-size: 13.5px;
+            color: #64748b;
+            margin: 0;
+        }
+        .archive-card {
+            background: #ffffff;
+            border: 1px dashed #cbd5e1;
+            border-radius: 18px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.2s ease;
+        }
+        .archive-card:hover {
+            border-color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+        <header class="vibrant-banner">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
+            </a>
+
+            <div class="brand-title">
+                <h1>
+                    <span class="text-dark">Said Fawzy</span>
+                    <span class="text-light">Learning</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+        <nav class="main-navbar">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../courses.html" class="nav-item active">Courses</a>
+                <a href="../books.html" class="nav-item">Books</a>
+                <a href="../resources.html" class="nav-item">Resources</a>
+                <a href="../community.html" class="nav-item">Community</a>
+                <a href="../gallery.html" class="nav-item">Gallery</a>
+                <a href="../about.html" class="nav-item">About</a>
+                <a href="../contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+        <div class="sub-nav-bar">
+            <div class="breadcrumb-trail">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../courses.html">Courses</a>
+                <span class="separator">›</span>
+                <span class="current-crumb">Data Analysis with Excel</span>
+            </div>
+
+            <a href="../courses.html" class="btn-back-pill">
+                ← Back to All Courses
+            </a>
+        </div>
+
+        <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+        <main class="page-body">
+
+            <!-- مساحة العنوان والتقديم للمسار التخصصي -->
+            <section class="course-master-hero" style="background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); color: #ffffff; border-radius: 24px; padding: 36px 40px; margin-bottom: 24px;">
+                <div style="max-width: 860px;">
+                    <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+                        <span class="badge-pill" style="background: #10b981; color: #ffffff;">Specialized BI Track</span>
+                        <span class="badge-pill" style="background: rgba(255,255,255,0.15); color: #ffffff;">Professional Data Analytics</span>
+                    </div>
+                    <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 12px; color: #ffffff;">
+                        Mastering Data Analysis with Excel
+                    </h2>
+                    <p style="font-size: 15px; color: #a7f3d0; line-height: 1.6; margin-bottom: 8px;">
+                        Transform raw enterprise sheets into dynamic insights. A focused analytical track covering data cleansing, ETL structuring, advanced statistical formulas, PivotTables, and interactive executive dashboard architecture.
+                    </p>
+                    <p style="font-size: 14.5px; color: #e2e8f0; line-height: 1.7; direction: rtl; text-align: right; margin: 0;">
+                        المسار المهني المتخصص لتحويل الجداول والمصنفات التقليدية إلى لوحات تحكم وقرارات أعمال استراتيجية: من مهارات تجهيز وتطهير البيانات الخام، مروراً بالدوال الإحصائية المتقدمة والـ PivotTables، وحتى بناء واجهات القيادة التفاعلية والـ Data Model.
+                    </p>
+                </div>
+            </section>
+
+            <!-- كارت الربط الذكي مع المسارات الأخرى -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 24px;">💡</span>
+                    <div>
+                        <strong style="font-size: 13.5px; color: #0f172a; display: block;">Looking for Excel Fundamentals or Power BI?</strong>
+                        <span style="font-size: 12.5px; color: #64748b;">تفضل بزيارة مسار تأسيس الإكسيل من الصفر، أو مسار ذكاء الأعمال المتقدم بـ Power BI.</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <a href="../excel/index.html" style="font-size: 12px; font-weight: 700; color: #047857; text-decoration: none; padding: 7px 12px; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px;">
+                        Excel Fundamentals Track →
+                    </a>
+                    <a href="../power-bi/index.html" style="font-size: 12px; font-weight: 700; color: #b45309; text-decoration: none; padding: 7px 12px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;">
+                        Power BI Track →
+                    </a>
+                </div>
+            </div>
+
+            <!-- ==========================================================================
+                 القسم الأول: الكورسات الأساسية الحديثة (Core Modern Track)
+                 ========================================================================== -->
+            <div style="margin-top: 32px;">
+                <h3 style="font-size: 21px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">
+                    Core Analytical Curriculum (المسار التحليلي الحديث)
+                </h3>
+                <p style="font-size: 13.5px; color: #64748b; margin: 0;">
+                    الكورسات المعتمدة المحدثة التي تجمع أحدث دوال الإكسيل ونمذجة البيانات (Data Model) وبناء الداشبورد المعاصرة.
+                </p>
+            </div>
+
+            <div class="track-grid">
+
+                <!-- 1. الكورس الشامل الرئيسي (Mastering Data Analysis with Excel) -->
+                <div class="track-card">
+                    <div>
+                        <div class="card-top-meta">
+                            <span class="badge-pill badge-green">Flagship Masterclass</span>
+                            <span class="badge-pill badge-blue">Complete Curriculum</span>
+                        </div>
+                        <h3 class="card-title">Mastering Data Analysis with Excel</h3>
+                        <p class="card-desc-en">
+                            The comprehensive modern masterclass combining dynamic array formulas, modern PivotTable modeling, data model integration, and practical decision-support dashboards.
+                        </p>
+                        <p class="card-desc-ar">
+                            الكورس الشامل والمحدث؛ يجمع خلاصة تقنيات التحليل المعاصرة، دوال الصفوف الديناميكية، تكامل نموذج البيانات (Data Model)، ونمذجة الـ Pivot Tables للقرارات الإدارية.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size: 12px; color: #64748b; font-weight: 600;">GitHub Repo &amp; Datasets Included</span>
+                        <a href="mastering-data-analysis.html" class="btn-open-course">
+                            Open Course →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. كورس تجهيز وتنظيف البيانات (Preparing Data for Analysis in Excel) -->
+                <div class="track-card">
+                    <div>
+                        <div class="card-top-meta">
+                            <span class="badge-pill badge-amber">Data Prep &amp; ETL</span>
+                            <span class="badge-pill badge-green">Foundation Deep-Dive</span>
+                        </div>
+                        <h3 class="card-title">Preparing Data for Analysis in Excel</h3>
+                        <p class="card-desc-en">
+                            Master the crucial 75% of every analyst's job: resolving duplicate records, handling text formatting anomalies, date inconsistencies, and structuring clean tabular schemas.
+                        </p>
+                        <p class="card-desc-ar">
+                            كورس التأسيس العملي المتعمق في أهم مراحل التحليل: تنظيف وتجهيز البيانات الخام، معالجة القيم الشاذة، ضبط النصوص والتواريخ، وتأهيل الجداول للتحليل.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size: 12px; color: #64748b; font-weight: 600;">Practice Files &amp; Exercises</span>
+                        <a href="preparing-data.html" class="btn-open-course">
+                            Open Course →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. ورشة عمل بناء الداشبورد (Excel Dashboard Overview Webinar) -->
+                <div class="track-card">
+                    <div>
+                        <div class="card-top-meta">
+                            <span class="badge-pill badge-blue">Live Workshop</span>
+                            <span class="badge-pill badge-amber">Hands-On Build</span>
+                        </div>
+                        <h3 class="card-title">Excel Dashboard Overview Webinar</h3>
+                        <p class="card-desc-en">
+                            A complete step-by-step masterclass demonstrating how to architect and design an interactive, dynamic executive dashboard from scratch using Excel tools.
+                        </p>
+                        <p class="card-desc-ar">
+                            ورشة العمل التطبيقية لبناء لوحة قيادة تفاعلية تنفيذية من الصفر خطوة بخطوة؛ توظيف شرائح التصفية (Slicers)، وتنسيق الجداول والمخططات المتجاوبة.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size: 12px; color: #64748b; font-weight: 600;">Full Session &amp; Workbook</span>
+                        <a href="webinar-project.html" class="btn-open-course">
+                            Open Course →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ==========================================================================
+                 القسم الثاني: الإصدار الكلاسيكي والأرشيف التعليمي (Classic Editions & Archive)
+                 ========================================================================== -->
+            <section class="archive-section">
+                <div class="archive-header">
+                    <div class="archive-title-group">
+                        <h3>Classic Editions &amp; Archive (الإصدارات الكلاسيكية والأرشيف)</h3>
+                        <p>
+                            مسار تدريبي يركز على مدرسة الـ Pivot Tables والداشبورد الكلاسيكية دون الحاجة للـ Data Model المعقد.
+                        </p>
+                    </div>
+                    <span class="badge-pill badge-gray">Archive Reference</span>
+                </div>
+
+                <div class="archive-card">
+                    <div>
+                        <div class="card-top-meta">
+                            <span class="badge-pill badge-purple">Classic Edition</span>
+                            <span class="badge-pill badge-amber">Pivot Tables Deep-Dive</span>
+                            <span class="badge-pill badge-gray">Pre-Data Model Workflow</span>
+                        </div>
+                        <h4 class="card-title">Introduction to Data Analysis in Excel (Classic Edition)</h4>
+                        <p class="card-desc-en">
+                            The original, in-depth scenario-based course focusing entirely on mastering Pivot Tables, grouping, calculated items, and building interactive dashboards using standard Excel features prior to the Data Model era.
+                        </p>
+                        <p class="card-desc-ar">
+                            الإصدار التدريبي الكلاسيكي الأصلي؛ يعتمد على سيناريو تدريجي ممتع يركز على استخراج كامل قوة الـ Pivot Tables وتجميع البيانات والعناصر المحسوبة وبناء الداشبورد بالأسلوب الكلاسيكي السلس، وهو مرجع مثالي لمن يفضل التدرج خطوة بخطوة قبل الانتقال لمرحلة النمذجة الحديثة.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 18px;">📁</span>
+                            <span style="font-size: 12.5px; color: #64748b; font-weight: 600;">GitHub Repo: SaidFawzy_Intro-to-DA-in-Excel-</span>
+                        </div>
+                        <a href="intro-to-da-classic.html" class="btn-open-course" style="background: #475569;">
+                            Explore Classic Course →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main> <!-- نهاية page-body -->
+
+        <!-- ==========================================================================
+             5. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+        <footer class="site-footer">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-title">
+                        <img src="../images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
+                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
+                    </div>
+                    <p class="footer-bio-ar">
+                        منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت الدولية وتكاليف المشروعات الهندسية.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h5 class="footer-col-title">Quick Links</h5>
+                    <div class="footer-quick-nav">
+                        <a href="../courses.html">Courses</a>
+                        <a href="../books.html">Books</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../community.html">Community</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-col">
+                    <h5 class="footer-col-title">Connect &amp; Learn</h5>
+                    <div class="footer-social-badges">
+                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
+                            <img src="../images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
+                            <img src="../images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
+                        </a>
+                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
+                            <img src="../images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
+                            <img src="../images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
+                        </a>
+                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
+                            <img src="../images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+                <p>Designed for data enthusiasts &amp; professionals</p>
+            </div>
+        </footer>
+
+    </div> <!-- نهاية site-wrapper -->
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

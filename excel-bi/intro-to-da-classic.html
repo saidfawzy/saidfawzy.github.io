@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Introduction to Data Analysis Using Excel (Classic) | Said Fawzy Learning
+    </title>
+
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/lessons.css" />
+
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/logo/saidfawzy-icon.png"
+    />
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png" />
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Introduction to Data Analysis Using Excel (Classic) | Said Fawzy Learning"
+    />
+    <meta
+      property="og:description"
+      content="الإصدار الكلاسيكي التأسيسي لتحليل البيانات في إكسيل: الرسوم البيانية، الجداول الذكية، الجداول المحورية، وبناء الداشبورد بالسيناريو العملي المتدرج."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/excel-bi/intro-to-da-classic.html"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="../courses.html" class="nav-item active">Courses</a>
+          <a href="../books.html" class="nav-item">Books</a>
+          <a href="../resources.html" class="nav-item">Resources</a>
+          <a href="../community.html" class="nav-item">Community</a>
+          <a href="../gallery.html" class="nav-item">Gallery</a>
+          <a href="../about.html" class="nav-item">About</a>
+          <a href="../contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+      <div class="sub-nav-bar">
+        <div class="breadcrumb-trail">
+          <a href="../index.html">Home</a>
+          <span class="separator">›</span>
+          <a href="../courses.html">Courses</a>
+          <span class="separator">›</span>
+          <a href="index.html">Data Analysis with Excel</a>
+          <span class="separator">›</span>
+          <span class="current-crumb">Classic Intro to Data Analysis</span>
+        </div>
+
+        <a href="index.html" class="btn-back-pill">
+          ← Back to Excel BI Track
+        </a>
+      </div>
+
+      <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- بانر رأس الكورس المطور (Course Master Hero with Book Visual Badge) -->
+        <section class="course-master-hero with-book-cover">
+          <div class="hero-layout-split">
+            <div class="hero-details-col">
+              <div class="hero-top-meta">
+                <span class="cert-pill" style="background: #6b21a8"
+                  >Classic Foundation Edition</span
+                >
+                <span class="part-pill"
+                  >Charts, Tables &amp; Pivot Dashboards</span
+                >
+                <span class="lang-pill">Arabic Audio / English Terms</span>
+              </div>
+
+              <h2>Introduction to Data Analysis Using Excel</h2>
+
+              <p class="hero-desc-en">
+                The original, in-depth scenario-based masterclass focusing on
+                core visual reporting, Excel structured tables,
+                multi-dimensional PivotTable summarization, and building dynamic
+                interactive executive dashboards without pre-requisite Data
+                Model complexity.
+              </p>
+              <p class="hero-desc-ar">
+                الإصدار التدريبي الكلاسيكي التأسيسي المتكامل؛ يقدم سيناريو
+                تدريجي ممتع يركز على إتقان الرسوم البيانية وإعداد التقارير
+                المرئية، إدارة الجداول الذكية، قوة الجداول المحورية (Pivot
+                Tables) في تلخيص البيانات الكثيفة، وتجميع لوحة قيادة تفاعلية
+                تنفيذية، وهو المدخل المثالي لفهم تحليل البيانات السلس قبل
+                الانتقال للنمذجة المتقدمة.
+              </p>
+
+              <div class="course-quick-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Track Level</span>
+                  <strong>Classic Analytical Foundation</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Video Modules</span>
+                  <strong>13 Guided Lessons</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Hands-on Labs</span>
+                  <strong>Lab 0 to Lab 3B + Capstone Dashboard</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Course Textbook</span>
+                  <strong>Official Handbook V2 Included 📦</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- عمود العرض البصري لغلاف الكتاب المعتمد -->
+            <div class="hero-book-preview-col">
+              <div class="course-book-card-mini">
+                <span class="book-companion-badge">Classic Handbook</span>
+                <div class="course-book-img-frame">
+                  <img
+                    src="../images/book-covers/Excel-book-7.png"
+                    alt="Introduction to Data Analysis Using Excel Book Cover"
+                    onerror="this.src = '../images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <span class="book-included-hint"
+                  >Included in GitHub Repo ↓</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- كارت التحفيز العملي ورابط مستودع GitHub -->
+        <section class="hands-on-callout-card">
+          <div class="callout-icon-box">
+            <span>📑</span>
+          </div>
+          <div class="callout-text-content">
+            <div class="callout-title-row">
+              <h3>Get Your Hands Dirty! (ملفات العمل والتدريبات الكلاسيكية)</h3>
+            </div>
+            <p class="callout-desc-en">
+              Download the official lab exercise workbooks (Lab 0 through Lab
+              3B), dataset sheets, and dashboard templates directly from the
+              repository.
+            </p>
+            <p class="callout-desc-ar">
+              التطبيق العملي خطوة بخطوة هو سر إتقان التحليل؛ حمّل ملفات المعامل
+              التطبيقية (Lab 0 حتى Lab 3B) وملفات التمارين والداشبورد من مستودع
+              GitHub الخاص بالكورس لمتابعة كل تطبيق عملي بالتزامن مع الفيديوهات.
+            </p>
+          </div>
+          <div class="callout-action-col">
+            <a
+              href="https://github.com/saidfawzy/SaidFawzy_Intro-to-DA-in-Excel-"
+              target="_blank"
+              class="btn-github-download"
+            >
+              <span class="gh-icon">📁</span>
+              <div class="btn-labels">
+                <span class="main-label">Download Course Material</span>
+                <span class="sub-label">GitHub Repo, Datasets &amp; Book</span>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+                 قائمة الدروس الـ 13 الموحدة (Lesson 01 إلى Lesson 13)
+                 ========================================================================== -->
+        <div class="course-lessons-accordion-stack">
+          <!-- Lesson 01 -->
+          <article class="lesson-accordion-item open" id="lesson-01">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 01</span>
+                <h4>00 Introduction (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    مقدمة الكورس وخطة المسار التدريبي؛ استعراض أهمية تحويل
+                    البيانات الصامتة إلى معلومات بصرية، وفلسفة سيناريو التدريب
+                    المعتمد على الرسوم والجداول والـ Pivot Tables.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Course roadmap and core reporting philosophy in Excel.
+                      </li>
+                      <li>
+                        How visual storytelling bridges data and decision
+                        making.
+                      </li>
+                      <li>
+                        Overview of companion lab files and practice structure.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/Tq90gdSsLEM"
+                      title="00 Introduction"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 02 -->
+          <article class="lesson-accordion-item" id="lesson-02">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 02</span>
+                <h4>00 Excel Chart Basics Part 1 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    أساسيات الرسوم البيانية (الجزء 1)؛ التعرف على أنواع المخططات
+                    (Column, Bar, Line Charts)، واختيار الرسم المناسب لطبيعة
+                    البيانات المعروضة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Anatomy of Excel charts and plotting principles.</li>
+                      <li>Selecting between Column, Bar, and Line charts.</li>
+                      <li>
+                        Mapping data categories and numerical value series
+                        cleanly.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/BAVMkTD_oh4"
+                      title="00 Excel Chart Basics Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 03 -->
+          <article class="lesson-accordion-item" id="lesson-03">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 03</span>
+                <h4>00 Excel Chart Basics Part 2 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    أساسيات الرسوم البيانية (الجزء 2)؛ تخصيص عناصر المخطط (Chart
+                    Elements)؛ المحاور، خطوط الشبكة، عناوين البيانات، ووسيلة
+                    الإيضاح (Legend).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Formatting chart axes, major/minor gridlines, and
+                        titles.
+                      </li>
+                      <li>Adding and positioning informative Data Labels.</li>
+                      <li>
+                        Cleaning chart clutter for executive visual clarity.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/hJbkdveUCfA"
+                      title="00 Excel Chart Basics Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 04 -->
+          <article class="lesson-accordion-item" id="lesson-04">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 04</span>
+                <h4>00 Excel Chart Basics Part 3 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    أساسيات الرسوم البيانية (الجزء 3)؛ تطبيق عملي لمعمل (Lab 0:
+                    Basics of Charts)؛ بناء مخططات بيانية متكاملة وحل تدريبات
+                    الفهم المباشرة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Hands-on walkthrough of Lab 0 exercise workbook.</li>
+                      <li>Handling multi-series comparison datasets.</li>
+                      <li>
+                        Exporting and sizing charts for corporate reports.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/8IkvAmv2b-U"
+                      title="00 Excel Chart Basics Part 3"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 05 -->
+          <article class="lesson-accordion-item" id="lesson-05">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 05</span>
+                <h4>01 Reporting in Excel Part 1 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    إعداد التقارير في إكسيل (Module 01 - الجزء 1)؛ مبادئ تصميم
+                    التقرير التنفيذي، وتطبيق (Demo 1) لتحويل جداول المبيعات إلى
+                    رسوم بيانية ذات دلالة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Principles of effective executive business reporting.
+                      </li>
+                      <li>
+                        Demo 1: Transforming flat numeric tables into visual
+                        charts.
+                      </li>
+                      <li>
+                        Evaluating visual hierarchy and readability standards.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/BQTFB8jIhw0"
+                      title="01 Reporting in Excel Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 06 -->
+          <article class="lesson-accordion-item" id="lesson-06">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-06')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 06</span>
+                <h4>01 Reporting in Excel Part 2 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    إعداد التقارير في إكسيل (الجزء 2)؛ حل أسئلة مراجعة المعرفة
+                    (Knowledge Checks)، وتطبيق معمل (Lab 01) على بيانات أداء
+                    متكاملة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Reviewing Knowledge Check conceptual questions.</li>
+                      <li>
+                        Full hands-on execution of Lab 01 reporting challenges.
+                      </li>
+                      <li>Validating report metrics against source numbers.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/W6gQ0P2WI1s"
+                      title="01 Reporting in Excel Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 07 -->
+          <article class="lesson-accordion-item" id="lesson-07">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-07')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 07</span>
+                <h4>02 Excel Tables Part 1 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    جداول إكسيل الذكية (Module 02 - الجزء 1)؛ تحويل نطاق
+                    البيانات إلى جدول منظم (Excel Table)، استكشاف شريط Design،
+                    وتطبيق (Demo 02).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Converting raw cell ranges into structured Excel Tables.
+                      </li>
+                      <li>
+                        Demo 02: Table naming, styles, and automated banding.
+                      </li>
+                      <li>Eliminating manual range expansion bottlenecks.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/MSwPiFZSUCA"
+                      title="02 Excel Tables Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 08 -->
+          <article class="lesson-accordion-item" id="lesson-08">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-08')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 08</span>
+                <h4>02 Excel Tables Part 2 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    جداول إكسيل الذكية (الجزء 2)؛ مراجع الصيغ الهيكلية
+                    (Structured References)، صف الإجماليات التلقائي (Total Row)،
+                    والفرز والتصفية المباشرة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Formulas with Structured References [@ColumnName].
+                      </li>
+                      <li>Configuring Total Row aggregation metrics.</li>
+                      <li>Header sorting and dynamic filtering behaviors.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/24sYoPDb_qI"
+                      title="02 Excel Tables Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 09 -->
+          <article class="lesson-accordion-item" id="lesson-09">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-09')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 09</span>
+                <h4>02 Excel Tables Part 3 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    جداول إكسيل الذكية (الجزء 3)؛ أسئلة تقييم المعرفة وحل تدريب
+                    معمل (Lab 02: Creating Excel Table) بالكامل لتثبيت مهارات
+                    بناء الجداول.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Solving Module 02 Knowledge Check questions.</li>
+                      <li>
+                        Full hands-on walkthrough of Lab 02 table exercises.
+                      </li>
+                      <li>
+                        Preparing clean table sources for PivotTable
+                        consumption.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/DPpy3VcBlWg"
+                      title="02 Excel Tables Part 3"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 10 -->
+          <article class="lesson-accordion-item" id="lesson-10">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-10')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 10</span>
+                <h4>03 Basics of Pivot Tables Part 1 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    أساسيات الجداول المحورية (Module 03 - الجزء 1)؛ إنشاء الجدول
+                    المحوري وتوزيع الحقول بين Rows و Columns و Values و Filters،
+                    وتطبيق (Demo 3A).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Demo 3A: Building your first PivotTable from an Excel
+                        Table.
+                      </li>
+                      <li>Understanding the 4 field quadrant zones.</li>
+                      <li>
+                        Instantaneous aggregations: Sum, Count, and Average.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/Dy_GGwCm2YE"
+                      title="03 Basics of Pivot Tables Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 11 -->
+          <article class="lesson-accordion-item" id="lesson-11">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-11')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 11</span>
+                <h4>03 Basics of Pivot Tables Part 2 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الجداول المحورية والداشبورد (الجزء 2)؛ تطبيق (Demo 3B:
+                    Creating Dashboard using Pivot Table)؛ مزامنة المخططات
+                    المحورية وإدخال شرائح التصفية (Slicers).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Demo 3B: Designing dashboard blocks using PivotTables.
+                      </li>
+                      <li>
+                        Connecting Pivot Charts with dynamic data summaries.
+                      </li>
+                      <li>
+                        Inserting interactive Slicers for quick visual slicing.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/QgZKRS2p_A4"
+                      title="03 Basics of Pivot Tables Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 12 -->
+          <article class="lesson-accordion-item" id="lesson-12">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-12')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 12</span>
+                <h4>03 Basics of Pivot Tables Part 3 (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الجداول المحورية (الجزء 3)؛ حل أسئلة مراجعة المعرفة،
+                    وتطبيقات المعامل المتقدمة (Lab 3 &amp; Lab 3A &amp; Lab 3B)
+                    خطوة بخطوة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Module 03 Knowledge Check question reviews.</li>
+                      <li>
+                        Hands-on execution of Lab 3, Lab 3A, and Lab 3B
+                        workbooks.
+                      </li>
+                      <li>
+                        Mastering cross-tabulation and multi-level data
+                        grouping.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/y82vSiC1dp0"
+                      title="03 Basics of Pivot Tables Part 3"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 13 -->
+          <article class="lesson-accordion-item" id="lesson-13">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-13')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 13</span>
+                <h4>04 Dashboard (Arabic)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    مشروع الداشبورد المتكامل (Capstone Dashboard)؛ تجميع كافة
+                    مخرجات الكورس في لوحة قيادة تفاعلية واحدة؛ ضبط واجهة
+                    المستخدم وعرض النتائج لمتخذي القرار.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Assembling the end-to-end interactive executive
+                        dashboard.
+                      </li>
+                      <li>
+                        Connecting multi-pivot slicers via Report Connections.
+                      </li>
+                      <li>
+                        Final layout polish and presentation tips for business
+                        leadership.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/TLj5ManhHAE"
+                      title="04 Dashboard"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- نهاية Stack الدروس -->
+      </main>
+      <!-- نهاية Page Body -->
+
+      <!-- ==========================================================================
+             5. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="../images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="../courses.html">Courses</a>
+              <a href="../books.html">Books</a>
+              <a href="../resources.html">Resources</a>
+              <a href="../community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="../images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="../images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="../images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="../images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="../images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
+    </div>
+    <!-- نهاية site-wrapper -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
