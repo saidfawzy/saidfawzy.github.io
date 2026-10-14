@@ -1,16 +1,29 @@
 /**
- * Said Fawzy Learning - Interaction Engine
+ * ==============================================================================
+ * المشروع: منصة Said Fawzy Learning
+ * الملف: main.js
+ * الوصف: المحرك التفاعلي للمنصة (JavaScript Core Interaction Engine)
+ * يشمل:
+ *  1. الانتقال السلس بين الصفحات.
+ *  2. أكورديون الكورسات الرئيسية (courses.html).
+ *  3. أكورديون مجموعات التراك (power-bi/index.html & excel-bi/index.html).
+ *  4. أكورديون الدروس والتحكم في إيقاف فيديوهات YouTube تلقائياً.
+ *  5. أكورديون تصنيفات الكتب مع التمرير السلس الذكي للهواتف (books.html).
+ *  6. محرك تغذية واستقبال حائط مناقشات المجتمع وتكامل Google Sheets.
+ * ==============================================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. انتقال سلس بين الصفحات (Page Exit Transition)
-    const links = document.querySelectorAll('.nav-item, .logo-link');
-    if (links.length > 0) {
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
+    // --------------------------------------------------------------------------
+    // 1. الانتقال السلس بين الصفحات (Page Exit Transition)
+    // --------------------------------------------------------------------------
+    const navigationLinks = document.querySelectorAll('.nav-item, .logo-link');
+    if (navigationLinks.length > 0) {
+        navigationLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
                 const destination = this.getAttribute('href');
                 if (destination && !destination.startsWith('#') && !this.classList.contains('active')) {
-                    e.preventDefault();
+                    event.preventDefault();
                     document.body.classList.add('page-leaving');
                     setTimeout(() => {
                         window.location.href = destination;
@@ -19,10 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // تهيئة حائط المجتمع في حال وجود الحاوية بالصفحة
+    if (document.getElementById('communityFeedContainer')) {
+        fetchCommunityFeed();
+    }
 });
 
+
 /**
+ * ------------------------------------------------------------------------------
  * 2. أكورديون صفحة الكورسات الرئيسية (courses.html)
+ * - يفتح كارت مسار واحد فقط ويغلق الباقي بحركة ارتفاع انسيابية.
+ * ------------------------------------------------------------------------------
  */
 function toggleTrack(cardId) {
     const targetCard = document.getElementById(cardId);
@@ -67,28 +89,29 @@ function toggleTrack(cardId) {
     }
 }
 
+
 /**
- * 3. فتح وإغلاق مجموعات التراك (power-bi/index.html) - كارت واحد مفتوح فقط
+ * ------------------------------------------------------------------------------
+ * 3. فتح وإغلاق مجموعات التراك (power-bi/index.html & excel-bi/index.html)
+ * - يضمن فتح مجموعة كروت واحدة فقط داخل نفس الحاوية.
+ * ------------------------------------------------------------------------------
  */
 function toggleGroup(groupId) {
     const targetGroup = document.getElementById(groupId);
     if (!targetGroup) return;
 
-    // استهداف كافة كروت المجموعات
     const parentContainer = targetGroup.parentElement;
     const baseClass = targetGroup.className.replace('open', '').trim().split(' ')[0];
     const allGroups = parentContainer ? parentContainer.children : document.querySelectorAll(`.${baseClass}`);
 
     const isCurrentlyOpen = targetGroup.classList.contains('open');
 
-    // إغلاق أي كارت مفتوح آخر
     Array.from(allGroups).forEach(group => {
         if (group !== targetGroup && group.classList && group.classList.contains('open')) {
             group.classList.remove('open');
         }
     });
 
-    // فتح الكارت المختار أو غلقه
     if (!isCurrentlyOpen) {
         targetGroup.classList.add('open');
     } else {
@@ -96,8 +119,13 @@ function toggleGroup(groupId) {
     }
 }
 
+
 /**
- * 4. نظام فتح كارت درس واحد وغلق الباقي وإيقاف الفيديو (pl300-part1.html)
+ * ------------------------------------------------------------------------------
+ * 4. نظام أكورديون الدروس وإيقاف الفيديوهات تلقائياً (Lesson Accordion)
+ * - يفتح الدرس المختار ويغلق باقي الدروس.
+ * - يوقف بث الـ YouTube iframe للدرس السابق فور إغلاقه لتجنب تداخل الصوت.
+ * ------------------------------------------------------------------------------
  */
 function toggleLesson(lessonId) {
     const targetLesson = document.getElementById(lessonId);
@@ -106,7 +134,7 @@ function toggleLesson(lessonId) {
     const allLessons = document.querySelectorAll('.lesson-accordion-item');
     const isCurrentlyOpen = targetLesson.classList.contains('open');
 
-    // إغلاق أي درس مفتوح آخر وإيقاف تشغيل الفيديو الخاص به
+    // إغلاق أي درس مفتوح آخر وإيقاف الفيديو الخاص به فوراً
     allLessons.forEach(lesson => {
         if (lesson !== targetLesson && lesson.classList.contains('open')) {
             const iframe = lesson.querySelector('iframe');
@@ -118,7 +146,7 @@ function toggleLesson(lessonId) {
         }
     });
 
-    // تبديل حالة الكارت المختار
+    // تبديل حالة الدرس الحالي
     if (!isCurrentlyOpen) {
         targetLesson.classList.add('open');
     } else {
@@ -133,7 +161,12 @@ function toggleLesson(lessonId) {
 
 
 /**
- * 5. نظام أكورديون تصنيفات الكتب (books.html)
+ * ------------------------------------------------------------------------------
+ * 5. نظام أكورديون تصنيفات الكتب والتمرير الذكي (books.html)
+ * - يغلق التصنيف المفتوح مسبقاً.
+ * - يفتح التصنيف المختار ويقوم بالتمرير السلس (Smooth Scroll) لأول كتاب.
+ * - يمنع هبوط الشاشة لآخر القائمة على الهواتف الذكية.
+ * ------------------------------------------------------------------------------
  */
 function toggleBookCategory(catId) {
     const targetCat = document.getElementById(catId);
@@ -142,16 +175,24 @@ function toggleBookCategory(catId) {
     const allCats = document.querySelectorAll('.book-category-card');
     const isCurrentlyOpen = targetCat.classList.contains('open');
 
-    // إغلاق أي فئة أخرى مفتوحة
+    // إغلاق أي تصنيف آخر مفتوح
     allCats.forEach(cat => {
         if (cat !== targetCat && cat.classList.contains('open')) {
             cat.classList.remove('open');
         }
     });
 
-    // تبديل حالة الفئة الحالية
+    // فتح التصنيف المطلوب أو إغلاقه
     if (!isCurrentlyOpen) {
         targetCat.classList.add('open');
+
+        // التمرير السلس الذكي لأول المجموعة بعد مهلة انغلاق التصنيف السابق
+        setTimeout(() => {
+            targetCat.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 180);
     } else {
         targetCat.classList.remove('open');
     }
@@ -159,17 +200,13 @@ function toggleBookCategory(catId) {
 
 
 /**
+ * ------------------------------------------------------------------------------
  * 6. نظام إدارة وتغذية حائط المجتمع (Community Feed System)
+ * ------------------------------------------------------------------------------
  */
 let allFeedData = [];
 let currentFilter = 'All';
 let visibleCount = 6;
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('communityFeedContainer')) {
-        fetchCommunityFeed();
-    }
-});
 
 async function fetchCommunityFeed() {
     const container = document.getElementById('communityFeedContainer');
@@ -178,10 +215,9 @@ async function fetchCommunityFeed() {
         if (!response.ok) throw new Error('Network error loading feed');
         const data = await response.json();
         
-        // تصفية الاقتراحات المعتمدة فقط التي تحمل approved: true
+        // جلب الاستفسارات المعتمدة للنشر فقط
         allFeedData = data.filter(item => item.approved === true);
         
-        // تحديث شارة العداد
         const countBadge = document.getElementById('approvedCountBadge');
         if (countBadge) {
             countBadge.innerText = `${allFeedData.length} ردود منشورة`;
@@ -202,7 +238,6 @@ function renderCommunityWall() {
     const loadMoreBtn = document.getElementById('btnLoadMore');
     if (!container) return;
 
-    // تطبيق الفلتر
     const filtered = currentFilter === 'All' 
         ? allFeedData 
         : allFeedData.filter(item => item.track === currentFilter);
@@ -250,7 +285,6 @@ function renderCommunityWall() {
         `;
     }).join('');
 
-    // إظهار أو إخفاء زر تحميل المزيد
     if (loadMoreBtn) {
         loadMoreBtn.style.display = filtered.length > visibleCount ? 'inline-flex' : 'none';
     }
@@ -267,7 +301,6 @@ function filterWall(trackName) {
     currentFilter = trackName;
     visibleCount = 6;
     
-    // تحديث الأزرار النشطة
     document.querySelectorAll('.filter-pill').forEach(btn => {
         btn.classList.toggle('active', btn.innerText.includes(trackName) || (trackName === 'All' && btn.innerText.includes('الكل')));
     });
@@ -280,11 +313,12 @@ function loadMoreSuggestions() {
     renderCommunityWall();
 }
 
+
 /**
- * إرسال المقترح صامتاً إلى Google Sheet عبر واجهة الموقع الفخمة
+ * ------------------------------------------------------------------------------
+ * 7. إرسال المقترحات إلى Google Sheets (Silent Google Apps Script Submission)
+ * ------------------------------------------------------------------------------
  */
-
-
 let isFormSubmitting = false;
 
 function handleFormSubmit() {
@@ -292,7 +326,6 @@ function handleFormSubmit() {
     const btn = document.getElementById('btnSubmitSheet');
     const statusMsg = document.getElementById('sheetStatusMsg');
     
-    // دمج الموضوع مع الرسالة قبل الإرسال الفعلي
     const topicVal = document.getElementById('userTopic').value.trim();
     const msgInput = document.getElementById('userMessage');
     if (topicVal) {
@@ -307,7 +340,6 @@ function handleFormSubmit() {
 }
 
 function handleIframeLoad() {
-    // تتفعل هذه الدالة فور رد خادم جوجل باستلام السجل
     if (isFormSubmitting) {
         isFormSubmitting = false;
         const btn = document.getElementById('btnSubmitSheet');
@@ -328,10 +360,6 @@ function handleIframeLoad() {
     }
 }
 
-
-/**
- * إرسال البيانات مباشرة لشيت الإكسيل عبر Google Apps Script
- */
 function submitFeedback(e) {
     e.preventDefault();
 
@@ -339,17 +367,14 @@ function submitFeedback(e) {
     const statusMsg = document.getElementById('sheetStatusMsg');
     const form = document.getElementById('nativeSuggestionForm');
 
-    // 1. ضع رابطك المنسوخ هنا بين علامتي التنصيص
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzJrK8FqsDa6Qk5P8_4ueYWAC6eVv9ne5I7qo4HRz5W4UXoZ9KM9MmOsblTIUQIL-UE/exec';
 
-    // تغيير حالة الزر أثناء الإرسال
     btn.disabled = true;
     btn.innerHTML = '<span>Sending... جاري الإرسال</span> <span>⏳</span>';
     statusMsg.innerText = '';
 
     const formData = new FormData(form);
 
-    // الإرسال في صمت لخادم جوجل
     fetch(scriptURL, {
         method: 'POST',
         body: formData,
