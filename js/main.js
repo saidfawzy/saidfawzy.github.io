@@ -175,33 +175,32 @@ function toggleLesson(lessonId) {
  * - يمنع هبوط الشاشة لآخر القائمة على الهواتف الذكية.
  * ------------------------------------------------------------------------------
  */
-function toggleBookCategory(catId) {
-    const targetCat = document.getElementById(catId);
-    if (!targetCat) return;
+function toggleBookCategory(categoryId) {
+    const targetCategory = document.getElementById(categoryId);
+    if (!targetCategory) return;
 
-    const allCats = document.querySelectorAll('.book-category-card');
-    const isCurrentlyOpen = targetCat.classList.contains('open');
+    const isOpen = targetCategory.classList.contains('open');
 
-    // إغلاق أي تصنيف آخر مفتوح
-    allCats.forEach(cat => {
-        if (cat !== targetCat && cat.classList.contains('open')) {
-            cat.classList.remove('open');
-        }
+    // 1. إغلاق كل فئات الكتب الأخرى فوراً
+    const allCategories = document.querySelectorAll('.book-category-card');
+    allCategories.forEach(cat => {
+        cat.classList.remove('open');
     });
 
-    // فتح التصنيف المطلوب أو إغلاقه
-    if (!isCurrentlyOpen) {
-        targetCat.classList.add('open');
+    // 2. إذا لم تكن الفئة المختارة مفتوحة، نفتحها وحدها مع التمرير السلس
+    if (!isOpen) {
+        targetCategory.classList.add('open');
 
-        // التمرير السلس الذكي لأول المجموعة بعد مهلة انغلاق التصنيف السابق
         setTimeout(() => {
-            targetCat.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const navbarOffset = 90; // تعويض ارتفاع الهيدر وشريط التنقل
+            const elementPosition = targetCategory.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
             });
-        }, 180);
-    } else {
-        targetCat.classList.remove('open');
+        }, 150);
     }
 }
 
