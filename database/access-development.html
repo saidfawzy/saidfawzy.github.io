@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Access Database Development | Said Fawzy Learning</title>
+
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/lessons.css" />
+
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/logo/saidfawzy-icon.png"
+    />
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png" />
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="MS Access Database Development | Said Fawzy Learning"
+    />
+    <meta
+      property="og:description"
+      content="Master practical Microsoft Access database development: building relational tables, complex relationships, advanced queries, parameter criteria, action queries, and SQL across 20 in-depth lessons."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/book-covers/database-book-2.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/database/access-development.html"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="../courses.html" class="nav-item active">Courses</a>
+          <a href="../books.html" class="nav-item">Books</a>
+          <a href="../resources.html" class="nav-item">Resources</a>
+          <a href="../community.html" class="nav-item">Community</a>
+          <a href="../gallery.html" class="nav-item">Gallery</a>
+          <a href="../about.html" class="nav-item">About</a>
+          <a href="../contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+      <div class="sub-nav-bar">
+        <div class="breadcrumb-trail">
+          <a href="../index.html">Home</a>
+          <span class="separator">›</span>
+          <a href="../courses.html">Courses</a>
+          <span class="separator">›</span>
+          <a href="index.html">Mastering Database System</a>
+          <span class="separator">›</span>
+          <span class="current-crumb">MS Access Database Development</span>
+        </div>
+
+        <a href="index.html" class="btn-back-pill">
+          ← Back to Database Track
+        </a>
+      </div>
+
+      <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- بانر رأس الكورس المطور (Course Master Hero with Book Visual Badge) -->
+        <section class="course-master-hero with-book-cover">
+          <div class="hero-layout-split">
+            <div class="hero-details-col">
+              <div class="hero-top-meta">
+                <span class="cert-pill" style="background: #b91c1c"
+                  >Access Core</span
+                >
+                <span class="part-pill">Database Development</span>
+                <span class="lang-pill"
+                  >Arabic Audio / English Terminology</span
+                >
+              </div>
+
+              <h2>MS Access Database Development</h2>
+
+              <p class="hero-desc-en">
+                An intensive hands-on lab masterclass covering table structures,
+                primary and foreign keys, relational integrity rules,
+                multi-table joins, calculated fields via Expression Builder,
+                parameter queries, action queries (Append, Update, Delete, Make
+                Table), and core SQL execution.
+              </p>
+              <p class="hero-desc-ar">
+                المسار التطبيقي المتكامل لتصميم وتطوير قواعد البيانات العلائقية
+                ببرنامج Microsoft Access؛ يشمل بناء الجداول المتقدمة، ضبط
+                المفاتيح الأساسية والأجنبية وتطبيق التكامل المرجعي، صياغة
+                الاستعلامات المتقدمة، استعلامات المعاملات التفاعلية (Parameter
+                Queries)، الاستعلامات الإجرائية (Action Queries)، ومشروع تطبيقي
+                متكامل من جزأين.
+              </p>
+
+              <div class="course-quick-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Course Level</span>
+                  <strong>Intermediate / Practical Lab</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Structure</span>
+                  <strong>20 In-Depth Practical Lessons</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Hands-On Projects</span>
+                  <strong>2 Milestone Applied Projects</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Course Handbook</span>
+                  <strong>Official Handbook V2 Included 📦</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- عمود العرض البصري لغلاف الكتاب المعتمد -->
+            <div class="hero-book-preview-col">
+              <div class="course-book-card-mini">
+                <span class="book-companion-badge" style="background: #b91c1c"
+                  >Lab Handbook V2</span
+                >
+                <div class="course-book-img-frame">
+                  <img
+                    src="../images/book-covers/database-book-2.png"
+                    alt="MS Access Database Development Book Cover"
+                    onerror="this.src = '../images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <span class="book-included-hint"
+                  >Included in GitHub Repo ↓</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- كارت التحفيز العملي ورابط مستودع GitHub -->
+        <section class="hands-on-callout-card">
+          <div class="callout-icon-box">
+            <span>🗄️</span>
+          </div>
+          <div class="callout-text-content">
+            <div class="callout-title-row">
+              <h3>Get Your Hands Dirty! (ملفات العمل والتدريبات العملية)</h3>
+            </div>
+            <p class="callout-desc-en">
+              Download the official exercise Access workbooks, project datasets,
+              query templates, and the companion development handbook directly
+              from GitHub.
+            </p>
+            <p class="callout-desc-ar">
+              التطبيق العملي خطوة بخطوة هو سر بناء قواعد بيانات قوية؛ حمّل ملفات
+              تدريبات Access، قواعد البيانات التمهيدية للمشاريع، وشيتات
+              الاستعلامات من مستودع GitHub الرسمي لمتابعة الشرح بالتطبيق الفعلي.
+            </p>
+          </div>
+          <div class="callout-action-col">
+            <a
+              href="https://github.com/saidfawzy/MS-ACCESS-Training-Beginners-to-Advanced"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-github-download"
+            >
+              <span class="gh-icon">📁</span>
+              <div class="btn-labels">
+                <span class="main-label">Download Course Material</span>
+                <span class="sub-label">GitHub Repo, Datasets &amp; Book</span>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             قائمة محاضرات الكورس التدريبي (Lesson 01 إلى Lesson 20)
+             ========================================================================== -->
+        <div class="course-lessons-accordion-stack">
+          <!-- Lesson 01 -->
+          <article class="lesson-accordion-item open" id="lesson-01">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 01</span>
+                <h4>00 Introduction</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    مقدمة الدورة والتعريف بالمحاضر؛ استعراض الأهداف التطبيقية
+                    لمسار تطوير قواعد البيانات ببرنامج Access ومنهجية العمل
+                    بالمشاريع.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Course roadmap, applied learning methodology, and tools.
+                      </li>
+                      <li>
+                        Understanding how desktop RDBMS supports enterprise
+                        business operations.
+                      </li>
+                      <li>
+                        Overview of course exercises, datasets, and milestone
+                        projects.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/3ChhXF_Yyyc"
+                      title="00 Introduction"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 02 -->
+          <article class="lesson-accordion-item" id="lesson-02">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 02</span>
+                <h4>01 Exploring Access</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    استكشاف بيئة العمل في Microsoft Access؛ إدارة شريط الأوامر،
+                    جزء التنقل (Navigation Pane)، والتعرف على كائنات الملف.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Navigating the Access Ribbon, Quick Access Toolbar, and
+                        Backstage.
+                      </li>
+                      <li>
+                        Organizing database objects in the Navigation Pane
+                        (Custom Categories &amp; Groups).
+                      </li>
+                      <li>
+                        Managing database file settings and AutoCorrect options.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/PAaFzmqfuVM"
+                      title="01 Exploring Access"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 03 -->
+          <article class="lesson-accordion-item" id="lesson-03">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 03</span>
+                <h4>02 Building Tables Part 1</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    بناء وتصميم الجداول (الجزء الأول)؛ طريقة عرض التصميم (Design
+                    View)، اختيار وتعيين أنواع البيانات المناسبة للحقول.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Creating tables using Design View for rigorous schema
+                        control.
+                      </li>
+                      <li>
+                        Field naming conventions and choosing appropriate data
+                        types.
+                      </li>
+                      <li>
+                        Text types (Short Text vs. Long Text), numbers,
+                        currencies, and dates.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/H8WKH9eRJgk"
+                      title="02 Building Tables Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 04 -->
+          <article class="lesson-accordion-item" id="lesson-04">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 04</span>
+                <h4>02 Building Tables Part 2</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    بناء الجداول (الجزء الثاني)؛ خصائص الحقول المتقدمة (Field
+                    Properties)، القيمة الافتراضية، وقواعد التحقق من صحة
+                    المدخلات.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Configuring field properties: Field Size, Formats, and
+                        Default Values.
+                      </li>
+                      <li>
+                        Writing validation rules and custom error alerts
+                        (Validation Text).
+                      </li>
+                      <li>
+                        Setting Required and Allow Zero Length properties to
+                        prevent null bugs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/QXphC9MM0to"
+                      title="02 Building Tables Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 05 -->
+          <article class="lesson-accordion-item" id="lesson-05">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 05</span>
+                <h4>02 Building Tables Part 3</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    بناء الجداول (الجزء الثالث)؛ إنشاء حقول البحث المنسدلة
+                    (Lookup Wizard)، وأقنعة الإدخال (Input Masks) لضبط صياغة
+                    البيانات.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Using the Lookup Wizard to create in-table drop-down
+                        choice lists.
+                      </li>
+                      <li>
+                        Designing custom Input Masks for phones, codes, and
+                        standardized formats.
+                      </li>
+                      <li>
+                        Assigning Primary Keys and composite unique identifiers.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/3nDn0rYDTnY"
+                      title="02 Building Tables Part 3"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 06 -->
+          <article class="lesson-accordion-item" id="lesson-06">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-06')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 06</span>
+                <h4>03 Table Relationship Part 1</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    العلاقات بين الجداول (الجزء الأول)؛ مفهوم المفتاح الأجنبي
+                    (Foreign Key) وربط الجداول في نافذة العلاقات (Relationships
+                    Window).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Relational mechanics: Linking Primary Keys to matching
+                        Foreign Keys.
+                      </li>
+                      <li>
+                        Navigating and organizing the Relationships Window.
+                      </li>
+                      <li>
+                        Building clean One-to-Many (1:N) relational links.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/tRPSKtvseYc"
+                      title="03 Table Relationship Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 07 -->
+          <article class="lesson-accordion-item" id="lesson-07">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-07')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 07</span>
+                <h4>03 Table Relationship Part 2</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    العلاقات بين الجداول (الجزء الثاني)؛ فرض التكامل المرجعي
+                    (Referential Integrity)، والتحديث والحذف المتتالي (Cascade
+                    Options).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Enforcing Referential Integrity to prevent orphaned
+                        child records.
+                      </li>
+                      <li>
+                        Configuring Cascade Update Related Fields for key
+                        synchronization.
+                      </li>
+                      <li>
+                        Risks and rules of Cascade Delete Related Records.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/NfbMckSwR9o"
+                      title="03 Table Relationship Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 08 -->
+          <article class="lesson-accordion-item" id="lesson-08">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-08')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 08</span>
+                <h4>03 Table Relationship Part 3</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    العلاقات بين الجداول (الجزء الثالث)؛ نمذجة علاقات متعدد إلى
+                    متعدد (Many-to-Many) باستخدام الجداول الوسيطة (Junction
+                    Tables).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Identifying Many-to-Many business requirements in real
+                        workflows.
+                      </li>
+                      <li>
+                        Creating junction (bridge) tables with composite primary
+                        keys.
+                      </li>
+                      <li>
+                        Testing relational navigation and subdatasheets in
+                        Access tables.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/1xApIXcjHnE"
+                      title="03 Table Relationship Part 3"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 09 -->
+          <article class="lesson-accordion-item" id="lesson-09">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-09')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 09</span>
+                <h4>03 PROJECT PART I</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    المشروع العملي التطبيقي (الجزء الأول)؛ بناء مخطط وقاعدة
+                    بيانات متكاملة من الصفر، إنشاء الجداول، وضبط العلاقات
+                    والقيود.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Executing Milestone Project 1: translating specs into
+                        Access tables.
+                      </li>
+                      <li>
+                        Applying field properties, validation rules, and primary
+                        keys.
+                      </li>
+                      <li>
+                        Building full relational schema and verifying
+                        referential integrity.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/M-pZ9-WFzE8"
+                      title="03 PROJECT PART I"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 10 -->
+          <article class="lesson-accordion-item" id="lesson-10">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-10')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 10</span>
+                <h4>04 Queries Basics</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    أساسيات الاستعلامات (Select Queries)؛ استخدام شبكة تصميم
+                    الاستعلام (Query Design Grid)، فرز السجلات، وإخفاء وإظهار
+                    الحقول.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Creating Select Queries using the Query Design grid.
+                      </li>
+                      <li>
+                        Adding tables, selecting fields, and sorting query
+                        results.
+                      </li>
+                      <li>
+                        Show/hide toggles and understanding the underlying SQL
+                        view.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/IZrMTcbu2Qc"
+                      title="04 Queries Basics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 11 -->
+          <article class="lesson-accordion-item" id="lesson-11">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-11')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 11</span>
+                <h4>05 Advanced Query Topics (Part 1)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الموضوعات المتقدمة في الاستعلامات (الجزء الأول)؛ شروط
+                    المعايير المعقدة (Criteria)، استخدام معاملات AND و OR،
+                    والبحث بالنصوص (Like &amp; Wildcards).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Compound criteria using AND rows vs. OR rows in the
+                        design grid.
+                      </li>
+                      <li>
+                        Text matching with wildcards (Like "A*", Like "*corp*").
+                      </li>
+                      <li>
+                        Filtering numeric, currency, and date ranges
+                        effectively.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/icagi7Ed9Gs"
+                      title="05 Advanced Query Topics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 12 -->
+          <article class="lesson-accordion-item" id="lesson-12">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-12')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 12</span>
+                <h4>05 Advanced Query Topics (Part 2)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الموضوعات المتقدمة في الاستعلامات (الجزء الثاني)؛ الحقول
+                    المحسوبة (Calculated Fields)، استخدام منشئ التعبيرات
+                    (Expression Builder).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Creating dynamic calculated fields inside queries (e.g.,
+                        Total: [Qty]*[Price]).
+                      </li>
+                      <li>
+                        Using the Expression Builder to construct mathematical
+                        and text formulas.
+                      </li>
+                      <li>
+                        Formatting calculated field properties (Currency,
+                        Decimals).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/RWLq7F7q4sw"
+                      title="05 Advanced Query Topics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 13 -->
+          <article class="lesson-accordion-item" id="lesson-13">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-13')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 13</span>
+                <h4>05 Advanced Query Topics (Part 3)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الموضوعات المتقدمة في الاستعلامات (الجزء الثالث)؛ استخدام
+                    الدوال المدمجة (Built-in Functions) كدوال التواريخ والنصوص
+                    ودالة IIf الشرطية.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Using date functions: Date(), Year(), Month(),
+                        DateDiff().
+                      </li>
+                      <li>
+                        String functions: Left(), Right(), Mid(), and string
+                        concatenation.
+                      </li>
+                      <li>
+                        Writing conditional logic inside queries using IIf() and
+                        Switch().
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/WXJMdNbJ7gE"
+                      title="05 Advanced Query Topics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 14 -->
+          <article class="lesson-accordion-item" id="lesson-14">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-14')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 14</span>
+                <h4>05 Advanced Query Topics (Part 4)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الموضوعات المتقدمة في الاستعلامات (الجزء الرابع)؛ استعلامات
+                    التجميع والإجماليات (Aggregate Queries) باستخدام Group By و
+                    Sum و Count.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>Activating the Totals row in query design.</li>
+                      <li>
+                        Grouping records by category, department, or client
+                        using Group By.
+                      </li>
+                      <li>
+                        Applying aggregate functions: Sum, Avg, Count, Min, and
+                        Max.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/Ey_BytXuGMQ"
+                      title="05 Advanced Query Topics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 15 -->
+          <article class="lesson-accordion-item" id="lesson-15">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-15')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 15</span>
+                <h4>05 Advanced Query Topics (Part 5)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الموضوعات المتقدمة في الاستعلامات (الجزء الخامس)؛ خصائص
+                    الربط بين الجداول (Join Properties)؛ الربط الداخلي والخارجي
+                    (Inner vs. Outer Joins).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Understanding Inner Joins vs. Left Outer Joins and Right
+                        Outer Joins.
+                      </li>
+                      <li>
+                        Finding records with missing associations (unmatched
+                        query modeling).
+                      </li>
+                      <li>
+                        Fixing join discrepancies to ensure complete report
+                        totals.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/ytumuo9cwEQ"
+                      title="05 Advanced Query Topics"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 16 -->
+          <article class="lesson-accordion-item" id="lesson-16">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-16')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 16</span>
+                <h4>06 Parameters in Queries (Part 1)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    استعلامات المعاملات التفاعلية (Parameter Queries) الجزء
+                    الأول؛ إنشاء نوافذ إدخال تسأل المستخدم عن القيمة المطلوبة
+                    عند التشغيل.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        The syntax of parameter prompts using square brackets:
+                        [Enter Value].
+                      </li>
+                      <li>
+                        Filtering data dynamically upon query execution without
+                        editing criteria.
+                      </li>
+                      <li>
+                        Configuring parameter data types in Query Parameters
+                        dialog.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/LrjefvRjxwY"
+                      title="06 Parameters in Queries"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 17 -->
+          <article class="lesson-accordion-item" id="lesson-17">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-17')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 17</span>
+                <h4>06 Parameters in Queries (Part 2)</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    استعلامات المعاملات التفاعلية (الجزء الثاني)؛ المعاملات
+                    المرنة (Flexible Parameters)، واستخدام معاملات التواريخ
+                    وفترات البحث (Between).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Building flexible parameters that accept optional or
+                        partial search terms.
+                      </li>
+                      <li>
+                        Using Between [Start Date] And [End Date] parameter
+                        prompts.
+                      </li>
+                      <li>
+                        Linking parameter criteria to form controls for
+                        user-friendly UI.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/9syaBEkRzPE"
+                      title="06 Parameters in Queries"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 18 -->
+          <article class="lesson-accordion-item" id="lesson-18">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-18')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 18</span>
+                <h4>06 PROJECT PART II</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    المشروع العملي التطبيقي (الجزء الثاني)؛ بناء شبكة استعلامات
+                    تحليلية وإحصائية متكاملة لقاعدة بيانات المشروع، وتطبيق
+                    المعاملات.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Executing Milestone Project 2: analytical queries on
+                        Project 1 schema.
+                      </li>
+                      <li>
+                        Building summary metrics, financial totals, and
+                        parameter filters.
+                      </li>
+                      <li>
+                        Auditing query outputs against business scenarios.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/FAWrJFP94sU"
+                      title="06 PROJECT PART II"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 19 -->
+          <article class="lesson-accordion-item" id="lesson-19">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-19')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 19</span>
+                <h4>07 Action Queries</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    الاستعلامات الإجرائية (Action Queries)؛ استعلام الإلحاق
+                    (Append)، التحديث (Update)، الحذف (Delete)، واستعلام إنشاء
+                    جدول (Make-Table).
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Make-Table queries for archiving and data extraction.
+                      </li>
+                      <li>
+                        Append queries to batch-insert records into existing
+                        tables.
+                      </li>
+                      <li>
+                        Update and Delete queries with safety backup protocols.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/XjpoofQVo6s"
+                      title="07 Action Queries"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 20 -->
+          <article class="lesson-accordion-item" id="lesson-20">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-20')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 20</span>
+                <h4>08 Structured Query</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    كتابة أوامر لغة الاستعلامات البنيوية (SQL) داخل Access؛
+                    الانتقال من المصمم المرئي لكتابة جمل SELECT و JOIN و GROUP
+                    BY بالكود مباشرة.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Translating visual query grid into explicit SQL code.
+                      </li>
+                      <li>
+                        Writing raw SELECT, INNER JOIN, WHERE, and GROUP BY
+                        statements.
+                      </li>
+                      <li>
+                        Transitioning from database development to full
+                        application UI design.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/QDj2oC1KbuE"
+                      title="08 Structured Query"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- نهاية Stack الدروس -->
+      </main>
+      <!-- نهاية Page Body -->
+
+      <!-- ==========================================================================
+             5. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="../images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="../courses.html">Courses</a>
+              <a href="../books.html">Books</a>
+              <a href="../resources.html">Resources</a>
+              <a href="../community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="../images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="../images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="../images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="../images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="../images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
+    </div>
+    <!-- نهاية site-wrapper -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
