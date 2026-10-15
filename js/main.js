@@ -100,22 +100,29 @@ function toggleGroup(groupId) {
     const targetGroup = document.getElementById(groupId);
     if (!targetGroup) return;
 
-    const parentContainer = targetGroup.parentElement;
-    const baseClass = targetGroup.className.replace('open', '').trim().split(' ')[0];
-    const allGroups = parentContainer ? parentContainer.children : document.querySelectorAll(`.${baseClass}`);
+    const isOpen = targetGroup.classList.contains('open');
 
-    const isCurrentlyOpen = targetGroup.classList.contains('open');
-
-    Array.from(allGroups).forEach(group => {
-        if (group !== targetGroup && group.classList && group.classList.contains('open')) {
-            group.classList.remove('open');
-        }
+    // 1. إغلاق جميع الأكورديونات الأخرى في المسار
+    const allGroups = document.querySelectorAll('.track-group-accordion');
+    allGroups.forEach(group => {
+        group.classList.remove('open');
     });
 
-    if (!isCurrentlyOpen) {
+    // 2. إذا لم يكن المختار مفتوحاً، نقوم بفتحه مع التمرير السلس لأول كروته
+    if (!isOpen) {
         targetGroup.classList.add('open');
-    } else {
-        targetGroup.classList.remove('open');
+
+        // مهلة زمنية قصيرة (150ms) لإعطاء فرصة لإغلاق الأكورديون القديم وإعادة حساب الأبعاد
+        setTimeout(() => {
+            const navbarOffset = 90; // مسافة تعويضية لحساب ارتفاع شريط التنقل العلوي
+            const elementPosition = targetGroup.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }, 150);
     }
 }
 
