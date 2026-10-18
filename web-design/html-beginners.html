@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         قسم البيانات الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML for Beginners | Said Fawzy Learning</title>
+
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/lessons.css" />
+
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/logo/saidfawzy-icon.png"
+    />
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png" />
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="HTML for Beginners | Said Fawzy Learning"
+    />
+    <meta
+      property="og:description"
+      content="Master semantic HTML5 web authoring from scratch: introduction, document structure, text formatting tags, learning roadmap, and ordered/unordered lists."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/book-covers/web-book-1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/web-design/html-beginners.html"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="../courses.html" class="nav-item active">Courses</a>
+          <a href="../books.html" class="nav-item">Books</a>
+          <a href="../resources.html" class="nav-item">Resources</a>
+          <a href="../community.html" class="nav-item">Community</a>
+          <a href="../gallery.html" class="nav-item">Gallery</a>
+          <a href="../about.html" class="nav-item">About</a>
+          <a href="../contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. مسار التنقل وزر الرجوع (Breadcrumb Trail & Back Button)
+             ========================================================================== -->
+      <div class="sub-nav-bar">
+        <div class="breadcrumb-trail">
+          <a href="../index.html">Home</a>
+          <span class="separator">›</span>
+          <a href="../courses.html">Courses</a>
+          <span class="separator">›</span>
+          <a href="index.html">Web Design Foundations</a>
+          <span class="separator">›</span>
+          <span class="current-crumb">HTML for Beginners</span>
+        </div>
+
+        <a href="index.html" class="btn-back-pill">
+          ← Back to Web Design Track
+        </a>
+      </div>
+
+      <!-- ==========================================================================
+             4. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- بانر رأس الكورس المطور (Course Master Hero with Book Visual Badge) -->
+        <section class="course-master-hero with-book-cover">
+          <div class="hero-layout-split">
+            <div class="hero-details-col">
+              <div class="hero-top-meta">
+                <span class="cert-pill" style="background: #d97706"
+                  >Frontend Foundations</span
+                >
+                <span class="part-pill">HTML5 Core</span>
+                <span class="lang-pill"
+                  >Arabic Audio / English Terminology</span
+                >
+              </div>
+
+              <h2>HTML for Beginners</h2>
+
+              <p class="hero-desc-en">
+                A solid, step-by-step introduction to semantic web authoring
+                using HTML5: understanding web mechanics, doctype declarations,
+                standard document structure, text formatting tags, code editor
+                setups, and organizing structured information with ordered,
+                unordered, and definition lists.
+              </p>
+              <p class="hero-desc-ar">
+                المسار التأسيسي العملي والمبسط لتعلم بناء وتصميم صفحات الويب
+                بلغة HTML5؛ يشمل فهم كيفية عمل مواقع الإنترنت والمتصفحات، هيكلة
+                كود الصفحة الأساسي (Doctype, Head, Body)، استخدام وسوم تنسيق
+                وعرض النصوص، جولة توجيهية وإرشادية في مسار التعلم، وبناء القوائم
+                المنظمة والمرتبة.
+              </p>
+
+              <div class="course-quick-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Course Level</span>
+                  <strong>Absolute Beginner to Junior Web Author</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Structure</span>
+                  <strong>5 Hands-on Step-by-Step Lessons</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Core Standards</span>
+                  <strong>HTML5 Semantic Markup</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Language</span>
+                  <strong>Arabic Audio (English Coding Tags)</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- عمود العرض البصري لغلاف الكورس المعتمد -->
+            <div class="hero-book-preview-col">
+              <div class="course-book-card-mini">
+                <span class="book-companion-badge" style="background: #d97706"
+                  >Web Guide</span
+                >
+                <div class="course-book-img-frame">
+                  <img
+                    src="../images/book-covers/web-book-1.png"
+                    alt="HTML for Beginners Cover"
+                    onerror="this.src = '../images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <span class="book-included-hint"
+                  >Official Web Foundations Series</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             قائمة محاضرات الكورس التدريبي (Lesson 01 إلى Lesson 05)
+             ========================================================================== -->
+        <div class="course-lessons-accordion-stack">
+          <!-- Lesson 01 -->
+          <article class="lesson-accordion-item open" id="lesson-01">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 01</span>
+                <h4>01 Introduction</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    مقدمة الدورة والتعريف بأساسيات شبكة الويب العالمية؛ كيف تعمل
+                    متصفحات الإنترنت في قراءة الأكواد، ما هي لغة HTML ولماذا
+                    تعتبر الهيكل العظمي لأي موقع على الإنترنت، وتجهيز بيئة ومحرر
+                    كتابة الأكواد.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Introduction to how the World Wide Web and web browsers
+                        render code.
+                      </li>
+                      <li>
+                        Understanding HTML (HyperText Markup Language) and its
+                        foundational role.
+                      </li>
+                      <li>
+                        Setting up your code editor environment and previewing
+                        your first file.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/9kJoyowVJsw"
+                      title="01 Introduction"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 02 -->
+          <article class="lesson-accordion-item" id="lesson-02">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 02</span>
+                <h4>02 Document Structure</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    هيكلية وبنية مستند الـ HTML القياسي؛ شرح وسم إعلان نوع
+                    الوثيقة (&lt;!DOCTYPE html&gt;)، وسم الجذر &lt;html&gt;، قسم
+                    الرأس &lt;head&gt; والبيانات الوصفية، وقسم جسم الصفحة
+                    &lt;body&gt; الذي يحتوي على كل ما يظهر للمستخدم.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        The boilerplate architecture of a valid HTML5 document.
+                      </li>
+                      <li>
+                        Understanding &lt;!DOCTYPE html&gt;, &lt;html&gt;,
+                        &lt;head&gt;, and &lt;body&gt;.
+                      </li>
+                      <li>
+                        Setting page titles, character encodings, and language
+                        attributes.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/tqjucRKif4s"
+                      title="02 Document Structure"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 03 -->
+          <article class="lesson-accordion-item" id="lesson-03">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 03</span>
+                <h4>03 Formatting Text with Tgas</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    تنسيق النصوص باستخدام وسوم الـ HTML؛ استعراض وسوم العناوين
+                    المتدرجة (&lt;h1&gt; إلى &lt;h6&gt;)، وسوم الفقرات
+                    (&lt;p&gt;)، وسوم التمييز والتوكيد (&lt;strong&gt;,
+                    &lt;em&gt;)، فواصل الأسطر، والخطوط الأفقية.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Heading hierarchy: proper semantic use of &lt;h1&gt;
+                        through &lt;h6&gt;.
+                      </li>
+                      <li>
+                        Paragraph blocks &lt;p&gt; and line break rules with
+                        &lt;br&gt; and &lt;hr&gt;.
+                      </li>
+                      <li>
+                        Text formatting and semantic emphasis tags:
+                        &lt;strong&gt;, &lt;em&gt;, and &lt;mark&gt;.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/yHW7q5cjC0k"
+                      title="03 Formatting Text with Tgas"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 04 -->
+          <article class="lesson-accordion-item" id="lesson-04">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-04')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 04</span>
+                <h4>04 Tour in Learning HTML</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    جولة إرشادية وتطبيقية شاملة في رحلة تعلم HTML؛ استعراض أفضل
+                    الممارسات البرمجية، كيفية قراءة وتصحيح الأخطاء في الكود،
+                    والاطلاع على المراجع والمصادر القياسية للويب لتطوير مهاراتك
+                    باستمرار.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Best practices for writing clean, indented, and readable
+                        HTML markup.
+                      </li>
+                      <li>
+                        How to inspect source code and troubleshoot rendering
+                        errors in browsers.
+                      </li>
+                      <li>
+                        Navigating standard web documentation and reference
+                        portals.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/FI60VWCzAOg"
+                      title="04 Tour in Learning HTML"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 05 -->
+          <article class="lesson-accordion-item" id="lesson-05">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-05')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 05</span>
+                <h4>05 Lists</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p class="lesson-lead-ar">
+                    تنظيم المحتوى باستخدام القوائم في HTML؛ بناء القوائم النقطية
+                    غير المرتبة (&lt;ul&gt;)، القوائم الرقمية المرتبة
+                    (&lt;ol&gt;)، عناصر القائمة (&lt;li&gt;)، والتعامل مع
+                    القوائم المتداخلة (Nested Lists) لبناء القوائم البرمجية
+                    وأشرطة التنقل.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Creating unordered bullet lists with &lt;ul&gt; and list
+                        items &lt;li&gt;.
+                      </li>
+                      <li>
+                        Structuring ordered numbered lists with &lt;ol&gt; and
+                        custom type attributes.
+                      </li>
+                      <li>
+                        Building multi-level nested lists as the foundation for
+                        website navigation menus.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/CYeEfrTKjHs"
+                      title="05 Lists"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- نهاية Stack الدروس -->
+      </main>
+      <!-- نهاية Page Body -->
+
+      <!-- ==========================================================================
+             5. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="../images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="../courses.html">Courses</a>
+              <a href="../books.html">Books</a>
+              <a href="../resources.html">Resources</a>
+              <a href="../community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="../images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="../images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="../images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="../images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="../images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
+    </div>
+    <!-- نهاية site-wrapper -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

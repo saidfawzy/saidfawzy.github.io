@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         Metadata & Title
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13 SharePoint Data Loss Disasters | Said Fawzy Learning</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/lessons.css" />
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/logo/saidfawzy-icon.png"
+    />
+    <link rel="apple-touch-icon" href="../images/logo/saidfawzy-icon.png" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="13 SharePoint Data Loss Disasters | Said Fawzy Learning"
+    />
+    <meta
+      property="og:description"
+      content="Master SharePoint disaster recovery and backup architectures: 13 catastrophic data loss scenarios deconstructed with practical restoration walkthroughs."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/book-covers/sharepoint-book-1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/sharepoint/backup-recovery.html"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. Top Brand Banner
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+             2. Main Navigation Bar
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="../courses.html" class="nav-item active">Courses</a>
+          <a href="../books.html" class="nav-item">Books</a>
+          <a href="../resources.html" class="nav-item">Resources</a>
+          <a href="../community.html" class="nav-item">Community</a>
+          <a href="../gallery.html" class="nav-item">Gallery</a>
+          <a href="../about.html" class="nav-item">About</a>
+          <a href="../contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. Breadcrumb Trail & Back Navigation
+             ========================================================================== -->
+      <div class="sub-nav-bar">
+        <div class="breadcrumb-trail">
+          <a href="../index.html">Home</a>
+          <span class="separator">›</span>
+          <a href="../courses.html">Courses</a>
+          <span class="separator">›</span>
+          <a href="index.html">SharePoint Protection</a>
+          <span class="separator">›</span>
+          <span class="current-crumb">13 SharePoint Data Loss Disasters</span>
+        </div>
+
+        <a href="index.html" class="btn-back-pill">
+          ← Back to SharePoint Track
+        </a>
+      </div>
+
+      <!-- ==========================================================================
+             4. Main Page Body
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- Course Master Hero Banner -->
+        <section class="course-master-hero with-book-cover">
+          <div class="hero-layout-split">
+            <div class="hero-details-col">
+              <div class="hero-top-meta">
+                <span class="cert-pill" style="background: #059669"
+                  >Disaster Recovery</span
+                >
+                <span class="part-pill">SharePoint Administration</span>
+                <span class="lang-pill">Full English Masterclass</span>
+              </div>
+
+              <h2>13 SharePoint Data Loss Disasters</h2>
+
+              <p class="hero-desc-en">
+                An advanced systems engineering and administration masterclass
+                exploring 13 catastrophic data loss scenarios in Microsoft
+                SharePoint. Learn how to diagnose critical corruption, establish
+                automated farm-level and granular backup strategies, navigate
+                multi-stage recycle bins, and execute complete disaster
+                recoveries.
+              </p>
+              <p class="hero-desc-en" style="margin-top: 8px; color: #475569">
+                Available both as a unified 1.5-hour complete masterclass and as
+                detailed two-part hands-on modules covering disaster prevention,
+                database backups, PowerShell routines, and live item-level
+                restoration.
+              </p>
+
+              <div class="course-quick-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Course Level</span>
+                  <strong>Systems &amp; Database Administration</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Structure</span>
+                  <strong>Full Masterclass + 2 Dedicated Modules</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Environment</span>
+                  <strong
+                    >SharePoint Server, SQL Server &amp; PowerShell</strong
+                  >
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Language</span>
+                  <strong>Full English Audio &amp; Walkthrough</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book / Media Preview Column -->
+            <div class="hero-book-preview-col">
+              <div class="course-book-card-mini">
+                <span class="book-companion-badge" style="background: #059669"
+                  >Disaster Guide</span
+                >
+                <div class="course-book-img-frame">
+                  <img
+                    src="../images/book-covers/sharepoint-book-1.png"
+                    alt="13 SharePoint Data Loss Disasters Cover"
+                    onerror="this.src = '../images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <span class="book-included-hint">Official Recovery Guide</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             Video Lessons Accordion Stack
+             ========================================================================== -->
+        <div class="course-lessons-accordion-stack">
+          <!-- Lesson 01: Complete Masterclass -->
+          <article class="lesson-accordion-item open" id="lesson-01">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-01')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 01</span>
+                <h4>13 SharePoint Data Loss Disasters</h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p
+                    class="lesson-lead-en"
+                    style="
+                      font-size: 14px;
+                      line-height: 1.6;
+                      color: #334155;
+                      margin-bottom: 14px;
+                    "
+                  >
+                    The definitive full masterclass: an in-depth breakdown of 13
+                    critical data loss scenarios across enterprise SharePoint
+                    deployments. Dissects user error, schema corruption, farm
+                    misconfigurations, orphaned assets, and presents
+                    battle-tested architectural recovery workflows.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Comprehensive exploration of 13 primary data loss
+                        disaster patterns.
+                      </li>
+                      <li>
+                        Understanding Central Administration vs. SQL Server
+                        database backup mechanics.
+                      </li>
+                      <li>
+                        First-stage vs. Second-stage site collection recycle bin
+                        preservation rules.
+                      </li>
+                      <li>
+                        Preventive policies, unattached content database
+                        recovery, and business continuity.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/K_G_NADFfHE"
+                      title="13 SharePoint Data Loss Disasters"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 02: Detailed Part 1 -->
+          <article class="lesson-accordion-item" id="lesson-02">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-02')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 02</span>
+                <h4>
+                  Practical Backup &amp; Restore in SharePoint 2010-2013 Part 1
+                </h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p
+                    class="lesson-lead-en"
+                    style="
+                      font-size: 14px;
+                      line-height: 1.6;
+                      color: #334155;
+                      margin-bottom: 14px;
+                    "
+                  >
+                    Module 1 of the practical series: configuring backup
+                    architectures, understanding farm topologies, setting up
+                    content database snapshots in SQL Server, and using Central
+                    Administration to plan full and differential backups.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Setting up backup infrastructure and service account
+                        permissions.
+                      </li>
+                      <li>
+                        Performing full farm backups via SharePoint Central
+                        Administration.
+                      </li>
+                      <li>
+                        Database-level backup configurations in Microsoft SQL
+                        Server Management Studio.
+                      </li>
+                      <li>
+                        Automating recurring backup schedules using PowerShell
+                        cmdlets (Backup-SPFarm).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/5eNNZm0MbsY"
+                      title="Practical Backup &amp; Restore in SharePoint 2010-2013 Part 1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lesson 03: Detailed Part 2 -->
+          <article class="lesson-accordion-item" id="lesson-03">
+            <div class="lesson-bar-header" onclick="toggleLesson('lesson-03')">
+              <div class="lesson-bar-left">
+                <span class="lesson-chip">Lesson 03</span>
+                <h4>
+                  Practical Backup &amp; Restore in SharePoint 2010-2013 Part 2
+                </h4>
+              </div>
+              <div class="lesson-bar-right">
+                <span class="lesson-play-hint">Watch &amp; Learn</span>
+                <div class="lesson-arrow-circle">▼</div>
+              </div>
+            </div>
+            <div class="lesson-accordion-content">
+              <div class="lesson-content-split">
+                <div class="lesson-text-side">
+                  <p
+                    class="lesson-lead-en"
+                    style="
+                      font-size: 14px;
+                      line-height: 1.6;
+                      color: #334155;
+                      margin-bottom: 14px;
+                    "
+                  >
+                    Module 2 of the practical series: step-by-step restoration
+                    procedures, recovering single site collections, exporting
+                    lists and libraries without downtime, and restoring data
+                    from unattached content databases.
+                  </p>
+                  <div class="lesson-takeaways-card">
+                    <span class="takeaways-title">What You'll Learn:</span>
+                    <ul>
+                      <li>
+                        Executing granular restores without overwriting entire
+                        production farms.
+                      </li>
+                      <li>
+                        Exporting and importing individual web sites, lists, and
+                        document libraries.
+                      </li>
+                      <li>
+                        Mounting unattached content databases to recover deleted
+                        assets directly.
+                      </li>
+                      <li>
+                        Post-restoration health checks, URL validation, and user
+                        permission verification.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="lesson-media-side">
+                  <div class="video-container-16-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/s4xB244FOhw"
+                      title="Practical Backup &amp; Restore in SharePoint 2010-2013 Part 2"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- End of Lessons Stack -->
+      </main>
+
+      <!-- ==========================================================================
+             5. Dark Executive Footer
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="../images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              A specialized educational hub providing practical pathways in Data
+              Analytics, Business Intelligence, and Engineering Cost Control.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="../courses.html">Courses</a>
+              <a href="../books.html">Books</a>
+              <a href="../resources.html">Resources</a>
+              <a href="../community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="../images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="../images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="../images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="../images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="../images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Main Interaction Script -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
