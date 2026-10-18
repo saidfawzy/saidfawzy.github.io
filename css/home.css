@@ -1,0 +1,354 @@
+/* ==========================================================================
+   Said Fawzy Learning - Homepage Styles (home.css)
+   Image-Led Layout Architecture (Image on Left, Content on Right)
+   ========================================================================== */
+
+/* الحاوية المشتركة للبانرات والهيرو بأسلوب Flex/Grid متجاوب */
+.full-width-hero,
+.powerbi-promo-banner,
+.excel-promo-banner,
+.candy-promo-banner,
+.database-promo-banner,
+.sixsigma-promo-banner {
+    position: relative;
+    width: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    margin-top: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+    border: 1px solid #e2e8f0;
+}
+
+.promo-banner-flex-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    width: 100%;
+}
+
+/* عمود الصورة: تظهر كاملة وغير مقصوصة نهائياً على اليسار */
+.promo-banner-image-col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    padding: 24px;
+}
+
+.promo-banner-image-col img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    display: block;
+}
+
+/* عمود النصوص والمساحة على اليمين */
+.promo-banner-text-col {
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background: #ffffff;
+}
+
+.promo-eyebrow,
+.hero-pill-tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #0284c7;
+    background: rgba(2, 132, 199, 0.12);
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(2, 132, 199, 0.25);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.promo-heading,
+.hero-main-title {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    color: #0f172a;
+    margin: 0 0 10px 0;
+}
+
+.promo-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+}
+
+.promo-description,
+.hero-support-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #334155;
+    margin: 0 0 12px 0;
+}
+
+.hero-support-text-ar {
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #475569;
+    margin: 0 0 22px 0;
+    font-weight: 700;
+    width: 100%;
+}
+
+.hero-action-buttons,
+.promo-btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.btn-hero-primary,
+.btn-promo-primary {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.35);
+}
+
+.btn-hero-primary:hover,
+.btn-promo-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(14, 165, 233, 0.45);
+}
+
+.btn-hero-secondary {
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #cbd5e1;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.btn-hero-secondary:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+.promo-support-footer {
+    font-size: 11.5px;
+    color: #64748b;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ==========================================================================
+   1. Power BI Promotional Banner (Brand Yellow Custom Theme)
+   ========================================================================== */
+.powerbi-promo-banner {
+    background-color: #fef3c7;
+    border-color: #fde68a;
+}
+.powerbi-promo-banner .promo-banner-text-col { background: #fef3c7; }
+.powerbi-promo-banner .promo-eyebrow { color: #b45309; background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3); }
+.powerbi-promo-banner .promo-heading { color: #78350f !important; }
+.powerbi-promo-banner .promo-subtitle { color: #92400e !important; }
+.powerbi-promo-banner .promo-description { color: #451a03 !important; }
+.powerbi-promo-banner .btn-promo-primary { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important; box-shadow: 0 6px 18px rgba(217, 119, 6, 0.35); }
+.powerbi-promo-banner .btn-promo-primary:hover { box-shadow: 0 10px 24px rgba(217, 119, 6, 0.45); }
+.powerbi-promo-banner .promo-support-footer { color: #78350f !important; }
+
+/* ==========================================================================
+   2. Excel Promotional Banner (Custom Green Theme)
+   ========================================================================== */
+.excel-promo-banner {
+    background-color: #DCFCE7;
+    border-color: #bbf7d0;
+}
+.excel-promo-banner .promo-banner-text-col { background: #DCFCE7; }
+.excel-promo-banner .promo-eyebrow { color: #15803d; background: rgba(21, 128, 61, 0.12); border-color: rgba(21, 128, 61, 0.25); }
+.excel-promo-banner .promo-heading { color: #166534 !important; }
+.excel-promo-banner .promo-subtitle { color: #14532d !important; }
+.excel-promo-banner .promo-description { color: #166534 !important; }
+.excel-promo-banner .btn-promo-primary { background: linear-gradient(135deg, #22c55e 0%, #15803D 100%) !important; box-shadow: 0 6px 18px rgba(21, 128, 61, 0.35); }
+.excel-promo-banner .btn-promo-primary:hover { box-shadow: 0 10px 24px rgba(21, 128, 61, 0.45); }
+.excel-promo-banner .promo-support-footer { color: #166534 !important; }
+
+/* ==========================================================================
+   3. Candy Promotional Banner (Custom Cyan Theme)
+   ========================================================================== */
+.candy-promo-banner {
+    background-color: #E0F2FE;
+    border-color: #bae6fd;
+}
+.candy-promo-banner .promo-banner-text-col { background: #E0F2FE; }
+.candy-promo-banner .promo-eyebrow { color: #0284c7; background: rgba(2, 132, 199, 0.12); border-color: rgba(2, 132, 199, 0.25); }
+.candy-promo-banner .promo-heading { color: #0C4A6E !important; }
+.candy-promo-banner .promo-subtitle { color: #0C4A6E !important; }
+.candy-promo-banner .promo-description { color: #0C4A6E !important; }
+.candy-promo-banner .btn-promo-primary { background: #0284C7 !important; color: #ffffff !important; box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35); }
+.candy-promo-banner .btn-promo-primary:hover { background: #0369a1 !important; box-shadow: 0 10px 24px rgba(2, 132, 199, 0.45); }
+.candy-promo-banner .promo-support-footer { color: #0C4A6E !important; }
+
+/* ==========================================================================
+   4. Database Promotional Banner (Custom Red/Access Theme)
+   ========================================================================== */
+.database-promo-banner {
+    background-color: #FCE7E7;
+    border-color: #fecaca;
+}
+.database-promo-banner .promo-banner-text-col { background: #FCE7E7; }
+.database-promo-banner .promo-eyebrow { color: #991b1b; background: rgba(185, 28, 28, 0.12); border-color: rgba(185, 28, 28, 0.25); }
+.database-promo-banner .promo-heading { color: #7F1D1D !important; }
+.database-promo-banner .promo-subtitle { color: #7F1D1D !important; }
+.database-promo-banner .promo-description { color: #7F1D1D !important; }
+.database-promo-banner .btn-promo-primary { background: #B91C1C !important; color: #ffffff !important; box-shadow: 0 6px 18px rgba(185, 28, 28, 0.35); }
+.database-promo-banner .btn-promo-primary:hover { background: #991b1b !important; box-shadow: 0 10px 24px rgba(185, 28, 28, 0.45); }
+.database-promo-banner .promo-support-footer { color: #7F1D1D !important; }
+
+/* ==========================================================================
+   5. Six Sigma Promotional Banner (Custom Purple/Teal Theme)
+   ========================================================================== */
+.sixsigma-promo-banner {
+    background-color: #F3E8FF;
+    border-color: #e9d5ff;
+}
+.sixsigma-promo-banner .promo-banner-text-col { background: #F3E8FF; }
+.sixsigma-promo-banner .promo-eyebrow { color: #6b21a8; background: rgba(107, 33, 168, 0.12); border-color: rgba(107, 33, 168, 0.25); }
+.sixsigma-promo-banner .promo-heading { color: #581C87 !important; }
+.sixsigma-promo-banner .promo-subtitle { color: #581C87 !important; }
+.sixsigma-promo-banner .promo-description { color: #581C87 !important; }
+.sixsigma-promo-banner .btn-promo-primary { background: #0F766E !important; color: #ffffff !important; box-shadow: 0 6px 18px rgba(15, 118, 110, 0.35); }
+.sixsigma-promo-banner .btn-promo-primary:hover { background: #115e59 !important; box-shadow: 0 10px 24px rgba(15, 118, 110, 0.45); }
+.sixsigma-promo-banner .promo-support-footer { color: #581C87 !important; }
+
+/* ==========================================================================
+   Featured Banners Carousel Styles (6-Second Auto Play)
+   ========================================================================== */
+.banners-carousel-wrap {
+    position: relative;
+    width: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    margin-top: 25px;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    animation: fadeInSlide 0.6s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+@keyframes fadeInSlide {
+    from { opacity: 0.4; transform: scale(0.99); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.carousel-dots-nav {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+    background: rgba(15, 23, 42, 0.25);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(4px);
+}
+
+.carousel-dots-nav .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dots-nav .dot.active,
+.carousel-dots-nav .dot:hover {
+    background: #ffffff;
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   التصميم المتجاوب لشاشات الموبايل والتابلت (Mobile & Tablet Optimization)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .promo-banner-flex-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .promo-banner-image-col {
+        padding: 20px 16px;
+        background: #f8fafc;
+    }
+
+    .promo-banner-image-col img {
+        max-height: 260px;
+    }
+
+    .promo-banner-text-col {
+        padding: 30px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .promo-eyebrow,
+    .hero-pill-tag {
+        align-self: center;
+    }
+
+    .promo-heading,
+    .hero-main-title {
+        font-size: 30px;
+    }
+
+    .hero-support-text-ar {
+        text-align: center;
+    }
+
+    .hero-action-buttons,
+    .promo-btn-wrap {
+        justify-content: center;
+    }
+
+    /* الحفاظ على ألوان الخلفيات المتخصصة للبانرات حتى على الموبايل */
+    .powerbi-promo-banner .promo-banner-text-col { background: #fef3c7; }
+    .excel-promo-banner .promo-banner-text-col { background: #DCFCE7; }
+    .candy-promo-banner .promo-banner-text-col { background: #E0F2FE; }
+    .database-promo-banner .promo-banner-text-col { background: #FCE7E7; }
+    .sixsigma-promo-banner .promo-banner-text-col { background: #F3E8FF; }
+}

@@ -1,130 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Fawzy Learning | Home</title>
-    
-    <!-- مسار الـ CSS داخل فولدر css/ -->
-    <link rel="stylesheet" href="css/global.css">
-    
-    <!-- الخطوط -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+  <head>
+    <!-- ==========================================================================
+         بيانات الصفحة الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Said Fawzy Learning | Enterprise Data, Engineering &amp; Systems
+    </title>
 
+    <!-- استدعاء ملفات التنسيق الموحدة للمنصة وملف الهوم المستقل -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
-    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
-    
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Said Fawzy Learning | Power BI & Data Analytics">
-    <meta property="og:description" content="منصة تعليمية متخصصة في مسارات تحليل البيانات، ذكاء الأعمال، وإدارة التكاليف الهندسية.">
-    <meta property="og:image" content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png">
-    <meta property="og:url" content="https://saidfawzy.github.io/">
+    <!-- الخطوط المعتمدة للمنصة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Arabic:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png" />
+    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png" />
 
-</head>
-<body>
-
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Said Fawzy Learning | Enterprise Data, Engineering &amp; Systems"
+    />
+    <meta
+      property="og:description"
+      content="A specialized educational hub bridging data analytics, engineering, and technology through practical learning."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/hero/hero-workspace.png"
+    />
+    <meta property="og:url" content="https://saidfawzy.github.io/index.html" />
+  </head>
+  <body>
     <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
 
-        <!-- ================= البانر العلوي الثابت ================= -->
-        <header class="vibrant-banner">
-            <a href="index.html" class="logo-link">
-                <!-- مسار اللوجو داخل images/logo/ -->
-                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
-            </a>
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
 
-            <div class="brand-title">
-                <h1>
-                    <span class="text-dark">Said Fawzy</span>
-                    <span class="text-light">Learning</span>
-                </h1>
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="index.html" class="nav-item active">Home</a>
+          <a href="courses.html" class="nav-item">Courses</a>
+          <a href="books.html" class="nav-item">Books</a>
+          <a href="resources.html" class="nav-item">Resources</a>
+          <a href="community.html" class="nav-item">Community</a>
+          <a href="gallery.html" class="nav-item">Gallery</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. جسم المحتوى الرئيسي (Main Page Body)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- أ. قسم الهيرو الرئيسي (Main Hero Section - Image on Left, Text on Right) -->
+        <section class="full-width-hero">
+          <div class="promo-banner-flex-layout">
+            <!-- العمود الأيسر: الصورة تعرض كاملة 100% بدون أي قص -->
+            <div class="promo-banner-image-col">
+              <img
+                src="images/hero/hero-workspace.png"
+                alt="Modern Engineering and Data Workspace"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
             </div>
-        </header>
 
-       <!-- ================= شريط التنقل الرئيسي (8 أزرار) ================= -->
-        <nav class="main-navbar">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item active">Home</a>
-                <a href="courses.html" class="nav-item">Courses</a>
-                <a href="books.html" class="nav-item">Books</a>
-                <a href="resources.html" class="nav-item">Resources</a>
-                <a href="community.html" class="nav-item">Community</a>
-                <a href="gallery.html" class="nav-item">Gallery</a>
-                <a href="about.html" class="nav-item">About</a>
-                <a href="contact.html" class="nav-item">Contact</a>
+            <!-- العمود الأيمن: النصوص والأزرار -->
+            <div class="promo-banner-text-col">
+              <span class="hero-pill-tag">Free Educational Hub</span>
+
+              <h2 class="hero-main-title">Learn. Practice. Grow.</h2>
+
+              <p class="hero-support-text">
+                Explore Data Analysis, Databases, Programming, and Practical
+                Technology Skills.
+              </p>
+
+              <p class="hero-support-text-ar">
+                محتوى تعليمي عملي ومجاني في تحليل البيانات، وقواعد البيانات،
+                والبرمجة، والتكنولوجيا، مع تطبيقات عملية في مجالات العمل
+                المختلفة.
+              </p>
+
+              <div class="hero-action-buttons">
+                <a href="courses.html" class="btn-hero-primary">
+                  <span>Explore Learning Tracks</span>
+                  <span>→</span>
+                </a>
+                <a href="books.html" class="btn-hero-secondary">
+                  <span>Browse Free Books</span>
+                  <span>📚</span>
+                </a>
+              </div>
             </div>
-        </nav>
+          </div>
+        </section>
 
-        <!-- ================= مساحة محتوى الصفحة الرئيسية ================= -->
-        <main class="page-body">
-            <div class="page-title-box">
-                <h2>Welcome</h2>
-            </div>
-        </main>
-
-
-
-       <!-- ================= Dark Executive Footer ================= -->
-        <footer class="site-footer">
-            <div class="footer-top-grid">
-                <div class="footer-brand-col">
-                    <div class="footer-logo-title">
-                        <img src="images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
-                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
-                    </div>
-                    <p class="footer-bio-ar">
-                        A specialized educational hub providing practical pathways in Data Analytics, Business Intelligence, and Engineering Cost Control.
-                    </p>
+        <!-- ب. سكشن السلايدر التفاعلي للبانرات الإعلانية (Banners Carousel - 6 Seconds Auto Play) -->
+        <section class="banners-carousel-wrap" id="homeBannersCarousel">
+          <!-- الشريحة 1: Power BI -->
+          <div class="carousel-slide active">
+            <div
+              class="powerbi-promo-banner"
+              style="margin-top: 0; box-shadow: none; border: none"
+            >
+              <div class="promo-banner-flex-layout">
+                <div class="promo-banner-image-col">
+                  <img
+                    src="images/banners/power-bi-banner.png"
+                    alt="Master Power BI Dashboard"
+                    onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                  />
                 </div>
-
-                <div class="footer-links-col">
-                    <h5 class="footer-col-title">Quick Links</h5>
-                    <div class="footer-quick-nav">
-                        <a href="courses.html">Courses</a>
-                        <a href="books.html">Books</a>
-                        <a href="resources.html">Resources</a>
-                        <a href="community.html">Community</a>
-                    </div>
+                <div class="promo-banner-text-col">
+                  <span class="promo-eyebrow">POWER BI · DATA ANALYSIS</span>
+                  <h3 class="promo-heading">Master Power BI</h3>
+                  <p class="promo-subtitle">
+                    Learn from Scratch. Prepare for PL-300.
+                  </p>
+                  <p class="promo-description">
+                    Build practical data analysis and visualization skills with
+                    free learning resources, step by step.
+                  </p>
+                  <div class="promo-btn-wrap">
+                    <a href="power-bi/index.html" class="btn-promo-primary"
+                      ><span>EXPLORE POWER BI COURSES</span><span>→</span></a
+                    >
+                  </div>
+                  <span class="promo-support-footer"
+                    >Free Educational Resources · Said Fawzy Learning</span
+                  >
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="footer-social-col">
-                    <h5 class="footer-col-title">Connect & Learn</h5>
-                    <div class="footer-social-badges">
-                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
-                            <img src="images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
-                        </a>
-                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
-                            <img src="images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
-                        </a>
-                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
-                            <img src="images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
-                        </a>
-                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
-                            <img src="images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
-                        </a>
-                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
-                            <img src="images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
-                        </a>
-                    </div>
+          <!-- الشريحة 2: Excel -->
+          <div class="carousel-slide">
+            <div
+              class="excel-promo-banner"
+              style="margin-top: 0; box-shadow: none; border: none"
+            >
+              <div class="promo-banner-flex-layout">
+                <div class="promo-banner-image-col" style="background: #dcfce7">
+                  <img
+                    src="images/banners/excel-banner.png"
+                    alt="Mastering Excel Dashboards"
+                    onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                  />
                 </div>
+                <div class="promo-banner-text-col">
+                  <span class="promo-eyebrow"
+                    >EXCEL · DATA ANALYSIS &amp; BI</span
+                  >
+                  <h3 class="promo-heading">Mastering Excel</h3>
+                  <p class="promo-subtitle">
+                    From Beginner to Dashboard Creator
+                  </p>
+                  <p class="promo-description">
+                    Start from Scratch, Master Excel, Analyze Data, and Build
+                    Professional Dashboards.
+                  </p>
+                  <div class="promo-btn-wrap">
+                    <a href="excel-bi/index.html" class="btn-promo-primary"
+                      ><span>EXPLORE EXCEL COURSES</span><span>→</span></a
+                    >
+                  </div>
+                  <span class="promo-support-footer"
+                    >Free Educational Resources · Said Fawzy Learning</span
+                  >
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="footer-bottom-bar">
-                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
-                <p>Designed for data enthusiasts & professionals</p>
+          <!-- الشريحة 3: Thinking in CANDY -->
+          <div class="carousel-slide">
+            <div
+              class="candy-promo-banner"
+              style="margin-top: 0; box-shadow: none; border: none"
+            >
+              <div class="promo-banner-flex-layout">
+                <div class="promo-banner-image-col" style="background: #e0f2fe">
+                  <img
+                    src="images/banners/candy-banner.png"
+                    alt="Thinking in CANDY"
+                    onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <div class="promo-banner-text-col">
+                  <span class="promo-eyebrow">THINKING IN CANDY</span>
+                  <h3 class="promo-heading">Thinking in CANDY.</h3>
+                  <p class="promo-subtitle">Estimate with Confidence.</p>
+                  <p class="promo-description">
+                    Learn construction estimating, quantity takeoff, project
+                    valuation, and cost management through practical CANDY
+                    learning resources.
+                  </p>
+                  <div class="promo-btn-wrap">
+                    <a href="candy/index.html" class="btn-promo-primary"
+                      ><span>EXPLORE CANDY COURSES</span><span>→</span></a
+                    >
+                  </div>
+                  <span class="promo-support-footer"
+                    >Free Educational Resources · Said Fawzy Learning</span
+                  >
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
 
+          <!-- الشريحة 4: Mastering Databases -->
+          <div class="carousel-slide">
+            <div
+              class="database-promo-banner"
+              style="margin-top: 0; box-shadow: none; border: none"
+            >
+              <div class="promo-banner-flex-layout">
+                <div class="promo-banner-image-col" style="background: #fce7e7">
+                  <img
+                    src="images/banners/database-banner.png"
+                    alt="Mastering Databases"
+                    onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <div class="promo-banner-text-col">
+                  <span class="promo-eyebrow">MASTERING DATABASES</span>
+                  <h3 class="promo-heading">Mastering Databases</h3>
+                  <p class="promo-subtitle">
+                    From Database Fundamentals to Complete Database Applications
+                  </p>
+                  <p class="promo-description">
+                    Learn database fundamentals, master Microsoft Access, and
+                    discover how to design and build complete database
+                    applications step by step.
+                  </p>
+                  <div class="promo-btn-wrap">
+                    <a href="database/index.html" class="btn-promo-primary"
+                      ><span>EXPLORE DATABASE COURSES</span><span>→</span></a
+                    >
+                  </div>
+                  <span class="promo-support-footer"
+                    >Free Educational Resources · Said Fawzy Learning</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- الشريحة 5: Introduction to Six Sigma -->
+          <div class="carousel-slide">
+            <div
+              class="sixsigma-promo-banner"
+              style="margin-top: 0; box-shadow: none; border: none"
+            >
+              <div class="promo-banner-flex-layout">
+                <div class="promo-banner-image-col" style="background: #f3e8ff">
+                  <img
+                    src="images/banners/six-sigma-banner.png"
+                    alt="Introduction to Six Sigma"
+                    onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+                  />
+                </div>
+                <div class="promo-banner-text-col">
+                  <span class="promo-eyebrow">INTRODUCTION TO SIX SIGMA</span>
+                  <h3 class="promo-heading">Introduction to Six Sigma</h3>
+                  <p class="promo-subtitle">
+                    Understand Quality. Improve Processes.
+                  </p>
+                  <p class="promo-description">
+                    Discover the fundamentals of Six Sigma, learn how data
+                    supports quality improvement, and explore the principles of
+                    reducing defects and improving process performance.
+                  </p>
+                  <div class="promo-btn-wrap">
+                    <a href="six-sigma/index.html" class="btn-promo-primary"
+                      ><span>EXPLORE SIX SIGMA</span><span>→</span></a
+                    >
+                  </div>
+                  <span class="promo-support-footer"
+                    >Free Educational Resources · Said Fawzy Learning</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- أزرار التنقل السفلية (Dots Navigation) -->
+          <div class="carousel-dots-nav">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </section>
+      </main>
+
+      <!-- ==========================================================================
+             4. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="courses.html">Courses</a>
+              <a href="books.html">Books</a>
+              <a href="resources.html">Resources</a>
+              <a href="community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
     </div>
 
-    <!-- مسار الجافا سكريبت داخل فولدر js/ -->
+    <!-- ملف الجافا سكريبت للتفاعل والسلايدر -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
