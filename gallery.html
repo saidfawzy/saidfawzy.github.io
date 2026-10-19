@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         بيانات الصفحة الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Gallery | Said Fawzy Learning</title>
+
+    <!-- استدعاء ملفات التنسيق الموحدة ومعرض الصور -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
+    <!-- الخطوط المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Arabic:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png" />
+    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png" />
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Training Gallery | Said Fawzy Learning"
+    />
+    <meta
+      property="og:description"
+      content="A Journey of Learning, Training, and Professional Development — Since 2009."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/gallery.html"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
+
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="courses.html" class="nav-item">Courses</a>
+          <a href="books.html" class="nav-item">Books</a>
+          <a href="resources.html" class="nav-item">Resources</a>
+          <a href="community.html" class="nav-item">Community</a>
+          <a href="gallery.html" class="nav-item active">Gallery</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+             3. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- قسم مقدمة المعرض (Introduction Section) -->
+        <section class="gallery-intro-box">
+          <span class="gallery-badge">Visual History</span>
+          <h2>Training Gallery</h2>
+          <p class="gallery-subtitle">
+            A Journey of Learning, Training, and Professional Development —
+            Since 2009.
+          </p>
+          <p class="gallery-desc">
+            A chronological visual archive documenting years of professional
+            engineering training, construction cost control workshops, data
+            analytics masterclasses, and hands-on technical sessions.
+          </p>
+        </section>
+
+        <!-- شبكة الصور التاريخية (21 Images in Chronological Order) -->
+        <div class="gallery-grid-container">
+          <!-- 1. Oct 2009 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(0)">
+              <img
+                src="images/gallery/gal-04.jpg"
+                alt="Candy Training at Arab Contractors"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Candy Training at Arab Contractors
+              </h3>
+              <span class="gallery-card-date">Oct 2009</span>
+            </div>
+          </article>
+
+          <!-- 2. Oct 2024 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(1)">
+              <img
+                src="images/gallery/gal-13.jpg"
+                alt="Power BI Quick Start"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Power BI Quick Start – Project Supporting Department, Arab
+                Contractors
+              </h3>
+              <span class="gallery-card-date">Oct 2024</span>
+            </div>
+          </article>
+
+          <!-- 3. Jan 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(2)">
+              <img
+                src="images/gallery/gal-17.jpg"
+                alt="Advanced Excel and Data Handling"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Advanced Excel and Data Handling – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">Jan 2025</span>
+            </div>
+          </article>
+
+          <!-- 4. May 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(3)">
+              <img
+                src="images/gallery/gal-16.jpg"
+                alt="Excel Intermediate Training"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Excel Intermediate Training – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">May 2025</span>
+            </div>
+          </article>
+
+          <!-- 5. June 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(4)">
+              <img
+                src="images/gallery/gal-18.jpg"
+                alt="Workshop Power BI Manager Guide"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Workshop "Power BI Manager Guide" – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">June 2025</span>
+            </div>
+          </article>
+
+          <!-- 6. June 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(5)">
+              <img
+                src="images/gallery/gal-19.jpg"
+                alt="Workshop Power BI Manager Guide"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Workshop "Power BI Manager Guide" – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">June 2025</span>
+            </div>
+          </article>
+
+          <!-- 7. June 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(6)">
+              <img
+                src="images/gallery/gal-20.jpg"
+                alt="Workshop Power BI Manager Guide"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Workshop "Power BI Manager Guide" – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">June 2025</span>
+            </div>
+          </article>
+
+          <!-- 8. June 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(7)">
+              <img
+                src="images/gallery/gal-21.jpg"
+                alt="Workshop Power BI Manager Guide"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Workshop "Power BI Manager Guide" – Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">June 2025</span>
+            </div>
+          </article>
+
+          <!-- 9. Jul 2014 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(8)">
+              <img
+                src="images/gallery/gal-06.jpg"
+                alt="Candy Training at Arab Contractors"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Candy Training at Arab Contractors
+              </h3>
+              <span class="gallery-card-date">Jul 2014</span>
+            </div>
+          </article>
+
+          <!-- 10. May 2015 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(9)">
+              <img
+                src="images/gallery/gal-01.jpg"
+                alt="Candy One-Day Training Course"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Candy One-Day Training Course for Newly Graduated Engineers –
+                Arab Contractors Institute (ICT Programs)
+              </h3>
+              <span class="gallery-card-date">May 2015</span>
+            </div>
+          </article>
+
+          <!-- 11. Dec 2015 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(10)">
+              <img
+                src="images/gallery/gal-05.jpg"
+                alt="Candy Training Course"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">Candy Training Course</h3>
+              <span class="gallery-card-date">Dec 2015</span>
+            </div>
+          </article>
+
+          <!-- 12. Feb 2016 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(11)">
+              <img
+                src="images/gallery/gal-02.jpg"
+                alt="Candy Training for Group 2"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Candy Training for Group 2 of Arab Contractors Branch Estimators
+                – AC Institute
+              </h3>
+              <span class="gallery-card-date">Feb 2016</span>
+            </div>
+          </article>
+
+          <!-- 13. May 2016 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(12)">
+              <img
+                src="images/gallery/gal-03.jpg"
+                alt="Candy Training at Arab Contractors Institute"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Candy Training at Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">May 2016</span>
+            </div>
+          </article>
+
+          <!-- 14. Aug 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(13)">
+              <img
+                src="images/gallery/gal-11.jpg"
+                alt="Mastering Data Analysis with Excel"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Mastering Data Analysis with Excel
+              </h3>
+              <span class="gallery-card-date">Aug 2025</span>
+            </div>
+          </article>
+
+          <!-- 15. Sep 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(14)">
+              <img
+                src="images/gallery/gal-12.jpg"
+                alt="Excel Intermediate Training"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">Excel Intermediate Training</h3>
+              <span class="gallery-card-date">Sep 2025</span>
+            </div>
+          </article>
+
+          <!-- 16. Oct 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(15)">
+              <img
+                src="images/gallery/gal-07.jpg"
+                alt="Power BI Quick Start"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">Power BI Quick Start</h3>
+              <span class="gallery-card-date">Oct 2025</span>
+            </div>
+          </article>
+
+          <!-- 17. Nov 2025 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(16)">
+              <img
+                src="images/gallery/gal-15.jpg"
+                alt="MS Excel for Beginners"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                MS Excel for Beginners – The Arab Contractors Institute
+              </h3>
+              <span class="gallery-card-date">Nov 2025</span>
+            </div>
+          </article>
+
+          <!-- 18. Nov 2025 (gal-09) -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(17)">
+              <img
+                src="images/gallery/gal-09.jpg"
+                alt="Excel for Beginners"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">Excel for Beginners</h3>
+              <span class="gallery-card-date">Nov 2025</span>
+            </div>
+          </article>
+
+          <!-- 19. Dec 2025 (gal-10) -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(18)">
+              <img
+                src="images/gallery/gal-10.jpg"
+                alt="Microsoft Access Training"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Microsoft Access Training – AC Institute
+              </h3>
+              <span class="gallery-card-date">Dec 2025</span>
+            </div>
+          </article>
+
+          <!-- 20. Dec 2025 (gal-14) -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(19)">
+              <img
+                src="images/gallery/gal-14.jpg"
+                alt="Getting Started with Microsoft Access"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Getting Started with Microsoft Access – The Arab Contractors
+                Institute
+              </h3>
+              <span class="gallery-card-date">Dec 2025</span>
+            </div>
+          </article>
+
+          <!-- 21. Jan 2026 -->
+          <article class="gallery-card">
+            <div class="gallery-img-wrapper" onclick="openLightbox(20)">
+              <img
+                src="images/gallery/gal-08.jpg"
+                alt="Excel Intermediate Training"
+                loading="lazy"
+                onerror="this.src = 'images/logo/saidfawzy-icon.png'"
+              />
+              <div class="gallery-zoom-overlay"><span>🔍</span></div>
+            </div>
+            <div class="gallery-card-content">
+              <h3 class="gallery-card-title">
+                Excel Intermediate Training – AC Institute
+              </h3>
+              <span class="gallery-card-date">Jan 2026</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- قسم الخاتمة (Closing Section) -->
+        <section class="gallery-closing-box">
+          <h3>Every Photo Tells a Story of Learning and Growth.</h3>
+          <p>
+            Explore our structured learning tracks and start your professional
+            journey today.
+          </p>
+          <a href="courses.html" class="btn-explore-tracks">
+            <span>Explore Learning Tracks</span>
+            <span>→</span>
+          </a>
+        </section>
+      </main>
+
+      <!-- ==========================================================================
+             4. نافذة الـ Lightbox المنبثقة لعرض الصور
+             ========================================================================== -->
+      <div
+        class="lightbox-modal"
+        id="imageLightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image Lightbox"
+      >
+        <div class="lightbox-content-box">
+          <button
+            class="lightbox-close"
+            onclick="closeLightbox()"
+            aria-label="Close lightbox"
+          >
+            ✕
+          </button>
+          <button
+            class="lightbox-nav-btn lightbox-prev"
+            onclick="changeLightboxImage(-1)"
+            aria-label="Previous image"
+          >
+            ❮
+          </button>
+          <button
+            class="lightbox-nav-btn lightbox-next"
+            onclick="changeLightboxImage(1)"
+            aria-label="Next image"
+          >
+            ❯
+          </button>
+
+          <img src="" alt="" class="lightbox-image" id="lightboxImg" />
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+             5. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="courses.html">Courses</a>
+              <a href="books.html">Books</a>
+              <a href="resources.html">Resources</a>
+              <a href="community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Script للتحكم في معارض الصور والـ Lightbox التفاعلي -->
+    <script>
+      const galleryData = [
+        {
+          src: "images/gallery/gal-04.jpg",
+          title: "Candy Training at Arab Contractors",
+          date: "Oct 2009",
+        },
+        {
+          src: "images/gallery/gal-13.jpg",
+          title:
+            "Power BI Quick Start – Project Supporting Department, Arab Contractors",
+          date: "Oct 2024",
+        },
+        {
+          src: "images/gallery/gal-17.jpg",
+          title:
+            "Advanced Excel and Data Handling – Arab Contractors Institute",
+          date: "Jan 2025",
+        },
+        {
+          src: "images/gallery/gal-16.jpg",
+          title: "Excel Intermediate Training – Arab Contractors Institute",
+          date: "May 2025",
+        },
+        {
+          src: "images/gallery/gal-18.jpg",
+          title:
+            'Workshop "Power BI Manager Guide" – Arab Contractors Institute',
+          date: "June 2025",
+        },
+        {
+          src: "images/gallery/gal-19.jpg",
+          title:
+            'Workshop "Power BI Manager Guide" – Arab Contractors Institute',
+          date: "June 2025",
+        },
+        {
+          src: "images/gallery/gal-20.jpg",
+          title:
+            'Workshop "Power BI Manager Guide" – Arab Contractors Institute',
+          date: "June 2025",
+        },
+        {
+          src: "images/gallery/gal-21",
+          title:
+            'Workshop "Power BI Manager Guide" – Arab Contractors Institute',
+          date: "June 2025",
+        },
+        {
+          src: "images/gallery/gal-06.jpg",
+          title: "Candy Training at Arab Contractors",
+          date: "Jul 2014",
+        },
+        {
+          src: "images/gallery/gal-01.jpg",
+          title:
+            "Candy One-Day Training Course for Newly Graduated Engineers – Arab Contractors Institute (ICT Programs)",
+          date: "May 2015",
+        },
+        {
+          src: "images/gallery/gal-05.jpg",
+          title: "Candy Training Course",
+          date: "Dec 2015",
+        },
+        {
+          src: "images/gallery/gal-02.jpg",
+          title:
+            "Candy Training for Group 2 of Arab Contractors Branch Estimators – AC Institute",
+          date: "Feb 2016",
+        },
+        {
+          src: "images/gallery/gal-03.jpg",
+          title: "Candy Training at Arab Contractors Institute",
+          date: "May 2016",
+        },
+        {
+          src: "images/gallery/gal-11.jpg",
+          title: "Mastering Data Analysis with Excel",
+          date: "Aug 2025",
+        },
+        {
+          src: "images/gallery/gal-12.jpg",
+          title: "Excel Intermediate Training",
+          date: "Sep 2025",
+        },
+        {
+          src: "images/gallery/gal-07.jpg",
+          title: "Power BI Quick Start",
+          date: "Oct 2025",
+        },
+        {
+          src: "images/gallery/gal-15.jpg",
+          title: "MS Excel for Beginners – The Arab Contractors Institute",
+          date: "Nov 2025",
+        },
+        {
+          src: "images/gallery/gal-09.jpg",
+          title: "Excel for Beginners",
+          date: "Nov 2025",
+        },
+        {
+          src: "images/gallery/gal-10.jpg",
+          title: "Microsoft Access Training – AC Institute",
+          date: "Dec 2025",
+        },
+        {
+          src: "images/gallery/gal-14.jpg",
+          title:
+            "Getting Started with Microsoft Access – The Arab Contractors Institute",
+          date: "Dec 2025",
+        },
+        {
+          src: "images/gallery/gal-08.jpg",
+          title: "Excel Intermediate Training – AC Institute",
+          date: "Jan 2026",
+        },
+      ];
+
+      let currentLightboxIndex = 0;
+
+      function openLightbox(index) {
+        currentLightboxIndex = index;
+        updateLightboxContent();
+        document.getElementById("imageLightbox").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        document.getElementById("imageLightbox").classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      function changeLightboxImage(direction) {
+        currentLightboxIndex += direction;
+        if (currentLightboxIndex >= galleryData.length) {
+          currentLightboxIndex = 0;
+        } else if (currentLightboxIndex < 0) {
+          currentLightboxIndex = galleryData.length - 1;
+        }
+        updateLightboxContent();
+      }
+
+      function updateLightboxContent() {
+        const item = galleryData[currentLightboxIndex];
+        const imgEl = document.getElementById("lightboxImg");
+        const captionEl = document.getElementById("lightboxCaption");
+
+        imgEl.src = item.src;
+        imgEl.alt = item.title;
+        captionEl.innerHTML = `<strong>${item.title}</strong> — <span style="color: #38bdf8;">${item.date}</span>`;
+      }
+
+      document.addEventListener("keydown", function (e) {
+        const modal = document.getElementById("imageLightbox");
+        if (modal.classList.contains("active")) {
+          if (e.key === "Escape") {
+            closeLightbox();
+          } else if (e.key === "ArrowRight") {
+            changeLightboxImage(1);
+          } else if (e.key === "ArrowLeft") {
+            changeLightboxImage(-1);
+          }
+        }
+      });
+
+      document
+        .getElementById("imageLightbox")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closeLightbox();
+          }
+        });
+    </script>
+
+    <!-- ملف التفاعل العام للمنصة -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,9 +1,11 @@
 /* ==========================================================================
    Said Fawzy Learning - Homepage Styles (home.css)
-   Image-Led Layout Architecture (Image on Left, Content on Right)
+   هيكل تنسيقات الصفحة الرئيسية للمنصة (معتمد وموثق بالكامل)
    ========================================================================== */
 
-/* الحاوية المشتركة للبانرات والهيرو بأسلوب Flex/Grid متجاوب */
+/* --------------------------------------------------------------------------
+   أولاً: الإطار العام والحاويات المشتركة للبانرات (Shared Containers)
+   -------------------------------------------------------------------------- */
 .full-width-hero,
 .powerbi-promo-banner,
 .excel-promo-banner,
@@ -27,7 +29,9 @@
     width: 100%;
 }
 
-/* عمود الصورة: تظهر كاملة وغير مقصوصة نهائياً على اليسار */
+/* --------------------------------------------------------------------------
+   ثانياً: تنسيق أعمدة الصور والنصوص الأساسية (Image & Text Columns)
+   -------------------------------------------------------------------------- */
 .promo-banner-image-col {
     width: 100%;
     height: 100%;
@@ -46,7 +50,6 @@
     display: block;
 }
 
-/* عمود النصوص والمساحة على اليمين */
 .promo-banner-text-col {
     padding: 45px 50px;
     display: flex;
@@ -56,6 +59,9 @@
     background: #ffffff;
 }
 
+/* --------------------------------------------------------------------------
+   ثالثاً: تنسيق النصوص، الشارات، والأزرار (Typography & Buttons)
+   -------------------------------------------------------------------------- */
 .promo-eyebrow,
 .hero-pill-tag {
     font-size: 11px;
@@ -165,13 +171,13 @@
     letter-spacing: 0.3px;
 }
 
-/* ==========================================================================
-   1. Power BI Promotional Banner (Brand Yellow Custom Theme)
-   ========================================================================== */
-.powerbi-promo-banner {
-    background-color: #fef3c7;
-    border-color: #fde68a;
-}
+
+/* --------------------------------------------------------------------------
+   رابعاً: تنسيقات الألوان المخصصة للبانرات الترويجية بالسلايدر
+   -------------------------------------------------------------------------- */
+
+/* 1. بانر Power BI (هوية أصفر دافئ) */
+.powerbi-promo-banner { background-color: #fef3c7; border-color: #fde68a; }
 .powerbi-promo-banner .promo-banner-text-col { background: #fef3c7; }
 .powerbi-promo-banner .promo-eyebrow { color: #b45309; background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3); }
 .powerbi-promo-banner .promo-heading { color: #78350f !important; }
@@ -181,13 +187,8 @@
 .powerbi-promo-banner .btn-promo-primary:hover { box-shadow: 0 10px 24px rgba(217, 119, 6, 0.45); }
 .powerbi-promo-banner .promo-support-footer { color: #78350f !important; }
 
-/* ==========================================================================
-   2. Excel Promotional Banner (Custom Green Theme)
-   ========================================================================== */
-.excel-promo-banner {
-    background-color: #DCFCE7;
-    border-color: #bbf7d0;
-}
+/* 2. بانر Excel (هوية أخضر هادئ) */
+.excel-promo-banner { background-color: #DCFCE7; border-color: #bbf7d0; }
 .excel-promo-banner .promo-banner-text-col { background: #DCFCE7; }
 .excel-promo-banner .promo-eyebrow { color: #15803d; background: rgba(21, 128, 61, 0.12); border-color: rgba(21, 128, 61, 0.25); }
 .excel-promo-banner .promo-heading { color: #166534 !important; }
@@ -197,13 +198,8 @@
 .excel-promo-banner .btn-promo-primary:hover { box-shadow: 0 10px 24px rgba(21, 128, 61, 0.45); }
 .excel-promo-banner .promo-support-footer { color: #166534 !important; }
 
-/* ==========================================================================
-   3. Candy Promotional Banner (Custom Cyan Theme)
-   ========================================================================== */
-.candy-promo-banner {
-    background-color: #E0F2FE;
-    border-color: #bae6fd;
-}
+/* 3. بانر Candy (هوية لبني فواتح) */
+.candy-promo-banner { background-color: #E0F2FE; border-color: #bae6fd; }
 .candy-promo-banner .promo-banner-text-col { background: #E0F2FE; }
 .candy-promo-banner .promo-eyebrow { color: #0284c7; background: rgba(2, 132, 199, 0.12); border-color: rgba(2, 132, 199, 0.25); }
 .candy-promo-banner .promo-heading { color: #0C4A6E !important; }
@@ -213,13 +209,8 @@
 .candy-promo-banner .btn-promo-primary:hover { background: #0369a1 !important; box-shadow: 0 10px 24px rgba(2, 132, 199, 0.45); }
 .candy-promo-banner .promo-support-footer { color: #0C4A6E !important; }
 
-/* ==========================================================================
-   4. Database Promotional Banner (Custom Red/Access Theme)
-   ========================================================================== */
-.database-promo-banner {
-    background-color: #FCE7E7;
-    border-color: #fecaca;
-}
+/* 4. بانر Database (هوية أحمر/عنابي) */
+.database-promo-banner { background-color: #FCE7E7; border-color: #fecaca; }
 .database-promo-banner .promo-banner-text-col { background: #FCE7E7; }
 .database-promo-banner .promo-eyebrow { color: #991b1b; background: rgba(185, 28, 28, 0.12); border-color: rgba(185, 28, 28, 0.25); }
 .database-promo-banner .promo-heading { color: #7F1D1D !important; }
@@ -229,13 +220,8 @@
 .database-promo-banner .btn-promo-primary:hover { background: #991b1b !important; box-shadow: 0 10px 24px rgba(185, 28, 28, 0.45); }
 .database-promo-banner .promo-support-footer { color: #7F1D1D !important; }
 
-/* ==========================================================================
-   5. Six Sigma Promotional Banner (Custom Purple/Teal Theme)
-   ========================================================================== */
-.sixsigma-promo-banner {
-    background-color: #F3E8FF;
-    border-color: #e9d5ff;
-}
+/* 5. بانر Six Sigma (هوية بنفسجي/مائل للتركواز) */
+.sixsigma-promo-banner { background-color: #F3E8FF; border-color: #e9d5ff; }
 .sixsigma-promo-banner .promo-banner-text-col { background: #F3E8FF; }
 .sixsigma-promo-banner .promo-eyebrow { color: #6b21a8; background: rgba(107, 33, 168, 0.12); border-color: rgba(107, 33, 168, 0.25); }
 .sixsigma-promo-banner .promo-heading { color: #581C87 !important; }
@@ -245,9 +231,10 @@
 .sixsigma-promo-banner .btn-promo-primary:hover { background: #115e59 !important; box-shadow: 0 10px 24px rgba(15, 118, 110, 0.45); }
 .sixsigma-promo-banner .promo-support-footer { color: #581C87 !important; }
 
-/* ==========================================================================
-   Featured Banners Carousel Styles (6-Second Auto Play)
-   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   خامساً: محرك السلايدر المتحرك (Carousel Core Styles)
+   -------------------------------------------------------------------------- */
 .banners-carousel-wrap {
     position: relative;
     width: 100%;
@@ -303,9 +290,56 @@
     transform: scale(1.2);
 }
 
-/* ==========================================================================
-   التصميم المتجاوب لشاشات الموبايل والتابلت (Mobile & Tablet Optimization)
-   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   سادساً: تنسيق البانرات الثلاثة السفلية (Static Promotional Banners)
+   - Explore Books
+   - Explore Learning Tracks
+   - Meet Said Fawzy
+   -------------------------------------------------------------------------- */
+.explore-books-section,
+.explore-tracks-section,
+.meet-said-section {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    display: flex;
+}
+
+.explore-books-link,
+.explore-tracks-link,
+.meet-said-link {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.explore-books-link:hover,
+.explore-tracks-link:hover,
+.meet-said-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.15);
+}
+
+.explore-books-section img,
+.explore-tracks-section img,
+.meet-said-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* --------------------------------------------------------------------------
+   سابعاً: التصميم المتجاوب للشاشات الصغيرة والموبايل (Mobile & Tablet Optimization)
+   -------------------------------------------------------------------------- */
 @media (max-width: 992px) {
     .promo-banner-flex-layout {
         grid-template-columns: 1fr;
@@ -351,4 +385,12 @@
     .candy-promo-banner .promo-banner-text-col { background: #E0F2FE; }
     .database-promo-banner .promo-banner-text-col { background: #FCE7E7; }
     .sixsigma-promo-banner .promo-banner-text-col { background: #F3E8FF; }
+
+    .explore-books-section,
+    .explore-tracks-section,
+    .meet-said-section {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border-radius: 18px;
+    }
 }
