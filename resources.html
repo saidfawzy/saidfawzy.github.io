@@ -1,257 +1,270 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical Resources & Datasets | Said Fawzy Learning</title>
-    
-    <!-- Favicon & App Icon -->
-    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png">
-    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ==========================================================================
+         بيانات الصفحة الوصفية (Metadata & Title)
+         ========================================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Resources | Said Fawzy Learning</title>
 
-    <!-- Fonts & Modular Stylesheets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/resources.css">
-</head>
-<body>
+    <!-- استدعاء ملفات التنسيق الموحدة وملف صفحة الموارد المستقل -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/resources.css" />
 
+    <!-- الخطوط المعتمدة للمنصة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Arabic:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/png" href="images/logo/saidfawzy-icon.png" />
+    <link rel="apple-touch-icon" href="images/logo/saidfawzy-icon.png" />
+
+    <!-- وسوم المشاركة الاجتماعية -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Free Resources | Said Fawzy Learning" />
+    <meta
+      property="og:description"
+      content="Explore free projects, datasets, and practical files to support your learning in data analysis and technology."
+    />
+    <meta
+      property="og:image"
+      content="https://saidfawzy.github.io/images/logo/saidfawzy-icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://saidfawzy.github.io/resources.html"
+    />
+  </head>
+  <body>
     <div class="site-wrapper">
+      <!-- ==========================================================================
+             1. البانر العلوي الثابت للموقع (Top Brand Banner)
+             ========================================================================== -->
+      <header class="vibrant-banner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo/saidfawzy-logo.png"
+            alt="Said Fawzy Logo"
+            class="free-logo"
+          />
+        </a>
 
-        <!-- ================= Vibrant Banner ================= -->
-        <header class="vibrant-banner">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo/saidfawzy-logo.png" alt="Said Fawzy Logo" class="free-logo">
-            </a>
-            <div class="brand-title">
-                <h1>
-                    <span class="text-dark">Said Fawzy</span>
-                    <span class="text-light">Learning</span>
-                </h1>
-            </div>
-        </header>
+        <div class="brand-title">
+          <h1>
+            <span class="text-dark">Said Fawzy</span>
+            <span class="text-light">Learning</span>
+          </h1>
+        </div>
+      </header>
 
-        <!-- ================= Main Navigation ================= -->
-        <nav class="main-navbar">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="courses.html" class="nav-item">Courses</a>
-                <a href="books.html" class="nav-item">Books</a>
-                <a href="resources.html" class="nav-item active">Resources</a>
-                <a href="community.html" class="nav-item">Community</a>
-                <a href="gallery.html" class="nav-item">Gallery</a>
-                <a href="about.html" class="nav-item">About</a>
-                <a href="contact.html" class="nav-item">Contact</a>
-            </div>
-        </nav>
+      <!-- ==========================================================================
+             2. شريط التنقل الرئيسي (Main Navbar - 8 Items)
+             ========================================================================== -->
+      <nav class="main-navbar">
+        <div class="nav-links">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="courses.html" class="nav-item">Courses</a>
+          <a href="books.html" class="nav-item">Books</a>
+          <a href="resources.html" class="nav-item active">Resources</a>
+          <a href="community.html" class="nav-item">Community</a>
+          <a href="gallery.html" class="nav-item">Gallery</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+      </nav>
 
-        <!-- ================= Sub Navigation / Breadcrumb ================= -->
-        <div class="sub-nav-bar">
-            <div class="breadcrumb-trail">
-                <a href="index.html">Home</a>
-                <span class="separator">/</span>
-                <span class="current-crumb">Resources & Datasets</span>
+      <!-- ==========================================================================
+             3. جسم المحتوى الرئيسي (Main Page Content Area)
+             ========================================================================== -->
+      <main class="page-body">
+        <!-- مقدمة صفحة الموارد (Resources Header Section) -->
+        <section class="resources-intro-box">
+          <span class="resources-badge">Open Source Hub</span>
+          <h2>Free Resources</h2>
+          <p class="resources-desc">
+            Explore free projects, datasets, and practical files to support your
+            learning in data analysis and technology.
+          </p>
+        </section>
+
+        <!-- شبكة الكروت الأربعة للموارد (The Four Resource Cards Grid) -->
+        <div class="resources-grid">
+          <!-- الكارت 1: Power BI Projects -->
+          <a
+            href="https://github.com/saidfawzy/Resources/tree/main/power-bi-projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-card"
+          >
+            <div class="resource-icon-wrap pbi-theme">📊</div>
+            <div class="resource-card-content">
+              <h3>Power BI Projects</h3>
+              <p>
+                Explore available Power BI project files and related resources.
+              </p>
+              <span class="resource-link-label">Browse Folder on GitHub →</span>
             </div>
-            <a href="index.html" class="btn-back-pill">
-                <span>←</span> Back to Home
-            </a>
+          </a>
+
+          <!-- الكارت 2: Python Projects -->
+          <a
+            href="https://github.com/saidfawzy/Resources/tree/main/python-projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-card"
+          >
+            <div class="resource-icon-wrap py-theme">💻</div>
+            <div class="resource-card-content">
+              <h3>Python Projects</h3>
+              <p>Browse available Python projects and their files.</p>
+              <span class="resource-link-label">Browse Folder on GitHub →</span>
+            </div>
+          </a>
+
+          <!-- الكارت 3: Practice Datasets -->
+          <a
+            href="https://github.com/saidfawzy/Resources/tree/main/datasets"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-card"
+          >
+            <div class="resource-icon-wrap data-theme">🗄️</div>
+            <div class="resource-card-content">
+              <h3>Practice Datasets</h3>
+              <p>Access datasets for practice, learning, and data analysis.</p>
+              <span class="resource-link-label">Browse Folder on GitHub →</span>
+            </div>
+          </a>
+
+          <!-- الكارت 4: Excel Templates -->
+          <a
+            href="https://github.com/saidfawzy/Resources/tree/main/excel-templates"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-card"
+          >
+            <div class="resource-icon-wrap excel-theme">📈</div>
+            <div class="resource-card-content">
+              <h3>Excel Templates</h3>
+              <p>Browse available Excel templates and practice files.</p>
+              <span class="resource-link-label">Browse Folder on GitHub →</span>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <!-- ==========================================================================
+             4. الفوتر التنفيذي للمنصة (Dark Executive Footer)
+             ========================================================================== -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo-title">
+              <img
+                src="images/logo/saidfawzy-icon.png"
+                alt="Said Fawzy Logo"
+                class="footer-logo-img"
+              />
+              <span class="footer-brand-title"
+                >Said Fawzy <span>Learning</span></span
+              >
+            </div>
+            <p class="footer-bio-ar">
+              منصة تعليمية متخصصة في مسارات تحليل البيانات واختبارات مايكروسوفت
+              الدولية وتكاليف المشروعات الهندسية.
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="footer-col-title">Quick Links</h5>
+            <div class="footer-quick-nav">
+              <a href="courses.html">Courses</a>
+              <a href="books.html">Books</a>
+              <a href="resources.html">Resources</a>
+              <a href="community.html">Community</a>
+            </div>
+          </div>
+
+          <div class="footer-social-col">
+            <h5 class="footer-col-title">Connect &amp; Learn</h5>
+            <div class="footer-social-badges">
+              <a
+                href="https://www.youtube.com/@saidfawzy"
+                target="_blank"
+                class="social-pill yt"
+              >
+                <img
+                  src="images/logo/Youtube-logo.png"
+                  alt="YouTube"
+                  class="footer-social-icon"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saidfawzy"
+                target="_blank"
+                class="social-pill li"
+              >
+                <img
+                  src="images/logo/linkedin-log.png"
+                  alt="LinkedIn"
+                  class="footer-social-icon"
+                />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/saidfawzy"
+                target="_blank"
+                class="social-pill gh"
+              >
+                <img
+                  src="images/logo/github-logo.png"
+                  alt="GitHub"
+                  class="footer-social-icon"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.facebook.com/DataAnalystJourney/"
+                target="_blank"
+                class="social-pill fb"
+              >
+                <img
+                  src="images/logo/facebook-logo.png"
+                  alt="Facebook"
+                  class="footer-social-icon"
+                />
+                Facebook
+              </a>
+              <a
+                href="https://wa.me/201227449987"
+                target="_blank"
+                class="social-pill wa"
+              >
+                <img
+                  src="images/logo/whatsapp-logo.png"
+                  alt="WhatsApp"
+                  class="footer-social-icon"
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- ================= Main Page Content ================= -->
-        <main class="page-body">
-            
-            <!-- Hero Title Box -->
-            <div class="page-title-box">
-                <span class="page-badge">Learning Assets</span>
-                <div class="title-heading-row">
-                    <div class="title-icon-chip">📂</div>
-                    <h2>Practice Files & Downloadable Resources</h2>
-                </div>
-            </div>
-
-            <!-- Resources Cards Grid -->
-            <div class="resources-grid">
-
-                <!-- 1. Power BI Practice Datasets -->
-                <div class="resource-card pbi-border">
-                    <div class="res-card-top">
-                        <div class="res-header">
-                            <div class="res-icon-box pbi-res-bg">📊</div>
-                            <div class="res-meta">
-                                <span class="res-tag pbi-tag">Power BI & DAX</span>
-                                <h3>Course Datasets & Star Schema Models</h3>
-                            </div>
-                        </div>
-                        <div class="res-bilingual-body">
-                            <p class="res-desc-en">
-                                Complete hands-on training kit containing raw transactional tables, dimensional models, and finished `.pbix` report files for project dashboards.
-                            </p>
-                            <p class="res-desc-ar">
-                                حزمة العمل الكاملة: تتضمن جداول البيانات الخام، ونماذج مخطط النجمة (Star Schema)، وملفات تقارير باور بي آي المكتملة للتطبيق العملي.
-                            </p>
-                        </div>
-                        <div class="res-meta-specs">
-                            <span>Format: <strong>.pbix / .xlsx</strong></span>
-                            <span>Source: <strong>GitHub</strong></span>
-                        </div>
-                    </div>
-                    <div class="res-action-row">
-                        <a href="https://github.com/saidfawzy" target="_blank" class="btn-res-download pbi-btn">
-                            <span>GitHub Repository</span> <span>📥</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 2. DAX Patterns & Cheatsheet -->
-                <div class="resource-card dax-border">
-                    <div class="res-card-top">
-                        <div class="res-header">
-                            <div class="res-icon-box dax-res-bg">📐</div>
-                            <div class="res-meta">
-                                <span class="res-tag dax-tag">DAX Calculations</span>
-                                <h3>DAX Patterns & Quick Reference</h3>
-                            </div>
-                        </div>
-                        <div class="res-bilingual-body">
-                            <p class="res-desc-en">
-                                A curated quick reference sheet for enterprise DAX expressions, time intelligence patterns, and evaluation context optimization rules.
-                            </p>
-                            <p class="res-desc-ar">
-                                دليل مرجعي منظم لأهم دوال DAX، وصيغ التوقيت الزمني (Time Intelligence)، وقواعد إدارة سياق التصفية وحسابات المقاييس المتقدمة.
-                            </p>
-                        </div>
-                        <div class="res-meta-specs">
-                            <span>Format: <strong>PDF / Markdown</strong></span>
-                            <span>Level: <strong>Intermediate - Advanced</strong></span>
-                        </div>
-                    </div>
-                    <div class="res-action-row">
-                        <a href="https://github.com/saidfawzy" target="_blank" class="btn-res-download dax-btn">
-                            <span>View Reference Guide</span> <span>📑</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 3. CCS CANDY Cost Estimation Guide -->
-                <div class="resource-card candy-border">
-                    <div class="res-card-top">
-                        <div class="res-header">
-                            <div class="res-icon-box candy-res-bg">🏗️</div>
-                            <div class="res-meta">
-                                <span class="res-tag candy-tag">Cost Engineering</span>
-                                <h3>CCS Candy Resource & BOQ Workbooks</h3>
-                            </div>
-                        </div>
-                        <div class="res-bilingual-body">
-                            <p class="res-desc-en">
-                                Standard bill of quantities (BOQ) sample workbooks, resource pricing worksheets, and indirect cost templates structured for construction estimators.
-                            </p>
-                            <p class="res-desc-ar">
-                                نماذج مقايسات كميات تجريبية، ومخططات تسعير الموارد والعمالة وتكاليف الموقع غير المباشرة المطبقة ببرنامج كاندي.
-                            </p>
-                        </div>
-                        <div class="res-meta-specs">
-                            <span>Format: <strong>.xlsx / Sample Data</strong></span>
-                            <span>Track: <strong>Thinking in Candy</strong></span>
-                        </div>
-                    </div>
-                    <div class="res-action-row">
-                        <a href="https://www.facebook.com/ThinkingInCandy/" target="_blank" class="btn-res-download candy-btn">
-                            <span>Request Workbook</span> <span>📂</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4. Excel Intermediate Training Worksheets -->
-                <div class="resource-card excel-border">
-                    <div class="res-card-top">
-                        <div class="res-header">
-                            <div class="res-icon-box excel-res-bg">📗</div>
-                            <div class="res-meta">
-                                <span class="res-tag excel-tag">Excel Intermediate</span>
-                                <h3>Advanced Lookups & Data Models Practice</h3>
-                            </div>
-                        </div>
-                        <div class="res-bilingual-body">
-                            <p class="res-desc-en">
-                                Hands-on exercises covering VLOOKUP, XLOOKUP, INDEX & MATCH comparisons, handling approximate match logic, and error handling in engineering tables.
-                            </p>
-                            <p class="res-desc-ar">
-                                ملفات تدريبية وتطبيقات عملية على دوال البحث المتقدمة (VLOOKUP, XLOOKUP, INDEX & MATCH) ومعالجة أخطاء البيانات في جداول المشروعات.
-                            </p>
-                        </div>
-                        <div class="res-meta-specs">
-                            <span>Format: <strong>.xlsx / Practice Files</strong></span>
-                            <span>Track: <strong>Excel Intermediate Training</strong></span>
-                        </div>
-                    </div>
-                    <div class="res-action-row">
-                        <a href="https://github.com/saidfawzy" target="_blank" class="btn-res-download excel-btn">
-                            <span>Download Datasets</span> <span>📥</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </main>
-
-        <!-- ================= Dark Executive Footer ================= -->
-        <footer class="site-footer">
-            <div class="footer-top-grid">
-                <div class="footer-brand-col">
-                    <div class="footer-logo-title">
-                        <img src="images/logo/saidfawzy-icon.png" alt="Said Fawzy Logo" class="footer-logo-img">
-                        <span class="footer-brand-title">Said Fawzy <span>Learning</span></span>
-                    </div>
-                    <p class="footer-bio-ar">
-                        A specialized educational hub providing practical pathways in Data Analytics, Business Intelligence, and Engineering Cost Control.
-                    </p>
-                </div>
-
-                <div class="footer-links-col">
-                    <h5 class="footer-col-title">Quick Links</h5>
-                    <div class="footer-quick-nav">
-                        <a href="courses.html">Courses</a>
-                        <a href="books.html">Books</a>
-                        <a href="resources.html">Resources</a>
-                        <a href="community.html">Community</a>
-                    </div>
-                </div>
-
-                <div class="footer-social-col">
-                    <h5 class="footer-col-title">Connect & Learn</h5>
-                    <div class="footer-social-badges">
-                        <a href="https://www.youtube.com/@saidfawzy" target="_blank" class="social-pill yt">
-                            <img src="images/logo/Youtube-logo.png" alt="YouTube" class="footer-social-icon"> YouTube
-                        </a>
-                        <a href="https://www.linkedin.com/in/saidfawzy" target="_blank" class="social-pill li">
-                            <img src="images/logo/linkedin-log.png" alt="LinkedIn" class="footer-social-icon"> LinkedIn
-                        </a>
-                        <a href="https://github.com/saidfawzy" target="_blank" class="social-pill gh">
-                            <img src="images/logo/github-logo.png" alt="GitHub" class="footer-social-icon"> GitHub
-                        </a>
-                        <a href="https://www.facebook.com/DataAnalystJourney/" target="_blank" class="social-pill fb">
-                            <img src="images/logo/facebook-logo.png" alt="Facebook" class="footer-social-icon"> Facebook
-                        </a>
-                        <a href="https://wa.me/201227449987" target="_blank" class="social-pill wa">
-                            <img src="images/logo/whatsapp-logo.png" alt="WhatsApp" class="footer-social-icon"> WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom-bar">
-                <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
-                <p>Designed for data enthusiasts & professionals</p>
-            </div>
-        </footer>
-
+        <div class="footer-bottom-bar">
+          <p>© 2026 Said Fawzy Learning. All rights reserved.</p>
+          <p>Designed for data enthusiasts &amp; professionals</p>
+        </div>
+      </footer>
     </div>
 
-    <!-- Script -->
+    <!-- ملف التفاعل العام للمنصة -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

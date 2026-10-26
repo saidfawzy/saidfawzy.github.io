@@ -1,157 +1,143 @@
 /* ==========================================================================
-   Said Fawzy Learning - Resources Page Styles (css/resources.css)
+   Said Fawzy Learning - Resources Page Styles (resources.css)
    ========================================================================== */
 
+/* 1. مقدمة صفحة الموارد (Resources Header Section) */
+.resources-intro-box {
+    text-align: center;
+    max-width: 750px;
+    margin: 35px auto 45px auto;
+    padding: 0 20px;
+}
+
+.resources-badge {
+    display: inline-block;
+    background: rgba(2, 132, 199, 0.12);
+    color: #0284c7;
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    padding: 5px 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(2, 132, 199, 0.25);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.resources-intro-box h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.8px;
+    margin: 0 0 12px 0;
+}
+
+.resources-desc {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #475569;
+    margin: 0;
+}
+
+
+/* 2. شبكة الكروت الأربعة (Four Resource Cards Grid) */
 .resources-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-    margin-top: 24px;
+    margin-bottom: 60px;
 }
 
 .resource-card {
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: 24px;
+    padding: 30px 24px;
     border: 1px solid #e2e8f0;
-    padding: 24px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
 .resource-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+    border-color: #cbd5e1;
 }
 
-.resource-card.pbi-border { border-top: 4px solid #f59e0b; }
-.resource-card.dax-border { border-top: 4px solid #3b82f6; }
-.resource-card.candy-border { border-top: 4px solid #ef4444; }
-.resource-card.excel-border { border-top: 4px solid #10b981; }
-
-.res-card-top {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.res-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.res-icon-box {
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
+/* الأيقونات وثيمات الألوان لكل تصنيف */
+.resource-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
-    flex-shrink: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.pbi-res-bg { background: #fef3c7; }
-.dax-res-bg { background: #dbeafe; }
-.candy-res-bg { background: #fee2e2; }
-.excel-res-bg { background: #d1fae5; }
+.pbi-theme { background: #fef3c7; border: 1px solid #fde68a; }
+.py-theme { background: #e0f2fe; border: 1px solid #bae6fd; }
+.data-theme { background: #f3e8ff; border: 1px solid #e9d5ff; }
+.excel-theme { background: #dcfce7; border: 1px solid #bbf7d0; }
 
-.res-meta {
+.resource-card-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    flex-grow: 1;
 }
 
-.res-tag {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    width: fit-content;
-    padding: 2px 8px;
-    border-radius: 4px;
-}
-
-.pbi-tag { color: #b45309; background: #fffbeb; }
-.dax-tag { color: #1d4ed8; background: #eff6ff; }
-.candy-tag { color: #b91c1c; background: #fef2f2; }
-.excel-tag { color: #047857; background: #ecfdf5; }
-
-.res-meta h3 {
-    margin: 0;
-    font-size: 1.15rem;
+.resource-card h3 {
+    font-size: 18px;
+    font-weight: 800;
     color: #0f172a;
-    font-weight: 700;
-    line-height: 1.3;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.3px;
 }
 
-.res-bilingual-body {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.res-desc-en {
-    margin: 0;
-    color: #475569;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.res-desc-ar {
-    margin: 0;
-    color: #64748b;
-    font-size: 0.88rem;
+.resource-card p {
+    font-size: 14px;
     line-height: 1.6;
-    direction: rtl;
-    text-align: right;
-    font-family: 'Noto Sans Arabic', sans-serif;
+    color: #475569;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
 }
 
-.res-meta-specs {
-    display: flex;
-    gap: 16px;
-    padding: 10px 14px;
-    background: #f8fafc;
-    border-radius: 8px;
-    font-size: 0.82rem;
-    color: #64748b;
-    border: 1px solid #edf2f7;
-}
-
-.res-meta-specs span strong {
-    color: #1e293b;
-}
-
-.res-action-row {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid #f1f5f9;
-}
-
-.btn-res-download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    padding: 10px 16px;
-    border-radius: 8px;
+.resource-link-label {
+    font-size: 13px;
     font-weight: 700;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    color: #0284c7;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s ease;
 }
 
-.btn-res-download:hover {
-    opacity: 0.92;
-    transform: translateY(-1px);
+.resource-card:hover .resource-link-label {
+    gap: 10px;
 }
 
-.pbi-btn { background: #f59e0b; color: #ffffff; }
-.dax-btn { background: #3b82f6; color: #ffffff; }
-.candy-btn { background: #ef4444; color: #ffffff; }
-.excel-btn { background: #10b981; color: #ffffff; }
+
+/* 3. التصميم المتجاوب (Responsive Layout) */
+@media (max-width: 1024px) {
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .resources-intro-box h2 {
+        font-size: 28px;
+    }
+    .resource-card {
+        padding: 24px 20px;
+    }
+}
